@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 import PixelTrail from "../components/PixelTrail";
 import GridDistortion from "../components/GridDistortion";
+import ASCIIText from "../components/ASCIIText";
 
 export default function Home() {
   const [hasClicked, sethasClicked] = useState(false);
@@ -39,7 +40,7 @@ export default function Home() {
       > */}
         <GridDistortion
           imageSrc="/homeBg.png"  // background image to distort
-          grid={48}
+          grid={90}
           mouse={0.1}
           strength={0.15}
           relaxation={0.9}
@@ -47,18 +48,19 @@ export default function Home() {
         />
       {/* </div>  */}
 
+
       {/* Page content above the distortion */}
       <div className="relative z-10 w-full flex items-center justify-center">
         <button
-          className="w-1/2 h-screen  relative"
+          className="w-1/2 h-screen text-center flex items-center justify-center relative"
           onClick={() => sethasClicked(true)}
         >
-          <Image
-            src={'technoVit.svg'}
-            alt="TechnoVit Logo"
-            fill
-            className="mx-auto pt-10"
+          <ASCIIText
+            text='⏻'
+            enableWaves={false}
+            asciiFontSize={8}
           />
+          
         </button>
       </div>
     </main>
