@@ -1,13 +1,10 @@
 // File: src/app/page.tsx
-'use client';
+"use client";
 import Image from "next/image";
 import { useState, useRef } from "react";
 import { gsap } from "gsap";
-import GridDistortion from "../components/GridDistortion";
 import ASCIIText from "../components/ASCIIText";
 import CountdownTimer from "@/components/CountdownTimer";
-import Dither from '../components/Dither';
-
 
 export default function Home() {
   const [hasClicked, sethasClicked] = useState(false);
@@ -52,12 +49,20 @@ export default function Home() {
     });
 
     if (firstScreenRef.current) {
-      tl.to(firstScreenRef.current, { opacity: 0, duration: 1, ease: "power2.inOut" });
+      tl.to(firstScreenRef.current, {
+        opacity: 0,
+        duration: 1,
+        ease: "power2.inOut",
+      });
     }
 
     if (secondScreenRef.current) {
       tl.set(secondScreenRef.current, { opacity: 0, display: "flex" });
-      tl.to(secondScreenRef.current, { opacity: 1, duration: 1, ease: "power2.inOut" }, "-=0.3");
+      tl.to(
+        secondScreenRef.current,
+        { opacity: 1, duration: 1, ease: "power2.inOut" },
+        "-=0.3"
+      );
     }
   };
 
@@ -65,7 +70,10 @@ export default function Home() {
     <main className="min-h-[100svh] relative flex items-center justify-center overflow-hidden bg-black">
       {/* First Screen */}
       {!hasClicked && (
-        <div ref={firstScreenRef} className="absolute inset-0 flex items-center justify-center">
+        <div
+          ref={firstScreenRef}
+          className="absolute inset-0 flex items-center justify-center"
+        >
           {/* <GridDistortion
             imageSrc="/homeBg1.png"
             grid={90}
@@ -75,18 +83,23 @@ export default function Home() {
             className="absolute top-0 left-0 w-screen h-screen"
           /> */}
           <div className="absolute top-0 left-0 w-screen h-screen z-10">
-          
-          <Image
-            src="/homeBg.png"
-            alt="Fullscreen Background"
-            fill
-            className="object-fill"
-            priority
-          />
-          
-    </div>
-    
-          <div style={{ width: '100vw', height: '100vh', position: 'absolute', zIndex: 0 }}>
+            <Image
+              src="/homeBg.png"
+              alt="Fullscreen Background"
+              fill
+              className="object-fill"
+              priority
+            />
+          </div>
+
+          <div
+            style={{
+              width: "100vw",
+              height: "100vh",
+              position: "absolute",
+              zIndex: 0,
+            }}
+          >
             {/* <Dither
               waveColor={[0.20, 0.25, 0.20]}
               disableAnimation={false}
@@ -114,14 +127,13 @@ export default function Home() {
                 style={{ opacity: 0 }}
               >
                 <div className="relative w-full h-full flex items-center justify-center">
-  <Image
-    src="/technoVit.svg"
-    alt="Techno VIT Logo"
-    fill
-    className="object-contain scale-80"
-  />
-</div>
-
+                  <Image
+                    src="/technoVit.svg"
+                    alt="Techno VIT Logo"
+                    fill
+                    className="object-contain scale-80"
+                  />
+                </div>
               </div>
             )}
           </div>
@@ -145,7 +157,6 @@ export default function Home() {
 
         {/* CRT Frame Container */}
         <div className="absolute top-0 left-0 w-screen h-screen z-10">
-          
           <Image
             src="/homeBg.png"
             alt="Fullscreen Background"
@@ -153,10 +164,9 @@ export default function Home() {
             className="object-fill"
             priority
           />
-          
-    </div>
-    
-          {/* <div style={{ width: '100vw', height: '100vh', position: 'absolute', zIndex: 0 }}>
+        </div>
+
+        {/* <div style={{ width: '100vw', height: '100vh', position: 'absolute', zIndex: 0 }}>
             <Dither
               waveColor={[0.22, 0.25, 0.22]}
               disableAnimation={false}
@@ -186,7 +196,6 @@ export default function Home() {
 
           {/* Inside CRT */}
           <div className="absolute inset-0 flex flex-col items-center justify-between px-4 py-4 md:px-8 md:py-6">
-            
             {/* Top Logos */}
             <div className="flex justify-between items-center w-full">
               <div className="flex-shrink-0 max-w-[20%]">
@@ -211,8 +220,8 @@ export default function Home() {
 
             {/* Middle Section: Date + Countdown */}
             <div className="flex flex-col items-center pt-30">
-                <CountdownTimer targetDate="2025-10-31T00:00:00" />
-              </div>
+              <CountdownTimer targetDate="2025-10-31T00:00:00" />
+            </div>
             {/* Socials */}
             <div className="flex justify-center gap-[10vw] sm:gap-[20vw] mt-3 flex-wrap w-full">
               <a
@@ -227,7 +236,6 @@ export default function Home() {
                     layout="responsive"
                     width={300}
                     height={300}
-                    
                   />
                 </div>
               </a>
