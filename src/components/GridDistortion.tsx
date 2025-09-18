@@ -102,7 +102,13 @@ const GridDistortion: React.FC<GridDistortionProps> = ({
       data[i * 4 + 1] = Math.random() * 255 - 125;
     }
 
-    const dataTexture = new THREE.DataTexture(data, size, size, THREE.RGBAFormat, THREE.FloatType);
+    const dataTexture = new THREE.DataTexture(
+      data,
+      size,
+      size,
+      THREE.RGBAFormat,
+      THREE.FloatType
+    );
     dataTexture.needsUpdate = true;
     uniforms.uDataTexture.value = dataTexture;
 
@@ -157,6 +163,7 @@ const GridDistortion: React.FC<GridDistortionProps> = ({
       window.addEventListener('resize', handleResize);
     }
 
+    // --- Mouse logic with idle pulse ---
     const mouseState = {
       x: 0,
       y: 0,
@@ -166,31 +173,45 @@ const GridDistortion: React.FC<GridDistortionProps> = ({
       vY: 0
     };
 
-    const handleMouseMove = (e: MouseEvent) => {
+    let lastMoveTime = Date.now();
+    let lastCoords = { clientX: 0, clientY: 0 };
+
+    const updateMouse = (clientX: number, clientY: number) => {
+      if (!container) return;
       const rect = container.getBoundingClientRect();
-      const x = (e.clientX - rect.left) / rect.width;
-      const y = 1 - (e.clientY - rect.top) / rect.height;
-      mouseState.vX = x - mouseState.prevX;
-      mouseState.vY = y - mouseState.prevY;
-      Object.assign(mouseState, { x, y, prevX: x, prevY: y });
-    };
 
-    const handleMouseLeave = () => {
-      if (dataTexture) {
-        dataTexture.needsUpdate = true;
+      const inside =
+        clientX >= rect.left &&
+        clientX <= rect.right &&
+        clientY >= rect.top &&
+        clientY <= rect.bottom;
+
+      if (inside) {
+        const x = (clientX - rect.left) / rect.width;
+        const y = 1 - (clientY - rect.top) / rect.height;
+        mouseState.vX = x - mouseState.prevX;
+        mouseState.vY = y - mouseState.prevY;
+        Object.assign(mouseState, { x, y, prevX: x, prevY: y });
+      } else {
+        Object.assign(mouseState, { vX: 0, vY: 0 });
       }
-      Object.assign(mouseState, {
-        x: 0,
-        y: 0,
-        prevX: 0,
-        prevY: 0,
-        vX: 0,
-        vY: 0
-      });
     };
 
-    container.addEventListener('mousemove', handleMouseMove);
-    container.addEventListener('mouseleave', handleMouseLeave);
+    const handleMouseMove = (e: MouseEvent) => {
+      lastMoveTime = Date.now();
+      lastCoords = { clientX: e.clientX, clientY: e.clientY };
+      updateMouse(e.clientX, e.clientY);
+    };
+
+    window.addEventListener('mousemove', handleMouseMove);
+
+    // Idle checker: every 500ms, if idle > 2s, retrigger
+    const idleInterval = setInterval(() => {
+      if (Date.now() - lastMoveTime > 1000) {
+        updateMouse(lastCoords.clientX, lastCoords.clientY);
+        lastMoveTime = Date.now(); // reset so it repeats every 2s
+      }
+    }, 500);
 
     handleResize();
 
@@ -217,7 +238,8 @@ const GridDistortion: React.FC<GridDistortionProps> = ({
 
       for (let i = 0; i < size; i++) {
         for (let j = 0; j < size; j++) {
-          const distSq = Math.pow(gridMouseX - i, 2) + Math.pow(gridMouseY - j, 2);
+          const distSq =
+            Math.pow(gridMouseX - i, 2) + Math.pow(gridMouseY - j, 2);
           if (distSq < maxDist * maxDist) {
             const index = 4 * (i + size * j);
             const power = Math.min(maxDist / Math.sqrt(distSq), 10);
@@ -244,8 +266,8 @@ const GridDistortion: React.FC<GridDistortionProps> = ({
         window.removeEventListener('resize', handleResize);
       }
 
-      container.removeEventListener('mousemove', handleMouseMove);
-      container.removeEventListener('mouseleave', handleMouseLeave);
+      window.removeEventListener('mousemove', handleMouseMove);
+      clearInterval(idleInterval);
 
       if (renderer) {
         renderer.dispose();
