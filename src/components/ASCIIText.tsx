@@ -369,7 +369,7 @@ class CanvAscii {
     this.textCanvas = new CanvasTxt(this.textString, {
       fontSize: this.textFontSize,
       fontFamily:
-        "'IBM Plex Mono', 'Segoe UI Symbol', 'Apple Symbols', 'Noto Sans Symbols 2', monospace",
+        "'IBM Plex Mono', 'Noto Sans Symbols 2', 'Segoe UI Symbol', 'Apple Symbols', monospace",
       color: this.textColor,
     });
     this.textCanvas.resize();
@@ -621,7 +621,7 @@ export default function ASCIIText({
       }}
     >
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Noto+Sans+Symbols+2&display=swap');
 
         body {
           margin: 0;
