@@ -4,15 +4,29 @@ import { useState, useRef } from "react";
 import { gsap } from "gsap";
 import ASCIIText from "../components/ASCIIText";
 import CountdownTimer from "@/components/CountdownTimer";
+import { useEffect } from "react";
 
 export default function Home() {
   const [hasClicked, sethasClicked] = useState(false);
   const [showAnimation, setShowAnimation] = useState(false);
+  const [powerButtonFontSize, setPowerButtonFontSize] = useState(200);
 
   const imageWrapperRef = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
   const firstScreenRef = useRef<HTMLDivElement>(null);
   const secondScreenRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setPowerButtonFontSize(window.innerWidth <= 768 ? 100 : 200);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const handleClick = () => {
     setShowAnimation(true);
@@ -96,7 +110,12 @@ export default function Home() {
               className="w-1/2 h-screen text-center flex items-center justify-center relative z-20"
               onClick={handleClick}
             >
-              <ASCIIText text="⏻" enableWaves={false} asciiFontSize={8} />
+              <ASCIIText
+                text="⏻"
+                enableWaves={false}
+                asciiFontSize={8}
+                textFontSize={powerButtonFontSize}
+              />
             </button>
 
             {showAnimation && (
