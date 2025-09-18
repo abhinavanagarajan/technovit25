@@ -53,7 +53,7 @@ export default function CountdownTimer({ targetDate }: { targetDate: string }) {
 
   return (
     <div
-      className={`text-[#DBFB81] text-[5vw] sm:text-[4vw] font-normal p-20vh m-20vh border-0 ${pressStart.className}`}
+      className={`text-[#DBFB81] text-[5vw] sm:text-[2vw] font-normal p-20vh m-20vh border-0 ${pressStart.className}`}
     >
       {String(timeLeft.days).padStart(2, "0")}d:
       {String(timeLeft.hours).padStart(2, "0")}h:
