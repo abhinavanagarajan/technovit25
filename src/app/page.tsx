@@ -1,4 +1,3 @@
-// File: src/app/page.tsx
 "use client";
 import Image from "next/image";
 import { useState, useRef } from "react";
@@ -68,20 +67,11 @@ export default function Home() {
 
   return (
     <main className="min-h-[100svh] relative flex items-center justify-center overflow-hidden bg-black">
-      {/* First Screen */}
       {!hasClicked && (
         <div
           ref={firstScreenRef}
           className="absolute inset-0 flex items-center justify-center"
         >
-          {/* <GridDistortion
-            imageSrc="/homeBg1.png"
-            grid={90}
-            mouse={0.1}
-            strength={0.15}
-            relaxation={0.9}
-            className="absolute top-0 left-0 w-screen h-screen"
-          /> */}
           <div className="absolute top-0 left-0 w-screen h-screen z-10">
             <Image
               src="/homeBg.png"
@@ -99,18 +89,7 @@ export default function Home() {
               position: "absolute",
               zIndex: 0,
             }}
-          >
-            {/* <Dither
-              waveColor={[0.20, 0.25, 0.20]}
-              disableAnimation={false}
-              enableMouseInteraction={true}
-              mouseRadius={0.3}
-              colorNum={4}
-              waveAmplitude={0.3}
-              waveFrequency={3}
-              waveSpeed={0.05}
-            /> */}
-          </div>
+          ></div>
           <div className="relative z-10 w-full h-full flex items-center justify-center">
             <button
               ref={buttonRef}
@@ -140,22 +119,10 @@ export default function Home() {
         </div>
       )}
 
-      {/* Second Screen */}
       <div
         ref={secondScreenRef}
         className="absolute inset-0 hidden flex-col items-center justify-center"
       >
-        {/* Background */}
-        {/* <GridDistortion
-          imageSrc="/homeBg.png"
-          grid={90}
-          mouse={0.1}
-          strength={0.15}
-          relaxation={0.9}
-          className="absolute top-0 left-0 w-screen h-screen"
-        /> */}
-
-        {/* CRT Frame Container */}
         <div className="absolute top-0 left-0 w-screen h-screen z-10">
           <Image
             src="/homeBg.png"
@@ -166,20 +133,7 @@ export default function Home() {
           />
         </div>
 
-        {/* <div style={{ width: '100vw', height: '100vh', position: 'absolute', zIndex: 0 }}>
-            <Dither
-              waveColor={[0.22, 0.25, 0.22]}
-              disableAnimation={false}
-              enableMouseInteraction={true}
-              mouseRadius={0.3}
-              colorNum={4}
-              waveAmplitude={0.3}
-              waveFrequency={3}
-              waveSpeed={0.05}
-            />
-          </div> */}
         <div className="relative z-10 w-[90%] max-w-6xl aspect-[4/3] flex items-center justify-center max-h-[85vh]">
-          {/* CRT Frame */}
           <Image
             src="/technoVit-CRT.png"
             alt="CRT Frame"
@@ -188,17 +142,15 @@ export default function Home() {
           />
           <Image
             src="/date.png"
-            alt="CRT Frame"
+            alt="Date"
             className="object-contain"
             width={1200}
             height={600}
           />
 
-          {/* Inside CRT */}
-          <div className="absolute inset-0 flex flex-col items-center justify-between px-4 py-4 md:px-8 md:py-6">
-            {/* Top Logos */}
-            <div className="flex justify-between items-center w-full">
-              <div className="flex-shrink-0 max-w-[20%]">
+          <div className="absolute inset-0 flex flex-col items-center justify-between p-4 md:p-8">
+            <div className="flex justify-between items-center w-full -mt-3 px-2 sm:px-4">
+              <div className="relative w-[25%] sm:w-[20%] md:w-[15%]">
                 <Image
                   src="/vitLogoWhite.png"
                   alt="VIT Logo"
@@ -207,7 +159,8 @@ export default function Home() {
                   height={60}
                 />
               </div>
-              <div className="flex-shrink-0 max-w-[30%]">
+
+              <div className="relative w-[40%] sm:w-[30%] md:w-[25%]">
                 <Image
                   src="/technoVit.svg"
                   alt="TechnoVIT Logo"
@@ -218,57 +171,52 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Middle Section: Date + Countdown */}
-            <div className="flex flex-col items-center pt-30">
+            <div className="flex flex-col items-center mt-[12vh] sm:mt-[32vh]">
               <CountdownTimer targetDate="2025-10-31T00:00:00" />
             </div>
-            {/* Socials */}
-            <div className="flex justify-center gap-[10vw] sm:gap-[20vw] mt-3 flex-wrap w-full">
+
+            <div className="flex justify-center items-center gap-4 sm:gap-20 md:gap-24 w-full mt-[-4vh] sm:mt-[-8vh]">
               <a
                 href="https://www.instagram.com/technovit_25/"
                 target="_blank"
-                className="flex flex-col items-center"
+                rel="noopener noreferrer"
+                className="w-[25vw] sm:w-40 transform transition-transform hover:scale-110"
               >
-                <div className="w-23 sm:w-27 scale-150">
-                  <Image
-                    src="/insta.png"
-                    alt="Instagram"
-                    layout="responsive"
-                    width={300}
-                    height={300}
-                  />
-                </div>
+                <Image
+                  src="/insta.png"
+                  alt="Instagram"
+                  layout="responsive"
+                  width={300}
+                  height={300}
+                />
               </a>
 
               <a
                 href="mailto:technovit@vit.ac.in"
-                className="flex flex-col items-center"
+                className="w-[36vw] sm:w-52 mt-3 sm:mt-6 transform transition-transform hover:scale-110"
               >
-                <div className="w-30 sm:w-30 scale-170">
-                  <Image
-                    src="/mail.png"
-                    alt="Email"
-                    layout="responsive"
-                    width={500}
-                    height={500}
-                  />
-                </div>
+                <Image
+                  src="/mail.png"
+                  alt="Email"
+                  layout="responsive"
+                  width={500}
+                  height={500}
+                />
               </a>
 
               <a
                 href="https://www.linkedin.com/company/technovit-chennai/"
                 target="_blank"
-                className="flex flex-col items-center"
+                rel="noopener noreferrer"
+                className="w-[25vw] sm:w-40 transform transition-transform hover:scale-110"
               >
-                <div className="w-23 sm:w-27 scale-150">
-                  <Image
-                    src="/linkedin.png"
-                    alt="LinkedIn"
-                    layout="responsive"
-                    width={300}
-                    height={300}
-                  />
-                </div>
+                <Image
+                  src="/linkedin.png"
+                  alt="LinkedIn"
+                  layout="responsive"
+                  width={300}
+                  height={300}
+                />
               </a>
             </div>
           </div>
