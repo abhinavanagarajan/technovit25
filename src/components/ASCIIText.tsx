@@ -368,7 +368,8 @@ class CanvAscii {
   setMesh() {
     this.textCanvas = new CanvasTxt(this.textString, {
       fontSize: this.textFontSize,
-      fontFamily: "IBM Plex Mono",
+      fontFamily:
+        "'IBM Plex Mono', 'Segoe UI Symbol', 'Apple Symbols', 'Noto Sans Symbols 2', monospace",
       color: this.textColor,
     });
     this.textCanvas.resize();
