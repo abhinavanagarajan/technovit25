@@ -7,6 +7,12 @@ import GridDistortion from "../components/GridDistortion";
 import ASCIIText from "../components/ASCIIText";
 import CountdownTimer from "@/components/CountdownTimer";
 import Dither from '../components/Dither';
+import { Press_Start_2P } from "next/font/google";
+
+const pressStart = Press_Start_2P({
+    subsets: ["latin"],
+    weight: "400",
+});
 
 
 export default function Home() {
@@ -98,14 +104,19 @@ export default function Home() {
               waveSpeed={0.05}
             /> */}
           </div>
-          <div className="relative z-10 w-full h-full flex items-center justify-center">
-            <button
-              ref={buttonRef}
-              className="w-1/2 h-screen text-center flex items-center justify-center relative z-20"
-              onClick={handleClick}
-            >
-              <ASCIIText text="⏻" enableWaves={false} asciiFontSize={8} />
-            </button>
+          <div className="relative z-10 w-full h-full flex flex-col items-center justify-center">
+          <div className="relative z-10 w-full h-full flex flex-col items-center justify-center">
+              <button
+                ref={buttonRef}
+                className="flex flex-col items-center justify-center z-20"
+                onClick={handleClick}
+              >
+                <ASCIIText text="⏻" enableWaves={false} asciiFontSize={8} />
+              </button>
+            </div>
+            <div className="absolute bottom-1/4 text-white text-sm md:text-lg z-20">
+              <p className={`${pressStart.className} text-lg`}>Click Me</p>
+            </div>
 
             {showAnimation && (
               <div
@@ -114,13 +125,13 @@ export default function Home() {
                 style={{ opacity: 0 }}
               >
                 <div className="relative w-full h-full flex items-center justify-center">
-  <Image
-    src="/technoVit.svg"
-    alt="Techno VIT Logo"
-    fill
-    className="object-contain scale-80"
-  />
-</div>
+                    <Image
+                      src="/technoVit.svg"
+                      alt="Techno VIT Logo"
+                      fill
+                      className="object-contain scale-80"
+                    />
+                  </div>
 
               </div>
             )}
@@ -214,7 +225,7 @@ export default function Home() {
                 <CountdownTimer targetDate="2025-10-31T00:00:00" />
               </div>
             {/* Socials */}
-            <div className="flex justify-center gap-[10vw] sm:gap-[20vw] mt-3 flex-wrap w-full">
+            <div className="flex justify-center gap-[10vw] sm:gap-[20vw] flex-wrap w-full">
               <a
                 href="https://www.instagram.com/technovit_25/"
                 target="_blank"
@@ -225,8 +236,8 @@ export default function Home() {
                     src="/insta.png"
                     alt="Instagram"
                     layout="responsive"
-                    width={300}
-                    height={300}
+                    width={500}
+                    height={500}
                     
                   />
                 </div>
@@ -257,8 +268,8 @@ export default function Home() {
                     src="/linkedin.png"
                     alt="LinkedIn"
                     layout="responsive"
-                    width={300}
-                    height={300}
+                    width={500}
+                    height={500}
                   />
                 </div>
               </a>
