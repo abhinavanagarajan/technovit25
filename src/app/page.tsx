@@ -4,13 +4,20 @@ import { useState, useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import ASCIIText from "../components/ASCIIText";
 import CountdownTimer from "@/components/CountdownTimer";
+import { Press_Start_2P } from "next/font/google";
+
+const pressStart = Press_Start_2P({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 export default function Home() {
-  const [hasClicked, sethasClicked] = useState(false);
+  const [hasClicked, setHasClicked] = useState(false);
   const [powerButtonFontSize, setPowerButtonFontSize] = useState(200);
 
   const imageWrapperRef = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
+  const clickMeRef = useRef<HTMLDivElement>(null);
   const firstScreenRef = useRef<HTMLDivElement>(null);
   const secondScreenRef = useRef<HTMLDivElement>(null);
 
@@ -28,19 +35,19 @@ export default function Home() {
       !firstScreenRef.current ||
       !secondScreenRef.current ||
       !imageWrapperRef.current ||
-      !buttonRef.current
+      !buttonRef.current ||
+      !clickMeRef.current
     ) {
       return;
     }
 
     const tl = gsap.timeline({
       onComplete: () => {
-        // Update state only after all animations are complete
-        sethasClicked(true);
+        setHasClicked(true);
       },
     });
 
-    tl.to(buttonRef.current, {
+    tl.to([buttonRef.current, clickMeRef.current], {
       opacity: 0,
       duration: 0.5,
       ease: "power2.in",
@@ -54,7 +61,7 @@ export default function Home() {
         "-=0.5"
       )
       .to(imageWrapperRef.current, {
-        clipPath: "circle(75% at 50% 50%)",
+        clipPath: "circle(100% at 50% 50%)",
         duration: 1.5,
         ease: "power2.out",
       })
@@ -98,14 +105,12 @@ export default function Home() {
   };
 
   const handleClick = () => {
-    // Prevent multiple clicks during the animation
     if (hasClicked) return;
     runTransitionAnimation();
   };
 
   return (
     <main className="min-h-[100svh] relative flex items-center justify-center overflow-hidden bg-black">
-      {/* 1. Both screens are now always in the DOM during the transition */}
       <div
         ref={firstScreenRef}
         className="absolute inset-0 flex items-center justify-center"
@@ -119,10 +124,10 @@ export default function Home() {
             priority
           />
         </div>
-        <div className="relative z-10 w-full h-full flex items-center justify-center">
+        <div className="relative z-20 w-full h-full flex flex-col items-center justify-center">
           <button
             ref={buttonRef}
-            className="w-1/2 h-screen text-center flex items-center justify-center relative z-20"
+            className="w-1/2 h-1/2 text-center flex items-center justify-center"
             onClick={handleClick}
           >
             <ASCIIText
@@ -132,6 +137,10 @@ export default function Home() {
               textFontSize={powerButtonFontSize}
             />
           </button>
+
+          <div ref={clickMeRef} className="absolute bottom-1/4 text-white z-20">
+            <p className={`${pressStart.className} text-lg`}>Click Me</p>
+          </div>
 
           <div
             ref={imageWrapperRef}
