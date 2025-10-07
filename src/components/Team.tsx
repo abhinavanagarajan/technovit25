@@ -1,5 +1,4 @@
 import { Card, CardContent } from "../components/Card";
-import { Mail } from "lucide-react";
 
 const teamData = {
   "Chief Patron": [

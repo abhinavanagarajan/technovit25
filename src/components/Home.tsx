@@ -32,7 +32,10 @@ export const Home = () => {
     } catch (e) {
       // localStorage might be unavailable (privacy mode), fall back to showing the video
       // We'll still attempt to set a session-based flag below when possible.
-      console.warn("localStorage unavailable, trailer will show every visit:", e);
+      console.warn(
+        "localStorage unavailable, trailer will show every visit:",
+        e
+      );
     }
 
     // Force video to play when component mounts (only if showVideo remains true)
@@ -47,7 +50,7 @@ export const Home = () => {
       // Mark as played in localStorage so subsequent visits don't autoplay
       try {
         window.localStorage.setItem("techno_trailer_played", "1");
-      } catch (e) {
+      } catch {
         // ignore write errors
       }
     }
@@ -251,13 +254,6 @@ export const Home = () => {
             </div>
             <div className="h-px w-12 sm:w-20 bg-gradient-to-l from-transparent to-[#00ff00]"></div>
           </div>
-        </div>
-
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce z-10">
-          <ChevronDown
-            size={32}
-            className="text-[#00ff00] drop-shadow-[0_0_10px_rgba(0,255,0,0.8)]"
-          />
         </div>
       </section>
 
