@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -45,8 +47,8 @@
 
 :root {
   --radius: 0.625rem;
-  --background: #000000;   /* default black body */
-  --foreground: #ffffff;   /* white text */
+  --background: #000000; /* default black body */
+  --foreground: #ffffff; /* white text */
 
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.147 0.004 49.25);
@@ -122,4 +124,21 @@
   }
 }
 
+@layer utilities {
+  .font-heading {
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
 
+  .font-subheading {
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  .font-body {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+  }
+}
