@@ -1,5 +1,6 @@
-import { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 interface NavigationProps {
   currentPage: string;
@@ -10,13 +11,9 @@ export const Navigation = ({ currentPage, onNavigate }: NavigationProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { name: 'Home', path: 'home' },
-    // { name: 'Events', path: 'events' },
-    { name: 'Team', path: 'team' },
-    {name: 'About', path: 'about'},
-    // { name: 'Merch', path: 'merch' },
-    // { name: 'Souvenir', path: 'souvenir' },
-    // { name: 'Sponsors', path: 'sponsors' },
+    { name: "Home", path: "home" },
+    { name: "Team", path: "team" },
+    { name: "About", path: "about" },
   ];
 
   const handleNavClick = (path: string) => {
@@ -25,87 +22,85 @@ export const Navigation = ({ currentPage, onNavigate }: NavigationProps) => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-black/95 backdrop-blur-md border-b border-[#00ff00]/20">
-      {/* Full-width row so logos can be flush-left while nav items remain centered */}
-      <div className="w-full">
-        <div className="flex items-center h-20">
-          {/* Left logos - placed before the centered container so they sit flush to the left edge */}
-          <div
-            className="flex items-center cursor-pointer group ml-0"
-            onClick={() => handleNavClick('home')}
-          >
-            <img
-              src="/Black Background Techno Logo.png"
-              alt="TechnoVIT Logo"
-              className="h-14 md:h-16 w-auto object-contain transition-all duration-300"
-            />
-              <div className="w-2 h-2 bg-white rounded-full mx-3"></div>
-
-            <img
-              src="/VIT logo.png"
-              alt="VIT Logo"
-              className="h-10 md:h-13 w-auto object-contain ml-3"
-            />
-          </div>
-
-          {/* Spacer */}
-          <div className="flex-1" />
-
-          {/* Centered container for nav items (keeps existing max width and padding) */}
-          <div className="flex items-center">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-              <div className="flex justify-end items-center space-x-1">
-                <div className="hidden md:flex items-center space-x-1">
-                  {navItems.map((item) => (
-                    <button
-                      key={item.path}
-                      onClick={() => handleNavClick(item.path)}
-                      className={`
-                        px-4 py-2 text-sm font-subheading uppercase tracking-wide
-                        transition-all duration-300 relative group
-                        ${currentPage === item.path ? 'text-[#00ff00]' : 'text-white hover:text-[#00ff00]'}
-                      `}
-                    >
-                      {item.name}
-                      <div
-                        className={`
-                          absolute bottom-0 left-0 h-0.5 bg-[#00ff00] transition-all duration-300
-                          ${currentPage === item.path ? 'w-full' : 'w-0 group-hover:w-full'}
-                        `}
-                      ></div>
-                    </button>
-                  ))}
-                </div>
-
-                <button
-                  className="md:hidden text-white hover:text-[#00ff00] transition-colors"
-                  onClick={() => setIsOpen(!isOpen)}
-                >
-                  {isOpen ? <X size={28} /> : <Menu size={28} />}
-                </button>
-              </div>
-            </div>
-          </div>
-
-          </div>
+    <nav className="fixed left-0 right-0 top-0 z-50 border-b border-[#00ff00]/20 bg-black/90 backdrop-blur-md">
+      <div className="mx-auto hidden h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8 md:flex">
+        <div
+          className="flex flex-shrink-0 cursor-pointer items-center gap-4"
+          onClick={() => handleNavClick("home")}
+        >
+          <img
+            src="/Black Background Techno Logo.png"
+            alt="TechnoVIT Logo"
+            className="h-12 w-auto object-contain"
+          />
+          <img
+            src="/VIT logo.png"
+            alt="VIT Logo"
+            className="h-12 w-auto object-contain"
+          />
         </div>
 
-        {isOpen && (
-        <div className="md:hidden bg-black border-t border-[#00ff00]/20 animate-fade-in">
-          <div className="px-4 py-4 space-y-2">
+        <div className="flex items-center space-x-1">
+          {navItems.map((item) => (
+            <button
+              key={item.path}
+              onClick={() => handleNavClick(item.path)}
+              className={cn(
+                "group relative px-4 py-2 text-sm font-subheading uppercase tracking-wide text-white transition-colors duration-300 hover:text-[#00ff00]",
+                currentPage === item.path && "text-[#00ff00]"
+              )}
+            >
+              {item.name}
+              <span
+                className={cn(
+                  "absolute bottom-0 left-0 h-0.5 w-0 bg-[#00ff00] transition-all duration-300 group-hover:w-full",
+                  currentPage === item.path ? "w-full" : "w-0"
+                )}
+              />
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div className="flex flex-col items-center gap-2 py-3 md:hidden">
+        <div
+          className="flex cursor-pointer items-center justify-center gap-4"
+          onClick={() => handleNavClick("home")}
+        >
+          <img
+            src="/Black Background Techno Logo.png"
+            alt="TechnoVIT Logo"
+            className="h-10 w-auto object-contain"
+          />
+          <img
+            src="/VIT logo.png"
+            alt="VIT Logo"
+            className="h-10 w-auto object-contain"
+          />
+        </div>
+
+        <button
+          className="text-white transition-colors hover:text-[#00ff00] mt-2"
+          onClick={() => setIsOpen(!isOpen)}
+          aria-label="Toggle navigation"
+        >
+          {isOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
+      </div>
+
+      {isOpen && (
+        <div className="border-t border-[#00ff00]/20 bg-black md:hidden">
+          <div className="space-y-2 px-4 py-4">
             {navItems.map((item) => (
               <button
                 key={item.path}
                 onClick={() => handleNavClick(item.path)}
-                className={`
-                  block w-full text-left px-4 py-3 text-base font-subheading uppercase
-                  border-l-4 transition-all duration-300
-                  ${
-                    currentPage === item.path
-                      ? 'border-[#00ff00] text-[#00ff00] bg-[#00ff00]/10'
-                      : 'border-transparent text-white hover:border-[#00ff00] hover:text-[#00ff00] hover:bg-[#00ff00]/5'
-                  }
-                `}
+                className={cn(
+                  "block w-full border-l-4 px-4 py-3 text-left text-base font-subheading uppercase text-white transition-all duration-300",
+                  currentPage === item.path
+                    ? "border-[#00ff00] bg-[#00ff00]/10 text-[#00ff00]"
+                    : "border-transparent hover:border-[#00ff00] hover:bg-[#00ff00]/5 hover:text-[#00ff00]"
+                )}
               >
                 {item.name}
               </button>

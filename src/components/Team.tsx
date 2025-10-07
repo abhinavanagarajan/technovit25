@@ -23,7 +23,7 @@ const teamData = {
       email: "vp2@vit.ac.in",
     },
     {
-      name: "Dr. G V Selvam",
+      name: "Dr. G V Selvam",
       role: "Vice President",
       image: "gvs.jpg",
       email: "selvam@vit.ac.in",
@@ -140,6 +140,21 @@ const teamData = {
   ],
 };
 
+// Helper function to determine grid classes based on the number of members
+const getGridClasses = (memberCount: number) => {
+  if (memberCount === 1) {
+    return "grid-cols-1 max-w-sm mx-auto";
+  }
+  if (memberCount === 2) {
+    return "grid-cols-1 sm:grid-cols-2 max-w-3xl mx-auto";
+  }
+  if (memberCount === 3) {
+    return "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 max-w-5xl mx-auto";
+  }
+  // Default responsive grid for 4 or more members
+  return "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4";
+};
+
 export const Team = () => {
   return (
     <div className="min-h-screen py-24">
@@ -169,33 +184,7 @@ export const Team = () => {
                   <div className="w-16 h-0.5 bg-[#00ff00]"></div>
                 </div>
 
-                <div
-                  className={`
-                  grid gap-6
-                  ${members.length === 1 ? "grid-cols-1 max-w-md mx-auto" : ""}
-                  ${
-                    members.length === 2
-                      ? "grid-cols-1 sm:grid-cols-2 max-w-3xl mx-auto"
-                      : ""
-                  }
-                  ${
-                    members.length === 3
-                      ? "grid-cols-1 sm:grid-cols-3 max-w-3xl mx-auto"
-                      : ""
-                  }
-                  ${
-                    members.length === 4
-                      ? "grid-cols-1 sm:grid-cols-4 lg:grid-cols-4"
-                      : ""
-                  }
-                  ${
-                    members.length > 5
-                      ? "grid-cols-1 sm:grid-cols-3 max-w-5xl mx-auto"
-                      : ""
-                  }
-
-                `}
-                >
+                <div className={`grid gap-6 ${getGridClasses(members.length)}`}>
                   {members.map((member, index) => (
                     <Card key={index} className="group">
                       <div className="relative overflow-hidden">
@@ -206,14 +195,12 @@ export const Team = () => {
                             className="w-full h-64 object-contain transition-transform duration-300 group-hover:scale-110"
                           />
                         )}
-
                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       </div>
                       <CardContent className="text-center">
                         <h3 className="text-lg font-subheading text-white mb-1 uppercase">
                           {member.name}
                         </h3>
-
                         <p className="text-sm text-[#00ff00] mb-3 uppercase tracking-wide">
                           {member.role}
                         </p>
