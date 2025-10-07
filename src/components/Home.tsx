@@ -18,24 +18,21 @@ export const Home = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
-    // Only attempt to autoplay if the overlay should be shown.
-    // Also ensure this runs in the browser (guard against SSR).
     if (typeof window === "undefined") return;
 
     try {
       const playedFlag = window.localStorage.getItem("techno_trailer_played");
-      // If the trailer was already played before, don't show it again
       if (playedFlag === "1") {
         setShowVideo(false);
         return;
       }
     } catch (e) {
-      // localStorage might be unavailable (privacy mode), fall back to showing the video
-      // We'll still attempt to set a session-based flag below when possible.
-      console.warn("localStorage unavailable, trailer will show every visit:", e);
+      console.warn(
+        "localStorage unavailable, trailer will show every visit:",
+        e
+      );
     }
 
-    // Force video to play when component mounts (only if showVideo remains true)
     if (videoRef.current && showVideo) {
       const playPromise = videoRef.current.play();
 
@@ -44,10 +41,9 @@ export const Home = () => {
           console.log("Video autoplay failed:", error);
         });
       }
-      // Mark as played in localStorage so subsequent visits don't autoplay
       try {
         window.localStorage.setItem("techno_trailer_played", "1");
-      } catch (e) {
+      } catch {
         // ignore write errors
       }
     }
@@ -148,7 +144,6 @@ export const Home = () => {
 
   return (
     <div className="min-h-screen relative">
-      {/* Video Overlay */}
       {showVideo && (
         <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black">
           <video
@@ -167,7 +162,6 @@ export const Home = () => {
             }}
           />
 
-          {/* Control Buttons */}
           <div className="absolute top-6 right-6 flex gap-3">
             <button
               className="text-white bg-black/60 hover:bg-black/80 rounded-full p-3 transition-all duration-300 hover:scale-110 backdrop-blur-sm border-2 border-white/20 hover:border-[#00ff00]"
@@ -201,24 +195,20 @@ export const Home = () => {
         </div>
       )}
 
-      {/* Landing Section with Matrix Animation */}
       <section className="relative h-screen flex flex-col items-center justify-center overflow-hidden px-4">
         <div className="absolute inset-0 bg-black overflow-hidden z-0">
           <canvas id="matrixCanvas" className="w-full h-full"></canvas>
         </div>
 
-        {/* Overlay gradient for better text visibility */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/60 z-[1]"></div>
 
         <div className="relative z-10 text-center max-w-6xl mx-auto -mt-12">
-          {/* VIT Chennai Badge */}
           <div className="mb-3 animate-fade-in">
             <span className="text-[10px] sm:text-xs text-[#00ff00] tracking-[0.3em] uppercase font-bold border-2 border-[#00ff00] px-4 py-1.5 inline-block backdrop-blur-sm bg-black/50 shadow-[0_0_20px_rgba(0,255,0,0.3)]">
               VIT Chennai
             </span>
           </div>
 
-          {/* Main Title */}
           <h1 className="text-6xl sm:text-7xl lg:text-9xl font-black mb-3 animate-slide-up">
             <span className="text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.3)] hover:drop-shadow-[0_0_40px_rgba(255,255,255,0.5)] transition-all duration-300">
               techno
@@ -231,7 +221,6 @@ export const Home = () => {
             </span>
           </h1>
 
-          {/* Tagline with enhanced styling */}
           <div className="mb-4 animate-fade-in">
             <div className="relative inline-block">
               <div className="absolute inset-0 bg-[#00ff00] blur-xl opacity-20"></div>
@@ -243,7 +232,6 @@ export const Home = () => {
             </div>
           </div>
 
-          {/* Date with modern styling */}
           <div className="flex items-center justify-center gap-4 animate-slide-in">
             <div className="h-px w-12 sm:w-20 bg-gradient-to-r from-transparent to-[#00ff00]"></div>
             <div className="text-sm sm:text-base lg:text-lg text-white font-light tracking-[0.2em] uppercase backdrop-blur-sm bg-black/30 px-6 py-3 border border-[#00ff00]/30 shadow-[0_0_30px_rgba(0,255,0,0.2)]">
@@ -252,16 +240,8 @@ export const Home = () => {
             <div className="h-px w-12 sm:w-20 bg-gradient-to-l from-transparent to-[#00ff00]"></div>
           </div>
         </div>
-
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce z-10">
-          <ChevronDown
-            size={32}
-            className="text-[#00ff00] drop-shadow-[0_0_10px_rgba(0,255,0,0.8)]"
-          />
-        </div>
       </section>
 
-      {/* Stats Section - Black Background */}
       <section className="bg-black py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
@@ -273,7 +253,7 @@ export const Home = () => {
               >
                 <CardContent className="py-8">
                   <stat.icon className="w-12 h-12 mx-auto mb-4 text-[#00ff00]" />
-                  <div className="text-4xl font-heading text-white mb-2">
+                  <div className="text-2xl sm:text-4xl font-heading text-white mb-2">
                     {stat.value}
                   </div>
                   <div className="text-sm text-[#00ff00]/70 uppercase tracking-wide">
@@ -286,7 +266,6 @@ export const Home = () => {
         </div>
       </section>
 
-      {/* About Section - Black Background */}
       <section className="bg-black py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
@@ -325,7 +304,6 @@ export const Home = () => {
         </div>
       </section>
 
-      {/* FAQ Section - Black Background */}
       <section className="bg-black py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
