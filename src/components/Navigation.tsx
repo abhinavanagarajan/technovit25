@@ -23,19 +23,19 @@ export const Navigation = ({ currentPage, onNavigate }: NavigationProps) => {
 
   return (
     <nav className="fixed left-0 right-0 top-0 z-50 border-b border-[#00ff00]/20 bg-black/90 backdrop-blur-md">
-      <div className="mx-auto hidden h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8 md:flex">
+      <div className="mx-auto hidden h-20 max-w-[95vw] items-center justify-between md:flex">
         <div
           className="flex flex-shrink-0 cursor-pointer items-center gap-4"
           onClick={() => handleNavClick("home")}
         >
           <img
-            src="/Black Background Techno Logo.png"
-            alt="TechnoVIT Logo"
+            src="/VIT logo.png"
+            alt="VIT Logo"
             className="h-12 w-auto object-contain"
           />
           <img
-            src="/VIT logo.png"
-            alt="VIT Logo"
+            src="/Black Background Techno Logo.png"
+            alt="TechnoVIT Logo"
             className="h-12 w-auto object-contain"
           />
         </div>

@@ -203,12 +203,6 @@ export const Home = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/60 z-[1]"></div>
 
         <div className="relative z-10 text-center max-w-6xl mx-auto -mt-12">
-          <div className="mb-3 animate-fade-in">
-            <span className="text-[10px] sm:text-xs text-[#00ff00] tracking-[0.3em] uppercase font-bold border-2 border-[#00ff00] px-4 py-1.5 inline-block backdrop-blur-sm bg-black/50 shadow-[0_0_20px_rgba(0,255,0,0.3)]">
-              VIT Chennai
-            </span>
-          </div>
-
           <h1 className="text-6xl sm:text-7xl lg:text-9xl font-black mb-3 animate-slide-up">
             <span className="text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.3)] hover:drop-shadow-[0_0_40px_rgba(255,255,255,0.5)] transition-all duration-300">
               techno
