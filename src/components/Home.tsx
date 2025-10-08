@@ -21,14 +21,14 @@ export const Home = () => {
     if (typeof window === "undefined") return;
 
     try {
-      const playedFlag = window.localStorage.getItem("techno_trailer_played");
+      const playedFlag = window.sessionStorage.getItem("techno_trailer_played");
       if (playedFlag === "1") {
         setShowVideo(false);
         return;
       }
     } catch (e) {
       console.warn(
-        "localStorage unavailable, trailer will show every visit:",
+        "sessionStorage unavailable, trailer will show every visit:",
         e
       );
     }
@@ -42,7 +42,7 @@ export const Home = () => {
         });
       }
       try {
-        window.localStorage.setItem("techno_trailer_played", "1");
+        window.sessionStorage.setItem("techno_trailer_played", "1");
       } catch {
         // ignore write errors
       }
