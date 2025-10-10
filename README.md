@@ -6,7 +6,7 @@ We’ll be developing the **Technovit’25 website** collaboratively using **Nex
 
 1. **Fork the Repository**
    Fork the main repository to your own GitHub account:
-   🔗 [https://github.com/a2ys/technovit25](https://github.com/a2ys/technovit25)
+   [https://github.com/a2ys/technovit25](https://github.com/a2ys/technovit25)
 
 2. **Clone Your Fork**
 
