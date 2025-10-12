@@ -126,19 +126,19 @@
 
 @layer utilities {
   .font-heading {
-    font-family: "Manrope", sans-serif;
+    font-family: "Be Vietnam Pro", sans-serif;
     font-weight: 800;
     letter-spacing: -0.02em;
   }
 
   .font-subheading {
-    font-family: "Manrope", sans-serif;
+    font-family: "Be Vietnam Pro", sans-serif;
     font-weight: 700;
     letter-spacing: -0.01em;
   }
 
   .font-body {
-    font-family: "Manrope", sans-serif;
+    font-family: "Be Vietnam Pro", sans-serif;
     font-weight: 400;
   }
 }
