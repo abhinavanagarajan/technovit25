@@ -37,7 +37,7 @@ const Events = () => {
               Events
             </h1>
             <p className="text-white text-xl md:text-2xl font-light">
-              @ technoVIT'25
+              @ technoVIT&apos;25
             </p>
           </div>
 

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+// State and Prop Types
 type FilterState = {
   eventType: string[];
   priceRange: number[];
@@ -28,13 +29,17 @@ type FilterButtonProps = {
   onClick: () => void;
 };
 
+// A type for the keys of the openSections state
+type SectionName = "eventType" | "priceRange" | "dateTime" | "teamSize";
+
+// Reusable Components
 const FilterButton = ({ children, selected, onClick }: FilterButtonProps) => (
   <button
     onClick={onClick}
     className={`
-        px-6 py-3 border-2 border-black font-bold uppercase cursor-pointer
-        text-sm font-sans
-        ${selected ? "bg-black text-[#42E25A]" : "bg-[#42E25A] text-black"}
+      px-6 py-3 border-2 border-black font-bold uppercase cursor-pointer
+      text-sm font-sans
+      ${selected ? "bg-black text-[#42E25A]" : "bg-[#42E25A] text-black"}
     `}
   >
     {children}
@@ -53,16 +58,15 @@ const FilterSection = ({
       className={`
         w-full p-5 bg-[#42E25A] border-t-2 border-black
         flex justify-between items-center cursor-pointer
-    `}
+      `}
     >
       <span className="font-sans text-lg font-bold uppercase text-black">
         {title}
       </span>
-
       <span
         className={`
-        text-2xl font-bold text-black transform transition-transform duration-300
-        ${isOpen ? "rotate-180" : "rotate-0"}
+          text-2xl font-bold text-black transform transition-transform duration-300
+          ${isOpen ? "rotate-180" : "rotate-0"}
         `}
       >
         <svg
@@ -85,6 +89,7 @@ const FilterSection = ({
   </div>
 );
 
+// Main Component
 const EventFilter = ({ onFilterChange }: EventFilterProps) => {
   const [openSections, setOpenSections] = useState({
     eventType: true,
@@ -104,65 +109,44 @@ const EventFilter = ({ onFilterChange }: EventFilterProps) => {
 
   const notifyFilterChange = (updatedState: Partial<FilterState> = {}) => {
     const filters: FilterState = {
-      eventType:
-        updatedState.eventType !== undefined
-          ? updatedState.eventType
-          : selectedEventTypes,
-      priceRange:
-        updatedState.priceRange !== undefined
-          ? updatedState.priceRange
-          : priceRange,
-      freeOfCost:
-        updatedState.freeOfCost !== undefined
-          ? updatedState.freeOfCost
-          : freeOfCost,
-      startDate:
-        updatedState.startDate !== undefined
-          ? updatedState.startDate
-          : startDate,
-      startTime:
-        updatedState.startTime !== undefined
-          ? updatedState.startTime
-          : startTime,
-      endDate:
-        updatedState.endDate !== undefined ? updatedState.endDate : endDate,
-      endTime:
-        updatedState.endTime !== undefined ? updatedState.endTime : endTime,
-      teamSize:
-        updatedState.teamSize !== undefined
-          ? updatedState.teamSize
-          : selectedTeamSizes,
+      eventType: updatedState.eventType ?? selectedEventTypes,
+      priceRange: updatedState.priceRange ?? priceRange,
+      freeOfCost: updatedState.freeOfCost ?? freeOfCost,
+      startDate: updatedState.startDate ?? startDate,
+      startTime: updatedState.startTime ?? startTime,
+      endDate: updatedState.endDate ?? endDate,
+      endTime: updatedState.endTime ?? endTime,
+      teamSize: updatedState.teamSize ?? selectedTeamSizes,
     };
 
     console.log(JSON.stringify(filters, null, 2));
 
-    // Call the parent's callback function if provided
     if (onFilterChange) {
       onFilterChange(filters);
     }
   };
 
-  const toggleSection = (section: any) => {
-    setOpenSections((prev: any) => ({
+  const toggleSection = (section: SectionName) => {
+    setOpenSections((prev) => ({
       ...prev,
       [section]: !prev[section],
     }));
   };
 
-  const toggleEventType = (type: any) => {
-    setSelectedEventTypes((prev: any) => {
+  const toggleEventType = (type: string) => {
+    setSelectedEventTypes((prev: string[]) => {
       const newTypes = prev.includes(type)
-        ? prev.filter((t: any) => t !== type)
+        ? prev.filter((t: string) => t !== type)
         : [...prev, type];
       notifyFilterChange({ eventType: newTypes });
       return newTypes;
     });
   };
 
-  const toggleTeamSize = (size: any) => {
-    setSelectedTeamSizes((prev: any) => {
+  const toggleTeamSize = (size: string) => {
+    setSelectedTeamSizes((prev: string[]) => {
       const newSizes = prev.includes(size)
-        ? prev.filter((s: any) => s !== size)
+        ? prev.filter((s: string) => s !== size)
         : [...prev, size];
       notifyFilterChange({ teamSize: newSizes });
       return newSizes;
@@ -282,7 +266,7 @@ const EventFilter = ({ onFilterChange }: EventFilterProps) => {
               max="1000"
               value={priceRange[1]}
               onChange={(e) => {
-                const newRange = [0, parseInt(e.target.value)];
+                const newRange = [0, parseInt(e.target.value, 10)];
                 setPriceRange(newRange);
                 notifyFilterChange({ priceRange: newRange });
               }}
@@ -362,7 +346,6 @@ const EventFilter = ({ onFilterChange }: EventFilterProps) => {
         title="TEAM SIZE"
         isOpen={openSections.teamSize}
         onToggle={() => toggleSection("teamSize")}
-        className="b"
       >
         <div className="flex flex-wrap gap-3">
           {teamSizes.map((size) => (
