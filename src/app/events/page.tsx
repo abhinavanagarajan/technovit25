@@ -51,7 +51,7 @@ export default function EventsPage() {
                     className="rounded-md overflow-hidden border-4 border-gray-400 shadow-2xl bg-gray-300 flex items-center justify-center flex-shrink-0"
                     style={{
                         width: '350px',
-                        height: '495px',
+                        height: '60vh',
                     }}
                 >
 
