@@ -393,7 +393,11 @@ export default function FaultyTerminal({
             resizeObserver.disconnect();
             if (mouseReact) document.removeEventListener('mousemove', handleMove);
             if (gl.canvas.parentElement === ctn) ctn.removeChild(gl.canvas);
-            gl.getExtension('WEBGL_lose_context')?.loseContext();
+            try {
+                gl.getExtension('WEBGL_lose_context')?.loseContext();
+            } catch (err) {
+                // Silently ignore errors during context loss cleanup
+            }
             loadAnimationStartRef.current = 0;
             timeOffsetRef.current = Math.random() * 100;
         };
