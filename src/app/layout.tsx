@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { Bayon, Be_Vietnam_Pro, Geist, Geist_Mono } from "next/font/google";
+import { Bayon, Be_Vietnam_Pro } from "next/font/google";
 import "./globals.css";
 
-const bayon = Bayon({
-  variable: "--font-bayon",
-  subsets: ["latin"],
-  weight: "400",
-});
+// const bayon = Bayon({
+//   variable: "--font-bayon",
+//   subsets: ["latin"],
+//   weight: "400",
+// });
 
-const beVietnamPro = Be_Vietnam_Pro({
+const beVietnam = Be_Vietnam_Pro({
   variable: "--font-be-vietnam-pro",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800", "900"],
@@ -26,11 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${bayon.className} ${beVietnamPro.className} font-sans antialiased`}
-      >
-        {children}
-      </body>
+      <body className={`${beVietnam.className} antialiased`}>{children}</body>
     </html>
   );
 }

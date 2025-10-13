@@ -29,9 +29,9 @@ const Events = () => {
           />
         </div>
 
-        <div className="relative z-10 w-full min-h-screen flex items-center justify-around px-6 md:px-16 lg:px-24">
+        <div className="relative z-10 w-full min-h-screen flex items-center justify-around px-6 md:px-16 lg:px-24 ttFont">
           <div className="flex flex-col space-y-3 text-left">
-            <h1 className="text-white font-bold text-6xl md:text-9xl lg:text-[110px] leading-none tracking-tight">
+            <h1 className="text-white text-6xl md:text-9xl lg:text-[110px] leading-none tracking-tight">
               Events
             </h1>
             <p className="text-white text-xl md:text-2xl font-light">

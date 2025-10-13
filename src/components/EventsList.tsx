@@ -2,6 +2,13 @@
 
 import React, { useEffect, useState } from "react";
 import { EventItem, Asset } from "@/interfaces/contentful";
+import { Be_Vietnam_Pro } from "next/font/google";
+
+const beVietnam = Be_Vietnam_Pro({
+  variable: "--font-bvietnam",
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
 
 const formatPrice = (price: number): string => {
   if (price === 0) return "FREE";
@@ -385,7 +392,7 @@ const EventCard = ({ event, imageUrl, onClick }: EventCardProps) => {
         </div>
         <div className="flex-grow flex flex-col justify-between my-auto h-full">
           <div>
-            <h2 className="text-2xl font-bold">{event.fields.eventName}</h2>
+            <h2 className="text-2xl ttFont">{event.fields.eventName}</h2>
             <h3 className="text-lg font-normal">{event.fields.clubName}</h3>
             <p className="text-sm leading-relaxed text-gray-300 max-w-6xl mt-2">
               {event.fields.shortDescription}

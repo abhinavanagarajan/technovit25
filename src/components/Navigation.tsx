@@ -1,11 +1,18 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { Bayon } from "next/font/google";
 
 interface NavigationProps {
   currentPage: string;
   onNavigate: (page: string) => void;
 }
+
+const bayon = Bayon({
+  variable: "--font-bayon",
+  subsets: ["latin"],
+  weight: "400",
+});
 
 export const Navigation = ({ currentPage, onNavigate }: NavigationProps) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +31,9 @@ export const Navigation = ({ currentPage, onNavigate }: NavigationProps) => {
   };
 
   return (
-    <nav className="fixed left-0 right-0 top-0 z-50 border-b-[1px] border-[#ffffff] bg-[#000000] backdrop-blur-md">
+    <nav
+      className={`fixed left-0 right-0 top-0 z-50 border-b-[1px] border-[#ffffff] bg-[#000000] backdrop-blur-md text-xl  ${bayon.className}`}
+    >
       <div className="mx-auto hidden h-16 max-w-[95vw] items-center md:flex">
         {/* Left - Navigation Links */}
         <div className="flex flex-1 items-center gap-6 justify-start">
@@ -33,7 +42,7 @@ export const Navigation = ({ currentPage, onNavigate }: NavigationProps) => {
               key={item.path}
               onClick={() => handleNavClick(item.path)}
               className={cn(
-                "text-xs font-semibold uppercase tracking-wide text-white transition-colors duration-200 hover:text-[#00ff00]",
+                "uppercase tracking-wide text-white transition-colors duration-200 hover:text-[#00ff00]",
                 currentPage === item.path && "text-[#00ff00]"
               )}
             >
@@ -68,7 +77,7 @@ export const Navigation = ({ currentPage, onNavigate }: NavigationProps) => {
         <div className="flex flex-1 items-center justify-end">
           <button
             onClick={() => handleNavClick("get-started")}
-            className="bg-[#70E081] px-4 py-2 text-xs font-bold uppercase text-black hover:bg-[#70E081]/90 transition-colors"
+            className="bg-[#70E081] px-4 py-2 uppercase text-black hover:bg-[#70E081]/90 transition-colors"
           >
             Get Started
           </button>
@@ -116,7 +125,7 @@ export const Navigation = ({ currentPage, onNavigate }: NavigationProps) => {
                 key={item.path}
                 onClick={() => handleNavClick(item.path)}
                 className={cn(
-                  "text-left text-sm font-semibold uppercase text-white px-3 py-2 transition-colors",
+                  "text-left uppercase text-white px-3 py-2 transition-colors",
                   currentPage === item.path
                     ? "bg-[#00ff00]/20 text-[#00ff00]"
                     : "hover:bg-[#00ff00]/10 hover:text-[#00ff00]"
@@ -127,7 +136,7 @@ export const Navigation = ({ currentPage, onNavigate }: NavigationProps) => {
             ))}
             <button
               onClick={() => handleNavClick("get-started")}
-              className="mt-2 w-full bg-[#00ff00] px-4 py-2 text-sm font-bold uppercase text-black hover:bg-[#00ff00]/90"
+              className="mt-2 w-full bg-[#00ff00] px-4 py-2 uppercase text-black hover:bg-[#00ff00]/90"
             >
               Get Started
             </button>
