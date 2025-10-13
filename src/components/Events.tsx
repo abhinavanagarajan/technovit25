@@ -1,15 +1,14 @@
 import EventsList from "./EventsList";
 import EventFilter from "./Filters";
 import FaultyTerminal from "./FaultyTerminal";
+import ImageCarousel from "./ImageCarousel";
 
 const Events = () => {
   return (
     <div>
       <div className="w-full h-screen bg-black overflow-hidden relative">
-        {/* Background effect */}
         <div className="absolute inset-0 opacity-40 pointer-events-none">
-          <FaultyTerminal
-            scale={1.5}
+            <FaultyTerminal scale={3}
             gridMul={[2, 1]}
             digitSize={1.2}
             timeScale={0.5}
@@ -25,13 +24,11 @@ const Events = () => {
             mouseReact={true}
             mouseStrength={0.6}
             pageLoadAnimation={false}
-            brightness={0.5}
-          />
+            brightness={0.5} />
         </div>
 
-        {/* Foreground content */}
-        <div className="relative z-10 w-full min-h-screen flex items-center justify-between px-6 md:px-16 lg:px-24">
-          {/* Left side: text */}
+        <div className="relative z-10 w-full min-h-screen flex items-center justify-around px-6 md:px-16 lg:px-24">
+          
           <div className="flex flex-col space-y-3 text-left">
             <h1 className="text-white font-bold text-6xl md:text-9xl lg:text-[110px] leading-none tracking-tight">
               Events
@@ -41,14 +38,8 @@ const Events = () => {
             </p>
           </div>
 
-          {/* Right side: image placeholder */}
-          <div
-            className="rounded-md overflow-hidden border-4 border-gray-400 shadow-2xl bg-gray-300 flex items-center justify-center flex-shrink-0"
-            style={{
-              width: "350px",
-              height: "60vh",
-            }}
-          ></div>
+          <ImageCarousel />
+
         </div>
       </div>
       <div className="flex flex-col md:flex-row">
