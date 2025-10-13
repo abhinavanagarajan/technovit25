@@ -1,29 +1,64 @@
-import React, { useState } from "react";
+"use client";
 
-interface Event {
-  id: number;
-  name: string;
-  club: string;
-  description: string;
-  time: string;
-  price: string;
-  date: string;
-  duration: string;
-}
+import React, { useEffect, useState } from "react";
+import { EventItem, Asset } from "@/interfaces/contentful";
 
-interface SearchAndFilterProps {
+const formatPrice = (price: number): string => {
+  if (price === 0) return "FREE";
+  return `₹${price}`;
+};
+
+const formatDate = (isoString: string): { date: string; time: string } => {
+  const dateObj = new Date(isoString);
+  const optionsTime: Intl.DateTimeFormatOptions = {
+    hour: "numeric",
+    minute: "numeric",
+    hour12: true,
+    timeZone: "UTC",
+  };
+
+  const day = dateObj.toLocaleDateString("en-US", {
+    day: "numeric",
+    timeZone: "UTC",
+  });
+  const month = dateObj
+    .toLocaleDateString("en-US", { month: "short", timeZone: "UTC" })
+    .toUpperCase();
+
+  let daySuffix;
+  if (day.endsWith("1") && !day.endsWith("11")) daySuffix = "ST";
+  else if (day.endsWith("2") && !day.endsWith("12")) daySuffix = "ND";
+  else if (day.endsWith("3") && !day.endsWith("13")) daySuffix = "RD";
+  else daySuffix = "TH";
+
+  return {
+    date: `${day}${daySuffix} ${month}`,
+    time: dateObj.toLocaleTimeString("en-US", optionsTime),
+  };
+};
+
+interface EventsListProps {
+  events: EventItem[];
+  assets?: Asset[];
   searchTerm: string;
   onSearchChange: (value: string) => void;
 }
 
 interface EventCardProps {
-  event: Event;
+  event: EventItem;
+  imageUrl?: string;
   onClick: () => void;
 }
 
 interface EventDetailsDialogProps {
-  event: Event;
+  event: EventItem;
+  imageUrl?: string;
   onClose: () => void;
+}
+
+interface SearchAndFilterProps {
+  searchTerm: string;
+  onSearchChange: (value: string) => void;
 }
 
 interface ChevronDownIconProps {
@@ -50,8 +85,9 @@ const SearchIcon = () => (
     strokeLinejoin="round"
     className="text-white"
   >
-    <circle cx="11" cy="11" r="8"></circle>
-    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+    {" "}
+    <circle cx="11" cy="11" r="8"></circle>{" "}
+    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>{" "}
   </svg>
 );
 const ClockIcon = () => (
@@ -63,11 +99,12 @@ const ClockIcon = () => (
     stroke="currentColor"
     strokeWidth={2}
   >
+    {" "}
     <path
       strokeLinecap="round"
       strokeLinejoin="round"
       d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-    />
+    />{" "}
   </svg>
 );
 const CalendarIcon = () => (
@@ -79,11 +116,12 @@ const CalendarIcon = () => (
     stroke="currentColor"
     strokeWidth={2}
   >
+    {" "}
     <path
       strokeLinecap="round"
       strokeLinejoin="round"
       d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-    />
+    />{" "}
   </svg>
 );
 const UsersIcon = () => (
@@ -95,11 +133,12 @@ const UsersIcon = () => (
     stroke="currentColor"
     strokeWidth={2}
   >
+    {" "}
     <path
       strokeLinecap="round"
       strokeLinejoin="round"
       d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.653-.125-1.273-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.653.125-1.273.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-    />
+    />{" "}
   </svg>
 );
 const ChevronDownIcon = ({ open }: ChevronDownIconProps) => (
@@ -113,7 +152,12 @@ const ChevronDownIcon = ({ open }: ChevronDownIconProps) => (
     stroke="currentColor"
     strokeWidth={2}
   >
-    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+    {" "}
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M19 9l-7 7-7-7"
+    />{" "}
   </svg>
 );
 const CloseIcon = () => (
@@ -125,14 +169,14 @@ const CloseIcon = () => (
     stroke="currentColor"
     strokeWidth={2}
   >
+    {" "}
     <path
       strokeLinecap="round"
       strokeLinejoin="round"
       d="M6 18L18 6M6 6l12 12"
-    />
+    />{" "}
   </svg>
 );
-
 const AccordionItem = ({
   title,
   children,
@@ -141,33 +185,89 @@ const AccordionItem = ({
 }: AccordionItemProps) => {
   return (
     <div className="border-t border-[#3a3a3a]">
+      {" "}
       <div
         className="flex justify-between items-center py-4 cursor-pointer"
         onClick={onClick}
       >
+        {" "}
         <h3 className="uppercase font-semibold tracking-wider text-white">
-          {title}
-        </h3>
-        <ChevronDownIcon open={isOpen} />
-      </div>
-      {isOpen && <div className="pb-4 text-gray-400">{children}</div>}
+          {" "}
+          {title}{" "}
+        </h3>{" "}
+        <ChevronDownIcon open={isOpen} />{" "}
+      </div>{" "}
+      {isOpen && <div className="pb-4 text-gray-400">{children}</div>}{" "}
+    </div>
+  );
+};
+const SearchAndFilter = ({
+  searchTerm,
+  onSearchChange,
+}: SearchAndFilterProps) => {
+  const dropdownArrow = `data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E`;
+  return (
+    <div className="w-full px-2 py-4 mb-4">
+      {" "}
+      <div className="flex w-full items-center gap-2">
+        {" "}
+        <div className="flex flex-grow items-center space-x-3 border bg-black border-[#565656] px-4 py-1.5">
+          {" "}
+          <SearchIcon />{" "}
+          <input
+            type="text"
+            placeholder="SEARCH"
+            className="w-full bg-transparent text-white placeholder-gray-300 outline-none placeholder:tracking-widest"
+            value={searchTerm}
+            onChange={(e) => onSearchChange(e.target.value)}
+          />{" "}
+        </div>{" "}
+        <select
+          className="cursor-pointer appearance-none border border-[#565656] bg-black px-3 py-1.5 pr-8 uppercase text-white outline-none text-sm whitespace-nowrap"
+          style={{
+            backgroundImage: `url("${dropdownArrow}")`,
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "right 0.5rem center",
+            backgroundSize: "0.6em",
+            minWidth: "fit-content",
+            width: "auto",
+          }}
+        >
+          {" "}
+          <option className="bg-black text-white" value="30">
+            {" "}
+            Show 30{" "}
+          </option>{" "}
+          <option className="bg-black text-white" value="50">
+            {" "}
+            Show 50{" "}
+          </option>{" "}
+          <option className="bg-black text-white" value="100">
+            {" "}
+            Show 100{" "}
+          </option>{" "}
+        </select>{" "}
+      </div>{" "}
     </div>
   );
 };
 
-const EventDetailsDialog = ({ event, onClose }: EventDetailsDialogProps) => {
+const EventDetailsDialog = ({
+  event,
+  imageUrl,
+  onClose,
+}: EventDetailsDialogProps) => {
   const [openAccordion, setOpenAccordion] = useState<string | null>(
     "Description"
   );
+  const { date, time } = formatDate(event.fields.startDateAndTime);
 
   const handleAccordionClick = (title: string) => {
     setOpenAccordion((prev) => (prev === title ? null : title));
   };
 
   const handleBackdropClick = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (e.target === e.currentTarget) {
-      onClose();
-    }
+    if (e.target === e.currentTarget) onClose();
   };
 
   return (
@@ -184,33 +284,45 @@ const EventDetailsDialog = ({ event, onClose }: EventDetailsDialogProps) => {
           <CloseIcon />
         </button>
         <div className="flex flex-col lg:flex-row gap-8">
-          <div className="w-full lg:w-1/3 h-64 lg:h-auto bg-[#d9d9d9] flex-shrink-0"></div>
+          <div className="w-full lg:w-1/3 h-64 lg:h-auto bg-[#d9d9d9] flex-shrink-0">
+            {imageUrl && (
+              <img
+                src={imageUrl}
+                alt={event.fields.eventName}
+                className="w-full h-full object-cover"
+              />
+            )}
+          </div>
           <div className="w-full lg:w-2/3 flex flex-col py-4">
             <div className="flex justify-between items-start px-6">
               <div>
-                <h1 className="text-4xl lg:text-5xl font-bold">{event.name}</h1>
+                <h1 className="text-4xl lg:text-5xl font-bold">
+                  {event.fields.eventName}
+                </h1>
                 <h2 className="text-xl text-[#70E081] font-semibold mt-1">
-                  {event.club}
+                  {event.fields.clubName}
                 </h2>
               </div>
               <div className="bg-[#70E081] text-black font-bold px-6 py-2 text-lg flex-shrink-0">
-                {event.price}
+                {formatPrice(event.fields.pricePerPerson)}
               </div>
             </div>
             <hr className="border-[#3a3a3a] my-4" />
-            <p className="text-gray-400 px-6">{event.description}</p>
+            <p className="text-gray-400 px-6">
+              {event.fields.shortDescription}
+            </p>
             <div className="flex flex-wrap gap-4 mt-4 px-6">
               <div className="flex items-center justify-center bg-[#70E081] text-black font-bold py-2 px-4 ">
                 <ClockIcon />
-                <span>{event.time}</span>
+                <span>{time}</span>
               </div>
               <div className="flex items-center justify-center bg-[#70E081] text-black font-bold py-2 px-4 ">
                 <CalendarIcon />
-                <span>{event.date}</span>
+                <span>{date}</span>
               </div>
               <div className="flex items-center justify-center bg-[#70E081] text-black font-bold py-2 px-4 ">
                 <UsersIcon />
-                <span>{event.duration}</span>
+                <span>{event.fields.participationType}</span>
               </div>
             </div>
             <div className="mt-6 px-6">
@@ -219,18 +331,17 @@ const EventDetailsDialog = ({ event, onClose }: EventDetailsDialogProps) => {
                 isOpen={openAccordion === "Description"}
                 onClick={() => handleAccordionClick("Description")}
               >
-                A more detailed description of the event goes here. It explains
-                the purpose, the activities involved, and what participants can
-                expect.
+                {event.fields.longDescription}
               </AccordionItem>
               <AccordionItem
                 title="Rules"
                 isOpen={openAccordion === "Rules"}
                 onClick={() => handleAccordionClick("Rules")}
               >
-                <ul className="list-disc pl-5">
-                  <li>Rule number one for the competition.</li>
-                  <li>Rule number two that all participants must follow.</li>
+                <ul className="list-disc pl-5 space-y-1">
+                  {event.fields.rules.map((rule, index) => (
+                    <li key={index}>{rule}</li>
+                  ))}
                 </ul>
               </AccordionItem>
               <AccordionItem
@@ -238,9 +349,11 @@ const EventDetailsDialog = ({ event, onClose }: EventDetailsDialogProps) => {
                 isOpen={openAccordion === "Judgement Criteria"}
                 onClick={() => handleAccordionClick("Judgement Criteria")}
               >
-                Participants will be judged based on creativity, execution, and
-                overall impact of their project. Originality will be highly
-                valued.
+                <ul className="list-disc pl-5 space-y-1">
+                  {event.fields.judgementCriteria.map((criteria, index) => (
+                    <li key={index}>{criteria}</li>
+                  ))}
+                </ul>
               </AccordionItem>
             </div>
           </div>
@@ -250,108 +363,49 @@ const EventDetailsDialog = ({ event, onClose }: EventDetailsDialogProps) => {
   );
 };
 
-const SearchAndFilter = ({
-  searchTerm,
-  onSearchChange,
-}: SearchAndFilterProps) => {
-  const dropdownArrow = `data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E`;
-  return (
-    <div className="w-full py-4 mb-4">
-      <div className="flex w-full items-center">
-        <div className="flex flex-grow items-center space-x-3 border bg-black border-[#565656] px-4 py-1.5">
-          <SearchIcon />
-          <input
-            type="text"
-            placeholder="SEARCH"
-            className="w-full bg-transparent text-white placeholder-gray-300 outline-none placeholder:tracking-widest"
-            value={searchTerm}
-            onChange={(e) => onSearchChange(e.target.value)}
-          />
-        </div>
-        <div className="ml-2">
-          <select
-            className="h-full cursor-pointer appearance-none border border-[#565656] bg-black px-4 py-1.5 uppercase text-white outline-none"
-            style={{
-              backgroundImage: `url("${dropdownArrow}")`,
-              backgroundRepeat: "no-repeat",
-              backgroundPosition: "right 0.75rem center",
-              backgroundSize: "0.65em",
-              paddingRight: "2.5rem",
-            }}
-          >
-            <option className="bg-black text-white" value="30">
-              Show 30
-            </option>
-            <option className="bg-black text-white" value="50">
-              Show 50
-            </option>
-            <option className="bg-black text-white" value="100">
-              Show 100
-            </option>
-          </select>
-        </div>
-      </div>
-    </div>
-  );
-};
+const EventCard = ({ event, imageUrl, onClick }: EventCardProps) => {
+  const { date, time } = formatDate(event.fields.startDateAndTime);
 
-const EventCard = ({ event, onClick }: EventCardProps) => {
   return (
     <div
-      className="bg-black border border-[#565656] p-4 flex w-full cursor-pointer"
+      className="bg-black border border-[#565656] p-4 flex w-full cursor-pointer h-[30vh]"
       onClick={onClick}
     >
       <div className="flex w-full items-start space-x-6 text-white">
-        <div className="flex-shrink-0 w-32 h-full bg-gray-300"></div>
-        <div className="flex-grow flex flex-col justify-between my-auto">
+        <div className="flex-shrink-0 w-40 h-full overflow-hidden rounded-md">
+          {imageUrl ? (
+            <img
+              src={imageUrl}
+              alt={event.fields.eventName}
+              className="w-full h-full object-cover"
+            />
+          ) : (
+            <div className="w-full h-full bg-gray-700"></div>
+          )}
+        </div>
+        <div className="flex-grow flex flex-col justify-between my-auto h-full">
           <div>
-            <h2 className="text-2xl font-bold">{event.name}</h2>
-            <h3 className="text-lg font-normal">{event.club}</h3>
-            <p className="text-sm leading-relaxed text-gray-300 max-w-lg">
-              {event.description}
+            <h2 className="text-2xl font-bold">{event.fields.eventName}</h2>
+            <h3 className="text-lg font-normal">{event.fields.clubName}</h3>
+            <p className="text-sm leading-relaxed text-gray-300 max-w-6xl mt-2">
+              {event.fields.shortDescription}
             </p>
           </div>
         </div>
-        <div className="flex-shrink-0 my-auto grid grid-cols-2 gap-3 w-72 font-bayon">
+        <div className="flex-shrink-0 my-auto grid grid-cols-2 gap-3 w-72">
           <div className="flex items-center justify-center bg-[#70E081] text-black font-semibold p-3 text-sm">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-4 w-4 mr-2"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth="2"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-              />
-            </svg>
-            {event.time}
+            <ClockIcon />
+            {time}
           </div>
           <div className="flex items-center justify-center bg-[#70E081] text-black font-semibold p-3 text-sm">
-            {event.price}
+            {formatPrice(event.fields.pricePerPerson)}
           </div>
           <div className="flex items-center justify-center bg-[#70E081] text-black font-semibold p-3 text-sm">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-4 w-4 mr-2"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth="2"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-              />
-            </svg>
-            {event.date}
+            <CalendarIcon />
+            {date}
           </div>
           <div className="flex items-center justify-center bg-[#70E081] text-black font-semibold p-3 text-sm">
-            {event.duration}
+            {event.fields.participationType}
           </div>
         </div>
       </div>
@@ -359,89 +413,52 @@ const EventCard = ({ event, onClick }: EventCardProps) => {
   );
 };
 
-const eventData: Event[] = [
-  {
-    id: 1,
-    name: "AI Hackathon",
-    club: "Tech Club",
-    description:
-      "A competitive event where teams develop innovative AI projects overnight.",
-    time: "9.00 AM",
-    price: "₹150/-",
-    date: "28TH OCT",
-    duration: "Team",
-  },
-  {
-    id: 2,
-    name: "Literary Fest",
-    club: "Bookworms Society",
-    description:
-      "Celebrate the world of literature with author talks, poetry slams, and workshops.",
-    time: "10.00 AM",
-    price: "FREE",
-    date: "29TH OCT",
-    duration: "Solo",
-  },
-  {
-    id: 3,
-    name: "Startup Pitch",
-    club: "Entrepreneurship Cell",
-    description:
-      "Present your business idea to a panel of venture capitalists and industry experts.",
-    time: "2.00 PM",
-    price: "₹100/-",
-    date: "29TH OCT",
-    duration: "Duo",
-  },
-  {
-    id: 4,
-    name: "Robotics Workshop",
-    club: "Tech Club",
-    description:
-      "Learn to build and program your own line-following robot from scratch.",
-    time: "11.00 AM",
-    price: "₹200/-",
-    date: "30TH OCT",
-    duration: "Solo",
-  },
-  {
-    id: 5,
-    name: "Drama Night",
-    club: "Theatrix",
-    description:
-      "An evening showcasing a series of short plays and theatrical performances by students.",
-    time: "6.00 PM",
-    price: "₹50/-",
-    date: "30TH OCT",
-    duration: "Team",
-  },
-];
-
-const EventsList = () => {
-  const [searchTerm, setSearchTerm] = useState("");
-  const [selectedEvent, setSelectedEvent] = useState<Event | null>(null);
-
-  const filteredEvents = eventData.filter(
-    (event) =>
-      event.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      event.club.toLowerCase().includes(searchTerm.toLowerCase())
+const EventsList = ({
+  events,
+  assets,
+  searchTerm,
+  onSearchChange,
+}: EventsListProps) => {
+  useEffect(
+    () => console.log("EventsList rendered with events:", events),
+    [events]
   );
+  const [selectedEvent, setSelectedEvent] = useState<EventItem | null>(null);
+
+  const getImageUrl = (event: EventItem): string | undefined => {
+    const posterId = event.fields.poster?.sys.id;
+    if (!posterId || !assets) return undefined;
+    const asset = assets.find((asset) => asset.sys.id === posterId);
+    return asset ? `https:${asset.fields.file.url}` : undefined;
+  };
 
   return (
     <div className="w-full flex flex-col">
-      <SearchAndFilter searchTerm={searchTerm} onSearchChange={setSearchTerm} />
-
-      {filteredEvents.map((event) => (
-        <EventCard
-          key={event.id}
-          event={event}
-          onClick={() => setSelectedEvent(event)}
-        />
-      ))}
-
+      <SearchAndFilter
+        searchTerm={searchTerm}
+        onSearchChange={onSearchChange}
+      />
+      {events.length > 0 ? (
+        events.map((event) => {
+          const imageUrl = getImageUrl(event);
+          return (
+            <EventCard
+              key={event.sys.id}
+              event={event}
+              imageUrl={imageUrl}
+              onClick={() => setSelectedEvent(event)}
+            />
+          );
+        })
+      ) : (
+        <p className="text-white text-center text-xl mt-10">
+          No events match the current filters.
+        </p>
+      )}
       {selectedEvent && (
         <EventDetailsDialog
           event={selectedEvent}
+          imageUrl={getImageUrl(selectedEvent)}
           onClose={() => setSelectedEvent(null)}
         />
       )}
