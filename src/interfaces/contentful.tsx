@@ -1,7 +1,7 @@
-interface ContentfulLink {
+interface ContentfulLink<T extends string> {
   sys: {
     type: "Link";
-    linkType: string;
+    linkType: T;
     id: string;
   };
 }
@@ -19,17 +19,27 @@ interface AssetFile {
   contentType: string;
 }
 
+interface Metadata {
+  tags: string[];
+  concepts: unknown[];
+}
+
+interface BaseSys {
+  id: string;
+  type: string;
+  createdAt: string;
+  updatedAt: string;
+  revision: number;
+  locale: string;
+  space: ContentfulLink<"Space">;
+  environment: ContentfulLink<"Environment">;
+  publishedVersion: number;
+}
+
 export interface Asset {
-  metadata: {
-    tags: string[];
-    concepts: any[];
-  };
-  sys: {
-    id: string;
+  metadata: Metadata;
+  sys: BaseSys & {
     type: "Asset";
-    createdAt: string;
-    updatedAt: string;
-    locale: string;
   };
   fields: {
     title: string;
@@ -42,7 +52,7 @@ export interface EventFields {
   eventName: string;
   clubName: string;
   eventType: string;
-  poster: ContentfulLink;
+  poster: ContentfulLink<"Asset">;
   startDateAndTime: string;
   endDateAndTime: string;
   pricePerPerson: number;
@@ -58,17 +68,21 @@ export interface EventFields {
 }
 
 export interface EventItem {
-  metadata: {
-    tags: string[];
-    concepts: any[];
-  };
-  sys: {
-    id: string;
+  metadata: Metadata;
+  sys: BaseSys & {
     type: "Entry";
-    createdAt: string;
-    updatedAt: string;
+    contentType: ContentfulLink<"ContentType">;
   };
   fields: EventFields;
+}
+
+export interface IncludedEntry {
+  metadata: Metadata;
+  sys: BaseSys & {
+    type: "Entry";
+    contentType: ContentfulLink<"ContentType">;
+  };
+  fields: Record<string, unknown>;
 }
 
 export interface ContentfulCollectionResponse<T> {
@@ -81,7 +95,7 @@ export interface ContentfulCollectionResponse<T> {
   items: T[];
   includes?: {
     Asset?: Asset[];
-    Entry?: any[];
+    Entry?: IncludedEntry[];
   };
 }
 

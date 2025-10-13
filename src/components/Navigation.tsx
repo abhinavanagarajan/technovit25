@@ -15,7 +15,7 @@ export const Navigation = ({ currentPage, onNavigate }: NavigationProps) => {
     { name: "EVENTS", path: "events" },
     { name: "TEAM", path: "team" },
     { name: "MERCH", path: "merch" },
-    { name: "SPONSORS", path: "sponsors" },
+    // { name: "SPONSORS", path: "sponsors" },
   ];
 
   const handleNavClick = (path: string) => {
@@ -25,9 +25,9 @@ export const Navigation = ({ currentPage, onNavigate }: NavigationProps) => {
 
   return (
     <nav className="fixed left-0 right-0 top-0 z-50 border-b-[1px] border-[#ffffff] bg-[#000000] backdrop-blur-md">
-      <div className="mx-auto hidden h-16 max-w-[95vw] items-center justify-between md:flex">
+      <div className="mx-auto hidden h-16 max-w-[95vw] items-center md:flex">
         {/* Left - Navigation Links */}
-        <div className="flex items-center gap-6">
+        <div className="flex flex-1 items-center gap-6 justify-start">
           {navItems.map((item) => (
             <button
               key={item.path}
@@ -44,7 +44,7 @@ export const Navigation = ({ currentPage, onNavigate }: NavigationProps) => {
 
         {/* Center - Logos */}
         <div
-          className="flex items-center gap-3 cursor-pointer"
+          className="flex flex-none items-center gap-3 justify-center cursor-pointer"
           onClick={() => handleNavClick("home")}
         >
           <img
@@ -65,12 +65,14 @@ export const Navigation = ({ currentPage, onNavigate }: NavigationProps) => {
         </div>
 
         {/* Right - Get Started Button */}
-        <button
-          onClick={() => handleNavClick("get-started")}
-          className="rounded-sm bg-[#70E081] px-4 py-2 text-xs font-bold uppercase text-black hover:bg-[#70E081]/90 transition-colors"
-        >
-          Get Started
-        </button>
+        <div className="flex flex-1 items-center justify-end">
+          <button
+            onClick={() => handleNavClick("get-started")}
+            className="bg-[#70E081] px-4 py-2 text-xs font-bold uppercase text-black hover:bg-[#70E081]/90 transition-colors"
+          >
+            Get Started
+          </button>
+        </div>
       </div>
 
       {/* Mobile Navbar */}
@@ -106,7 +108,6 @@ export const Navigation = ({ currentPage, onNavigate }: NavigationProps) => {
         </button>
       </div>
 
-     
       {isOpen && (
         <div className="border-t border-[#00ff00]/20 bg-black md:hidden">
           <div className="flex flex-col px-4 py-3 space-y-2">
@@ -115,7 +116,7 @@ export const Navigation = ({ currentPage, onNavigate }: NavigationProps) => {
                 key={item.path}
                 onClick={() => handleNavClick(item.path)}
                 className={cn(
-                  "text-left text-sm font-semibold uppercase text-white px-3 py-2 rounded-md transition-colors",
+                  "text-left text-sm font-semibold uppercase text-white px-3 py-2 transition-colors",
                   currentPage === item.path
                     ? "bg-[#00ff00]/20 text-[#00ff00]"
                     : "hover:bg-[#00ff00]/10 hover:text-[#00ff00]"
@@ -126,7 +127,7 @@ export const Navigation = ({ currentPage, onNavigate }: NavigationProps) => {
             ))}
             <button
               onClick={() => handleNavClick("get-started")}
-              className="mt-2 w-full rounded-sm bg-[#00ff00] px-4 py-2 text-sm font-bold uppercase text-black hover:bg-[#00ff00]/90"
+              className="mt-2 w-full bg-[#00ff00] px-4 py-2 text-sm font-bold uppercase text-black hover:bg-[#00ff00]/90"
             >
               Get Started
             </button>

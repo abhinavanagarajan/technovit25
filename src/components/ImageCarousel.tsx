@@ -25,7 +25,11 @@ const ImageCarousel = () => {
   };
 
   // The function expects an object { itemIndex: number } as its argument
-  const getItemStyle = ({ itemIndex }: { itemIndex: number }): React.CSSProperties => {
+  const getItemStyle = ({
+    itemIndex,
+  }: {
+    itemIndex: number;
+  }): React.CSSProperties => {
     const len = carouselItems.length;
     const centerIndex = currentIndex;
     const leftIndex = (currentIndex - 1 + len) % len;
@@ -37,7 +41,7 @@ const ImageCarousel = () => {
       opacity: 0,
       transform: "scale(0.5)",
       zIndex: 0,
-      position: 'absolute',
+      position: "absolute",
     };
 
     if (itemIndex === centerIndex) {
@@ -75,7 +79,7 @@ const ImageCarousel = () => {
       {carouselItems.map((color, index) => (
         <div
           key={index}
-          className={`rounded-lg border-2 border-gray-400 shadow-xl ${color}`}
+          className={`border-2 border-gray-400 shadow-xl ${color}`}
           style={{
             height: "50vh",
             width: "35vh",
