@@ -1,3 +1,4 @@
+import { Bayon } from "next/font/google";
 import React, { useState, useEffect } from "react";
 
 type FilterState = {
@@ -25,15 +26,23 @@ type FilterButtonProps = {
   onClick: () => void;
 };
 
+const bayon = Bayon({
+  subsets: ["latin"],
+  weight: "400",
+  display: "swap",
+  variable: "--font-bayon",
+});
+
 type SectionName = "eventType" | "priceRange" | "date" | "teamSize";
 
 const FilterButton = ({ children, selected, onClick }: FilterButtonProps) => (
   <button
     onClick={onClick}
     className={`
-      px-4 py-2 border-2 border-black font-bold uppercase cursor-pointer
-      text-xs font-sans
+      px-4 py-2 border-2 border-black uppercase cursor-pointer
+      text-lg
       ${selected ? "bg-black text-[#42E25A]" : "bg-[#42E25A] text-black"}
+      ${bayon.className}
     `}
   >
     {children}
@@ -52,14 +61,13 @@ const FilterSection = ({
       className={`
         w-full p-4 bg-[#42E25A] border-t-2 border-black
         flex justify-between items-center cursor-pointer
+        ${bayon.className} text-xl
       `}
     >
-      <span className="font-sans text-base font-bold uppercase text-black">
-        {title}
-      </span>
+      <span className="uppercase text-black">{title}</span>
       <span
         className={`
-          text-xl font-bold text-black transform transition-transform duration-300
+          text-xl text-black transform transition-transform duration-300
           ${isOpen ? "rotate-180" : "rotate-0"}
         `}
       >
@@ -159,12 +167,10 @@ const EventFilter = ({ onFilterChange, availableDates }: EventFilterProps) => {
     <div className="w-full bg-[#70E081]">
       <div className="p-4 bg-black flex justify-between items-center border-b-2 border-black">
         <div className="flex items-center gap-2">
-          <h2 className="m-0 text-white text-xl font-bold uppercase">
-            FILTERS
-          </h2>
+          <h2 className="m-0 text-white text-xl uppercase">FILTERS</h2>
         </div>
         <button
-          className="bg-transparent border-none text-[#FF4500] text-sm font-bold uppercase cursor-pointer"
+          className="bg-transparent border-none text-[#FF4500] text-sm uppercase cursor-pointer"
           onClick={clearFilters}
         >
           CLEAR
@@ -196,7 +202,7 @@ const EventFilter = ({ onFilterChange, availableDates }: EventFilterProps) => {
       >
         <div>
           <div className="relative py-4">
-            <span className="text-sm font-bold text-black">
+            <span className={`${bayon.className} text-lg text-black`}>
               ₹{priceRange[1]}
             </span>
             <input
@@ -209,9 +215,11 @@ const EventFilter = ({ onFilterChange, availableDates }: EventFilterProps) => {
               }}
               className="w-full h-1 bg-black outline-none cursor-pointer"
             />
-            <div className="flex justify-between mt-2">
-              <span className="text-xs font-bold text-black">₹0</span>
-              <span className="text-xs font-bold text-black">₹1000</span>
+            <div
+              className={`flex justify-between mt-2 text-lg ${bayon.className}`}
+            >
+              <span>₹0</span>
+              <span>₹1000</span>
             </div>
           </div>
         </div>

@@ -57,13 +57,11 @@ export interface EventFields {
   endDateAndTime: string;
   pricePerPerson: number;
   participationType: string;
-  maxParticipants: number;
   eventVenue: string;
   shortDescription: string;
   longDescription: string;
-  rules: string[];
-  judgementCriteria: string[];
-  tags: string[];
+  rules?: string[];
+  judgementCriteria?: string[];
   specialEvent: boolean;
 }
 

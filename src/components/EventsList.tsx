@@ -2,13 +2,9 @@
 
 import React, { useEffect, useState } from "react";
 import { EventItem, Asset } from "@/interfaces/contentful";
-import { Be_Vietnam_Pro } from "next/font/google";
+import { Bayon } from "next/font/google";
 
-const beVietnam = Be_Vietnam_Pro({
-  variable: "--font-bvietnam",
-  subsets: ["latin"],
-  weight: ["400", "700"],
-});
+const fontBayon = Bayon({ subsets: ["latin"], weight: "400" });
 
 const formatPrice = (price: number): string => {
   if (price === 0) return "FREE";
@@ -191,20 +187,15 @@ const AccordionItem = ({
   onClick,
 }: AccordionItemProps) => {
   return (
-    <div className="border-t border-[#3a3a3a]">
-      {" "}
+    <div className={`border-t border-[#3a3a3a] ${fontBayon.className}`}>
       <div
-        className="flex justify-between items-center py-4 cursor-pointer"
+        className="flex justify-between items-center py-4 cursor-pointer text-3xl"
         onClick={onClick}
       >
-        {" "}
-        <h3 className="uppercase font-semibold tracking-wider text-white">
-          {" "}
-          {title}{" "}
-        </h3>{" "}
-        <ChevronDownIcon open={isOpen} />{" "}
-      </div>{" "}
-      {isOpen && <div className="pb-4 text-gray-400">{children}</div>}{" "}
+        <h3 className="uppercase text-white">{title}</h3>
+        <ChevronDownIcon open={isOpen} />
+      </div>
+      {isOpen && <div className="pb-4 text-gray-400 text-lg">{children}</div>}
     </div>
   );
 };
@@ -215,20 +206,17 @@ const SearchAndFilter = ({
   const dropdownArrow = `data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E`;
   return (
     <div className="w-full px-2 py-4 mb-4">
-      {" "}
       <div className="flex w-full items-center gap-2">
-        {" "}
         <div className="flex flex-grow items-center space-x-3 border bg-black border-[#565656] px-4 py-1.5">
-          {" "}
-          <SearchIcon />{" "}
+          <SearchIcon />
           <input
             type="text"
             placeholder="SEARCH"
             className="w-full bg-transparent text-white placeholder-gray-300 outline-none placeholder:tracking-widest"
             value={searchTerm}
             onChange={(e) => onSearchChange(e.target.value)}
-          />{" "}
-        </div>{" "}
+          />
+        </div>
         <select
           className="cursor-pointer appearance-none border border-[#565656] bg-black px-3 py-1.5 pr-8 uppercase text-white outline-none text-sm whitespace-nowrap"
           style={{
@@ -240,21 +228,17 @@ const SearchAndFilter = ({
             width: "auto",
           }}
         >
-          {" "}
           <option className="bg-black text-white" value="30">
-            {" "}
-            Show 30{" "}
-          </option>{" "}
+            Show 30
+          </option>
           <option className="bg-black text-white" value="50">
-            {" "}
-            Show 50{" "}
-          </option>{" "}
+            Show 50
+          </option>
           <option className="bg-black text-white" value="100">
-            {" "}
-            Show 100{" "}
-          </option>{" "}
-        </select>{" "}
-      </div>{" "}
+            Show 100
+          </option>
+        </select>
+      </div>
     </div>
   );
 };
@@ -303,14 +287,16 @@ const EventDetailsDialog = ({
           <div className="w-full lg:w-2/3 flex flex-col py-4">
             <div className="flex justify-between items-start px-6">
               <div>
-                <h1 className="text-4xl lg:text-5xl font-bold">
+                <h1 className="text-5xl font-bold ttFont tracking-tighter max-w-sm">
                   {event.fields.eventName}
                 </h1>
-                <h2 className="text-xl text-[#70E081] font-semibold mt-1">
+                <h2
+                  className={`text-xl text-[#70E081] mt-1 ${fontBayon.className}`}
+                >
                   {event.fields.clubName}
                 </h2>
               </div>
-              <div className="bg-[#70E081] text-black font-bold px-6 py-2 text-lg flex-shrink-0">
+              <div className="bg-[#70E081] text-black px-6 py-2 text-lg flex-shrink-0 ttFont tracking-tigher">
                 {formatPrice(event.fields.pricePerPerson)}
               </div>
             </div>
@@ -318,16 +304,18 @@ const EventDetailsDialog = ({
             <p className="text-gray-400 px-6">
               {event.fields.shortDescription}
             </p>
-            <div className="flex flex-wrap gap-4 mt-4 px-6">
-              <div className="flex items-center justify-center bg-[#70E081] text-black font-bold py-2 px-4 ">
+            <div
+              className={`grid grid-cols-3 gap-4 mt-4 px-6 text-lg ${fontBayon.className}`}
+            >
+              <div className="flex items-center justify-center bg-[#70E081] text-black py-2 px-4">
                 <ClockIcon />
                 <span>{time}</span>
               </div>
-              <div className="flex items-center justify-center bg-[#70E081] text-black font-bold py-2 px-4 ">
+              <div className="flex items-center justify-center bg-[#70E081] text-black py-2 px-4">
                 <CalendarIcon />
                 <span>{date}</span>
               </div>
-              <div className="flex items-center justify-center bg-[#70E081] text-black font-bold py-2 px-4 ">
+              <div className="flex items-center justify-center bg-[#70E081] text-black py-2 px-4">
                 <UsersIcon />
                 <span>{event.fields.participationType}</span>
               </div>
@@ -340,28 +328,32 @@ const EventDetailsDialog = ({
               >
                 {event.fields.longDescription}
               </AccordionItem>
-              <AccordionItem
-                title="Rules"
-                isOpen={openAccordion === "Rules"}
-                onClick={() => handleAccordionClick("Rules")}
-              >
-                <ul className="list-disc pl-5 space-y-1">
-                  {event.fields.rules.map((rule, index) => (
-                    <li key={index}>{rule}</li>
-                  ))}
-                </ul>
-              </AccordionItem>
-              <AccordionItem
-                title="Judgement Criteria"
-                isOpen={openAccordion === "Judgement Criteria"}
-                onClick={() => handleAccordionClick("Judgement Criteria")}
-              >
-                <ul className="list-disc pl-5 space-y-1">
-                  {event.fields.judgementCriteria.map((criteria, index) => (
-                    <li key={index}>{criteria}</li>
-                  ))}
-                </ul>
-              </AccordionItem>
+              {event.fields.rules && (
+                <AccordionItem
+                  title="Rules"
+                  isOpen={openAccordion === "Rules"}
+                  onClick={() => handleAccordionClick("Rules")}
+                >
+                  <ul className="list-disc pl-5 space-y-1">
+                    {event.fields.rules.map((rule, index) => (
+                      <li key={index}>{rule}</li>
+                    ))}
+                  </ul>
+                </AccordionItem>
+              )}
+              {event.fields.judgementCriteria && (
+                <AccordionItem
+                  title="Judgement Criteria"
+                  isOpen={openAccordion === "Judgement Criteria"}
+                  onClick={() => handleAccordionClick("Judgement Criteria")}
+                >
+                  <ul className="list-disc pl-5 space-y-1">
+                    {event.fields.judgementCriteria.map((criteria, index) => (
+                      <li key={index}>{criteria}</li>
+                    ))}
+                  </ul>
+                </AccordionItem>
+              )}
             </div>
           </div>
         </div>
@@ -390,28 +382,34 @@ const EventCard = ({ event, imageUrl, onClick }: EventCardProps) => {
             <div className="w-full h-full bg-gray-700"></div>
           )}
         </div>
-        <div className="flex-grow flex flex-col justify-between my-auto h-full">
+        <div className="flex-grow flex flex-col justify-between my-auto">
           <div>
-            <h2 className="text-2xl ttFont">{event.fields.eventName}</h2>
-            <h3 className="text-lg font-normal">{event.fields.clubName}</h3>
-            <p className="text-sm leading-relaxed text-gray-300 max-w-6xl mt-2">
+            <h2 className="text-2xl font-semibold ttFont tracking-tighter">
+              {event.fields.eventName}
+            </h2>
+            <h3 className={`${fontBayon.className} text-lg`}>
+              {event.fields.clubName}
+            </h3>
+            <p className="leading-relaxed text-gray-300 max-w-6xl">
               {event.fields.shortDescription}
             </p>
           </div>
         </div>
-        <div className="flex-shrink-0 my-auto grid grid-cols-2 gap-3 w-72">
-          <div className="flex items-center justify-center bg-[#70E081] text-black font-semibold p-3 text-sm">
+        <div
+          className={`flex-shrink-0 my-auto grid grid-cols-2 gap-3 w-72 text-lg uppercase ${fontBayon.className}`}
+        >
+          <div className="flex items-center justify-center bg-[#70E081] text-black p-3">
             <ClockIcon />
             {time}
           </div>
-          <div className="flex items-center justify-center bg-[#70E081] text-black font-semibold p-3 text-sm">
+          <div className="flex items-center justify-center bg-[#70E081] text-black p-3">
             {formatPrice(event.fields.pricePerPerson)}
           </div>
-          <div className="flex items-center justify-center bg-[#70E081] text-black font-semibold p-3 text-sm">
+          <div className="flex items-center justify-center bg-[#70E081] text-black p-3">
             <CalendarIcon />
             {date}
           </div>
-          <div className="flex items-center justify-center bg-[#70E081] text-black font-semibold p-3 text-sm">
+          <div className="flex items-center justify-center bg-[#70E081] text-black p-3">
             {event.fields.participationType}
           </div>
         </div>
