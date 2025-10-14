@@ -1,11 +1,13 @@
 "use client";
 
-// Import useCallback along with other hooks
 import React, { useState, useMemo, useEffect, useCallback } from "react";
 import EventsList from "./EventsList";
 import EventFilter from "./Filters";
 import axios from "axios";
 import { Asset, EventApiResponse, EventItem } from "@/interfaces/contentful";
+
+const spaceId = process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID;
+const accessToken = process.env.NEXT_PUBLIC_CONTENT_DELIVERY_API_ACCESS_TOKEN;
 
 type FilterState = {
   eventType: string[];
@@ -42,7 +44,7 @@ const EventsPage = () => {
     const fetchEvents = async () => {
       try {
         const response = await axios.get<EventApiResponse>(
-          "https://cdn.contentful.com/spaces/rr94wjxz7mfi/environments/master/entries?access_token=ZIlCXBayzsq9UzgLCKmqRjKuUcOS9JTIi0kFwcR7LHA&content_type=event"
+          `https://cdn.contentful.com/spaces/${spaceId}/environments/master/entries?access_token=${accessToken}&content_type=event`
         );
         console.log("Fetched Events:", response.data.items);
         setEvents(response.data.items);
