@@ -70,7 +70,9 @@ interface ChevronDownIconProps {
 
 interface AccordionItemProps {
   title: string;
-  children: React.ReactNode;
+  // children: string;
+  children?: React.ReactNode;
+  htmlContent?: string;
   isOpen: boolean;
   onClick: () => void;
 }
@@ -180,9 +182,11 @@ const CloseIcon = () => (
     />{" "}
   </svg>
 );
+
 const AccordionItem = ({
   title,
   children,
+  htmlContent,
   isOpen,
   onClick,
 }: AccordionItemProps) => {
@@ -195,10 +199,35 @@ const AccordionItem = ({
         <h3 className="uppercase text-white">{title}</h3>
         <ChevronDownIcon open={isOpen} />
       </div>
-      {isOpen && <div className="pb-4 text-gray-400 text-lg">{children}</div>}
+      {/* {isOpen && (
+        // <div className="pb-4 text-gray-400 text-lg max-h-24 overflow-y-scroll">
+        //   {children}
+        // </div>
+
+        <div
+          className="pb-4 text-gray-400 text-lg max-h-24 overflow-y-scroll"
+          dangerouslySetInnerHTML={{ __html: children }}
+        />
+      )} */}
+
+      {isOpen && (
+        <>
+          {htmlContent && (
+            <div
+              className="pb-4 text-gray-400 text-lg max-h-24 overflow-y-scroll"
+              dangerouslySetInnerHTML={{ __html: htmlContent }}
+            />
+          )}
+
+          {children && (
+            <div className="pb-4 text-gray-400 text-lg">{children}</div>
+          )}
+        </>
+      )}
     </div>
   );
 };
+
 const SearchAndFilter = ({
   searchTerm,
   onSearchChange,
@@ -249,7 +278,8 @@ const EventDetailsDialog = ({
   onClose,
 }: EventDetailsDialogProps) => {
   const [openAccordion, setOpenAccordion] = useState<string | null>(
-    "Description"
+    // "Description"
+    null
   );
   const { date, time } = formatDate(event.fields.startDateAndTime);
 
@@ -325,9 +355,8 @@ const EventDetailsDialog = ({
                 title="Description"
                 isOpen={openAccordion === "Description"}
                 onClick={() => handleAccordionClick("Description")}
-              >
-                {event.fields.longDescription}
-              </AccordionItem>
+                htmlContent={event.fields.longDescription}
+              />
               {event.fields.rules && (
                 <AccordionItem
                   title="Rules"
