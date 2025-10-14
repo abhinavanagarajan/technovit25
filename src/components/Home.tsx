@@ -10,6 +10,7 @@ import {
   VolumeX,
 } from "lucide-react";
 import { Card, CardContent } from "./Card";
+import FaultyTerminal from "./FaultyTerminal";
 
 export const Home = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -197,13 +198,31 @@ export const Home = () => {
 
       <section className="relative h-screen flex flex-col items-center justify-center overflow-hidden px-4">
         <div className="absolute inset-0 bg-black overflow-hidden z-0">
-          <canvas id="matrixCanvas" className="w-full h-full"></canvas>
+          <FaultyTerminal
+                      scale={1.5}
+                      gridMul={[2, 1]}
+                      digitSize={1.2}
+                      timeScale={0.5}
+                      pause={false}
+                      scanlineIntensity={0.2}
+                      glitchAmount={0.8}
+                      flickerAmount={0.3}
+                      noiseAmp={0.8}
+                      chromaticAberration={0}
+                      dither={0}
+                      curvature={0}
+                      tint="#00ff00"
+                      mouseReact={true}
+                      mouseStrength={0.6}
+                      pageLoadAnimation={false}
+                      brightness={0.5}
+                    />
         </div>
 
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/60 z-[1]"></div>
 
         <div className="relative z-10 text-center max-w-6xl mx-auto -mt-12">
-          <h1 className="text-6xl sm:text-7xl lg:text-9xl font-black mb-3 animate-slide-up">
+          {/* <h1 className="text-6xl sm:text-7xl lg:text-9xl font-black mb-3 animate-slide-up">
             <span className="text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.3)] hover:drop-shadow-[0_0_40px_rgba(255,255,255,0.5)] transition-all duration-300">
               techno
             </span>
@@ -213,7 +232,8 @@ export const Home = () => {
             <span className="text-[#00ff00] drop-shadow-[0_0_40px_rgba(0,255,0,0.8)]">
               &apos;25
             </span>
-          </h1>
+          </h1> */}
+          <img src="/technoVit.svg" alt="TechnoVIT 25 Logo" width={800} height={200}/>
 
           <div className="mb-4 animate-fade-in">
             <div className="relative inline-block">

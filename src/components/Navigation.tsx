@@ -1,19 +1,28 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { Bayon } from "next/font/google";
 
 interface NavigationProps {
   currentPage: string;
   onNavigate: (page: string) => void;
 }
 
+const bayon = Bayon({
+  variable: "--font-bayon",
+  subsets: ["latin"],
+  weight: "400",
+});
+
 export const Navigation = ({ currentPage, onNavigate }: NavigationProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { name: "Home", path: "home" },
-    { name: "Team", path: "team" },
-    { name: "About", path: "about" },
+    { name: "HOME", path: "home" },
+    { name: "EVENTS", path: "events" },
+    { name: "TEAM", path: "team" },
+    { name: "MERCH", path: "merch" },
+    // { name: "SPONSORS", path: "sponsors" },
   ];
 
   const handleNavClick = (path: string) => {
@@ -22,89 +31,115 @@ export const Navigation = ({ currentPage, onNavigate }: NavigationProps) => {
   };
 
   return (
-    <nav className="fixed left-0 right-0 top-0 z-50 border-b border-[#00ff00]/20 bg-black/90 backdrop-blur-md">
-      <div className="mx-auto hidden h-20 max-w-[95vw] items-center justify-between md:flex">
-        <div
-          className="flex flex-shrink-0 cursor-pointer items-center gap-4"
-          onClick={() => handleNavClick("home")}
-        >
-          <img
-            src="/VIT logo.png"
-            alt="VIT Logo"
-            className="h-12 w-auto object-contain"
-          />
-          <img
-            src="/Black Background Techno Logo.png"
-            alt="TechnoVIT Logo"
-            className="h-12 w-auto object-contain"
-          />
-        </div>
-
-        <div className="flex items-center space-x-1">
+    <nav
+      className={`fixed left-0 right-0 top-0 z-50 border-b-[1px] border-[#ffffff] bg-[#000000] backdrop-blur-md text-xl  ${bayon.className}`}
+    >
+      <div className="mx-auto hidden h-16 max-w-[95vw] items-center md:flex">
+        {/* Left - Navigation Links */}
+        <div className="flex flex-1 items-center gap-6 justify-start">
           {navItems.map((item) => (
             <button
               key={item.path}
               onClick={() => handleNavClick(item.path)}
               className={cn(
-                "group relative px-4 py-2 text-sm font-subheading uppercase tracking-wide text-white transition-colors duration-300 hover:text-[#00ff00]",
+                "uppercase tracking-wide text-white transition-colors duration-200 hover:text-[#00ff00]",
                 currentPage === item.path && "text-[#00ff00]"
               )}
             >
               {item.name}
-              <span
-                className={cn(
-                  "absolute bottom-0 left-0 h-0.5 w-0 bg-[#00ff00] transition-all duration-300 group-hover:w-full",
-                  currentPage === item.path ? "w-full" : "w-0"
-                )}
-              />
             </button>
           ))}
         </div>
-      </div>
 
-      <div className="flex flex-col items-center gap-2 py-3 md:hidden">
+        {/* Center - Logos */}
         <div
-          className="flex cursor-pointer items-center justify-center gap-4"
+          className="flex flex-none items-center gap-3 justify-center cursor-pointer"
           onClick={() => handleNavClick("home")}
         >
           <img
-            src="/Black Background Techno Logo.png"
+            src="/technovit1.svg"
             alt="TechnoVIT Logo"
             className="h-10 w-auto object-contain"
           />
           <img
-            src="/VIT logo.png"
+            src="/dot.png"
+            alt="Separator Dot"
+            className="h-2 w-auto object-contain"
+          />
+          <img
+            src="/vitlogo.png"
             alt="VIT Logo"
             className="h-10 w-auto object-contain"
           />
         </div>
 
-        <button
-          className="text-white transition-colors hover:text-[#00ff00] mt-2"
-          onClick={() => setIsOpen(!isOpen)}
-          aria-label="Toggle navigation"
+        {/* Right - Get Started Button */}
+        <div className="flex flex-1 items-center justify-end">
+          <button
+            onClick={() => handleNavClick("get-started")}
+            className="bg-[#70E081] px-4 py-2 uppercase text-black hover:bg-[#70E081]/90 transition-colors"
+          >
+            Get Started
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile Navbar */}
+      <div className="flex items-center justify-between px-4 py-3 md:hidden">
+        {/* Mobile Logos */}
+        <div
+          className="flex items-center gap-2 cursor-pointer"
+          onClick={() => handleNavClick("home")}
         >
-          {isOpen ? <X size={28} /> : <Menu size={28} />}
+          <img
+            src="/technovit1.svg"
+            alt="TechnoVIT Logo"
+            className="h-8 w-auto object-contain"
+          />
+          <img
+            src="/dot.png"
+            alt="Separator Dot"
+            className="h-1.5 w-auto object-contain"
+          />
+          <img
+            src="/vitlogo.svg"
+            alt="VIT Logo"
+            className="h-8 w-auto object-contain"
+          />
+        </div>
+
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="text-white"
+          aria-label="Toggle menu"
+        >
+          {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 
       {isOpen && (
         <div className="border-t border-[#00ff00]/20 bg-black md:hidden">
-          <div className="space-y-2 px-4 py-4">
+          <div className="flex flex-col px-4 py-3 space-y-2">
             {navItems.map((item) => (
               <button
                 key={item.path}
                 onClick={() => handleNavClick(item.path)}
                 className={cn(
-                  "block w-full border-l-4 px-4 py-3 text-left text-base font-subheading uppercase text-white transition-all duration-300",
+                  "text-left uppercase text-white px-3 py-2 transition-colors",
                   currentPage === item.path
-                    ? "border-[#00ff00] bg-[#00ff00]/10 text-[#00ff00]"
-                    : "border-transparent hover:border-[#00ff00] hover:bg-[#00ff00]/5 hover:text-[#00ff00]"
+                    ? "bg-[#00ff00]/20 text-[#00ff00]"
+                    : "hover:bg-[#00ff00]/10 hover:text-[#00ff00]"
                 )}
               >
                 {item.name}
               </button>
             ))}
+            <button
+              onClick={() => handleNavClick("get-started")}
+              className="mt-2 w-full bg-[#00ff00] px-4 py-2 uppercase text-black hover:bg-[#00ff00]/90"
+            >
+              Get Started
+            </button>
           </div>
         </div>
       )}

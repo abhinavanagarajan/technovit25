@@ -4,6 +4,7 @@ import { Team } from "./Team";
 import { About } from "./About";
 import { Navigation } from "./Navigation";
 import { Footer } from "./Footer";
+import Events from "./Events";
 
 const MainPage = () => {
   const [currentPage, setCurrentPage] = useState("home");
@@ -16,6 +17,8 @@ const MainPage = () => {
     switch (currentPage) {
       case "home":
         return <Home />;
+      case "events":
+        return <Events />;
       case "team":
         return <Team />;
       case "about":

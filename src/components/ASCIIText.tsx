@@ -475,23 +475,23 @@ class CanvAscii {
 
   clear() {
     this.scene.traverse((object) => {
-      const obj = object as unknown as THREE.Mesh;
-      if (!obj.isMesh) return;
-      [obj.material].flat().forEach((material) => {
-        material.dispose();
-        Object.keys(material).forEach((key) => {
-          const matProp = material[key as keyof typeof material];
-          if (
-            matProp &&
-            typeof matProp === "object" &&
-            "dispose" in matProp &&
-            typeof matProp.dispose === "function"
-          ) {
-            matProp.dispose();
-          }
+      if (object instanceof THREE.Mesh) {
+        [object.material].flat().forEach((material) => {
+          material.dispose();
+          Object.keys(material).forEach((key) => {
+            const matProp = material[key as keyof typeof material];
+            if (
+              matProp &&
+              typeof matProp === "object" &&
+              "dispose" in matProp &&
+              typeof matProp.dispose === "function"
+            ) {
+              matProp.dispose();
+            }
+          });
         });
-      });
-      obj.geometry.dispose();
+        object.geometry.dispose();
+      }
     });
     this.scene.clear();
   }
