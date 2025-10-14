@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+//import { Home } from "./Home";
 import { Home } from "./Home";
 import { Team } from "./Team";
 import { About } from "./About";
