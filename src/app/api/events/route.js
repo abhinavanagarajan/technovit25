@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import axios from "axios";
 
-export async function GET(request) {
+export async function GET() {
   const spaceId = process.env.CONTENTFUL_SPACE_ID;
   const accessToken = process.env.CONTENT_DELIVERY_API_ACCESS_TOKEN;
 

@@ -6,9 +6,6 @@ import EventFilter from "./Filters";
 import axios from "axios";
 import { Asset, EventApiResponse, EventItem } from "@/interfaces/contentful";
 
-const spaceId = process.env.CONTENTFUL_SPACE_ID;
-const accessToken = process.env.CONTENT_DELIVERY_API_ACCESS_TOKEN;
-
 type FilterState = {
   eventType: string[];
   priceRange: number[];
