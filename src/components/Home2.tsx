@@ -1,23 +1,16 @@
 import { useState, useEffect, useRef } from "react";
 import {
   ChevronDown,
-  Users,
-  Trophy,
-  Globe,
-  CalendarDays,
+  // Users,
+  // Trophy,
+  // Globe,
+  // CalendarDays,
   X,
   Volume2,
   VolumeX,
 } from "lucide-react";
-import { Card, CardContent } from "./Card";
 import FaultyTerminal from "./FaultyTerminal";
-import { Bayon } from "next/font/google";
-
-const bayon = Bayon({
-  variable: "--font-bayon",
-  subsets: ["latin"],
-  weight: "400",
-});
+// import { Bayon } from "next/font/google";
 
 export const Home = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -121,12 +114,12 @@ export const Home = () => {
     };
   }, []);
 
-  const stats = [
-    { icon: Users, value: "40,000+", label: "Participants" },
-    { icon: CalendarDays, value: "200+", label: "Events" },
-    { icon: Trophy, value: "70+", label: "Sponsors" },
-    { icon: Globe, value: "20+", label: "Countries" },
-  ];
+  // const stats = [
+  //   { icon: Users, value: "40,000+", label: "Participants" },
+  //   { icon: CalendarDays, value: "200+", label: "Events" },
+  //   { icon: Trophy, value: "70+", label: "Sponsors" },
+  //   { icon: Globe, value: "20+", label: "Countries" },
+  // ];
 
   const faqs = [
     {
@@ -206,24 +199,24 @@ export const Home = () => {
       <section className="relative h-screen flex flex-col items-center justify-center overflow-hidden px-4">
         <div className="absolute inset-0 bg-black overflow-hidden z-0">
           <FaultyTerminal
-                      scale={1.5}
-                      gridMul={[2, 1]}
-                      digitSize={1.2}
-                      timeScale={0.5}
-                      pause={false}
-                      scanlineIntensity={0.2}
-                      glitchAmount={0.8}
-                      flickerAmount={0.3}
-                      noiseAmp={0.8}
-                      chromaticAberration={0}
-                      dither={0}
-                      curvature={0}
-                      tint="#00ff00"
-                      mouseReact={true}
-                      mouseStrength={0.6}
-                      pageLoadAnimation={false}
-                      brightness={0.5}
-                    />
+            scale={1.5}
+            gridMul={[2, 1]}
+            digitSize={1.2}
+            timeScale={0.5}
+            pause={false}
+            scanlineIntensity={0.2}
+            glitchAmount={0.8}
+            flickerAmount={0.3}
+            noiseAmp={0.8}
+            chromaticAberration={0}
+            dither={0}
+            curvature={0}
+            tint="#00ff00"
+            mouseReact={true}
+            mouseStrength={0.6}
+            pageLoadAnimation={false}
+            brightness={0.5}
+          />
         </div>
 
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/60 z-[1]"></div>
@@ -240,23 +233,24 @@ export const Home = () => {
               &apos;25
             </span>
           </h1> */}
-          <img src="/technoVit.svg" alt="TechnoVIT 25 Logo" width={800} height={200}/>
+          <img
+            src="/technoVit.svg"
+            alt="TechnoVIT 25 Logo"
+            width={800}
+            height={200}
+          />
 
           <div className="mb-4 animate-fade-in">
             <div className="relative inline-block">
               <div className="absolute inset-0 bg-[#00ff00] blur-xl opacity-20"></div>
-              <h2 className="relative text-lg sm:text-xl lg:text-2xl font-bold text-white tracking-wider uppercase bg-gradient-to-r from-white via-gray-100 to-white bg-clip-text px-6 py-3">
-                
-              </h2>
+              <h2 className="relative text-lg sm:text-xl lg:text-2xl font-bold text-white tracking-wider uppercase bg-gradient-to-r from-white via-gray-100 to-white bg-clip-text px-6 py-3"></h2>
             </div>
           </div>
 
           <div className="flex items-center justify-center gap-4 animate-slide-in">
-            
             <div className="text-md sm:text-base lg:text-lg text-white font-light tracking-[0.2em] px-6">
               October 31 - November 2
             </div>
-            
           </div>
         </div>
       </section>
@@ -287,63 +281,80 @@ export const Home = () => {
 
       <section className="bg-black py-20">
         <div className="relative w-full min-h-screen bg-black flex">
-        {/* Left Section - Green Background with Content */}
-        <div className="relative w-full sm:w-4/5 bg-[#70E081] sm:flex flex-col justify-between">
+          {/* Left Section - Green Background with Content */}
+          <div className="relative w-full sm:w-4/5 bg-[#70E081] sm:flex flex-col justify-between">
             {/* Pixelated decorative elements at top */}
 
-            <img src='pixelDecoration.png' className='right-0 bottom-0 h-1/2 absolute z-10 hidden sm:block' />
-            <img src='pixelDecoration.png' className='right-0 top-0 h-1/2 absolute z-10 hidden sm:block' />
+            <img
+              src="pixelDecoration.png"
+              className="right-0 bottom-0 h-1/2 absolute z-10 hidden sm:block"
+            />
+            <img
+              src="pixelDecoration.png"
+              className="right-0 top-0 h-1/2 absolute z-10 hidden sm:block"
+            />
 
             {/* Main Content */}
             <div className="relative z-10 mt-8">
-            <h1 className="text-4xl sm:text-6xl font-black mt-4 mb-16 text-white bg-black px-10 py-4" style={{ fontFamily: 'Arial Black, sans-serif' }}>
-                About TechnoVIT'25
-            </h1>
-            <p className="text-black text-xl sm:mb-12 px-8 sm:mr-64 leading-relaxed text-justify" style={{ fontFamily: 'Arial, sans-serif' }}>
-                VIT Chennai is a globally engaged, competitive, comprehensive, and research- enriched university campus strategically positioned in the capital city of Tamil Nadu, to respond to major industrial, social, economic, and environmental demands and challenges. 
-            </p>
+              <h1
+                className="text-4xl sm:text-6xl font-black mt-4 mb-16 text-white bg-black px-10 py-4"
+                style={{ fontFamily: "Arial Black, sans-serif" }}
+              >
+                About TechnoVIT&apos;25
+              </h1>
+              <p
+                className="text-black text-xl sm:mb-12 px-8 sm:mr-64 leading-relaxed text-justify"
+                style={{ fontFamily: "Arial, sans-serif" }}
+              >
+                VIT Chennai is a globally engaged, competitive, comprehensive,
+                and research- enriched university campus strategically
+                positioned in the capital city of Tamil Nadu, to respond to
+                major industrial, social, economic, and environmental demands
+                and challenges.
+              </p>
 
-            
-
-            <p className="text-black text-xl sm:mb-12 px-8 sm:mr-64 leading-relaxed text-justify" style={{ fontFamily: 'Arial, sans-serif' }}>
-                The focus is to maximize industrial connectivity, create Centers of Excellence in niche areas of research, enrich technological and Managerial Human Capital nurtured in a multicultural ambience and create opportunities to exploit the available resources to benefit industry/society.
-            </p>
+              <p
+                className="text-black text-xl sm:mb-12 px-8 sm:mr-64 leading-relaxed text-justify"
+                style={{ fontFamily: "Arial, sans-serif" }}
+              >
+                The focus is to maximize industrial connectivity, create Centers
+                of Excellence in niche areas of research, enrich technological
+                and Managerial Human Capital nurtured in a multicultural
+                ambience and create opportunities to exploit the available
+                resources to benefit industry/society.
+              </p>
             </div>
 
             {/* Pixelated decorative pattern - center */}
-            <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-64 h-96">
-            
-            </div>
+            <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-64 h-96"></div>
 
             {/* Pixelated decorative elements at bottom */}
-            <div className="absolute bottom-0 left-0 right-0 h-8 flex">
-            
-            </div>
-        </div>
+            <div className="absolute bottom-0 left-0 right-0 h-8 flex"></div>
+          </div>
 
-        {/* Right Section - Image Grid */}
-        <div className="md:w-1/5 bg-black sm:flex flex-col hidden">
+          {/* Right Section - Image Grid */}
+          <div className="md:w-1/5 bg-black sm:flex flex-col hidden">
             {/* Top Image - Speaker */}
             <div className="flex-1 relative overflow-hidden border-4 border-black">
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-900 to-blue-600 flex items-center justify-center">
-                <img src='/speakerStands.png' alt='Speaker Stands' />
-            </div>
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-900 to-blue-600 flex items-center justify-center">
+                <img src="/speakerStands.png" alt="Speaker Stands" />
+              </div>
             </div>
 
             {/* Middle Image - Award Ceremony */}
             <div className="flex-1 relative overflow-hidden border-4 border-black">
-            <div className="absolute inset-0 bg-gradient-to-br from-orange-900 to-yellow-700 flex items-center justify-center">
-                <img src='/lightingLamp.png' alt='Lighting Lamp' />
-            </div>
+              <div className="absolute inset-0 bg-gradient-to-br from-orange-900 to-yellow-700 flex items-center justify-center">
+                <img src="/lightingLamp.png" alt="Lighting Lamp" />
+              </div>
             </div>
 
             {/* Bottom Image - Student */}
             <div className="flex-1 relative overflow-hidden border-4 border-black">
-            <div className="absolute inset-0 bg-gradient-to-br from-gray-900 to-gray-700 flex items-center justify-center">
-                <img src='/speakerStudent.png' alt='Speaker Student' />
+              <div className="absolute inset-0 bg-gradient-to-br from-gray-900 to-gray-700 flex items-center justify-center">
+                <img src="/speakerStudent.png" alt="Speaker Student" />
+              </div>
             </div>
-            </div>
-        </div>
+          </div>
         </div>
       </section>
 

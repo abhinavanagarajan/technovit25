@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Bayon, Be_Vietnam_Pro } from "next/font/google";
+import { Be_Vietnam_Pro } from "next/font/google";
 import "./globals.css";
 
 // const bayon = Bayon({
