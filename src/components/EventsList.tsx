@@ -349,6 +349,14 @@ const EventDetailsDialog = ({
                 <UsersIcon />
                 <span>{event.fields.participationType}</span>
               </div>
+              <a
+                href="https://www.google.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="col-span-3 flex items-center justify-center bg-[#70E081] text-black py-2 px-4 mt-2 font-semibold cursor-pointer"
+              >
+                REGISTER NOW
+              </a>
             </div>
             <div className="mt-6 px-6">
               <AccordionItem
