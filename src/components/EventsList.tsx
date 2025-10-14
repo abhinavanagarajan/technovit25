@@ -70,7 +70,9 @@ interface ChevronDownIconProps {
 
 interface AccordionItemProps {
   title: string;
-  children: React.ReactNode;
+  // children: string;
+  children?: React.ReactNode;
+  htmlContent?: string;
   isOpen: boolean;
   onClick: () => void;
 }
@@ -180,9 +182,11 @@ const CloseIcon = () => (
     />{" "}
   </svg>
 );
+
 const AccordionItem = ({
   title,
   children,
+  htmlContent,
   isOpen,
   onClick,
 }: AccordionItemProps) => {
@@ -195,10 +199,35 @@ const AccordionItem = ({
         <h3 className="uppercase text-white">{title}</h3>
         <ChevronDownIcon open={isOpen} />
       </div>
-      {isOpen && <div className="pb-4 text-gray-400 text-lg">{children}</div>}
+      {/* {isOpen && (
+        // <div className="pb-4 text-gray-400 text-lg max-h-24 overflow-y-scroll">
+        //   {children}
+        // </div>
+
+        <div
+          className="pb-4 text-gray-400 text-lg max-h-24 overflow-y-scroll"
+          dangerouslySetInnerHTML={{ __html: children }}
+        />
+      )} */}
+
+      {isOpen && (
+        <>
+          {htmlContent && (
+            <div
+              className="pb-4 text-gray-400 text-lg max-h-24 overflow-y-scroll"
+              dangerouslySetInnerHTML={{ __html: htmlContent }}
+            />
+          )}
+
+          {children && (
+            <div className="pb-4 text-gray-400 text-lg">{children}</div>
+          )}
+        </>
+      )}
     </div>
   );
 };
+
 const SearchAndFilter = ({
   searchTerm,
   onSearchChange,
@@ -249,7 +278,8 @@ const EventDetailsDialog = ({
   onClose,
 }: EventDetailsDialogProps) => {
   const [openAccordion, setOpenAccordion] = useState<string | null>(
-    "Description"
+    // "Description"
+    null
   );
   const { date, time } = formatDate(event.fields.startDateAndTime);
 
@@ -266,7 +296,7 @@ const EventDetailsDialog = ({
       className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center p-4 z-50"
       onClick={handleBackdropClick}
     >
-      <div className="relative bg-black text-white w-full max-w-5xl py-10 px-8 border border-[#3a3a3a]">
+      <div className="relative bg-black text-white w-full max-w-7xl py-10 px-8 border border-[#3a3a3a]">
         <button
           onClick={onClose}
           className="absolute top-3 right-3 bg-[#2a2a2a] p-1 hover:bg-[#3a3a3a] transition-colors cursor-pointer"
@@ -275,14 +305,14 @@ const EventDetailsDialog = ({
           <CloseIcon />
         </button>
         <div className="flex flex-col lg:flex-row gap-8">
-          <div className="w-full lg:w-1/3 h-64 lg:h-auto bg-[#d9d9d9] flex-shrink-0">
+          <div className="w-full lg:w-1/3 h-full lg:h-auto bg-[#d9d9d9] flex-shrink-0">
             {imageUrl && (
               <img
                 src={imageUrl}
                 alt={event.fields.eventName}
-                className="w-full h-full object-cover"
+                className="w-full h-auto"
               />
-            )}
+            )} 
           </div>
           <div className="w-full lg:w-2/3 flex flex-col py-4">
             <div className="flex justify-between items-start px-6">
@@ -325,9 +355,8 @@ const EventDetailsDialog = ({
                 title="Description"
                 isOpen={openAccordion === "Description"}
                 onClick={() => handleAccordionClick("Description")}
-              >
-                {event.fields.longDescription}
-              </AccordionItem>
+                htmlContent={event.fields.longDescription}
+              />
               {event.fields.rules && (
                 <AccordionItem
                   title="Rules"
@@ -376,7 +405,7 @@ const EventCard = ({ event, imageUrl, onClick }: EventCardProps) => {
             <img
               src={imageUrl}
               alt={event.fields.eventName}
-              className="w-full h-full object-cover"
+              className="w-full h-auto object-cover"
             />
           ) : (
             <div className="w-full h-full bg-gray-700"></div>

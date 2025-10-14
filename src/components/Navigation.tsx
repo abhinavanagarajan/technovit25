@@ -57,9 +57,9 @@ export const Navigation = ({ currentPage, onNavigate }: NavigationProps) => {
           onClick={() => handleNavClick("home")}
         >
           <img
-            src="/technovit1.svg"
+            src="/technoVit25-new.png"
             alt="TechnoVIT Logo"
-            className="h-10 w-auto object-contain"
+            className="h-16 w-auto object-contain"
           />
           <img
             src="/dot.png"
