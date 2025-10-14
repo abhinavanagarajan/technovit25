@@ -91,7 +91,7 @@ const ImageCarousel = () => {
       {carouselItems.map((color, index) => (
         <div
           key={index}
-          className={`border-2 border-gray-400 shadow-xl ${color} rounded-lg sm:rounded-xl`}
+          className={`border-2 border-gray-400 shadow-xl ${color}`}
           style={{
             height: "clamp(200px, 40vh, 50vh)",
             width: "clamp(150px, 30vh, 35vh)",
