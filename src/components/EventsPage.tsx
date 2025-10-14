@@ -6,8 +6,8 @@ import EventFilter from "./Filters";
 import axios from "axios";
 import { Asset, EventApiResponse, EventItem } from "@/interfaces/contentful";
 
-const spaceId = process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID;
-const accessToken = process.env.NEXT_PUBLIC_CONTENT_DELIVERY_API_ACCESS_TOKEN;
+const spaceId = process.env.CONTENTFUL_SPACE_ID;
+const accessToken = process.env.CONTENT_DELIVERY_API_ACCESS_TOKEN;
 
 type FilterState = {
   eventType: string[];
@@ -43,9 +43,7 @@ const EventsPage = () => {
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const response = await axios.get<EventApiResponse>(
-          `https://cdn.contentful.com/spaces/${spaceId}/environments/master/entries?access_token=${accessToken}&content_type=event`
-        );
+        const response = await axios.get<EventApiResponse>("/api/events");
         console.log("Fetched Events:", response.data.items);
         setEvents(response.data.items);
         setAssetData(response.data.includes?.Asset || []);
