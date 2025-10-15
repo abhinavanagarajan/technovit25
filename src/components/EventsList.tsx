@@ -149,9 +149,8 @@ const UsersIcon = () => (
 const ChevronDownIcon = ({ open }: ChevronDownIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className={`h-6 w-6 transition-transform duration-300 ${
-      open ? "rotate-180" : ""
-    }`}
+    className={`h-6 w-6 transition-transform duration-300 ${open ? "rotate-180" : ""
+      }`}
     fill="none"
     viewBox="0 0 24 24"
     stroke="currentColor"
@@ -305,13 +304,15 @@ const EventDetailsDialog = ({
           <CloseIcon />
         </button>
         <div className="flex flex-col lg:flex-row gap-8">
-          <div className="w-full lg:w-1/3 h-64 lg:h-auto bg-[#d9d9d9] flex-shrink-0">
-            {imageUrl && (
+          <div className="relative w-full lg:w-1/3 bg-black flex-shrink-0 aspect-[4/5] lg:aspect-auto lg:h-[520px]">
+            {imageUrl ? (
               <img
                 src={imageUrl}
                 alt={event.fields.eventName}
-                className="w-full h-full object-cover"
+                className="absolute inset-0 h-full w-full object-contain object-center"
               />
+            ) : (
+              <div className="absolute inset-0 bg-[#1a1a1a]" />
             )}
           </div>
           <div className="w-full lg:w-2/3 flex flex-col py-4">
@@ -404,23 +405,23 @@ const EventCard = ({ event, imageUrl, onClick }: EventCardProps) => {
 
   return (
     <div
-      className="bg-black border border-[#565656] p-4 flex w-full cursor-pointer h-[30vh]"
+      className="bg-black border border-[#565656] p-4 flex w-full cursor-pointer"
       onClick={onClick}
     >
-      <div className="flex w-full items-start space-x-6 text-white">
-        <div className="flex-shrink-0 w-40 h-full overflow-hidden rounded-md">
+      <div className="flex w-full flex-col gap-6 text-white lg:h-[30vh] lg:flex-row lg:items-stretch lg:space-x-6 lg:gap-6">
+        <div className="relative flex-shrink-0 overflow-hidden rounded-md bg-black aspect-[4/5] lg:self-stretch">
           {imageUrl ? (
             <img
               src={imageUrl}
               alt={event.fields.eventName}
-              className="w-full h-full object-cover"
+              className="absolute inset-0 h-full w-full object-contain object-center"
             />
           ) : (
-            <div className="w-full h-full bg-gray-700"></div>
+            <div className="absolute inset-0 bg-[#1a1a1a]"></div>
           )}
         </div>
-        <div className="flex-grow flex flex-col justify-between my-auto">
-          <div>
+        <div className="flex flex-1 flex-col min-h-0 overflow-hidden">
+          <div className="overflow-y-auto pr-2">
             <h2 className="text-2xl font-semibold ttFont tracking-tighter">
               {event.fields.eventName}
             </h2>
@@ -432,9 +433,7 @@ const EventCard = ({ event, imageUrl, onClick }: EventCardProps) => {
             </p>
           </div>
         </div>
-        <div
-          className={`flex-shrink-0 my-auto grid grid-cols-2 gap-3 w-72 text-lg uppercase ${fontBayon.className}`}
-        >
+        <div className={`grid grid-cols-2 gap-3 text-lg uppercase ${fontBayon.className} lg:w-72 lg:flex-shrink-0 lg:my-auto`}>
           <div className="flex items-center justify-center bg-[#70E081] text-black p-3">
             <ClockIcon />
             {time}
