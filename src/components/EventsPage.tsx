@@ -100,7 +100,10 @@ const EventsPage = () => {
 
       const teamSizeMatch =
         filters.teamSize.length === 0 ||
-        filters.teamSize.includes(event.fields.participationType.toUpperCase());
+        filters.teamSize.some((size) =>
+          event.fields.participationType.toUpperCase().includes(size)
+        );
+
 
       const dateMatch =
         filters.dates.length === 0 ||

@@ -1,8 +1,39 @@
 import FaultyTerminal from "./FaultyTerminal";
 import ImageCarousel from "./ImageCarousel";
 import EventsPage from "./EventsPage";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import { Asset, EventApiResponse, EventItem } from "@/interfaces/contentful";
 
 const Events = () => {
+
+  const [eventData, setEvents] = useState<EventItem[]>([]);
+  const [assetData, setAssetData] = useState<Asset[]>([]);
+
+  useEffect(() => {
+    const fetchEvents = async () => {
+      try {
+        const response = await axios.get<EventApiResponse>("/api/events");
+        console.log("Carousel Fetched Events:", response.data.items);
+        setEvents(response.data.items);
+        setAssetData(response.data.includes?.Asset || []);
+      } catch (error) {
+        console.error("Error fetching events:", error);
+      }
+    };
+    fetchEvents();
+  }, []);
+
+  // Get carousel images from special events
+  const carouselImages = eventData
+    .filter(event => event.fields.specialEvent === true)
+    .map(event => {
+      const assetId = event.fields.poster?.sys?.id;
+      const asset = assetData.find(a => a.sys.id === assetId);
+      return asset?.fields?.file?.url ? `https:${asset.fields.file.url}` : null;
+    })
+    .filter((url): url is string => url !== null);
+
   return (
     <div>
       <div className="w-full h-[90vh] bg-black overflow-hidden relative">
@@ -39,7 +70,7 @@ const Events = () => {
             </p>
           </div>
 
-          <ImageCarousel />
+          <ImageCarousel images={carouselImages} autoPlayInterval={2500} />
         </div>
       </div>
       <div className="flex flex-col md:flex-row">
