@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import { EventItem, Asset } from "@/interfaces/contentful";
 import { Bayon } from "next/font/google";
+import { MapPin } from "lucide-react";
 
 const fontBayon = Bayon({ subsets: ["latin"], weight: "400" });
 
@@ -280,7 +281,8 @@ const EventDetailsDialog = ({
     // "Description"
     null
   );
-  const { date, time } = formatDate(event.fields.startDateAndTime);
+  const { date: startdate, time: starttime } = formatDate(event.fields.startDateAndTime);
+  const { date: enddate, time: endtime } = formatDate(event.fields.endDateAndTime);
 
   const handleAccordionClick = (title: string) => {
     setOpenAccordion((prev) => (prev === title ? null : title));
@@ -334,25 +336,30 @@ const EventDetailsDialog = ({
               {event.fields.shortDescription}
             </p>
             <div
-              className={`grid grid-cols-3 gap-4 mt-4 px-6 text-lg ${fontBayon.className}`}
+              className={`grid grid-cols-4 gap-4 mt-4 px-6 text-lg ${fontBayon.className}`}
             >
               <div className="flex items-center justify-center bg-[#70E081] text-black py-2 px-4">
                 <ClockIcon />
-                <span>{time}</span>
+                <span>{starttime}</span>
               </div>
               <div className="flex items-center justify-center bg-[#70E081] text-black py-2 px-4">
                 <CalendarIcon />
-                <span>{date}</span>
+                {(startdate === enddate) ? <span>{startdate}</span> : (
+                <span>{startdate} - {enddate}</span> )}
               </div>
               <div className="flex items-center justify-center bg-[#70E081] text-black py-2 px-4">
                 <UsersIcon />
                 <span>{event.fields.participationType}</span>
               </div>
+              <div className="flex items-center justify-center bg-[#70E081] text-black py-2 px-4">
+                <MapPin />
+                <span>{event.fields.eventVenue}</span>
+              </div>
               <a
                 href="https://www.google.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="col-span-3 flex items-center justify-center bg-[#70E081] text-black py-2 px-4 mt-2 font-semibold cursor-pointer"
+                className="col-span-4 flex items-center justify-center bg-[#70E081] text-black py-2 px-4 mt-2 font-semibold cursor-pointer"
               >
                 REGISTER NOW
               </a>
@@ -445,6 +452,9 @@ const EventCard = ({ event, imageUrl, onClick }: EventCardProps) => {
           </div>
           <div className="flex items-center justify-center bg-[#70E081] text-black p-3">
             {event.fields.participationType}
+          </div>
+          <div className="flex col-span-2 items-center justify-center bg-[#70E081] w-full text-black p-3">
+            {event.fields.eventVenue}
           </div>
         </div>
       </div>

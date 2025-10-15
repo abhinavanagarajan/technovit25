@@ -202,24 +202,55 @@ const EventFilter = ({ onFilterChange, availableDates }: EventFilterProps) => {
       >
         <div>
           <div className="relative py-4">
-            <span className={`${bayon.className} text-lg text-black`}>
-              ₹{priceRange[1]}
-            </span>
-            <input
-              type="range"
-              min="0"
-              max="1000"
-              value={priceRange[1]}
-              onChange={(e) => {
-                setPriceRange([0, parseInt(e.target.value, 10)]);
-              }}
-              className="w-full h-1 bg-black outline-none cursor-pointer"
-            />
-            <div
-              className={`flex justify-between mt-2 text-lg ${bayon.className}`}
-            >
-              <span>₹0</span>
-              <span>₹1000</span>
+            <div className={`flex justify-between mb-2 text-lg text-black ${bayon.className}`}>
+              <span>₹{priceRange[0]}</span>
+              <span>₹{priceRange[1]}</span>
+            </div>
+            
+            <div className="relative h-1 bg-gray-300 rounded">
+              {/* Range track highlight */}
+              <div 
+                className="absolute h-1 bg-black rounded"
+                style={{
+                  left: `${(priceRange[0] / 1000) * 100}%`,
+                  right: `${100 - (priceRange[1] / 1000) * 100}%`
+                }}
+              />
+              
+              {/* Min range slider */}
+              <input
+                type="range"
+                min="0"
+                max="1000"
+                value={priceRange[0]}
+                onChange={(e) => {
+                  const newMin = parseInt(e.target.value, 10);
+                  if (newMin <= priceRange[1]) {
+                    setPriceRange([newMin, priceRange[1]]);
+                  }
+                }}
+                className="absolute w-full h-1 bg-transparent appearance-none cursor-pointer pointer-events-none [&::-webkit-slider-thumb]:pointer-events-auto [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-4 [&::-webkit-slider-thumb]:h-4 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-black [&::-webkit-slider-thumb]:cursor-pointer [&::-moz-range-thumb]:pointer-events-auto [&::-moz-range-thumb]:w-4 [&::-moz-range-thumb]:h-4 [&::-moz-range-thumb]:rounded-full [&::-moz-range-thumb]:bg-black [&::-moz-range-thumb]:border-0 [&::-moz-range-thumb]:cursor-pointer"
+              />
+              
+              {/* Max range slider */}
+              <input
+                type="range"
+                min="0"
+                max="1000"
+                value={priceRange[1]}
+                onChange={(e) => {
+                  const newMax = parseInt(e.target.value, 10);
+                  if (newMax >= priceRange[0]) {
+                    setPriceRange([priceRange[0], newMax]);
+                  }
+                }}
+                className="absolute w-full h-1 bg-transparent appearance-none cursor-pointer pointer-events-none [&::-webkit-slider-thumb]:pointer-events-auto [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-4 [&::-webkit-slider-thumb]:h-4 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-black [&::-webkit-slider-thumb]:cursor-pointer [&::-moz-range-thumb]:pointer-events-auto [&::-moz-range-thumb]:w-4 [&::-moz-range-thumb]:h-4 [&::-moz-range-thumb]:rounded-full [&::-moz-range-thumb]:bg-black [&::-moz-range-thumb]:border-0 [&::-moz-range-thumb]:cursor-pointer"
+              />
+            </div>
+            
+            <div className={`flex justify-between mt-2 text-lg ${bayon.className}`}>
+              <span className='text-gray-800'>₹0</span>
+              <span className='text-gray-800'>₹1000</span>
             </div>
           </div>
         </div>
