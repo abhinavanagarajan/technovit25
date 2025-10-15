@@ -30,7 +30,7 @@ jobs:
           const fetchData = async () => {
             try {
               const res = await axios.get(url);
-              fs.writeFileSync('data/events.json', JSON.stringify(res.data, null, 2));
+              fs.writeFileSync('src/data/events.json', JSON.stringify(res.data, null, 2));
               console.log('✅ events.json updated successfully');
             } catch (err) {
               console.error('❌ Error fetching Contentful data:', err.message);
