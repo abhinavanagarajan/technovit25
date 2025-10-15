@@ -61,6 +61,2586 @@
         "longDescription": "Brainware is an exciting quiz-based competition that brings a technological twist to the classic Kaun Banega Crorepati format. Participants will tackle rounds of progressively challenging questions spanning computer science, emerging technologies, logical problem-solving, and general tech knowledge. The event is designed to test technical expertise, quick thinking, and strategic decision-making in an engaging and competitive setup. Scheduled to be held on any one day of TechnoVIT, with a maximum team size of 2 members, Brainware promotes collaboration and knowledge sharing, making it a fun, intellectually stimulating highlight of TechnoVIT.",
         "specialEvent": false
       }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "5qmAw2mmugGfrF5f6uXi7u",
+        "type": "Entry",
+        "createdAt": "2025-10-15T11:24:19.508Z",
+        "updatedAt": "2025-10-15T11:45:55.479Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 24,
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "DesignSprint - 1 Participant",
+        "clubName": "IEEE ROBOTICS & AUTOMATION SOCIETY (IEEE-RAS)",
+        "eventType": "Hackathon",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "5oXhJ9MpBGEgexMAbNyZ7U"
+          }
+        },
+        "startDateAndTime": "2025-10-31T09:00+00:00",
+        "endDateAndTime": "2025-10-01T09:00+00:00",
+        "pricePerPerson": 150,
+        "participationType": "Solo",
+        "eventVenue": "Online",
+        "shortDescription": "24-hour online hackathon where participants design innovative, user-centered UIs for platforms promoting environmental sustainability. Challenges focus on UN SDGs like climate action, circular economy, resource management and green mobility solutions.",
+        "longDescription": "DesignSprint is an intensive 24-hour online hackathon that challenges participants to create innovative, user-centered interfaces for platforms promoting environmental sustainability and responsible practices. This virtual event brings together designers, developers, and sustainability enthusiasts to tackle real-world problems through thoughtful UI/UX design. Participants must design a functional and user-friendly UI for a digital platform that directly supports UN Sustainable Development Goals (SDGs) or environmental sustainability practices. Challenge areas include climate action platforms, circular economy applications, sustainable consumption tools, resource management dashboards, food security systems, or green mobility solutions.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "2Usnbna0BgRESq2zW1HFUf",
+        "type": "Entry",
+        "createdAt": "2025-10-15T11:45:17.274Z",
+        "updatedAt": "2025-10-15T11:45:17.274Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 16,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "DesignSprint - 3 Participants",
+        "clubName": "IEEE ROBOTICS & AUTOMATION SOCIETY (IEEE-RAS)",
+        "eventType": "Hackathon",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "5uHkScYUJfs0KBkjP92e9h"
+          }
+        },
+        "startDateAndTime": "2025-10-31T09:00+00:00",
+        "endDateAndTime": "2025-11-01T09:00+00:00",
+        "pricePerPerson": 300,
+        "participationType": "Trio",
+        "eventVenue": "Online",
+        "shortDescription": "24-hour online hackathon where participants design innovative, user-centered UIs for platforms promoting environmental sustainability. Challenges focus on UN SDGs like climate action, circular economy, resource management and green mobility solutions.",
+        "longDescription": "DesignSprint is an intensive 24-hour online hackathon that challenges participants to create innovative, user-centered interfaces for platforms promoting environmental sustainability and responsible practices. This virtual event brings together designers, developers, and sustainability enthusiasts to tackle real-world problems through thoughtful UI/UX design. Participants must design a functional and user-friendly UI for a digital platform that directly supports UN Sustainable Development Goals (SDGs) or environmental sustainability practices. Challenge areas include climate action platforms, circular economy applications, sustainable consumption tools, resource management dashboards, food security systems, or green mobility solutions.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "UuZNNvbrdIbGSpVu3noWa",
+        "type": "Entry",
+        "createdAt": "2025-10-15T11:17:27.650Z",
+        "updatedAt": "2025-10-15T11:31:22.402Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 21,
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "One day Workshop on Agentic AI for Beginners: Create Autonomous AI with Open-Source Ollama",
+        "clubName": "YUVA",
+        "eventType": "Workshop",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "3HPdNanTAFCFOGGuLxMDwP"
+          }
+        },
+        "startDateAndTime": "2025-11-01T09:00+00:00",
+        "endDateAndTime": "2025-11-01T16:00+00:00",
+        "pricePerPerson": 250,
+        "participationType": "Solo",
+        "eventVenue": "AB1 209",
+        "shortDescription": "Led by Aishwarya Sundaresan (Infosys), this hands-on workshop explores Agentic AI. Participants learn to build, train, and deploy intelligent agents on real-time e-commerce use cases using Ollama, gaining practical AI experience.",
+        "longDescription": "Workshop Title: Building Intelligent Agents with Ollama: A Practical Workshop<br> Resource Person: Aishwarya Sundaresan – Lead Consultant @ Infosys | Executive MBA in Data Science & AI<br> <br> Description:<br> Dive into the world of Agentic AI in this hands-on workshop designed for students, developers, and professionals eager to explore intelligent agents. Ollama is an advanced platform for building, managing, and deploying Agentic AI applications. It enables developers and AI enthusiasts to create intelligent agents that can perform autonomous tasks, make decisions, and interact with users or other systems. Under the guidance of Aishwarya Sundaresan, a leading AI consultant at Infosys, participants will gain practical experience in building, training, and deploying intelligent AI agents using the Ollama tool. The resource person has 14 years of digital transformation experience with a focus on meticulous technology implementation. Her journey in e-commerce consulting has honed a keen attention to detail and a strategic approach to business strategy, consistently driving growth and innovation. Her top skills include Solution Architecture , Digital Transformation, Large Language Models (LLM), Artificial Intelligence (AI). The resource person will provide hands-on training on Realtime E-commerce use cases.<br> <br> <br> This workshop will cover:<br> <br> Fundamentals of Agentic AI and its real-world applications<br> <br> Step-by-step guidance on using Ollama for agent creation<br> <br> Hands-on exercises to design and deploy intelligent agents on Realtime E-commerce use cases<br> <br> Best practices for optimizing AI agent performance<br> <br> By the end of the session, participants will have a working understanding of how to create functional AI agents and leverage them for practical applications in business, research, and technology.",
+        "rules": [
+          "Register in advance and attend fully for a certificate. Basic Python/AI knowledge preferred. Bring a laptop with internet and install Ollama if needed. Participate actively, respect others, and don’t share materials. Be punctual to avoid missing key parts."
+        ],
+        "judgementCriteria": [
+          "not applicable"
+        ],
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "6fISydGQHEs8bHTyNGAj2h",
+        "type": "Entry",
+        "createdAt": "2025-10-14T18:47:55.659Z",
+        "updatedAt": "2025-10-15T11:22:33.526Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 15,
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "8 Minutes to win it",
+        "clubName": "INDIAN CONCRETE INSTITUTE STUDENT CHAPTER",
+        "eventType": "Entertainment",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "6OHduzb0cokTRQXgpvxykk"
+          }
+        },
+        "startDateAndTime": "2025-10-28T13:00+00:00",
+        "endDateAndTime": "2025-10-28T16:00+00:00",
+        "pricePerPerson": 75,
+        "participationType": "Duo/Trio/Squad",
+        "eventVenue": "AB1 Lawn",
+        "shortDescription": "Minute-to-Win-it: Civil Edition\n Small, quick challenges like:\n Stack bricks fastest without falling.\n Mix mock “concrete” (sand + pebbles) with correct proportions.\n Quickest floor plan sketch of a house.\n Fun, lighthearted, yet relevant.",
+        "longDescription": "Minute-to-Win-it: Civil Edition\n Small, quick challenges like:\n Stack bricks fastest without falling.\n Mix mock “concrete” (sand + pebbles) with correct proportions.\n Quickest floor plan sketch of a house.\n Fun, lighthearted, yet relevant.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "5LLVFSvBDwijFDZZzJ8VdZ",
+        "type": "Entry",
+        "createdAt": "2025-10-15T11:20:56.073Z",
+        "updatedAt": "2025-10-15T11:20:56.073Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 9,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Next-Gen Talent with AI: HireAbility Workshop",
+        "clubName": "ACM Women",
+        "eventType": "Workshop",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "4g3fR6bgDIZ2dO9WQi8Wr7"
+          }
+        },
+        "startDateAndTime": "2025-11-01T10:00+00:00",
+        "endDateAndTime": "2025-11-01T16:00+00:00",
+        "pricePerPerson": 100,
+        "participationType": "Solo",
+        "eventVenue": "AB3 412 LAB",
+        "shortDescription": "Hire-Ability Lab gets you future-ready — sharpening how you think, solve, and break problems down from first principles. It’s about mindset to tackle challenges and skills to land the job",
+        "longDescription": "Hire-Ability Lab gets you future-ready — sharpening how you think, solve, and break problems down from first principles. It’s about mindset to tackle challenges and skills to land the job",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "5IWAvNY4UrYAhAlfQ1tpZj",
+        "type": "Entry",
+        "createdAt": "2025-10-14T18:42:02.671Z",
+        "updatedAt": "2025-10-15T05:43:39.066Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 16,
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "AWS DeepRacer 2.0",
+        "clubName": "IEEE ROBOTICS & AUTOMATION SOCIETY (IEEE-RAS)",
+        "eventType": "Competition",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "5BbpphceFveFOvtKxw9SK2"
+          }
+        },
+        "startDateAndTime": "2025-11-01T08:00+00:00",
+        "endDateAndTime": "2025-11-01T18:00+00:00",
+        "pricePerPerson": 200,
+        "participationType": "Solo/Duo/Trio",
+        "eventVenue": "Netaji Auditorium",
+        "shortDescription": "Participants begin with a workshop on reinforcement learning, building and training models on AWS Deepracer. They then compete by racing their models for fastest lap times, applying their skills in an exciting, hands-on competition.",
+        "longDescription": "This event will begin with an interactive workshop where participants learn the fundamentals of reinforcement learning and get hands-on experience building and training their own models on AWS Deepracer. Following the workshop, participants will put their knowledge into action in an exciting competition, racing their trained models to achieve the fastest lap times and showcase their skills.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "1wmZB4nTD6wNdsrWA3VBhh",
+        "type": "Entry",
+        "createdAt": "2025-10-15T03:17:24.837Z",
+        "updatedAt": "2025-10-15T03:17:24.837Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 14,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "The Stranger Clues",
+        "clubName": "OPEN SOURCE PROGRAMMING CLUB",
+        "eventType": "Game",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "7v2AZm2eZOhEHXan7lQktJ"
+          }
+        },
+        "startDateAndTime": "2025-10-29T13:00+00:00",
+        "endDateAndTime": "2025-10-29T00:00+00:00",
+        "pricePerPerson": 50,
+        "participationType": "Solo/Duo/Trio/Squad",
+        "eventVenue": " AB1 Mini Portico",
+        "shortDescription": "In this on-campus digital treasure hunt, teams of 1-4 will learn Open Source Intelligence (OSINT). Follow online and offline clues using cybersecurity skills to reach a finale where your choices determine how you find a missing person.",
+        "longDescription": "An engaging, on-campus digital treasure hunt designed to introduce participants to Open Source Intelligence (OSINT) techniques through a mix of real-world investigation and cybersecurity puzzles. Starting from a physical location within the college, participants follow clues that take them on various online and offline trails involving web research, digital footprints, and hidden leads. All paths lead to a thrilling three-way finale where participants’ choices determine how they find a missing person. This event provides students with a fun, interactive way to build foundational OSINT and cybersecurity skills while offering management a well-rounded, technically relevant learning experience.\n \n Team size: 1-4",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "5mkryCejPM0vEsT1r71rKt",
+        "type": "Entry",
+        "createdAt": "2025-10-15T03:12:14.380Z",
+        "updatedAt": "2025-10-15T03:12:14.380Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 14,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Drone Sim",
+        "clubName": "AUTOVIT",
+        "eventType": "Game",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "7JFgrsoZmv6HZ50em4uowA"
+          }
+        },
+        "startDateAndTime": "2025-10-31T09:00+00:00",
+        "endDateAndTime": "2025-11-01T17:30+00:00",
+        "pricePerPerson": 50,
+        "participationType": "Solo",
+        "eventVenue": "AB3 210 Satori Lab",
+        "shortDescription": "Fly drones in a realistic simulation using actual remote controllers. Participants will navigate virtual challenges, testing piloting skills in a safe environment linked to aerospace, control systems, and simulation engineering.",
+        "longDescription": "Fly drones in a realistic simulation using actual remote controllers. Participants will navigate virtual challenges, testing their piloting skills in a safe environment. The event connects to the technical domain through aerospace, control systems, and simulation engineering, showcasing real-world applications of drones in logistics, defense, and surveying.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "2OtKGx5Ex4KJJn84NSTX0d",
+        "type": "Entry",
+        "createdAt": "2025-10-15T03:07:58.047Z",
+        "updatedAt": "2025-10-15T03:07:58.047Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 13,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "ANGRY BIRD STEM",
+        "clubName": "AUTOVIT",
+        "eventType": "Game",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "2KvbDfRnjAwWUCladLBY9b"
+          }
+        },
+        "startDateAndTime": "2025-11-02T09:00+00:00",
+        "endDateAndTime": "2025-11-02T15:00+00:00",
+        "pricePerPerson": 100,
+        "participationType": "Trio",
+        "eventVenue": "AB3 201",
+        "shortDescription": "In this challenge, teams of 2 have 45 minutes to build a catapult using only provided materials. The objective is to launch projectiles and knock down targets. Points are awarded for accuracy, power, and creative design, with penalties for delays.\n",
+        "longDescription": "The Angry Bird Stem event is a hands-on building and targeting challenge. \n Objective: Participants must design and build a miniature catapult that can launch projectiles to knock down the target. Accuracy and distance both matter.\n Competition: Team of 2 people. All the teams compete with each other. Each and every team will be given 45 mins to build and design their own catapult and launch. Points will be awarded for hitting the target, knocking them down, creative design and if they do not finish it on time their points will be reduced. The team with the highest score or fastest completion wins.\n Rules: Participants can only use the materials provided by the club. Creativity in building and designing the catapult is encouraged. Safety must be maintained while launching projectiles",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "61nmjeeMea4SPY8upGAOWQ",
+        "type": "Entry",
+        "createdAt": "2025-10-15T03:03:06.059Z",
+        "updatedAt": "2025-10-15T03:03:06.059Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 15,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Animatathon",
+        "clubName": "ANIMATION CLUB",
+        "eventType": "Hackathon",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "1TVE7wjo6VDdqgFXvZkSgP"
+          }
+        },
+        "startDateAndTime": "2025-11-01T10:00+00:00",
+        "endDateAndTime": "2025-11-02T13:30+00:00",
+        "pricePerPerson": 100,
+        "participationType": "5+ Members",
+        "eventVenue": "VOC Auditorium",
+        "shortDescription": "Animatathon is a hackathon for creators in 2D, 3D, and stop-motion animation. The event starts with a 2-hour industry talk, followed by a team creation phase. It concludes with a showcase judged on creativity, narrative, and technical execution.",
+        "longDescription": "Animatathon is a 28-hour (or slightly shorter) hackathon-style event that celebrates the full spectrum of animation. Participants from diverse creative backgrounds will come together to explore and experiment with different forms of animation including 2D, 3D, stop motion, and multimedia. The event begins with a two-hour session led by a spokesperson, where industry insights and professional works will be shared to inspire and guide participants before they begin their projects.\n \n Following this, teams will immerse themselves in an intensive creation phase, working to conceptualize and produce original animated projects within the given timeframe. From crafting characters and worlds to experimenting with techniques and storytelling, participants will push their creative boundaries. The event concludes with a showcase judged on creativity, narrative impact, and technical execution, making Animatathon both a competition and a collaborative platform to learn, innovate, and connect within the animation community.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "3e7rrybDex3VEn8UWAm1cV",
+        "type": "Entry",
+        "createdAt": "2025-10-15T02:58:47.618Z",
+        "updatedAt": "2025-10-15T02:58:47.618Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 21,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Symmetria: The Art & Math Exposition",
+        "clubName": "MATHEMATICS CLUB",
+        "eventType": "Competition",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "3egm8GBILHBVPRADKeO7Wp"
+          }
+        },
+        "startDateAndTime": "2025-11-01T10:00+00:00",
+        "endDateAndTime": "2025-11-01T01:30+00:00",
+        "pricePerPerson": 100,
+        "participationType": "Duo/Trio/Squad",
+        "eventVenue": "AB4  201",
+        "shortDescription": "Choose your challenge!\nAlgorithmic Art: Generate visual art from code using mathematical principles.\nGeometric Design: Design a 3D structure demonstrating advanced geometry.\nData Sonification: Transform a dataset into a musical composition.",
+        "longDescription": "Algorithmic Art: Generate stunning visual art using code, based on mathematical principles like fractals, tessellations, or parametric equations.\n \n ​Geometric Design: Design a physical or 3D-modeled structure (e.g., a bridge, a sculpture, an architectural model) that demonstrates advanced geometric principles and structural integrity.\n \n Data Sonification: Transform a complex dataset into a musical composition, using mathematical rules to map data points to notes, rhythms, and harmonies.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "7wDMAjAEh8H0DeYXzjtwCu",
+        "type": "Entry",
+        "createdAt": "2025-10-15T02:50:04.329Z",
+        "updatedAt": "2025-10-15T02:50:04.329Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 14,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Workshop on PCB",
+        "clubName": "IEEE COMPUTER SOCIETY (IEEE-CS)",
+        "eventType": "Workshop",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "5xGcUNgvVl7OWbNkT3agak"
+          }
+        },
+        "startDateAndTime": "2025-10-31T09:00+00:00",
+        "endDateAndTime": "2025-10-31T16:00+00:00",
+        "pricePerPerson": 300,
+        "participationType": "Solo/Duo/Trio",
+        "eventVenue": "AB3 602",
+        "shortDescription": "Interactive event designed to teach participants the practical skills of designing and fabricating electronic circuits on PCB platforms.",
+        "longDescription": "Interactive event designed to teach participants the practical skills of designing and fabricating electronic circuits on PCB platforms.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "5UuP8xiUSVrucNBc3HZiku",
+        "type": "Entry",
+        "createdAt": "2025-10-15T02:43:30.944Z",
+        "updatedAt": "2025-10-15T02:43:30.944Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 13,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Frame it with Figma",
+        "clubName": "CLOUD COMPUTING CLUB",
+        "eventType": "Workshop",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "3oh8rIU6orV0p3UtUqMEth"
+          }
+        },
+        "startDateAndTime": "2025-10-29T10:00+01:00",
+        "endDateAndTime": "2025-10-29T18:00+00:00",
+        "pricePerPerson": 100,
+        "participationType": "Solo",
+        "eventVenue": "Kamaraj Auditorium",
+        "shortDescription": "Hands-on Figma workshop: learn wireframes, mockups, prototypes, then design a complete UI. Win cash prizes, certificates for all.",
+        "longDescription": "Hands-on Figma workshop: learn wireframes, mockups, prototypes, then design a complete UI. Win cash prizes, certificates for all.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "5ewmbQkhj7CHWDAUobYWND",
+        "type": "Entry",
+        "createdAt": "2025-10-14T10:01:47.055Z",
+        "updatedAt": "2025-10-14T19:37:45.544Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 40,
+        "revision": 5,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "HackaThrone",
+        "clubName": "MICROSOFT INNOVATION CLUB",
+        "eventType": "Hackathon",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "4Ix6PVl0AolFhukMHBzyAy"
+          }
+        },
+        "startDateAndTime": "2025-10-29T11:00+00:00",
+        "endDateAndTime": "2025-10-30T11:00+00:00",
+        "pricePerPerson": 50,
+        "participationType": "Squad",
+        "eventVenue": "MG Auditorium",
+        "shortDescription": "A multidisciplinary hackathon where every project integrates web development, AI/ML, cybersecurity, and product innovation. Teams build cohesive, user-centered solutions, blending technical skills, data intelligence, and innovative system design.",
+        "longDescription": "HackThrone is a high-impact, multidisciplinary hackathon where participants go beyond traditional domain silos. Unlike regular hackathons that focus on a single track or theme, every project at HackThrone must integrate four critical pillars of modern technology:\n <br><br>\n 1. Web Development\n 2. Artificial Intelligence & Machine Learning (AI/ML)\n 3. Cybersecurity\n 4. Innovation & Product Thinking\n \n This format challenges teams to think holistically, blending technical skill, system design, data intelligence, and user-centered innovation into one cohesive solution.\n \n By creating a hackathon where every team must incorporate all four core domains, not just pick one or two, HackThrone truly stands out from traditional hackathons.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "2Hp5FF2FfSkvHizd9ewMVT",
+        "type": "Entry",
+        "createdAt": "2025-10-14T18:57:54.677Z",
+        "updatedAt": "2025-10-14T18:57:54.677Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 18,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Codemafia",
+        "clubName": "DAO COMMUNITY",
+        "eventType": "Competition",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "4wlT4fRSMysakQAOn17vAq"
+          }
+        },
+        "startDateAndTime": "2025-10-29T09:00+00:00",
+        "endDateAndTime": "2025-10-29T16:00+00:00",
+        "pricePerPerson": 50,
+        "participationType": "Duo/Trio",
+        "eventVenue": "VOC Auditorium",
+        "shortDescription": "Participants will join a Capture The Flag (CTF) contest with cryptography, web, reverse engineering, and forensics challenges, sharpening cybersecurity skills as teams race to capture flags and lead the leaderboard.",
+        "longDescription": "Participants will join a Capture The Flag (CTF) competition featuring cryptography, web exploitation, reverse engineering, and forensics. This workshop-style event hones cybersecurity skills as teams race to capture flags and top the leaderboard.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "3Pct6xW10pQYuErVb9nRhp",
+        "type": "Entry",
+        "createdAt": "2025-10-14T18:57:32.370Z",
+        "updatedAt": "2025-10-14T18:57:32.370Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 14,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Game to Survive: Escape Room",
+        "clubName": "GOOGLE DEVELOPER STUDENT CLUB (GDSC)",
+        "eventType": "Game",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "7nKgOxss8eG11jSyXFkuIM"
+          }
+        },
+        "startDateAndTime": "2025-11-01T09:30+00:00",
+        "endDateAndTime": "2025-11-01T16:00+00:00",
+        "pricePerPerson": 100,
+        "participationType": "Duo/Trio",
+        "eventVenue": "AB1 402",
+        "shortDescription": "In this high-intensity escape room, physical puzzles meet a technical CTF. Teams of 2-3 have 30 minutes to find clues in the room and use them on a central laptop to hack their way to freedom. Solve every puzzle to win before time expires!",
+        "longDescription": "A high-intensity challenge where physical puzzles and technical CTFs collide. Teams of 2-3 must decipher clues in the room to execute commands on a central laptop, unlock files, and escape within 30 minutes by collaborating and solving all puzzles.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "braRd8Uq5WN8vxoQYnA1P",
+        "type": "Entry",
+        "createdAt": "2025-10-14T18:57:03.795Z",
+        "updatedAt": "2025-10-14T18:57:03.795Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 14,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Build A Bridge",
+        "clubName": "AUTOVIT",
+        "eventType": "Competition",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "7rpcxPKSUTTC2WmhukoQhO"
+          }
+        },
+        "startDateAndTime": "2025-10-31T10:00+00:00",
+        "endDateAndTime": "2025-10-31T04:00+00:00",
+        "pricePerPerson": 100,
+        "participationType": "Trio",
+        "eventVenue": "AB3 208",
+        "shortDescription": "Teams of 3 get a fixed budget to build a bridge and load-bearing structure. Completing mini-challenges earns extra materials. Participants must optimize resources, time, and construction strategy to create the strongest, most efficient structure",
+        "longDescription": "we provide each participating team with a fixed budget, which they can spend on materials that we have in store and use to build a bridge to cross a gap and a structure that can take the maximum load. Participants are also given a chance to complete some small challenges to get more budget for materials. They now must optimize time spent on challenges materials and the time spent on constructing the bridge . Team of 3 will take on this challenge",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "3UMwTt7Sv0fm4LleLwZMws",
+        "type": "Entry",
+        "createdAt": "2025-10-14T18:54:21.650Z",
+        "updatedAt": "2025-10-14T18:54:21.650Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 14,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Gen AI - Workshop",
+        "clubName": "ACM STUDENT CHAPTER",
+        "eventType": "Workshop",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "37xuOrzMgOm7r9X2Pe0SIp"
+          }
+        },
+        "startDateAndTime": "2025-10-27T13:00+00:00",
+        "endDateAndTime": "2025-10-27T19:00+00:00",
+        "pricePerPerson": 200,
+        "participationType": "Solo",
+        "eventVenue": "Kamaraj Auditorium",
+        "shortDescription": "A genAI workshop featuring a session by ManageEngine (Zoho) on AI in security, followed by a hands-on session where students explore genAI for general and industry use cases, including MCP server creation.",
+        "longDescription": "A GenAI workshop featuring an interactive session by industry experts from ManageEngine (Zoho) on GenAI in security domains, followed by a hands-on session by students exploring general applications, industry use cases, and MCP server creation.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "3MJxe4CtBFTi5yNUYy7rOy",
+        "type": "Entry",
+        "createdAt": "2025-10-14T18:10:48.549Z",
+        "updatedAt": "2025-10-14T18:48:15.465Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 18,
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Hack A Cure",
+        "clubName": "CODECHEF ",
+        "eventType": "Hackathon",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "6xVQmlw9iUvK3hIZJe9oqi"
+          }
+        },
+        "startDateAndTime": "2025-10-28T08:00+00:00",
+        "endDateAndTime": "2025-10-29T08:00+00:00",
+        "pricePerPerson": 200,
+        "participationType": "Squad",
+        "eventVenue": "Kamaraj Auditorium",
+        "shortDescription": "In this 24-hour hackathon, teams will design medical AI systems using Retrieval Augmented Generation (RAG). Leverage medical literature to build solutions, deploy them as APIs, and compete based on accuracy, evidence citation, and reliability.",
+        "longDescription": "Hack A Cure is a 24-hour hackathon where participants design advanced medical AI systems using Retrieval Augmented Generation (RAG). Teams leverage extensive medical literature to integrate large language models with external knowledge sources, creating AI solutions that provide accurate, context-rich clinical insights.\n \n Participants deploy their solutions as APIs, which are assessed through automated medical query tests measuring accuracy, evidence citation, and reliability. The hackathon emphasizes developing AI tools that enhance diagnostics, improve patient outcomes, and reduce AI hallucinations.\n \n Beyond technical innovation, Hack A Cure offers hands-on experience with cutting-edge AI technologies, including vector and graph databases, preparing participants for real-world challenges in medical AI applications. The event fosters creativity, collaboration, and ethical AI development, showcasing the potential of retrieval-augmented generation in healthcare.\n \n By combining AI, data retrieval, and medical expertise, Hack A Cure equips students and professionals with practical skills to design robust, evidence-based AI systems, advancing the future of intelligent healthcare solutions.",
+        "specialEvent": true
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "1nCGK2YhYTdXKs3gTIp4nL",
+        "type": "Entry",
+        "createdAt": "2025-10-14T18:37:15.873Z",
+        "updatedAt": "2025-10-14T18:38:44.446Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 17,
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "GreenCode Hackathon: Innovation for Agriculture",
+        "clubName": "AGRHI INNOVATORS CLUB",
+        "eventType": "Hackathon",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "60RaLyiHMNKjzSgWlr8lCY"
+          }
+        },
+        "startDateAndTime": "2025-10-30T09:00+00:00",
+        "endDateAndTime": "2025-10-30T18:00+00:00",
+        "pricePerPerson": 236,
+        "participationType": "Solo",
+        "eventVenue": "AB3 309",
+        "shortDescription": "The “Green Code: OpenCV and App Development Applications in Agriculture” workshop offers hands-on training in integrating computer vision and mobile app technologies for smart farming solutions. Participants will learn how to use OpenCV for crop monitoring, disease detection, and yield analysis, along with app development tools to create farmer-friendly digital interfaces. The session bridges technology and agriculture, empowering students and innovators to develop sustainable, data-driven farm management applications.",
+        "longDescription": "💻 Hackathon Problem Statement 1\n \n Title: DirectLink: Producers to Consumers\n \n Description:\n Cut out the middleman, empower the farmer! In this hackathon challenge, you’ll design software solutions that connect producers directly with consumers, ensuring fair pricing, transparency, and trust. Build platforms, apps, or digital tools that revolutionize agri-markets and put power back into the hands of the growers. Innovation meets impact!\n \n \n 🤖 Hackathon Problem Statement 2\n \n Title: AgriBot: Chat for Change\n \n Description:\n Bring AI to the fields! This challenge invites you to create a farmer-friendly chatbot that provides instant guidance — from crop care and weather updates to market trends and government schemes. Build a smart conversational assistant that’s simple, accessible, and impactful for rural communities. Let’s code solutions that speak the farmers’ language!",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "3MeLfkYbjNtodYLN9ggG3Y",
+        "type": "Entry",
+        "createdAt": "2025-10-14T18:34:07.536Z",
+        "updatedAt": "2025-10-14T18:34:07.536Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 12,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "IGNITE",
+        "clubName": "FRATERNITY OF LEADERS",
+        "eventType": "Competition",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "4iqdHopoSaFjpNP0gQOD6c"
+          }
+        },
+        "startDateAndTime": "2025-10-28T09:00+00:00",
+        "endDateAndTime": "2025-10-29T12:00+00:00",
+        "pricePerPerson": 50,
+        "participationType": "Squad",
+        "eventVenue": "Netaji Auditorium",
+        "shortDescription": "The two-day Startup Conclave inspires and guides students in entrepreneurship. Day 1 features interactive sessions with speakers sharing journeys and strategies. Day 2 focuses on startup pitches judged by experts, concluding with a prize distribution.",
+        "longDescription": "The Startup Conclave is a two-day event focused on inspiring and guiding students in their entrepreneurial journeys.\n Day 1: Innovation & Insight : This day will feature motivational and interactive sessions with three renowned speakers. They will share their personal stories of turning ideas into successful ventures, detailing the challenges, strategies, and key milestones they encountered. \n Day 2 : Pitch : This day will focus on the practical application of entrepreneurial skills. Following two final speaker sessions, a dedicated startup pitching event will take place. This provides a platform for student startups to present their ideas to a panel of judges, investors, and industry experts. The event will culminate with a prize distribution ceremony to recognize and reward innovative ideas.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "EVUgVDNTBb8ofcB23oj1v",
+        "type": "Entry",
+        "createdAt": "2025-10-14T18:29:36.695Z",
+        "updatedAt": "2025-10-14T18:29:36.695Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 16,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Robosoccer",
+        "clubName": "INTERNET OF THINGS COMMUNITY (IOTHINC)",
+        "eventType": "Game",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "42jcutc0wBg63mfsz93rF5"
+          }
+        },
+        "startDateAndTime": "2025-10-31T09:00+00:00",
+        "endDateAndTime": "2025-11-02T18:00+00:00",
+        "pricePerPerson": 50,
+        "participationType": "Duo",
+        "eventVenue": "AB3 Portico",
+        "shortDescription": "Its a robosoccer event (2v2) . Two bots designed by the club engineers per team equipped with shooting mechanisms are provided to be controlled by the participants.",
+        "longDescription": "Its a robosoccer event (2v2) . Two bots designed by the club engineers per team equipped with shooting mechanisms are provided to be controlled by the participants.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "VtWgE4b9oTSQx4647enAN",
+        "type": "Entry",
+        "createdAt": "2025-10-14T18:24:42.628Z",
+        "updatedAt": "2025-10-14T18:24:42.628Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 13,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "F1 GRAND PRIX",
+        "clubName": "AUTOVIT",
+        "eventType": "Game",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "1nvyK2ZMdL4C4bzyHmWv4q"
+          }
+        },
+        "startDateAndTime": "2025-10-31T09:00+00:00",
+        "endDateAndTime": "2025-10-01T17:00+00:00",
+        "pricePerPerson": 50,
+        "participationType": "Solo",
+        "eventVenue": "AB3 210 SATORI LAB",
+        "shortDescription": "A solo racing challenge on F1 25 where each participant first answers 10 rapid-fire technical questions. Every wrong answer adds +1 second penalty to their lap time. The fastest adjusted lap wins combining racing thrill with technical knowledge.",
+        "longDescription": "A solo racing challenge on F1 25 where each participant first answers 10 rapid-fire technical questions. Every wrong answer adds +1 second penalty to their lap time. The fastest adjusted lap wins combining racing thrill with technical knowledge.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "5zaUpVMhfUHLy6hRUSTYV1",
+        "type": "Entry",
+        "createdAt": "2025-10-14T18:22:53.894Z",
+        "updatedAt": "2025-10-14T18:22:53.894Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 15,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Code the Future: ESP Workshop",
+        "clubName": "AGRHI INNOVATORS CLUB",
+        "eventType": "Workshop",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "3yWTLXlHR2fUCumWzvsOKq"
+          }
+        },
+        "startDateAndTime": "2025-10-31T00:00+00:00",
+        "endDateAndTime": "2025-10-31T00:00+00:00",
+        "pricePerPerson": 60,
+        "participationType": "Solo",
+        "eventVenue": "AB3 612",
+        "shortDescription": "Explore the Internet of Things in this hands-on workshop! Learn to program ESP microcontrollers and build exciting projects, from smart devices to real-world automation. Perfect for beginners and tinkerers ready to code, create, and innovate.",
+        "longDescription": "Get hands-on with the Internet of Things! This workshop introduces you to the world of ESP microcontrollers, where hardware meets innovation. Learn to program, connect, and build exciting projects using ESP boards, from smart devices to real-world automation. Whether you’re a beginner or a tinkerer, this is your chance to code, create, and craft the connected future.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "1elXhApvqZR3vJw43G2nI2",
+        "type": "Entry",
+        "createdAt": "2025-10-14T10:51:06.624Z",
+        "updatedAt": "2025-10-14T10:51:06.624Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 15,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "VOID",
+        "clubName": "OPEN SOURCE PROGRAMMING CLUB",
+        "eventType": "Hackathon",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "6XREmCpb6zZseshGRlm5ZT"
+          }
+        },
+        "startDateAndTime": "2025-10-28T09:00+00:00",
+        "endDateAndTime": "2025-10-29T10:00+00:00",
+        "pricePerPerson": 200,
+        "participationType": "Squad",
+        "eventVenue": "MG Auditorium",
+        "shortDescription": "A 24-hour innovation hackathon on 28–29 Oct 2025. Teams create disruptive prototypes, business plans, and pitch decks across FinTech, HealthTech, RetailTech, AgriTech, and Open Innovation, merging technology, entrepreneurship, and real-world impact.",
+        "longDescription": "VØID:v1 is built for the restless and the bold - those who refuse to watch the future unfold and instead choose to shape it. Scheduled for 28th & 29th October 2025, this 24-hour hackathon is more than just a coding competition. It is an arena where creativity collides with technology, where ideas roar louder than Wall Street, and where teams don't just build projects - they spark movements. \n\nVOID is an innovation-focused hackathon where top minds converge to build groundbreaking, disruptive solutions. It's more than just a coding competition; it's a platform for turning visionary ideas into viable businesses. Participants will not only create groundbreaking, functional prototypes but will also develop comprehensive business plans, including pitch decks and Business Model Canvases (BMCs), preparing them for real-world application. VOID is where technology meets entrepreneurship, creating a future-ready cohort of innovators.\n\nPowered by the Open Source Programming Club (OSPC) and the Business Innovation Club (BIC) of VIT Chennai, and hosted on Devfolio, VØID provides the perfect platform to showcase talent, collaborate with like-minded peers, and turn visionary ideas into tangible, game-changing outcomes.\n\n🌐 Tracks:\n1. FinTech & Digital Payments\n2. HealthTech & EdTech\n3. RetailTech, SaaS & Smart Mobility\n4. AgriTech & SDG\n5. Open Innovation",
+        "specialEvent": false
+      }
     }
-  ]
+  ],
+  "includes": {
+    "Asset": [
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "rr94wjxz7mfi"
+            }
+          },
+          "id": "1TVE7wjo6VDdqgFXvZkSgP",
+          "type": "Asset",
+          "createdAt": "2025-10-15T03:00:49.053Z",
+          "updatedAt": "2025-10-15T03:00:49.053Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 3,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "Animatathon - VIT Chennai Animation Club",
+          "description": "",
+          "file": {
+            "url": "//images.ctfassets.net/rr94wjxz7mfi/1TVE7wjo6VDdqgFXvZkSgP/6a9e39f24d35713bfd08b912bec20f9e/Animatathon_-_VIT_Chennai_Animation_Club.jpg",
+            "details": {
+              "size": 754366,
+              "image": {
+                "width": 1587,
+                "height": 2245
+              }
+            },
+            "fileName": "Animatathon - VIT Chennai Animation Club.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "rr94wjxz7mfi"
+            }
+          },
+          "id": "1nvyK2ZMdL4C4bzyHmWv4q",
+          "type": "Asset",
+          "createdAt": "2025-10-14T18:21:21.990Z",
+          "updatedAt": "2025-10-14T18:22:25.445Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 7,
+          "revision": 2,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "Na",
+          "description": "A solo racing challenge on F1 25 where each participant first answers 10 rapid-fire technical questions. Every wrong answer adds +1 second penalty to their lap time. The fastest adjusted lap wins combining racing thrill with technical knowledge.",
+          "file": {
+            "url": "//images.ctfassets.net/rr94wjxz7mfi/1nvyK2ZMdL4C4bzyHmWv4q/7661b3e2a6e6011d103089fac4715ad3/Car1_-_IT_AUTOVIT.jpg",
+            "details": {
+              "size": 385647,
+              "image": {
+                "width": 1587,
+                "height": 2245
+              }
+            },
+            "fileName": "Car1 - IT AUTOVIT.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "rr94wjxz7mfi"
+            }
+          },
+          "id": "2KvbDfRnjAwWUCladLBY9b",
+          "type": "Asset",
+          "createdAt": "2025-10-15T03:05:16.490Z",
+          "updatedAt": "2025-10-15T03:05:16.490Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 3,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "TechnoVITPosters - IT AUTOVIT",
+          "description": "",
+          "file": {
+            "url": "//images.ctfassets.net/rr94wjxz7mfi/2KvbDfRnjAwWUCladLBY9b/b355ad7e008aade1795254d788d2a010/TechnoVITPosters_-_IT_AUTOVIT.jpg",
+            "details": {
+              "size": 390474,
+              "image": {
+                "width": 1587,
+                "height": 2245
+              }
+            },
+            "fileName": "TechnoVITPosters - IT AUTOVIT.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "rr94wjxz7mfi"
+            }
+          },
+          "id": "37xuOrzMgOm7r9X2Pe0SIp",
+          "type": "Asset",
+          "createdAt": "2025-10-14T18:54:13.944Z",
+          "updatedAt": "2025-10-14T18:54:13.944Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 3,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "gen ai event - VITCC ACM Student Chapter",
+          "description": "",
+          "file": {
+            "url": "//images.ctfassets.net/rr94wjxz7mfi/37xuOrzMgOm7r9X2Pe0SIp/627e5e0ba367eba72872dde780155c22/gen_ai_event_-_VITCC_ACM_Student_Chapter.png",
+            "details": {
+              "size": 451834,
+              "image": {
+                "width": 1080,
+                "height": 1920
+              }
+            },
+            "fileName": "gen_ai_event - VITCC ACM Student Chapter.png",
+            "contentType": "image/png"
+          }
+        }
+      },
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "rr94wjxz7mfi"
+            }
+          },
+          "id": "3HPdNanTAFCFOGGuLxMDwP",
+          "type": "Asset",
+          "createdAt": "2025-10-15T11:14:13.519Z",
+          "updatedAt": "2025-10-15T11:14:13.519Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 3,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "2 - Priyadarshini R",
+          "description": "",
+          "file": {
+            "url": "//images.ctfassets.net/rr94wjxz7mfi/3HPdNanTAFCFOGGuLxMDwP/3c4967b46febd2bd4c0884d9ced2bbc0/2_-_Priyadarshini_R.png",
+            "details": {
+              "size": 935498,
+              "image": {
+                "width": 1587,
+                "height": 2245
+              }
+            },
+            "fileName": "2 - Priyadarshini R.png",
+            "contentType": "image/png"
+          }
+        }
+      },
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "rr94wjxz7mfi"
+            }
+          },
+          "id": "3egm8GBILHBVPRADKeO7Wp",
+          "type": "Asset",
+          "createdAt": "2025-10-15T02:58:38.263Z",
+          "updatedAt": "2025-10-15T02:58:38.263Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 3,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "Blue Abstract Blank A4 Document Landscape (2) - Mathematics Club",
+          "description": "",
+          "file": {
+            "url": "//images.ctfassets.net/rr94wjxz7mfi/3egm8GBILHBVPRADKeO7Wp/b14ec61e057c4dc802e94b23162c837c/Blue_Abstract_Blank_A4_Document_Landscape__2__-_Mathematics_Club.jpg",
+            "details": {
+              "size": 333440,
+              "image": {
+                "width": 1414,
+                "height": 2000
+              }
+            },
+            "fileName": "Blue Abstract Blank A4 Document Landscape (2) - Mathematics Club.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "rr94wjxz7mfi"
+            }
+          },
+          "id": "3oh8rIU6orV0p3UtUqMEth",
+          "type": "Asset",
+          "createdAt": "2025-10-15T02:43:22.886Z",
+          "updatedAt": "2025-10-15T02:43:22.886Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 3,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "WhatsApp Image 2025-10-10 at 17.49.45 6d1a40e9 - CloudOps VITC",
+          "description": "",
+          "file": {
+            "url": "//images.ctfassets.net/rr94wjxz7mfi/3oh8rIU6orV0p3UtUqMEth/32a5cb1a2096a5587cab866257acf9f4/WhatsApp_Image_2025-10-10_at_17.49.45_6d1a40e9_-_CloudOps_VITC.jpg",
+            "details": {
+              "size": 298366,
+              "image": {
+                "width": 1236,
+                "height": 1600
+              }
+            },
+            "fileName": "WhatsApp Image 2025-10-10 at 17.49.45_6d1a40e9 - CloudOps VITC.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "rr94wjxz7mfi"
+            }
+          },
+          "id": "3yWTLXlHR2fUCumWzvsOKq",
+          "type": "Asset",
+          "createdAt": "2025-10-14T18:22:43.058Z",
+          "updatedAt": "2025-10-14T18:22:43.058Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 3,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "ESP Workshop (2) - Abirami S",
+          "description": "",
+          "file": {
+            "url": "//images.ctfassets.net/rr94wjxz7mfi/3yWTLXlHR2fUCumWzvsOKq/104bceac578646ef8a6f0991ad62a975/ESP_Workshop__2__-_Abirami_S.png",
+            "details": {
+              "size": 544207,
+              "image": {
+                "width": 1587,
+                "height": 2245
+              }
+            },
+            "fileName": "ESP_Workshop (2) - Abirami S.png",
+            "contentType": "image/png"
+          }
+        }
+      },
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "rr94wjxz7mfi"
+            }
+          },
+          "id": "42jcutc0wBg63mfsz93rF5",
+          "type": "Asset",
+          "createdAt": "2025-10-14T18:29:28.330Z",
+          "updatedAt": "2025-10-14T18:29:28.330Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 3,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "IMG-20251010-WA0013 - IoTHINC - VIT Chennai",
+          "description": "",
+          "file": {
+            "url": "//images.ctfassets.net/rr94wjxz7mfi/42jcutc0wBg63mfsz93rF5/35a0b99f43aea055778e98acc289c7f2/IMG-20251010-WA0013_-_IoTHINC_-_VIT_Chennai.jpg",
+            "details": {
+              "size": 530506,
+              "image": {
+                "width": 988,
+                "height": 1280
+              }
+            },
+            "fileName": "IMG-20251010-WA0013 - IoTHINC - VIT Chennai.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "rr94wjxz7mfi"
+            }
+          },
+          "id": "4Ix6PVl0AolFhukMHBzyAy",
+          "type": "Asset",
+          "createdAt": "2025-10-14T10:01:28.047Z",
+          "updatedAt": "2025-10-14T10:01:28.047Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 5,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "IMG-20251014-WA0050",
+          "description": "HackaThrone Event Poster",
+          "file": {
+            "url": "//images.ctfassets.net/rr94wjxz7mfi/4Ix6PVl0AolFhukMHBzyAy/edf5d87c545b9742939ee6c01ea77730/IMG-20251014-WA0050.jpg",
+            "details": {
+              "size": 322523,
+              "image": {
+                "width": 904,
+                "height": 1280
+              }
+            },
+            "fileName": "IMG-20251014-WA0050.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "rr94wjxz7mfi"
+            }
+          },
+          "id": "4g3fR6bgDIZ2dO9WQi8Wr7",
+          "type": "Asset",
+          "createdAt": "2025-10-15T11:20:50.394Z",
+          "updatedAt": "2025-10-15T11:20:50.394Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 3,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "technovit event poster - Sangeetha",
+          "description": "",
+          "file": {
+            "url": "//images.ctfassets.net/rr94wjxz7mfi/4g3fR6bgDIZ2dO9WQi8Wr7/c72bdd491ff2a4457df5e9e0a767dda7/technovit_event_poster_-_Sangeetha.jpg",
+            "details": {
+              "size": 269920,
+              "image": {
+                "width": 2000,
+                "height": 2588
+              }
+            },
+            "fileName": "technovit event poster - Sangeetha.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "rr94wjxz7mfi"
+            }
+          },
+          "id": "4iqdHopoSaFjpNP0gQOD6c",
+          "type": "Asset",
+          "createdAt": "2025-10-14T18:33:56.167Z",
+          "updatedAt": "2025-10-14T18:33:56.167Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 7,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "Na",
+          "description": "The two-day Startup Conclave inspires and guides students in entrepreneurship. Day 1 features interactive sessions with speakers sharing journeys and strategies. Day 2 focuses on startup pitches judged by experts, concluding with a prize distribution.",
+          "file": {
+            "url": "//images.ctfassets.net/rr94wjxz7mfi/4iqdHopoSaFjpNP0gQOD6c/eceb5960e60fd08ffcbbfbf6f738e1bb/Poster_FoL_-_Fraternity_Of_Leaders.jpeg",
+            "details": {
+              "size": 252284,
+              "image": {
+                "width": 1131,
+                "height": 1600
+              }
+            },
+            "fileName": "Poster_FoL - Fraternity Of Leaders.jpeg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "rr94wjxz7mfi"
+            }
+          },
+          "id": "4wlT4fRSMysakQAOn17vAq",
+          "type": "Asset",
+          "createdAt": "2025-10-14T18:49:48.983Z",
+          "updatedAt": "2025-10-14T18:49:48.983Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 3,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "Code Mafia DAO X IEEERAS c - Sanjana PS",
+          "description": "",
+          "file": {
+            "url": "//images.ctfassets.net/rr94wjxz7mfi/4wlT4fRSMysakQAOn17vAq/5e6be4ae535ec679d156923d0c091bdd/Code_Mafia_DAO_X_IEEERAS_c_-_Sanjana_PS.jpg",
+            "details": {
+              "size": 995066,
+              "image": {
+                "width": 5400,
+                "height": 7200
+              }
+            },
+            "fileName": "Code Mafia DAO X IEEERAS c - Sanjana PS.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "rr94wjxz7mfi"
+            }
+          },
+          "id": "5BbpphceFveFOvtKxw9SK2",
+          "type": "Asset",
+          "createdAt": "2025-10-14T18:41:49.311Z",
+          "updatedAt": "2025-10-14T18:41:49.311Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 5,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "Na",
+          "description": "This event will begin with an interactive workshop where participants learn the fundamentals of reinforcement learning and get hands-on experience building and training their own models on AWS Deepracer. Following the workshop, participants will put their knowledge into action in an exciting competition, racing their trained models to achieve the fastest lap times and showcase their skills.",
+          "file": {
+            "url": "//images.ctfassets.net/rr94wjxz7mfi/5BbpphceFveFOvtKxw9SK2/c42365de6b6149dbbbc221504e7d745a/AWS-Deepracer_-_Nikhil_Bansal_V_23BPS1039.png",
+            "details": {
+              "size": 697210,
+              "image": {
+                "width": 761,
+                "height": 1067
+              }
+            },
+            "fileName": "AWS-Deepracer - Nikhil Bansal V 23BPS1039.png",
+            "contentType": "image/png"
+          }
+        }
+      },
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "rr94wjxz7mfi"
+            }
+          },
+          "id": "5WM0Gam15m4DSf8VUuLJqD",
+          "type": "Asset",
+          "createdAt": "2025-10-15T11:34:03.308Z",
+          "updatedAt": "2025-10-15T11:34:03.308Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 3,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "Brainware (updated) - Kaushik Saravanan",
+          "description": "",
+          "file": {
+            "url": "//images.ctfassets.net/rr94wjxz7mfi/5WM0Gam15m4DSf8VUuLJqD/e2fcf4903c142226e1a41a0f2714b195/Brainware__updated__-_Kaushik_Saravanan.jpg",
+            "details": {
+              "size": 378924,
+              "image": {
+                "width": 1587,
+                "height": 2245
+              }
+            },
+            "fileName": "Brainware (updated) - Kaushik Saravanan.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "rr94wjxz7mfi"
+            }
+          },
+          "id": "5oXhJ9MpBGEgexMAbNyZ7U",
+          "type": "Asset",
+          "createdAt": "2025-10-15T11:18:27.385Z",
+          "updatedAt": "2025-10-15T11:18:27.385Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 3,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "DesignSprint brouhure - Christopher Columbus C",
+          "description": "",
+          "file": {
+            "url": "//images.ctfassets.net/rr94wjxz7mfi/5oXhJ9MpBGEgexMAbNyZ7U/235acc862c9bb6635428d457ca75a86e/DesignSprint_brouhure__-_Christopher_Columbus_C.jpeg",
+            "details": {
+              "size": 211056,
+              "image": {
+                "width": 904,
+                "height": 1280
+              }
+            },
+            "fileName": "DesignSprint_brouhure  - Christopher Columbus C.jpeg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "rr94wjxz7mfi"
+            }
+          },
+          "id": "5uHkScYUJfs0KBkjP92e9h",
+          "type": "Asset",
+          "createdAt": "2025-10-15T11:26:51.617Z",
+          "updatedAt": "2025-10-15T11:26:51.617Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 3,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "DesignSprint brouhure - Christopher Columbus C",
+          "description": "",
+          "file": {
+            "url": "//images.ctfassets.net/rr94wjxz7mfi/5uHkScYUJfs0KBkjP92e9h/2a3eb4ca7736bb55bee7c968b01d6c24/DesignSprint_brouhure__-_Christopher_Columbus_C.jpeg",
+            "details": {
+              "size": 211056,
+              "image": {
+                "width": 904,
+                "height": 1280
+              }
+            },
+            "fileName": "DesignSprint_brouhure  - Christopher Columbus C.jpeg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "rr94wjxz7mfi"
+            }
+          },
+          "id": "5xGcUNgvVl7OWbNkT3agak",
+          "type": "Asset",
+          "createdAt": "2025-10-15T02:49:52.273Z",
+          "updatedAt": "2025-10-15T02:49:52.273Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 3,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "PCB workshop-Ieee-compsoc-final - Shruthi Reddy",
+          "description": "",
+          "file": {
+            "url": "//images.ctfassets.net/rr94wjxz7mfi/5xGcUNgvVl7OWbNkT3agak/2391e095d74bbef60e93e1ba80349223/PCB_workshop-Ieee-compsoc-final_-_Shruthi_Reddy.png",
+            "details": {
+              "size": 531617,
+              "image": {
+                "width": 490,
+                "height": 687
+              }
+            },
+            "fileName": "PCB workshop-Ieee-compsoc-final - Shruthi Reddy.png",
+            "contentType": "image/png"
+          }
+        }
+      },
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "rr94wjxz7mfi"
+            }
+          },
+          "id": "60RaLyiHMNKjzSgWlr8lCY",
+          "type": "Asset",
+          "createdAt": "2025-10-14T18:38:37.727Z",
+          "updatedAt": "2025-10-14T18:38:37.727Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 3,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "GreenCode (1) - Abirami S",
+          "description": "",
+          "file": {
+            "url": "//images.ctfassets.net/rr94wjxz7mfi/60RaLyiHMNKjzSgWlr8lCY/c4ce1d447cd8c82213b0b2502bc12e95/GreenCode__1__-_Abirami_S.jpg",
+            "details": {
+              "size": 409340,
+              "image": {
+                "width": 1587,
+                "height": 2245
+              }
+            },
+            "fileName": "GreenCode (1) - Abirami S.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "rr94wjxz7mfi"
+            }
+          },
+          "id": "6OHduzb0cokTRQXgpvxykk",
+          "type": "Asset",
+          "createdAt": "2025-10-14T18:47:41.033Z",
+          "updatedAt": "2025-10-14T18:47:41.033Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 6,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "Na",
+          "description": "\nMinute-to-Win-it: Civil Edition\n Small, quick challenges like:\n Stack bricks fastest without falling.\n Mix mock “concrete” (sand + pebbles) with correct proportions.\n Quickest floor plan sketch of a house.\n Fun, lighthearted, yet relevant.",
+          "file": {
+            "url": "//images.ctfassets.net/rr94wjxz7mfi/6OHduzb0cokTRQXgpvxykk/3f6bb61f25b3681d507c9ddabc62c0f4/Screenshot_20251010_163239_WhatsApp_-_Divya.jpg",
+            "details": {
+              "size": 346181,
+              "image": {
+                "width": 1080,
+                "height": 1527
+              }
+            },
+            "fileName": "Screenshot_20251010_163239_WhatsApp - Divya.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "rr94wjxz7mfi"
+            }
+          },
+          "id": "6XREmCpb6zZseshGRlm5ZT",
+          "type": "Asset",
+          "createdAt": "2025-10-14T10:47:00.310Z",
+          "updatedAt": "2025-10-14T10:47:00.310Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 3,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "Poster - Prannavakhanth",
+          "description": "",
+          "file": {
+            "url": "//images.ctfassets.net/rr94wjxz7mfi/6XREmCpb6zZseshGRlm5ZT/7ad081f6c92c5086fedef3022a6290ce/Poster_-_Prannavakhanth.jpg",
+            "details": {
+              "size": 242584,
+              "image": {
+                "width": 756,
+                "height": 944
+              }
+            },
+            "fileName": "Poster - Prannavakhanth.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "rr94wjxz7mfi"
+            }
+          },
+          "id": "6xVQmlw9iUvK3hIZJe9oqi",
+          "type": "Asset",
+          "createdAt": "2025-10-14T18:06:44.488Z",
+          "updatedAt": "2025-10-14T18:06:44.488Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 7,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "Hack  a cure",
+          "description": "In this 24-hour hackathon, teams will design medical AI systems using Retrieval Augmented Generation (RAG). Leverage medical literature to build solutions, deploy them as APIs, and compete based on accuracy, evidence citation, and reliability.",
+          "file": {
+            "url": "//images.ctfassets.net/rr94wjxz7mfi/6xVQmlw9iUvK3hIZJe9oqi/8920e49c70ec86e9fef24fbd48b94117/IMG-20251014-WA0048_-_Aneeka_Reemaz_A_23BEL1058__1_.jpg",
+            "details": {
+              "size": 134983,
+              "image": {
+                "width": 890,
+                "height": 1280
+              }
+            },
+            "fileName": "IMG-20251014-WA0048 - Aneeka Reemaz A 23BEL1058 (1).jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "rr94wjxz7mfi"
+            }
+          },
+          "id": "7JFgrsoZmv6HZ50em4uowA",
+          "type": "Asset",
+          "createdAt": "2025-10-15T03:10:17.912Z",
+          "updatedAt": "2025-10-15T03:10:17.912Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 3,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "TechnoVITPosters - IT AUTOVIT (1)",
+          "description": "",
+          "file": {
+            "url": "//images.ctfassets.net/rr94wjxz7mfi/7JFgrsoZmv6HZ50em4uowA/e3e8d2cc7c8d7d24e1bcde61d0426487/TechnoVITPosters_-_IT_AUTOVIT__1_.jpg",
+            "details": {
+              "size": 644593,
+              "image": {
+                "width": 1587,
+                "height": 2245
+              }
+            },
+            "fileName": "TechnoVITPosters - IT AUTOVIT (1).jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "rr94wjxz7mfi"
+            }
+          },
+          "id": "7nKgOxss8eG11jSyXFkuIM",
+          "type": "Asset",
+          "createdAt": "2025-10-14T18:44:47.797Z",
+          "updatedAt": "2025-10-14T18:44:47.797Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 3,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "game poster - Benila S",
+          "description": "",
+          "file": {
+            "url": "//images.ctfassets.net/rr94wjxz7mfi/7nKgOxss8eG11jSyXFkuIM/f5dc02b930ece103dee1bfedb594e2e9/game_poster_-_Benila_S.jpg",
+            "details": {
+              "size": 154862,
+              "image": {
+                "width": 1130,
+                "height": 1600
+              }
+            },
+            "fileName": "game poster - Benila S.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "rr94wjxz7mfi"
+            }
+          },
+          "id": "7rpcxPKSUTTC2WmhukoQhO",
+          "type": "Asset",
+          "createdAt": "2025-10-14T18:56:06.663Z",
+          "updatedAt": "2025-10-14T18:56:06.663Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 4,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "Na",
+          "description": "we provide each participating team with a fixed budget, which they can spend on materials that we have in store and use to build a bridge to cross a gap and a structure that can take the maximum load. Participants are also given a chance to complete some small challenges to get more budget for materials. They now must optimize time spent on challenges materials and the time spent on constructing the bridge . Team of 3 will take on this challenge",
+          "file": {
+            "url": "//images.ctfassets.net/rr94wjxz7mfi/7rpcxPKSUTTC2WmhukoQhO/94fe315a8b5880a8f91848328e4e3d96/TechnoVITPosters_-_IT_AUTOVIT.jpg",
+            "details": {
+              "size": 455585,
+              "image": {
+                "width": 1587,
+                "height": 2245
+              }
+            },
+            "fileName": "TechnoVITPosters - IT AUTOVIT.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "rr94wjxz7mfi"
+            }
+          },
+          "id": "7v2AZm2eZOhEHXan7lQktJ",
+          "type": "Asset",
+          "createdAt": "2025-10-15T03:14:25.877Z",
+          "updatedAt": "2025-10-15T03:14:25.877Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 3,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "THE STRANGER CLUES - Open Source Programming Club",
+          "description": "",
+          "file": {
+            "url": "//images.ctfassets.net/rr94wjxz7mfi/7v2AZm2eZOhEHXan7lQktJ/e5141a97f23315fce2e6ce4c7dc57d43/THE_STRANGER_CLUES_-_Open_Source_Programming_Club.jpg",
+            "details": {
+              "size": 973369,
+              "image": {
+                "width": 1587,
+                "height": 2245
+              }
+            },
+            "fileName": "THE STRANGER CLUES - Open Source Programming Club.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    ]
+  }
 }
