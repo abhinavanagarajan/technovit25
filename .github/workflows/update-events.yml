@@ -1,0 +1,49 @@
+name: Update Events Data
+
+on:
+  schedule:
+    - cron: "0 * * * *" # every hour
+  workflow_dispatch: # allow manual trigger too
+
+jobs:
+  update-json:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: npm install axios
+
+      - name: Fetch Contentful data
+        env:
+          SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
+          ACCESS_TOKEN: ${{ secrets.CONTENT_DELIVERY_API_ACCESS_TOKEN }}
+        run: |
+          node <<'EOF'
+          import fs from 'fs';
+          import axios from 'axios';
+          
+          const url = `https://cdn.contentful.com/spaces/${process.env.SPACE_ID}/environments/master/entries?access_token=${process.env.ACCESS_TOKEN}&content_type=event`;
+
+          const fetchData = async () => {
+            try {
+              const res = await axios.get(url);
+              fs.writeFileSync('data/events.json', JSON.stringify(res.data, null, 2));
+              console.log('✅ events.json updated successfully');
+            } catch (err) {
+              console.error('❌ Error fetching Contentful data:', err.message);
+              process.exit(1);
+            }
+          };
+
+          fetchData();
+          EOF
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "GitHub Action"
+          git config user.email "action@github.com"
+          git add data/events.json
+          git diff --quiet && echo "No changes" || (git commit -m "Update events.json" && git push)

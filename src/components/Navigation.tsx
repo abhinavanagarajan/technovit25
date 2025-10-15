@@ -76,7 +76,7 @@ export const Navigation = ({ currentPage, onNavigate }: NavigationProps) => {
         {/* Right - Get Started Button */}
         <div className="flex flex-1 items-center justify-end">
           <button
-            onClick={() => handleNavClick("get-started")}
+            onClick={() => handleNavClick("events")}
             className="bg-[#70E081] px-4 py-2 uppercase text-black hover:bg-[#70E081]/90 transition-colors"
           >
             Get Started
@@ -135,7 +135,7 @@ export const Navigation = ({ currentPage, onNavigate }: NavigationProps) => {
               </button>
             ))}
             <button
-              onClick={() => handleNavClick("get-started")}
+              onClick={() => handleNavClick("events")}
               className="mt-2 w-full bg-[#00ff00] px-4 py-2 uppercase text-black hover:bg-[#00ff00]/90"
             >
               Get Started

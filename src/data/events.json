@@ -1,0 +1,66 @@
+{
+  "sys": {
+    "type": "Array"
+  },
+  "total": 26,
+  "skip": 0,
+  "limit": 100,
+  "items": [
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "5jTo3ukG6ULA5CQvciAaln",
+        "type": "Entry",
+        "createdAt": "2025-10-15T11:55:04.243Z",
+        "updatedAt": "2025-10-15T11:58:58.945Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 16,
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Brainware",
+        "clubName": "ARTIFICIAL INTELLIGENCE CLUB",
+        "eventType": "Competition",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "5WM0Gam15m4DSf8VUuLJqD"
+          }
+        },
+        "startDateAndTime": "2025-10-31T09:00+00:00",
+        "endDateAndTime": "2025-10-31T14:00+00:00",
+        "pricePerPerson": 100,
+        "participationType": "Duo",
+        "eventVenue": "AB3 201",
+        "shortDescription": "Quiz-based competition testing tech knowledge, problem-solving, and emerging technology awareness. Teams answer progressively challenging questions, fostering collaboration, quick thinking, and competitive spirit.",
+        "longDescription": "Brainware is an exciting quiz-based competition that brings a technological twist to the classic Kaun Banega Crorepati format. Participants will tackle rounds of progressively challenging questions spanning computer science, emerging technologies, logical problem-solving, and general tech knowledge. The event is designed to test technical expertise, quick thinking, and strategic decision-making in an engaging and competitive setup. Scheduled to be held on any one day of TechnoVIT, with a maximum team size of 2 members, Brainware promotes collaboration and knowledge sharing, making it a fun, intellectually stimulating highlight of TechnoVIT.",
+        "specialEvent": false
+      }
+    }
+  ]
+}

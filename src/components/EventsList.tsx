@@ -309,7 +309,7 @@ const EventDetailsDialog = ({
           <div className="w-full lg:w-1/3 h-64 lg:h-auto bg-[#d9d9d9] flex-shrink-0">
             {imageUrl && (
               <img
-                src={imageUrl}
+                src='./defaultPoster.png' //{imageUrl}
                 alt={event.fields.eventName}
                 className="w-full h-full object-cover"
               />
@@ -340,12 +340,12 @@ const EventDetailsDialog = ({
             >
               <div className="flex items-center justify-center bg-[#70E081] text-black py-2 px-4">
                 <ClockIcon />
-                <span>{starttime} - {endtime}</span>
+                <span>{starttime} - <br/> {endtime}</span>
               </div>
               <div className="flex items-center justify-center bg-[#70E081] text-black py-2 px-4">
                 <CalendarIcon />
                 {(startdate === enddate) ? <span>{startdate}</span> : (
-                <span>{startdate} - {enddate}</span> )}
+                <span>{startdate} -<br/> {enddate}</span> )}
               </div>
               <div className="flex items-center justify-center bg-[#70E081] text-black py-2 px-4">
                 <UsersIcon />
@@ -417,7 +417,7 @@ const EventCard = ({ event, imageUrl, onClick }: EventCardProps) => {
         <div className="relative flex-shrink-0 overflow-hidden rounded-md bg-black aspect-[4/5] lg:self-stretch">
           {imageUrl ? (
             <img
-              src={imageUrl}
+              src='./defaultPoster.png' //{imageUrl}
               alt={event.fields.eventName}
               className="w-full h-full object-cover"
             />
@@ -454,6 +454,7 @@ const EventCard = ({ event, imageUrl, onClick }: EventCardProps) => {
             {event.fields.participationType}
           </div>
           <div className="flex col-span-2 items-center justify-center bg-[#70E081] w-full text-black p-3">
+            <MapPin />
             {event.fields.eventVenue}
           </div>
         </div>

@@ -1,22 +1,16 @@
 import { NextResponse } from "next/server";
-import axios from "axios";
+import fs from "fs";
+import path from "path";
 
 export async function GET() {
-  const spaceId = process.env.CONTENTFUL_SPACE_ID;
-  const accessToken = process.env.CONTENT_DELIVERY_API_ACCESS_TOKEN;
-
-  const url = `https://cdn.contentful.com/spaces/${spaceId}/environments/master/entries?access_token=${accessToken}&content_type=event`;
+  const filePath = path.join(process.cwd(), "src", "data", "events.json");
 
   try {
-    const response = await axios.get(url);
-
-    return NextResponse.json(response.data);
+    const jsonData = fs.readFileSync(filePath, "utf-8");
+    const data = JSON.parse(jsonData);
+    return NextResponse.json(data);
   } catch (error) {
-    console.error("Error fetching from Contentful:", error);
-
-    return NextResponse.json(
-      { message: "Error fetching events from Contentful." },
-      { status: 500 }
-    );
+    console.error("Error reading events.json:", error);
+    return NextResponse.json({ message: "Error reading local event data." }, { status: 500 });
   }
 }

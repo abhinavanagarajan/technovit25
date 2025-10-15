@@ -22,7 +22,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
   }, [images, autoPlayInterval]);
 
   const handleCenterItemClick = () => {
-    console.log(`Center item ${currentIndex + 1} clicked!`);
+    window.open("https://chennaievents.vit.ac.in/technovit/", "_blank", "noopener,noreferrer")
   };
 
   const getItemStyle = ({
@@ -84,7 +84,6 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
   if (!images || images.length === 0) {
     return (
       <div className="flex items-center justify-center w-full h-96">
-        <p className="text-gray-500">No images provided</p>
       </div>
     );
   }
@@ -97,7 +96,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
       {images.map((imageUrl, index) => (
         <div
           key={index}
-          className="border-2 border-gray-400 shadow-xl rounded-sm overflow-hidden bg-gray-200"
+          className="border-0 border-gray-400 shadow-xl rounded-sm overflow-hidden bg-gray-200"
           style={{
             height: "clamp(200px, 40vh, 50vh)",
             width: "clamp(150px, 30vh, 35vh)",
@@ -110,7 +109,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
           }}
         >
           <img 
-            src={imageUrl} 
+            src='./defaultPoster.png' //{imageUrl} 
             alt={`Carousel item ${index + 1}`}
             className="w-full h-full object-cover"
           />
