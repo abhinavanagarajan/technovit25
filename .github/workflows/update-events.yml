@@ -30,7 +30,15 @@ jobs:
           const fetchData = async () => {
             try {
               const res = await axios.get(url);
+              console.log('📥 Fetched events:', JSON.stringify(res.data.items, null, 2));
+              
+              // Create directory if it doesn't exist
+              if (!fs.existsSync('src/data')) {
+                fs.mkdirSync('src/data', { recursive: true });
+              }
+              
               fs.writeFileSync('src/data/events.json', JSON.stringify(res.data, null, 2));
+              console.log('📝 Written to events.json:', fs.readFileSync('src/data/events.json', 'utf8'));
               console.log('✅ events.json updated successfully');
             } catch (err) {
               console.error('❌ Error fetching Contentful data:', err.message);
@@ -46,4 +54,6 @@ jobs:
           git config user.name "GitHub Action"
           git config user.email "action@github.com"
           git add src/data/events.json
-          git diff --quiet && echo "No changes" || (git commit -m "Update events.json" && git push)
+          git diff --staged --quiet || (git commit -m "Update events.json" && git push)
+          echo "🔍 Checking for changes in events.json..."
+          git diff HEAD~1 src/data/events.json || echo "No changes in events.json"
