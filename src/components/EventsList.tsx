@@ -340,7 +340,7 @@ const EventDetailsDialog = ({
             >
               <div className="flex items-center justify-center bg-[#70E081] text-black py-2 px-4">
                 <ClockIcon />
-                <span>{starttime}</span>
+                <span>{starttime} - {endtime}</span>
               </div>
               <div className="flex items-center justify-center bg-[#70E081] text-black py-2 px-4">
                 <CalendarIcon />
@@ -356,7 +356,7 @@ const EventDetailsDialog = ({
                 <span>{event.fields.eventVenue}</span>
               </div>
               <a
-                href="https://www.google.com"
+                href="https://chennaievents.vit.ac.in/technovit/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="col-span-4 flex items-center justify-center bg-[#70E081] text-black py-2 px-4 mt-2 font-semibold cursor-pointer"
