@@ -57,9 +57,9 @@ export const Navigation = ({ currentPage, onNavigate }: NavigationProps) => {
           onClick={() => handleNavClick("home")}
         >
           <img
-            src="/TechnoVitLogo.png"
+            src="/technoVit25-new.png"
             alt="TechnoVIT Logo"
-            className="h-10 w-auto object-contain"
+            className="h-16 w-auto object-contain"
           />
           <img
             src="/dot.png"
@@ -92,7 +92,7 @@ export const Navigation = ({ currentPage, onNavigate }: NavigationProps) => {
           onClick={() => handleNavClick("home")}
         >
           <img
-            src="/TechnoVitLogo.png"
+            src="/technoVit25-new.png"
             alt="TechnoVIT Logo"
             className="h-8 w-auto object-contain"
           />
@@ -102,7 +102,7 @@ export const Navigation = ({ currentPage, onNavigate }: NavigationProps) => {
             className="h-1.5 w-auto object-contain"
           />
           <img
-            src="/VIT logo.png"
+            src="/vitlogo.png"
             alt="VIT Logo"
             className="h-6 w-auto object-contain"
           />
