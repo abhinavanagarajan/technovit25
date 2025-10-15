@@ -45,5 +45,5 @@ jobs:
         run: |
           git config user.name "GitHub Action"
           git config user.email "action@github.com"
-          git add data/events.json
+          git add src/data/events.json
           git diff --quiet && echo "No changes" || (git commit -m "Update events.json" && git push)
