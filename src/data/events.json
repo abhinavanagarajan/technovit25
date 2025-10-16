@@ -2,10 +2,1634 @@
   "sys": {
     "type": "Array"
   },
-  "total": 82,
+  "total": 111,
   "skip": 0,
   "limit": 100,
   "items": [
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "4LR07ucaTXNlxYUUVYWFJo",
+        "type": "Entry",
+        "createdAt": "2025-10-16T14:16:08.719Z",
+        "updatedAt": "2025-10-16T14:16:08.719Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Whodunit exe",
+        "clubName": "THE HACK CLUB",
+        "eventType": "Competition",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "47Xb2cPhpwsklnk79zlQto"
+          }
+        },
+        "startDateAndTime": "2025-11-01T09:00:00.000Z",
+        "endDateAndTime": "2025-11-01T16:00:00.000Z",
+        "pricePerPerson": 50,
+        "participationType": "Solo",
+        "eventVenue": "AB3 501",
+        "shortDescription": "Participants act as digital detectives in a CTF-style murder mystery. They uncover hidden clues, solve technical puzzles, and piece together evidence under time pressure, combining investigation, problem-solving, and teamwork.",
+        "longDescription": "Participants will step into the role of digital detectives in this thrilling capture-the-flag challenge, where they must unravel a gripping murder mystery by uncovering hidden clues, solving technical puzzles, and piecing together evidence. The event blends problem-solving, investigation, and teamwork under time pressure, offering an engaging and competitive experience for beginners and enthusiasts alike.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "1lhNRMBbHhEMvc98JZ1HG8",
+        "type": "Entry",
+        "createdAt": "2025-10-16T14:16:07.568Z",
+        "updatedAt": "2025-10-16T14:16:07.568Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Quantum Meets AI The Rise of Quantum Deep Learning",
+        "clubName": "ARTIFICIAL INTELLIGENCE CLUB",
+        "eventType": "Workshop",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "47Xb2cPhpwsklnk79zlQto"
+          }
+        },
+        "startDateAndTime": "2025-10-29T10:00:00.000Z",
+        "endDateAndTime": "2025-10-29T16:00:00.000Z",
+        "pricePerPerson": 1000,
+        "participationType": "Solo",
+        "eventVenue": "AB3 201",
+        "shortDescription": "Explore quantum computing principles like superposition and entanglement to accelerate deep learning. Learn hybrid algorithms, quantum-inspired neural networks, and see hands-on demos highlighting future AI applications.",
+        "longDescription": "This workshop explores how quantum computing principles, such as superposition and entanglement, can accelerate and transform deep learning models. Participants will learn about quantum-inspired neural networks, hybrid quantum-classical algorithms, and their potential in solving complex problems. Hands-on demonstrations and case studies will highlight the future of quantum-enhanced AI applications.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "725uP6SzL6dK6LZq31E1lS",
+        "type": "Entry",
+        "createdAt": "2025-10-16T14:16:06.453Z",
+        "updatedAt": "2025-10-16T14:16:06.453Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "prompt a thon",
+        "clubName": "IEEE WOMEN IN ENGINEERING (IEEE-WIE)",
+        "eventType": "Competition",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "47Xb2cPhpwsklnk79zlQto"
+          }
+        },
+        "startDateAndTime": "2025-10-28T12:00:00.000Z",
+        "endDateAndTime": "2025-10-29T12:00:00.000Z",
+        "pricePerPerson": 100,
+        "participationType": "Solo",
+        "eventVenue": "AB3-001 & AB3 101",
+        "shortDescription": "Creative hackathon to generate and refine AI prompts for tools like ChatGPT, DALL·E, or Midjourney. Participants brainstorm, test, and optimize prompts across coding, design, storytelling, business, or analytics projects.",
+        "longDescription": "A Prompt-a-thon is a creative, hackathon-style event focused on generating and refining AI prompts to get the most effective, accurate, or innovative outputs from AI tools like ChatGPT, DALL·E, or Midjourney.<br> Participants brainstorm, design, and test prompts across different domains—like coding, design, storytelling, business solutions, or data analytics—to solve real-world problems or create cool, out-of-the-box projects.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "a0ZfysfEfrCd3DUboQWpa",
+        "type": "Entry",
+        "createdAt": "2025-10-16T14:14:23.368Z",
+        "updatedAt": "2025-10-16T14:14:23.368Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Prompt Wars AI Image Challenge Solo",
+        "clubName": "POP CULTURE CLUB",
+        "eventType": "Game",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "47Xb2cPhpwsklnk79zlQto"
+          }
+        },
+        "startDateAndTime": "2025-10-28T10:00:00.000Z",
+        "endDateAndTime": "2025-10-28T14:00:00.000Z",
+        "pricePerPerson": 50,
+        "participationType": "Solo",
+        "eventVenue": "Clock Court",
+        "shortDescription": "Participants will see an AI-generated image made by the club and must craft the most accurate prompt using an AI image generation tool to recreate it. The participant whose output best matches the original image will be declared the winner.",
+        "longDescription": "Participants will be shown an AI-generated image created by the club. Their task is to craft the most accurate prompt using an AI image generation tool to recreate the image as closely as possible.The participant whose output most closely matches the original image will be declared the winner",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "6vYUa6HqpFFLNfL4LqP4jv",
+        "type": "Entry",
+        "createdAt": "2025-10-16T14:14:22.197Z",
+        "updatedAt": "2025-10-16T14:14:22.197Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Prompt Wars AI Image Challenge Duo",
+        "clubName": "POP CULTURE CLUB",
+        "eventType": "Game",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "47Xb2cPhpwsklnk79zlQto"
+          }
+        },
+        "startDateAndTime": "2025-10-28T10:00:00.000Z",
+        "endDateAndTime": "2025-10-28T14:00:00.000Z",
+        "pricePerPerson": 80,
+        "participationType": "Duo",
+        "eventVenue": "Clock Court",
+        "shortDescription": "Participants will see an AI-generated image made by the club and must craft the most accurate prompt using an AI image generation tool to recreate it. The participant whose output best matches the original image will be declared the winner.",
+        "longDescription": "Participants will be shown an AI-generated image created by the club. Their task is to craft the most accurate prompt using an AI image generation tool to recreate the image as closely as possible.The participant whose output most closely matches the original image will be declared the winner",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "6g6ggIcOAYLDzusKGVd9sj",
+        "type": "Entry",
+        "createdAt": "2025-10-16T14:14:21.076Z",
+        "updatedAt": "2025-10-16T14:14:21.076Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Building Intelligent Agents with Ollama",
+        "clubName": "AGRHI INNOVATORS CLUB",
+        "eventType": "Workshop",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "47Xb2cPhpwsklnk79zlQto"
+          }
+        },
+        "startDateAndTime": "2025-10-31T09:00:00.000Z",
+        "endDateAndTime": "2025-10-31T16:00:00.000Z",
+        "pricePerPerson": 30,
+        "participationType": "Solo",
+        "eventVenue": "AB3 210 SATORI Lab ",
+        "shortDescription": "Experience the future of power! This workshop and Make-a-Thon will guide you through designing air-cored coupled inductors to achieve electricity transfer through air. Learn the science, build your own prototypes, and compete with peers in creating innovative wireless power solutions. Gen Z innovation meets real-world energy transfer!",
+        "longDescription": "Experience the future of power! This workshop and Make-a-Thon will guide you through designing air-cored coupled inductors to achieve electricity transfer through air. Learn the science, build your own prototypes, and compete with peers in creating innovative wireless power solutions. Gen Z innovation meets real-world energy transfer!",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "11zzXN09lvFqSfvSHPMRhh",
+        "type": "Entry",
+        "createdAt": "2025-10-16T14:14:19.979Z",
+        "updatedAt": "2025-10-16T14:14:19.979Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Neural Strokes AI for Cultural Creativity Duo",
+        "clubName": "CULTURE IT",
+        "eventType": "Competition",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "47Xb2cPhpwsklnk79zlQto"
+          }
+        },
+        "startDateAndTime": "2025-11-01T10:00:00.000Z",
+        "endDateAndTime": "2025-11-01T13:00:00.000Z",
+        "pricePerPerson": 100,
+        "participationType": "Duo",
+        "eventVenue": "AB1 606A Embedded Systems Lab",
+        "shortDescription": "Neural Strokes: AI for Cultural Creativity explores the intersection of tradition and technology, where artificial intelligence reimagines cultural drawings and heritage art forms.",
+        "longDescription": "Neural Strokes: AI for Cultural Creativity explores the intersection of tradition and technology, where artificial intelligence reimagines cultural drawings and heritage art forms.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "9oA6gyxmswfnDZYX26mFf",
+        "type": "Entry",
+        "createdAt": "2025-10-16T14:14:18.931Z",
+        "updatedAt": "2025-10-16T14:14:18.931Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Neural Strokes AI for Cultural Creativity Solo",
+        "clubName": "CULTURE IT",
+        "eventType": "Competition",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "47Xb2cPhpwsklnk79zlQto"
+          }
+        },
+        "startDateAndTime": "2025-11-01T10:00:00.000Z",
+        "endDateAndTime": "2025-11-01T13:00:00.000Z",
+        "pricePerPerson": 75,
+        "participationType": "Solo",
+        "eventVenue": "AB1 606A Embedded Systems Lab",
+        "shortDescription": "Neural Strokes: AI for Cultural Creativity explores the intersection of tradition and technology, where artificial intelligence reimagines cultural drawings and heritage art forms.",
+        "longDescription": "Neural Strokes: AI for Cultural Creativity explores the intersection of tradition and technology, where artificial intelligence reimagines cultural drawings and heritage art forms.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "2SNqKTCfjBAhfyrVbD8Sfq",
+        "type": "Entry",
+        "createdAt": "2025-10-16T14:14:17.788Z",
+        "updatedAt": "2025-10-16T14:14:17.788Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Matlab a Thon",
+        "clubName": "IEEE SIGNAL PROCESSING SOCIETY (IEEE-SPS)",
+        "eventType": "Hackathon",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "47Xb2cPhpwsklnk79zlQto"
+          }
+        },
+        "startDateAndTime": "2025-10-28T08:00:00.000Z",
+        "endDateAndTime": "2025-10-29T08:00:00.000Z",
+        "pricePerPerson": 500,
+        "participationType": "Duo",
+        "eventVenue": "AB3 510 5G lab ",
+        "shortDescription": "Students will be given series of problem statements to be solved only by MATLAB and SIMULINK.",
+        "longDescription": "Students will be given series of problem statements to be solved only by MATLAB and SIMULINK.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "7j5PY3GRPn4iK6XGTguKmn",
+        "type": "Entry",
+        "createdAt": "2025-10-16T14:14:16.708Z",
+        "updatedAt": "2025-10-16T14:14:16.708Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Innovation Technology protection of Human values",
+        "clubName": "ACM-W",
+        "eventType": "Workshop",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "47Xb2cPhpwsklnk79zlQto"
+          }
+        },
+        "startDateAndTime": "2025-11-01T09:00:00.000Z",
+        "endDateAndTime": "2025-11-01T13:00:00.000Z",
+        "pricePerPerson": 150,
+        "participationType": "Solo",
+        "eventVenue": "AB1-201",
+        "shortDescription": "Multidisciplinary Workshop on protection of Human values",
+        "longDescription": "Multidisciplinary Workshop on protection of Human values",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "4GTPvR52lMyxifSqPECsQ4",
+        "type": "Entry",
+        "createdAt": "2025-10-16T14:14:15.672Z",
+        "updatedAt": "2025-10-16T14:14:15.672Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Pravahan",
+        "clubName": "TechnoVIT",
+        "eventType": "Entertainment",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "47Xb2cPhpwsklnk79zlQto"
+          }
+        },
+        "startDateAndTime": "2025-10-31T09:00:00.000Z",
+        "endDateAndTime": "2025-11-01T09:00:00.000Z",
+        "pricePerPerson": 199,
+        "participationType": "Duo/Trio/Squad",
+        "eventVenue": "Ground Near E Block",
+        "shortDescription": "Teams design compact rovers and compete in mobility and manipulation trials over rough terrain. Judging includes time, accuracy, efficiency, robustness, innovation, and safety, with bonuses for autonomous performance.",
+        "longDescription": "Pravahan 1.0 is VIT Chennai’s flagship national robotics competition, inviting student teams of 2–4 members to design compact rovers within 30 × 30 × 40 cm (l*b*h). The event is structured in three stages: Stage 1 – Ideation (online submission of concept report), Stage 2 – Proof of Concept (structured report + video demonstration), and Stage 3 – On-Site Finals at VIT Chennai. In the Finals, teams compete in two trials: (i) Mobility Trial – obstacle avoidance and checkpoint navigation across terrains with sand, mud, stones, uneven paths, humps, and sharp turns, and (ii) Manipulation Trial – precise pick-and-place of colored blocks at different heights under terrain difficulties. Judging will be based on time, accuracy, efficiency, robustness, innovation, and safety, with bonus recognition for autonomous mobility. As part of TechnoVIT, Pravahan 1.0 offers a national platform for showcasing innovation, applied engineering, and teamwork, supported by prizes, patent assistance, and industry exposure.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "6e7DkFo7XoKg67TOg1nXHI",
+        "type": "Entry",
+        "createdAt": "2025-10-16T14:13:25.784Z",
+        "updatedAt": "2025-10-16T14:13:25.784Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "InnoHack Innovation and IPR Challenge",
+        "clubName": "ENTREPRENEURSHIP CELL (E-CELL)",
+        "eventType": "Workshop",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "47Xb2cPhpwsklnk79zlQto"
+          }
+        },
+        "startDateAndTime": "2025-10-30T09:00:00.000Z",
+        "endDateAndTime": "2025-10-30T16:30:00.000Z",
+        "pricePerPerson": 300,
+        "participationType": "Solo",
+        "eventVenue": "AB3 001",
+        "shortDescription": "Workshop on innovation and IPR with a hackathon. Sessions include: innovation introduction, IPR basics, ideation, creative problem-solving, group hackathon activity, and presentations. Participants learn to implement ideas effectively.",
+        "longDescription": "Objective:<br> • To educate students about intellectual property rights (IPR) and their role in innovation.<br> • To inspire students to generate creative solutions to real-world problems.<br> • To provide a platform where students can implement their ideas through a hackathon - Group activity<br> <br> Tentative Sessions:<br> <br> Session 1: Introduction to Innovation (FN session)<br> <br> Session 2: Understanding intellectual property rights (IPR) (FN session)<br> <br> Session 3: Ideation & Creativity (FN session)<br> <br> Session 4: Hackathon - Group activity - Creative solutions to real-world problems (FN & AN session)<br> <br> Session 5: Presentation (AN session)",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "58qneRp13n1uHDjPYLWslq",
+        "type": "Entry",
+        "createdAt": "2025-10-16T14:13:24.760Z",
+        "updatedAt": "2025-10-16T14:13:24.760Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Breaking Point A Structural Engineering Showdown",
+        "clubName": "ASME STUDENT CHAPTER",
+        "eventType": "Competition",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "47Xb2cPhpwsklnk79zlQto"
+          }
+        },
+        "startDateAndTime": "2025-11-02T10:00:00.000Z",
+        "endDateAndTime": "2025-11-02T13:30:00.000Z",
+        "pricePerPerson": 180,
+        "participationType": "Trio/Squad",
+        "eventVenue": "AB3 601",
+        "shortDescription": "Put your engineering instincts to the test in this hands-on structural challenge! In Breaking Point: A Structural Engineering showdown, teams will design and construct bridge or boom structures using simple materials like popsicle sticks or straws. Each structure will be judged on three key criteria: Strength-to-weight ratio Design creativity Structural performance under load Once built, the real test begins — bridges will be load tested until failure to determine which designs truly hold up under pressure. This is more than a contest; it’s a chance to apply engineering principles, think creatively under constraints, and experience the thrill of designing something that just might outperform the rest. Can your structure take the pressure, or will it hit its breaking point?",
+        "longDescription": "Put your engineering instincts to the test in this hands-on structural challenge! In Breaking Point: A Structural Engineering showdown, teams will design and construct bridge or boom structures using simple materials like popsicle sticks or straws.<br><br>Each structure will be judged on three key criteria:<br><br>Strength-to-weight ratio<br>Design creativity<br>Structural performance under load<br><br>Once built, the real test begins — bridges will be load tested until failure to determine which designs truly hold up under pressure.<br><br>This is more than a contest; it’s a chance to apply engineering principles, think creatively under constraints, and experience the thrill of designing something that just might outperform the rest.<br><br>Can your structure take the pressure, or will it hit its breaking point?",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "VHjaoPQhopxX8nFv0QCO9",
+        "type": "Entry",
+        "createdAt": "2025-10-16T14:13:23.630Z",
+        "updatedAt": "2025-10-16T14:13:23.630Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Global Goals, Local Code An Innovation Challenge",
+        "clubName": "ARTIFICIAL INTELLIGENCE CLUB",
+        "eventType": "Hackathon",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "47Xb2cPhpwsklnk79zlQto"
+          }
+        },
+        "startDateAndTime": "2025-10-31T09:00:00.000Z",
+        "endDateAndTime": "2025-10-31T12:30:00.000Z",
+        "pricePerPerson": 118,
+        "participationType": "Solo",
+        "eventVenue": "AB1 304 ",
+        "shortDescription": "A challenge in creating tech solutions addressing any of the 17 UN Sustainable Development Goals. Using AI/ML, apps, or hardware, students identify niche problems and design efficient systems to positively impact development criteria.",
+        "longDescription": "\" Global Goals, Local Code: An Innovation Challenge\" The event will challenge participants to develop innovative, technology-based solutions addressing any of the 17 United Nations Sustainable Development Goals (SDGs). By focusing on globally recognized challenges and leveraging domains like AI/ML, web/app development, or hardware, this recognises technological innovation, and talent engagement. <br> Objective of the event: Students will be choosing one among the 17 SDG goals and identify niche areas and provide an efficient system or model that creates a positive impact on the development criteria.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "3SyknyOfDzITQNbwLwnOTD",
+        "type": "Entry",
+        "createdAt": "2025-10-16T14:13:22.537Z",
+        "updatedAt": "2025-10-16T14:13:22.537Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Pitch your ideas to Products",
+        "clubName": "ENTREPRENEURSHIP CELL (E-CELL)",
+        "eventType": "Workshop",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "47Xb2cPhpwsklnk79zlQto"
+          }
+        },
+        "startDateAndTime": "2025-10-31T10:00:00.000Z",
+        "endDateAndTime": "2025-11-01T16:00:00.000Z",
+        "pricePerPerson": 100,
+        "participationType": "Solo",
+        "eventVenue": "AB3 409",
+        "shortDescription": "Hands on session for Mastering in Digital marketing techniques by building ideas to product.",
+        "longDescription": "Hands on session for Mastering in Digital marketing techniques by building ideas to product.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "2auAqu5RDWVSpXlC6kOJwm",
+        "type": "Entry",
+        "createdAt": "2025-10-16T14:13:21.480Z",
+        "updatedAt": "2025-10-16T14:13:21.480Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Cyber-0-Day 4.0",
+        "clubName": "LINUX CLUB",
+        "eventType": "Competition",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "47Xb2cPhpwsklnk79zlQto"
+          }
+        },
+        "startDateAndTime": "2025-11-01T10:00:00.000Z",
+        "endDateAndTime": "2025-11-02T10:00:00.000Z",
+        "pricePerPerson": 200,
+        "participationType": "Solo",
+        "eventVenue": "Kamaraj Auditorium",
+        "shortDescription": "A blend of cybersecurity and open-source learning through workshops, quizzes, overnight CTFs and showcases. It engages beginners and enthusiasts, fosters creativity and introduces students to inclusive FOSS and cybersecurity culture.",
+        "longDescription": "Cyber 0 Day is a community-driven cybersecurity and open-source event that blends technical learning, problem-solving, and creativity. The event is designed to engage beginners and enthusiasts in hands-on workshops, a technical quiz, overnight Capture the Flag (CTF) challenges, and interactive showcases.<br> By combining technical depth with fun, collaborative activities, Cyber 0 Day aims to introduce younger students to cybersecurity and FOSS culture while fostering an inclusive, community-oriented environment that encourages peer-to-peer learning and open-source contributions.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "7JIWldqj7l0CahIueOaZts",
+        "type": "Entry",
+        "createdAt": "2025-10-16T14:13:20.231Z",
+        "updatedAt": "2025-10-16T14:13:20.231Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Animatathon Team of 5 to 6",
+        "clubName": "ANIMATION CLUB",
+        "eventType": "Hackathon",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "47Xb2cPhpwsklnk79zlQto"
+          }
+        },
+        "startDateAndTime": "2025-11-01T10:00:00.000Z",
+        "endDateAndTime": "2025-11-02T13:30:00.000Z",
+        "pricePerPerson": 500,
+        "participationType": "5+ Members",
+        "eventVenue": "VOC Auditorium",
+        "shortDescription": "A 28-hour animation hackathon exploring 2D, 3D, stop motion, and multimedia. Teams conceptualize, produce, and pitch original projects. Event includes industry insights and concludes with judging on creativity, narrative, and technical execution.",
+        "longDescription": "Animatathon is a 28-hour (or slightly shorter) hackathon-style event that celebrates the full spectrum of animation. Participants from diverse creative backgrounds will come together to explore and experiment with different forms of animation including 2D, 3D, stop motion, and multimedia. The event begins with a two-hour session led by a spokesperson, where industry insights and professional works will be shared to inspire and guide participants before they begin their projects.<br> <br> Following this, teams will immerse themselves in an intensive creation phase, working to conceptualize and produce original animated projects within the given timeframe. From crafting characters and worlds to experimenting with techniques and storytelling, participants will push their creative boundaries. The event concludes with a showcase judged on creativity, narrative impact, and technical execution, making Animatathon both a competition and a collaborative platform to learn, innovate, and connect within the animation community.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "3KebXhxVMmjAGIYZYa8tKU",
+        "type": "Entry",
+        "createdAt": "2025-10-16T14:13:19.116Z",
+        "updatedAt": "2025-10-16T14:13:19.116Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Animatathon Team of 3 to 4",
+        "clubName": "ANIMATION CLUB",
+        "eventType": "Hackathon",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "47Xb2cPhpwsklnk79zlQto"
+          }
+        },
+        "startDateAndTime": "2025-11-01T10:00:00.000Z",
+        "endDateAndTime": "2025-11-02T13:30:00.000Z",
+        "pricePerPerson": 300,
+        "participationType": "Trio/Squad",
+        "eventVenue": "VOC Auditorium",
+        "shortDescription": "A 28-hour animation hackathon exploring 2D, 3D, stop motion, and multimedia. Teams conceptualize, produce, and pitch original projects. Event includes industry insights and concludes with judging on creativity, narrative, and technical execution.",
+        "longDescription": "Animatathon is a 28-hour (or slightly shorter) hackathon-style event that celebrates the full spectrum of animation. Participants from diverse creative backgrounds will come together to explore and experiment with different forms of animation including 2D, 3D, stop motion, and multimedia. The event begins with a two-hour session led by a spokesperson, where industry insights and professional works will be shared to inspire and guide participants before they begin their projects.<br> <br> Following this, teams will immerse themselves in an intensive creation phase, working to conceptualize and produce original animated projects within the given timeframe. From crafting characters and worlds to experimenting with techniques and storytelling, participants will push their creative boundaries. The event concludes with a showcase judged on creativity, narrative impact, and technical execution, making Animatathon both a competition and a collaborative platform to learn, innovate, and connect within the animation community.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "197A5WHeEo1QPEUVhqtt2F",
+        "type": "Entry",
+        "createdAt": "2025-10-16T14:13:17.979Z",
+        "updatedAt": "2025-10-16T14:13:17.979Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Frame it with Figma Trio",
+        "clubName": "CLOUD COMPUTING CLUB",
+        "eventType": "Workshop",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "47Xb2cPhpwsklnk79zlQto"
+          }
+        },
+        "startDateAndTime": "2025-10-29T10:00:00.000Z",
+        "endDateAndTime": "2025-10-29T18:00:00.000Z",
+        "pricePerPerson": 250,
+        "participationType": "Trio",
+        "eventVenue": "Kamaraj Auditorium",
+        "shortDescription": "Participants will see an AI-generated image made by the club and must craft the most accurate prompt using an AI image generation tool to recreate it. The participant whose output best matches the original image will be declared the winner.",
+        "longDescription": "Participants will be shown an AI-generated image created by the club. Their task is to craft the most accurate prompt using an AI image generation tool to recreate the image as closely as possible.The participant whose output most closely matches the original image will be declared the winner",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "64Ep2n3Sq9kORfPsTahf5U",
+        "type": "Entry",
+        "createdAt": "2025-10-16T14:13:16.924Z",
+        "updatedAt": "2025-10-16T14:13:16.924Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Frame it with Figma Duo",
+        "clubName": "CLOUD COMPUTING CLUB",
+        "eventType": "Workshop",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "47Xb2cPhpwsklnk79zlQto"
+          }
+        },
+        "startDateAndTime": "2025-10-29T10:00:00.000Z",
+        "endDateAndTime": "2025-10-29T18:00:00.000Z",
+        "pricePerPerson": 175,
+        "participationType": "Duo",
+        "eventVenue": "Kamaraj Auditorium",
+        "shortDescription": "Participants will see an AI-generated image made by the club and must craft the most accurate prompt using an AI image generation tool to recreate it. The participant whose output best matches the original image will be declared the winner.",
+        "longDescription": "Participants will be shown an AI-generated image created by the club. Their task is to craft the most accurate prompt using an AI image generation tool to recreate the image as closely as possible.The participant whose output most closely matches the original image will be declared the winner",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "3IXTggB9oDnfDJA6hmVEyf",
+        "type": "Entry",
+        "createdAt": "2025-10-16T14:13:15.848Z",
+        "updatedAt": "2025-10-16T14:13:15.848Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Frame it with Figma Solo",
+        "clubName": "CLOUD COMPUTING CLUB",
+        "eventType": "Workshop",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "47Xb2cPhpwsklnk79zlQto"
+          }
+        },
+        "startDateAndTime": "2025-10-29T10:00:00.000Z",
+        "endDateAndTime": "2025-10-29T18:00:00.000Z",
+        "pricePerPerson": 100,
+        "participationType": "Solo",
+        "eventVenue": "Kamaraj Auditorium",
+        "shortDescription": "Participants will see an AI-generated image made by the club and must craft the most accurate prompt using an AI image generation tool to recreate it. The participant whose output best matches the original image will be declared the winner.",
+        "longDescription": "Participants will be shown an AI-generated image created by the club. Their task is to craft the most accurate prompt using an AI image generation tool to recreate the image as closely as possible.The participant whose output most closely matches the original image will be declared the winner",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "2OLKhBX7VGal2Z9maaQf0V",
+        "type": "Entry",
+        "createdAt": "2025-10-16T14:13:14.609Z",
+        "updatedAt": "2025-10-16T14:13:14.609Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Create Autonomous AI with Open Source Ollama",
+        "clubName": "YUVA",
+        "eventType": "Workshop",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "47Xb2cPhpwsklnk79zlQto"
+          }
+        },
+        "startDateAndTime": "2025-11-01T09:00:00.000Z",
+        "endDateAndTime": "2025-11-01T16:00:00.000Z",
+        "pricePerPerson": 250,
+        "participationType": "Solo",
+        "eventVenue": "AB1 209",
+        "shortDescription": "Workshop Title: Building Intelligent Agents with Ollama: A Practical Workshop Resource Person: Aishwarya Sundaresan – Lead Consultant @ Infosys | Executive MBA in Data Science & AI Description: Dive into the world of Agentic AI in this hands-on workshop designed for students, developers, and professionals eager to explore intelligent agents. Ollama is an advanced platform for building, managing, and deploying Agentic AI applications. It enables developers and AI enthusiasts to create intelligent agents that can perform autonomous tasks, make decisions, and interact with users or other systems. Under the guidance of Aishwarya Sundaresan, a leading AI consultant at Infosys, participants will gain practical experience in building, training, and deploying intelligent AI agents using the Ollama tool. The resource person has 14 years of digital transformation experience with a focus on meticulous technology implementation. Her journey in e-commerce consulting has honed a keen attention to detail and a strategic approach to business strategy, consistently driving growth and innovation. Her top skills include Solution Architecture , Digital Transformation, Large Language Models (LLM), Artificial Intelligence (AI). The resource person will provide hands-on training on Realtime E-commerce use cases. This workshop will cover: Fundamentals of Agentic AI and its real-world applications Step-by-step guidance on using Ollama for agent creation Hands-on exercises to design and deploy intelligent agents on Realtime E-commerce use cases Best practices for optimizing AI agent performance By the end of the session, participants will have a working understanding of how to create functional AI agents and leverage them for practical applications in business, research, and technology.",
+        "longDescription": "Workshop Title: Building Intelligent Agents with Ollama: A Practical Workshop<br> Resource Person: Aishwarya Sundaresan – Lead Consultant @ Infosys | Executive MBA in Data Science & AI<br> <br> Description:<br> Dive into the world of Agentic AI in this hands-on workshop designed for students, developers, and professionals eager to explore intelligent agents. Ollama is an advanced platform for building, managing, and deploying Agentic AI applications. It enables developers and AI enthusiasts to create intelligent agents that can perform autonomous tasks, make decisions, and interact with users or other systems. Under the guidance of Aishwarya Sundaresan, a leading AI consultant at Infosys, participants will gain practical experience in building, training, and deploying intelligent AI agents using the Ollama tool. The resource person has 14 years of digital transformation experience with a focus on meticulous technology implementation. Her journey in e-commerce consulting has honed a keen attention to detail and a strategic approach to business strategy, consistently driving growth and innovation. Her top skills include Solution Architecture , Digital Transformation, Large Language Models (LLM), Artificial Intelligence (AI). The resource person will provide hands-on training on Realtime E-commerce use cases.<br> <br> <br> This workshop will cover:<br> <br> Fundamentals of Agentic AI and its real-world applications<br> <br> Step-by-step guidance on using Ollama for agent creation<br> <br> Hands-on exercises to design and deploy intelligent agents on Realtime E-commerce use cases<br> <br> Best practices for optimizing AI agent performance<br> <br> By the end of the session, participants will have a working understanding of how to create functional AI agents and leverage them for practical applications in business, research, and technology.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "62IKGMLUz30zYVVS7uY8D0",
+        "type": "Entry",
+        "createdAt": "2025-10-16T14:13:12.985Z",
+        "updatedAt": "2025-10-16T14:13:12.985Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "GreenCode Hackathon Innovation for Agriculture",
+        "clubName": "AGRHI INNOVATORS CLUB",
+        "eventType": "Hackathon",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "47Xb2cPhpwsklnk79zlQto"
+          }
+        },
+        "startDateAndTime": "2025-10-30T09:00:00.000Z",
+        "endDateAndTime": "2025-10-30T18:00:00.000Z",
+        "pricePerPerson": 236,
+        "participationType": "Solo/Duo/Trio",
+        "eventVenue": "AB3 309",
+        "shortDescription": "Participants tackle two agriculture-focused challenges. DirectLink connects farmers to consumers for fair pricing and transparency. AgriBot builds AI chatbots offering crop guidance, weather updates, and market insights for rural communities.",
+        "longDescription": "💻 Hackathon Problem Statement 1<br> <br> Title: DirectLink: Producers to Consumers<br> <br> Description:<br> Cut out the middleman, empower the farmer! In this hackathon challenge, you’ll design software solutions that connect producers directly with consumers, ensuring fair pricing, transparency, and trust. Build platforms, apps, or digital tools that revolutionize agri-markets and put power back into the hands of the growers. Innovation meets impact!<br> <br> <br> 🤖 Hackathon Problem Statement 2<br> <br> Title: AgriBot: Chat for Change<br> <br> Description:<br> Bring AI to the fields! This challenge invites you to create a farmer-friendly chatbot that provides instant guidance — from crop care and weather updates to market trends and government schemes. Build a smart conversational assistant that’s simple, accessible, and impactful for rural communities. Let’s code solutions that speak the farmers’ language!",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "26xPjgy5jNS9dKZm2xl7bf",
+        "type": "Entry",
+        "createdAt": "2025-10-16T14:13:11.781Z",
+        "updatedAt": "2025-10-16T14:13:11.781Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Chessathlon",
+        "clubName": "MATHEMATICS CLUB",
+        "eventType": "Competition",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "47Xb2cPhpwsklnk79zlQto"
+          }
+        },
+        "startDateAndTime": "2025-11-02T09:00:00.000Z",
+        "endDateAndTime": "2025-10-29T13:30:00.000Z",
+        "pricePerPerson": 100,
+        "participationType": "Solo",
+        "eventVenue": "AB3 512",
+        "shortDescription": "A GenAI workshop featuring an interactive session by industry experts from ManageEngine (Zoho) on GenAI in security domains, followed by a hands-on session by students exploring general applications, industry use cases, and MCP server creation.",
+        "longDescription": "A genAI workshop starting with a interactive session by Industry people form ManageEngine (Zoho) on usage of genAI on securiy domains followed by a hands-on workshop from students on genAI of general use and for industry related usecases, MCP server creation, usecases.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "HDeV2aCpvzlGGHUqCGhqY",
+        "type": "Entry",
+        "createdAt": "2025-10-16T14:12:04.156Z",
+        "updatedAt": "2025-10-16T14:12:04.156Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Cursor Create Your First Website in a Day",
+        "clubName": "ARTIFICIAL INTELLIGENCE CLUB",
+        "eventType": "Workshop",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "47Xb2cPhpwsklnk79zlQto"
+          }
+        },
+        "startDateAndTime": "2025-11-01T09:00:00.000Z",
+        "endDateAndTime": "2025-11-01T15:00:00.000Z",
+        "pricePerPerson": 50,
+        "participationType": "Solo",
+        "eventVenue": "AB1 601",
+        "shortDescription": "Beginner-friendly workshop building a personal portfolio website with Cursor AI. Learn HTML/CSS, code with AI assistance, and create a fully customized site, ending with a showcase of participants’ completed projects.",
+        "longDescription": "“Cursor Create: Your First Website in a Day” is a beginner-friendly hands-on workshop where students will learn to build their very own personal portfolio website with the help of Cursor AI. Without needing prior coding experience, participants will explore the basics of HTML and CSS, see how AI can assist in writing and debugging code, and leave with a fully customized website they can proudly showcase on their resumes, LinkedIn, or GitHub. The event ends with a showcase round where students present their creations, making it both a learning and celebratory experience.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "3nEYqIqPakXxkb0IPP06jF",
+        "type": "Entry",
+        "createdAt": "2025-10-16T14:12:02.949Z",
+        "updatedAt": "2025-10-16T14:12:02.949Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "One day Workshop on Agentic AI for Beginners",
+        "clubName": "YUVA",
+        "eventType": "Workshop",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "47Xb2cPhpwsklnk79zlQto"
+          }
+        },
+        "startDateAndTime": "2025-11-01T09:00:00.000Z",
+        "endDateAndTime": "2025-11-01T16:00:00.000Z",
+        "pricePerPerson": 118,
+        "participationType": "Solo",
+        "eventVenue": "AB1 209",
+        "shortDescription": "Led by Aishwarya Sundaresan (Infosys), this hands-on workshop explores Agentic AI. Participants learn to build, train, and deploy intelligent agents on real-time e-commerce use cases using Ollama, gaining practical AI experience.",
+        "longDescription": "Workshop Title: Building Intelligent Agents with Ollama: A Practical Workshop<br> Resource Person: Aishwarya Sundaresan – Lead Consultant @ Infosys | Executive MBA in Data Science & AI<br> <br> Description:<br> Dive into the world of Agentic AI in this hands-on workshop designed for students, developers, and professionals eager to explore intelligent agents. Ollama is an advanced platform for building, managing, and deploying Agentic AI applications. It enables developers and AI enthusiasts to create intelligent agents that can perform autonomous tasks, make decisions, and interact with users or other systems. Under the guidance of Aishwarya Sundaresan, a leading AI consultant at Infosys, participants will gain practical experience in building, training, and deploying intelligent AI agents using the Ollama tool. The resource person has 14 years of digital transformation experience with a focus on meticulous technology implementation. Her journey in e-commerce consulting has honed a keen attention to detail and a strategic approach to business strategy, consistently driving growth and innovation. Her top skills include Solution Architecture , Digital Transformation, Large Language Models (LLM), Artificial Intelligence (AI). The resource person will provide hands-on training on Realtime E-commerce use cases.<br> <br> <br> This workshop will cover:<br> <br> Fundamentals of Agentic AI and its real-world applications<br> <br> Step-by-step guidance on using Ollama for agent creation<br> <br> Hands-on exercises to design and deploy intelligent agents on Realtime E-commerce use cases<br> <br> Best practices for optimizing AI agent performance<br> <br> By the end of the session, participants will have a working understanding of how to create functional AI agents and leverage them for practical applications in business, research, and technology.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "3hWx0I5LJffm1wBJoQ2JxR",
+        "type": "Entry",
+        "createdAt": "2025-10-16T14:12:01.584Z",
+        "updatedAt": "2025-10-16T14:12:01.584Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Game to Survive Escape Room",
+        "clubName": "GOOGLE DEVELOPER STUDENT CLUB (GDSC)",
+        "eventType": "Game",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "47Xb2cPhpwsklnk79zlQto"
+          }
+        },
+        "startDateAndTime": "2025-11-01T09:30:00.000Z",
+        "endDateAndTime": "2025-11-01T16:30:00.000Z",
+        "pricePerPerson": 100,
+        "participationType": "Duo/Trio",
+        "eventVenue": "AB1 402",
+        "shortDescription": "\"Game to Survive: Escape Room,\" a high-intensity challenge where physical puzzles and technical CTFs collide. The team of 2-3 will be trapped in a room filled with props and hidden clues, but the key to freedom lies in a central laptop terminal. The team must decipher physical hints from the surroundings to execute the correct commands, unlocking files and revealing the path forward. With only 30 minutes on the clock, the team must work together to solve every puzzle, master every game, and hack the way to victory",
+        "longDescription": "\"Game to Survive: Escape Room,\" a high-intensity challenge where physical puzzles and technical CTFs collide. The team of 2-3 will be trapped in a room filled with props and hidden clues, but the key to freedom lies in a central laptop terminal. The team must decipher physical hints from the surroundings to execute the correct commands, unlocking files and revealing the path forward. With only 30 minutes on the clock, the team must work together to solve every puzzle, master every game, and hack the way to victory",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "3l8jy31mYX6fNqxp7m8gw3",
+        "type": "Entry",
+        "createdAt": "2025-10-16T14:12:00.297Z",
+        "updatedAt": "2025-10-16T14:12:00.297Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Grab the CAD",
+        "clubName": "CAD CLUB",
+        "eventType": "Hackathon",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "47Xb2cPhpwsklnk79zlQto"
+          }
+        },
+        "startDateAndTime": "2025-10-31T09:00:00.000Z",
+        "endDateAndTime": "2025-11-01T17:00:00.000Z",
+        "pricePerPerson": 500,
+        "participationType": "Duo",
+        "eventVenue": "Kasturba Hall",
+        "shortDescription": "A SolidWorks/Fusion 360 event with a hands-on workshop on Day 1 and a design on Day 2. The 24 hr hackathon helps participants get the hang of CSWA & CSWP exam-taking, with a chance to win CSWA/CWSP coupons and a ₹10,000 cash prize pool.",
+        "longDescription": "A SolidWorks/Fusion 360 event with a hands-on workshop on Day 1 and a design on Day 2. The 24 hr hackathon helps participants get the hang of CSWA & CSWP exam-taking, with a chance to win CSWA/CWSP coupons and a ₹10,000 cash prize pool.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "3nQxNqQp1xJICRkldIGkBS",
+        "type": "Entry",
+        "createdAt": "2025-10-16T14:11:26.426Z",
+        "updatedAt": "2025-10-16T14:11:26.426Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Surveying treasure hunt",
+        "clubName": "INDIAN CONCRETE INSTITUTE STUDENT CHAPTER",
+        "eventType": "Entertainment",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "47Xb2cPhpwsklnk79zlQto"
+          }
+        },
+        "startDateAndTime": "2025-10-27T10:00:00.000Z",
+        "endDateAndTime": "2025-10-27T03:00:00.000Z",
+        "pricePerPerson": 150,
+        "participationType": "Trio/Squad/5+ Members",
+        "eventVenue": "AB1 Amphitheatre",
+        "shortDescription": "Participants use leveling staff and basic surveying techniques to follow clues and find hidden checkpoints across campus. Each clue tests technical skills and teamwork, with the first team reaching the final treasure declared the winner.",
+        "longDescription": "An exciting twist to surveying! Participants will use leveling staff and basic surveying techniques to navigate clues and locate hidden checkpoints across the campus. Each clue leads to the next spot, testing both technical knowledge and teamwork. The team that finds the final treasure first wins the challenge.",
+        "specialEvent": false
+      }
+    },
     {
       "metadata": {
         "tags": [],
@@ -3993,622 +5617,6 @@
         "longDescription": "HackThrone is a high-impact, multidisciplinary hackathon where participants go beyond traditional domain silos. Unlike regular hackathons that focus on a single track or theme, every project at HackThrone must integrate four critical pillars of modern technology:\n <br><br>\n 1. Web Development\n 2. Artificial Intelligence & Machine Learning (AI/ML)\n 3. Cybersecurity\n 4. Innovation & Product Thinking\n \n This format challenges teams to think holistically, blending technical skill, system design, data intelligence, and user-centered innovation into one cohesive solution.\n \n By creating a hackathon where every team must incorporate all four core domains, not just pick one or two, HackThrone truly stands out from traditional hackathons.",
         "specialEvent": false
       }
-    },
-    {
-      "metadata": {
-        "tags": [],
-        "concepts": []
-      },
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "rr94wjxz7mfi"
-          }
-        },
-        "id": "2Hp5FF2FfSkvHizd9ewMVT",
-        "type": "Entry",
-        "createdAt": "2025-10-14T18:57:54.677Z",
-        "updatedAt": "2025-10-14T18:57:54.677Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 18,
-        "revision": 1,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "event"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "eventName": "Codemafia",
-        "clubName": "DAO COMMUNITY",
-        "eventType": "Competition",
-        "poster": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Asset",
-            "id": "4wlT4fRSMysakQAOn17vAq"
-          }
-        },
-        "startDateAndTime": "2025-10-29T09:00+00:00",
-        "endDateAndTime": "2025-10-29T16:00+00:00",
-        "pricePerPerson": 50,
-        "participationType": "Duo/Trio",
-        "eventVenue": "VOC Auditorium",
-        "shortDescription": "Participants will join a Capture The Flag (CTF) contest with cryptography, web, reverse engineering, and forensics challenges, sharpening cybersecurity skills as teams race to capture flags and lead the leaderboard.",
-        "longDescription": "Participants will join a Capture The Flag (CTF) competition featuring cryptography, web exploitation, reverse engineering, and forensics. This workshop-style event hones cybersecurity skills as teams race to capture flags and top the leaderboard.",
-        "specialEvent": false
-      }
-    },
-    {
-      "metadata": {
-        "tags": [],
-        "concepts": []
-      },
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "rr94wjxz7mfi"
-          }
-        },
-        "id": "3Pct6xW10pQYuErVb9nRhp",
-        "type": "Entry",
-        "createdAt": "2025-10-14T18:57:32.370Z",
-        "updatedAt": "2025-10-14T18:57:32.370Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 14,
-        "revision": 1,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "event"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "eventName": "Game to Survive: Escape Room",
-        "clubName": "GOOGLE DEVELOPER STUDENT CLUB (GDSC)",
-        "eventType": "Game",
-        "poster": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Asset",
-            "id": "7nKgOxss8eG11jSyXFkuIM"
-          }
-        },
-        "startDateAndTime": "2025-11-01T09:30+00:00",
-        "endDateAndTime": "2025-11-01T16:00+00:00",
-        "pricePerPerson": 100,
-        "participationType": "Duo/Trio",
-        "eventVenue": "AB1 402",
-        "shortDescription": "In this high-intensity escape room, physical puzzles meet a technical CTF. Teams of 2-3 have 30 minutes to find clues in the room and use them on a central laptop to hack their way to freedom. Solve every puzzle to win before time expires!",
-        "longDescription": "A high-intensity challenge where physical puzzles and technical CTFs collide. Teams of 2-3 must decipher clues in the room to execute commands on a central laptop, unlock files, and escape within 30 minutes by collaborating and solving all puzzles.",
-        "specialEvent": false
-      }
-    },
-    {
-      "metadata": {
-        "tags": [],
-        "concepts": []
-      },
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "rr94wjxz7mfi"
-          }
-        },
-        "id": "braRd8Uq5WN8vxoQYnA1P",
-        "type": "Entry",
-        "createdAt": "2025-10-14T18:57:03.795Z",
-        "updatedAt": "2025-10-14T18:57:03.795Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 14,
-        "revision": 1,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "event"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "eventName": "Build A Bridge",
-        "clubName": "AUTOVIT",
-        "eventType": "Competition",
-        "poster": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Asset",
-            "id": "7rpcxPKSUTTC2WmhukoQhO"
-          }
-        },
-        "startDateAndTime": "2025-10-31T10:00+00:00",
-        "endDateAndTime": "2025-10-31T04:00+00:00",
-        "pricePerPerson": 100,
-        "participationType": "Trio",
-        "eventVenue": "AB3 208",
-        "shortDescription": "Teams of 3 get a fixed budget to build a bridge and load-bearing structure. Completing mini-challenges earns extra materials. Participants must optimize resources, time, and construction strategy to create the strongest, most efficient structure",
-        "longDescription": "we provide each participating team with a fixed budget, which they can spend on materials that we have in store and use to build a bridge to cross a gap and a structure that can take the maximum load. Participants are also given a chance to complete some small challenges to get more budget for materials. They now must optimize time spent on challenges materials and the time spent on constructing the bridge . Team of 3 will take on this challenge",
-        "specialEvent": false
-      }
-    },
-    {
-      "metadata": {
-        "tags": [],
-        "concepts": []
-      },
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "rr94wjxz7mfi"
-          }
-        },
-        "id": "3UMwTt7Sv0fm4LleLwZMws",
-        "type": "Entry",
-        "createdAt": "2025-10-14T18:54:21.650Z",
-        "updatedAt": "2025-10-14T18:54:21.650Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 14,
-        "revision": 1,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "event"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "eventName": "Gen AI - Workshop",
-        "clubName": "ACM STUDENT CHAPTER",
-        "eventType": "Workshop",
-        "poster": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Asset",
-            "id": "37xuOrzMgOm7r9X2Pe0SIp"
-          }
-        },
-        "startDateAndTime": "2025-10-27T13:00+00:00",
-        "endDateAndTime": "2025-10-27T19:00+00:00",
-        "pricePerPerson": 200,
-        "participationType": "Solo",
-        "eventVenue": "Kamaraj Auditorium",
-        "shortDescription": "A genAI workshop featuring a session by ManageEngine (Zoho) on AI in security, followed by a hands-on session where students explore genAI for general and industry use cases, including MCP server creation.",
-        "longDescription": "A GenAI workshop featuring an interactive session by industry experts from ManageEngine (Zoho) on GenAI in security domains, followed by a hands-on session by students exploring general applications, industry use cases, and MCP server creation.",
-        "specialEvent": false
-      }
-    },
-    {
-      "metadata": {
-        "tags": [],
-        "concepts": []
-      },
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "rr94wjxz7mfi"
-          }
-        },
-        "id": "3MJxe4CtBFTi5yNUYy7rOy",
-        "type": "Entry",
-        "createdAt": "2025-10-14T18:10:48.549Z",
-        "updatedAt": "2025-10-14T18:48:15.465Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 18,
-        "revision": 3,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "event"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "eventName": "Hack A Cure",
-        "clubName": "CODECHEF ",
-        "eventType": "Hackathon",
-        "poster": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Asset",
-            "id": "6xVQmlw9iUvK3hIZJe9oqi"
-          }
-        },
-        "startDateAndTime": "2025-10-28T08:00+00:00",
-        "endDateAndTime": "2025-10-29T08:00+00:00",
-        "pricePerPerson": 200,
-        "participationType": "Squad",
-        "eventVenue": "Kamaraj Auditorium",
-        "shortDescription": "In this 24-hour hackathon, teams will design medical AI systems using Retrieval Augmented Generation (RAG). Leverage medical literature to build solutions, deploy them as APIs, and compete based on accuracy, evidence citation, and reliability.",
-        "longDescription": "Hack A Cure is a 24-hour hackathon where participants design advanced medical AI systems using Retrieval Augmented Generation (RAG). Teams leverage extensive medical literature to integrate large language models with external knowledge sources, creating AI solutions that provide accurate, context-rich clinical insights.\n \n Participants deploy their solutions as APIs, which are assessed through automated medical query tests measuring accuracy, evidence citation, and reliability. The hackathon emphasizes developing AI tools that enhance diagnostics, improve patient outcomes, and reduce AI hallucinations.\n \n Beyond technical innovation, Hack A Cure offers hands-on experience with cutting-edge AI technologies, including vector and graph databases, preparing participants for real-world challenges in medical AI applications. The event fosters creativity, collaboration, and ethical AI development, showcasing the potential of retrieval-augmented generation in healthcare.\n \n By combining AI, data retrieval, and medical expertise, Hack A Cure equips students and professionals with practical skills to design robust, evidence-based AI systems, advancing the future of intelligent healthcare solutions.",
-        "specialEvent": true
-      }
-    },
-    {
-      "metadata": {
-        "tags": [],
-        "concepts": []
-      },
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "rr94wjxz7mfi"
-          }
-        },
-        "id": "1nCGK2YhYTdXKs3gTIp4nL",
-        "type": "Entry",
-        "createdAt": "2025-10-14T18:37:15.873Z",
-        "updatedAt": "2025-10-14T18:38:44.446Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 17,
-        "revision": 2,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "event"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "eventName": "GreenCode Hackathon: Innovation for Agriculture",
-        "clubName": "AGRHI INNOVATORS CLUB",
-        "eventType": "Hackathon",
-        "poster": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Asset",
-            "id": "60RaLyiHMNKjzSgWlr8lCY"
-          }
-        },
-        "startDateAndTime": "2025-10-30T09:00+00:00",
-        "endDateAndTime": "2025-10-30T18:00+00:00",
-        "pricePerPerson": 236,
-        "participationType": "Solo",
-        "eventVenue": "AB3 309",
-        "shortDescription": "The “Green Code: OpenCV and App Development Applications in Agriculture” workshop offers hands-on training in integrating computer vision and mobile app technologies for smart farming solutions. Participants will learn how to use OpenCV for crop monitoring, disease detection, and yield analysis, along with app development tools to create farmer-friendly digital interfaces. The session bridges technology and agriculture, empowering students and innovators to develop sustainable, data-driven farm management applications.",
-        "longDescription": "💻 Hackathon Problem Statement 1\n \n Title: DirectLink: Producers to Consumers\n \n Description:\n Cut out the middleman, empower the farmer! In this hackathon challenge, you’ll design software solutions that connect producers directly with consumers, ensuring fair pricing, transparency, and trust. Build platforms, apps, or digital tools that revolutionize agri-markets and put power back into the hands of the growers. Innovation meets impact!\n \n \n 🤖 Hackathon Problem Statement 2\n \n Title: AgriBot: Chat for Change\n \n Description:\n Bring AI to the fields! This challenge invites you to create a farmer-friendly chatbot that provides instant guidance — from crop care and weather updates to market trends and government schemes. Build a smart conversational assistant that’s simple, accessible, and impactful for rural communities. Let’s code solutions that speak the farmers’ language!",
-        "specialEvent": false
-      }
-    },
-    {
-      "metadata": {
-        "tags": [],
-        "concepts": []
-      },
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "rr94wjxz7mfi"
-          }
-        },
-        "id": "3MeLfkYbjNtodYLN9ggG3Y",
-        "type": "Entry",
-        "createdAt": "2025-10-14T18:34:07.536Z",
-        "updatedAt": "2025-10-14T18:34:07.536Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 12,
-        "revision": 1,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "event"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "eventName": "IGNITE",
-        "clubName": "FRATERNITY OF LEADERS",
-        "eventType": "Competition",
-        "poster": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Asset",
-            "id": "4iqdHopoSaFjpNP0gQOD6c"
-          }
-        },
-        "startDateAndTime": "2025-10-28T09:00+00:00",
-        "endDateAndTime": "2025-10-29T12:00+00:00",
-        "pricePerPerson": 50,
-        "participationType": "Squad",
-        "eventVenue": "Netaji Auditorium",
-        "shortDescription": "The two-day Startup Conclave inspires and guides students in entrepreneurship. Day 1 features interactive sessions with speakers sharing journeys and strategies. Day 2 focuses on startup pitches judged by experts, concluding with a prize distribution.",
-        "longDescription": "The Startup Conclave is a two-day event focused on inspiring and guiding students in their entrepreneurial journeys.\n Day 1: Innovation & Insight : This day will feature motivational and interactive sessions with three renowned speakers. They will share their personal stories of turning ideas into successful ventures, detailing the challenges, strategies, and key milestones they encountered. \n Day 2 : Pitch : This day will focus on the practical application of entrepreneurial skills. Following two final speaker sessions, a dedicated startup pitching event will take place. This provides a platform for student startups to present their ideas to a panel of judges, investors, and industry experts. The event will culminate with a prize distribution ceremony to recognize and reward innovative ideas.",
-        "specialEvent": false
-      }
-    },
-    {
-      "metadata": {
-        "tags": [],
-        "concepts": []
-      },
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "rr94wjxz7mfi"
-          }
-        },
-        "id": "EVUgVDNTBb8ofcB23oj1v",
-        "type": "Entry",
-        "createdAt": "2025-10-14T18:29:36.695Z",
-        "updatedAt": "2025-10-14T18:29:36.695Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 16,
-        "revision": 1,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "event"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "eventName": "Robosoccer",
-        "clubName": "INTERNET OF THINGS COMMUNITY (IOTHINC)",
-        "eventType": "Game",
-        "poster": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Asset",
-            "id": "42jcutc0wBg63mfsz93rF5"
-          }
-        },
-        "startDateAndTime": "2025-10-31T09:00+00:00",
-        "endDateAndTime": "2025-11-02T18:00+00:00",
-        "pricePerPerson": 50,
-        "participationType": "Duo",
-        "eventVenue": "AB3 Portico",
-        "shortDescription": "Its a robosoccer event (2v2) . Two bots designed by the club engineers per team equipped with shooting mechanisms are provided to be controlled by the participants.",
-        "longDescription": "Its a robosoccer event (2v2) . Two bots designed by the club engineers per team equipped with shooting mechanisms are provided to be controlled by the participants.",
-        "specialEvent": false
-      }
-    },
-    {
-      "metadata": {
-        "tags": [],
-        "concepts": []
-      },
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "rr94wjxz7mfi"
-          }
-        },
-        "id": "VtWgE4b9oTSQx4647enAN",
-        "type": "Entry",
-        "createdAt": "2025-10-14T18:24:42.628Z",
-        "updatedAt": "2025-10-14T18:24:42.628Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 13,
-        "revision": 1,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "event"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "eventName": "F1 GRAND PRIX",
-        "clubName": "AUTOVIT",
-        "eventType": "Game",
-        "poster": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Asset",
-            "id": "1nvyK2ZMdL4C4bzyHmWv4q"
-          }
-        },
-        "startDateAndTime": "2025-10-31T09:00+00:00",
-        "endDateAndTime": "2025-10-01T17:00+00:00",
-        "pricePerPerson": 50,
-        "participationType": "Solo",
-        "eventVenue": "AB3 210 SATORI LAB",
-        "shortDescription": "A solo racing challenge on F1 25 where each participant first answers 10 rapid-fire technical questions. Every wrong answer adds +1 second penalty to their lap time. The fastest adjusted lap wins combining racing thrill with technical knowledge.",
-        "longDescription": "A solo racing challenge on F1 25 where each participant first answers 10 rapid-fire technical questions. Every wrong answer adds +1 second penalty to their lap time. The fastest adjusted lap wins combining racing thrill with technical knowledge.",
-        "specialEvent": false
-      }
-    },
-    {
-      "metadata": {
-        "tags": [],
-        "concepts": []
-      },
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "rr94wjxz7mfi"
-          }
-        },
-        "id": "5zaUpVMhfUHLy6hRUSTYV1",
-        "type": "Entry",
-        "createdAt": "2025-10-14T18:22:53.894Z",
-        "updatedAt": "2025-10-14T18:22:53.894Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 15,
-        "revision": 1,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "event"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "eventName": "Code the Future: ESP Workshop",
-        "clubName": "AGRHI INNOVATORS CLUB",
-        "eventType": "Workshop",
-        "poster": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Asset",
-            "id": "3yWTLXlHR2fUCumWzvsOKq"
-          }
-        },
-        "startDateAndTime": "2025-10-31T00:00+00:00",
-        "endDateAndTime": "2025-10-31T00:00+00:00",
-        "pricePerPerson": 60,
-        "participationType": "Solo",
-        "eventVenue": "AB3 612",
-        "shortDescription": "Explore the Internet of Things in this hands-on workshop! Learn to program ESP microcontrollers and build exciting projects, from smart devices to real-world automation. Perfect for beginners and tinkerers ready to code, create, and innovate.",
-        "longDescription": "Get hands-on with the Internet of Things! This workshop introduces you to the world of ESP microcontrollers, where hardware meets innovation. Learn to program, connect, and build exciting projects using ESP boards, from smart devices to real-world automation. Whether you’re a beginner or a tinkerer, this is your chance to code, create, and craft the connected future.",
-        "specialEvent": false
-      }
-    },
-    {
-      "metadata": {
-        "tags": [],
-        "concepts": []
-      },
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "rr94wjxz7mfi"
-          }
-        },
-        "id": "1elXhApvqZR3vJw43G2nI2",
-        "type": "Entry",
-        "createdAt": "2025-10-14T10:51:06.624Z",
-        "updatedAt": "2025-10-14T10:51:06.624Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 15,
-        "revision": 1,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "event"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "eventName": "VOID",
-        "clubName": "OPEN SOURCE PROGRAMMING CLUB",
-        "eventType": "Hackathon",
-        "poster": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Asset",
-            "id": "6XREmCpb6zZseshGRlm5ZT"
-          }
-        },
-        "startDateAndTime": "2025-10-28T09:00+00:00",
-        "endDateAndTime": "2025-10-29T10:00+00:00",
-        "pricePerPerson": 200,
-        "participationType": "Squad",
-        "eventVenue": "MG Auditorium",
-        "shortDescription": "A 24-hour innovation hackathon on 28–29 Oct 2025. Teams create disruptive prototypes, business plans, and pitch decks across FinTech, HealthTech, RetailTech, AgriTech, and Open Innovation, merging technology, entrepreneurship, and real-world impact.",
-        "longDescription": "VØID:v1 is built for the restless and the bold - those who refuse to watch the future unfold and instead choose to shape it. Scheduled for 28th & 29th October 2025, this 24-hour hackathon is more than just a coding competition. It is an arena where creativity collides with technology, where ideas roar louder than Wall Street, and where teams don't just build projects - they spark movements. \n\nVOID is an innovation-focused hackathon where top minds converge to build groundbreaking, disruptive solutions. It's more than just a coding competition; it's a platform for turning visionary ideas into viable businesses. Participants will not only create groundbreaking, functional prototypes but will also develop comprehensive business plans, including pitch decks and Business Model Canvases (BMCs), preparing them for real-world application. VOID is where technology meets entrepreneurship, creating a future-ready cohort of innovators.\n\nPowered by the Open Source Programming Club (OSPC) and the Business Innovation Club (BIC) of VIT Chennai, and hosted on Devfolio, VØID provides the perfect platform to showcase talent, collaborate with like-minded peers, and turn visionary ideas into tangible, game-changing outcomes.\n\n🌐 Tracks:\n1. FinTech & Digital Payments\n2. HealthTech & EdTech\n3. RetailTech, SaaS & Smart Mobility\n4. AgriTech & SDG\n5. Open Innovation",
-        "specialEvent": false
-      }
     }
   ],
   "includes": {
@@ -4671,51 +5679,6 @@
               "id": "rr94wjxz7mfi"
             }
           },
-          "id": "1nvyK2ZMdL4C4bzyHmWv4q",
-          "type": "Asset",
-          "createdAt": "2025-10-14T18:21:21.990Z",
-          "updatedAt": "2025-10-14T18:22:25.445Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "publishedVersion": 7,
-          "revision": 2,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "Na",
-          "description": "A solo racing challenge on F1 25 where each participant first answers 10 rapid-fire technical questions. Every wrong answer adds +1 second penalty to their lap time. The fastest adjusted lap wins combining racing thrill with technical knowledge.",
-          "file": {
-            "url": "//images.ctfassets.net/rr94wjxz7mfi/1nvyK2ZMdL4C4bzyHmWv4q/7661b3e2a6e6011d103089fac4715ad3/Car1_-_IT_AUTOVIT.jpg",
-            "details": {
-              "size": 385647,
-              "image": {
-                "width": 1587,
-                "height": 2245
-              }
-            },
-            "fileName": "Car1 - IT AUTOVIT.jpg",
-            "contentType": "image/jpeg"
-          }
-        }
-      },
-      {
-        "metadata": {
-          "tags": [],
-          "concepts": []
-        },
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "rr94wjxz7mfi"
-            }
-          },
           "id": "2KvbDfRnjAwWUCladLBY9b",
           "type": "Asset",
           "createdAt": "2025-10-15T03:05:16.490Z",
@@ -4745,51 +5708,6 @@
             },
             "fileName": "TechnoVITPosters - IT AUTOVIT.jpg",
             "contentType": "image/jpeg"
-          }
-        }
-      },
-      {
-        "metadata": {
-          "tags": [],
-          "concepts": []
-        },
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "rr94wjxz7mfi"
-            }
-          },
-          "id": "37xuOrzMgOm7r9X2Pe0SIp",
-          "type": "Asset",
-          "createdAt": "2025-10-14T18:54:13.944Z",
-          "updatedAt": "2025-10-14T18:54:13.944Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "publishedVersion": 3,
-          "revision": 1,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "gen ai event - VITCC ACM Student Chapter",
-          "description": "",
-          "file": {
-            "url": "//images.ctfassets.net/rr94wjxz7mfi/37xuOrzMgOm7r9X2Pe0SIp/627e5e0ba367eba72872dde780155c22/gen_ai_event_-_VITCC_ACM_Student_Chapter.png",
-            "details": {
-              "size": 451834,
-              "image": {
-                "width": 1080,
-                "height": 1920
-              }
-            },
-            "fileName": "gen_ai_event - VITCC ACM Student Chapter.png",
-            "contentType": "image/png"
           }
         }
       },
@@ -4941,96 +5859,6 @@
               "id": "rr94wjxz7mfi"
             }
           },
-          "id": "3yWTLXlHR2fUCumWzvsOKq",
-          "type": "Asset",
-          "createdAt": "2025-10-14T18:22:43.058Z",
-          "updatedAt": "2025-10-14T18:22:43.058Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "publishedVersion": 3,
-          "revision": 1,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "ESP Workshop (2) - Abirami S",
-          "description": "",
-          "file": {
-            "url": "//images.ctfassets.net/rr94wjxz7mfi/3yWTLXlHR2fUCumWzvsOKq/104bceac578646ef8a6f0991ad62a975/ESP_Workshop__2__-_Abirami_S.png",
-            "details": {
-              "size": 544207,
-              "image": {
-                "width": 1587,
-                "height": 2245
-              }
-            },
-            "fileName": "ESP_Workshop (2) - Abirami S.png",
-            "contentType": "image/png"
-          }
-        }
-      },
-      {
-        "metadata": {
-          "tags": [],
-          "concepts": []
-        },
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "rr94wjxz7mfi"
-            }
-          },
-          "id": "42jcutc0wBg63mfsz93rF5",
-          "type": "Asset",
-          "createdAt": "2025-10-14T18:29:28.330Z",
-          "updatedAt": "2025-10-14T18:29:28.330Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "publishedVersion": 3,
-          "revision": 1,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "IMG-20251010-WA0013 - IoTHINC - VIT Chennai",
-          "description": "",
-          "file": {
-            "url": "//images.ctfassets.net/rr94wjxz7mfi/42jcutc0wBg63mfsz93rF5/35a0b99f43aea055778e98acc289c7f2/IMG-20251010-WA0013_-_IoTHINC_-_VIT_Chennai.jpg",
-            "details": {
-              "size": 530506,
-              "image": {
-                "width": 988,
-                "height": 1280
-              }
-            },
-            "fileName": "IMG-20251010-WA0013 - IoTHINC - VIT Chennai.jpg",
-            "contentType": "image/jpeg"
-          }
-        }
-      },
-      {
-        "metadata": {
-          "tags": [],
-          "concepts": []
-        },
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "rr94wjxz7mfi"
-            }
-          },
           "id": "47Xb2cPhpwsklnk79zlQto",
           "type": "Asset",
           "createdAt": "2025-10-15T19:41:42.624Z",
@@ -5148,96 +5976,6 @@
               }
             },
             "fileName": "technovit event poster - Sangeetha.jpg",
-            "contentType": "image/jpeg"
-          }
-        }
-      },
-      {
-        "metadata": {
-          "tags": [],
-          "concepts": []
-        },
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "rr94wjxz7mfi"
-            }
-          },
-          "id": "4iqdHopoSaFjpNP0gQOD6c",
-          "type": "Asset",
-          "createdAt": "2025-10-14T18:33:56.167Z",
-          "updatedAt": "2025-10-14T18:33:56.167Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "publishedVersion": 7,
-          "revision": 1,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "Na",
-          "description": "The two-day Startup Conclave inspires and guides students in entrepreneurship. Day 1 features interactive sessions with speakers sharing journeys and strategies. Day 2 focuses on startup pitches judged by experts, concluding with a prize distribution.",
-          "file": {
-            "url": "//images.ctfassets.net/rr94wjxz7mfi/4iqdHopoSaFjpNP0gQOD6c/eceb5960e60fd08ffcbbfbf6f738e1bb/Poster_FoL_-_Fraternity_Of_Leaders.jpeg",
-            "details": {
-              "size": 252284,
-              "image": {
-                "width": 1131,
-                "height": 1600
-              }
-            },
-            "fileName": "Poster_FoL - Fraternity Of Leaders.jpeg",
-            "contentType": "image/jpeg"
-          }
-        }
-      },
-      {
-        "metadata": {
-          "tags": [],
-          "concepts": []
-        },
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "rr94wjxz7mfi"
-            }
-          },
-          "id": "4wlT4fRSMysakQAOn17vAq",
-          "type": "Asset",
-          "createdAt": "2025-10-14T18:49:48.983Z",
-          "updatedAt": "2025-10-14T18:49:48.983Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "publishedVersion": 3,
-          "revision": 1,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "Code Mafia DAO X IEEERAS c - Sanjana PS",
-          "description": "",
-          "file": {
-            "url": "//images.ctfassets.net/rr94wjxz7mfi/4wlT4fRSMysakQAOn17vAq/5e6be4ae535ec679d156923d0c091bdd/Code_Mafia_DAO_X_IEEERAS_c_-_Sanjana_PS.jpg",
-            "details": {
-              "size": 995066,
-              "image": {
-                "width": 5400,
-                "height": 7200
-              }
-            },
-            "fileName": "Code Mafia DAO X IEEERAS c - Sanjana PS.jpg",
             "contentType": "image/jpeg"
           }
         }
@@ -5390,51 +6128,6 @@
               "id": "rr94wjxz7mfi"
             }
           },
-          "id": "60RaLyiHMNKjzSgWlr8lCY",
-          "type": "Asset",
-          "createdAt": "2025-10-14T18:38:37.727Z",
-          "updatedAt": "2025-10-14T18:38:37.727Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "publishedVersion": 3,
-          "revision": 1,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "GreenCode (1) - Abirami S",
-          "description": "",
-          "file": {
-            "url": "//images.ctfassets.net/rr94wjxz7mfi/60RaLyiHMNKjzSgWlr8lCY/c4ce1d447cd8c82213b0b2502bc12e95/GreenCode__1__-_Abirami_S.jpg",
-            "details": {
-              "size": 409340,
-              "image": {
-                "width": 1587,
-                "height": 2245
-              }
-            },
-            "fileName": "GreenCode (1) - Abirami S.jpg",
-            "contentType": "image/jpeg"
-          }
-        }
-      },
-      {
-        "metadata": {
-          "tags": [],
-          "concepts": []
-        },
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "rr94wjxz7mfi"
-            }
-          },
           "id": "6OHduzb0cokTRQXgpvxykk",
           "type": "Asset",
           "createdAt": "2025-10-14T18:47:41.033Z",
@@ -5480,96 +6173,6 @@
               "id": "rr94wjxz7mfi"
             }
           },
-          "id": "6XREmCpb6zZseshGRlm5ZT",
-          "type": "Asset",
-          "createdAt": "2025-10-14T10:47:00.310Z",
-          "updatedAt": "2025-10-14T10:47:00.310Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "publishedVersion": 3,
-          "revision": 1,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "Poster - Prannavakhanth",
-          "description": "",
-          "file": {
-            "url": "//images.ctfassets.net/rr94wjxz7mfi/6XREmCpb6zZseshGRlm5ZT/7ad081f6c92c5086fedef3022a6290ce/Poster_-_Prannavakhanth.jpg",
-            "details": {
-              "size": 242584,
-              "image": {
-                "width": 756,
-                "height": 944
-              }
-            },
-            "fileName": "Poster - Prannavakhanth.jpg",
-            "contentType": "image/jpeg"
-          }
-        }
-      },
-      {
-        "metadata": {
-          "tags": [],
-          "concepts": []
-        },
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "rr94wjxz7mfi"
-            }
-          },
-          "id": "6xVQmlw9iUvK3hIZJe9oqi",
-          "type": "Asset",
-          "createdAt": "2025-10-14T18:06:44.488Z",
-          "updatedAt": "2025-10-14T18:06:44.488Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "publishedVersion": 7,
-          "revision": 1,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "Hack  a cure",
-          "description": "In this 24-hour hackathon, teams will design medical AI systems using Retrieval Augmented Generation (RAG). Leverage medical literature to build solutions, deploy them as APIs, and compete based on accuracy, evidence citation, and reliability.",
-          "file": {
-            "url": "//images.ctfassets.net/rr94wjxz7mfi/6xVQmlw9iUvK3hIZJe9oqi/8920e49c70ec86e9fef24fbd48b94117/IMG-20251014-WA0048_-_Aneeka_Reemaz_A_23BEL1058__1_.jpg",
-            "details": {
-              "size": 134983,
-              "image": {
-                "width": 890,
-                "height": 1280
-              }
-            },
-            "fileName": "IMG-20251014-WA0048 - Aneeka Reemaz A 23BEL1058 (1).jpg",
-            "contentType": "image/jpeg"
-          }
-        }
-      },
-      {
-        "metadata": {
-          "tags": [],
-          "concepts": []
-        },
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "rr94wjxz7mfi"
-            }
-          },
           "id": "7JFgrsoZmv6HZ50em4uowA",
           "type": "Asset",
           "createdAt": "2025-10-15T03:10:17.912Z",
@@ -5598,96 +6201,6 @@
               }
             },
             "fileName": "TechnoVITPosters - IT AUTOVIT (1).jpg",
-            "contentType": "image/jpeg"
-          }
-        }
-      },
-      {
-        "metadata": {
-          "tags": [],
-          "concepts": []
-        },
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "rr94wjxz7mfi"
-            }
-          },
-          "id": "7nKgOxss8eG11jSyXFkuIM",
-          "type": "Asset",
-          "createdAt": "2025-10-14T18:44:47.797Z",
-          "updatedAt": "2025-10-14T18:44:47.797Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "publishedVersion": 3,
-          "revision": 1,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "game poster - Benila S",
-          "description": "",
-          "file": {
-            "url": "//images.ctfassets.net/rr94wjxz7mfi/7nKgOxss8eG11jSyXFkuIM/f5dc02b930ece103dee1bfedb594e2e9/game_poster_-_Benila_S.jpg",
-            "details": {
-              "size": 154862,
-              "image": {
-                "width": 1130,
-                "height": 1600
-              }
-            },
-            "fileName": "game poster - Benila S.jpg",
-            "contentType": "image/jpeg"
-          }
-        }
-      },
-      {
-        "metadata": {
-          "tags": [],
-          "concepts": []
-        },
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "rr94wjxz7mfi"
-            }
-          },
-          "id": "7rpcxPKSUTTC2WmhukoQhO",
-          "type": "Asset",
-          "createdAt": "2025-10-14T18:56:06.663Z",
-          "updatedAt": "2025-10-14T18:56:06.663Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "publishedVersion": 4,
-          "revision": 1,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "Na",
-          "description": "we provide each participating team with a fixed budget, which they can spend on materials that we have in store and use to build a bridge to cross a gap and a structure that can take the maximum load. Participants are also given a chance to complete some small challenges to get more budget for materials. They now must optimize time spent on challenges materials and the time spent on constructing the bridge . Team of 3 will take on this challenge",
-          "file": {
-            "url": "//images.ctfassets.net/rr94wjxz7mfi/7rpcxPKSUTTC2WmhukoQhO/94fe315a8b5880a8f91848328e4e3d96/TechnoVITPosters_-_IT_AUTOVIT.jpg",
-            "details": {
-              "size": 455585,
-              "image": {
-                "width": 1587,
-                "height": 2245
-              }
-            },
-            "fileName": "TechnoVITPosters - IT AUTOVIT.jpg",
             "contentType": "image/jpeg"
           }
         }
