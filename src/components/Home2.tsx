@@ -306,15 +306,32 @@ export const Home = () => {
                 className="text-black text-xl sm:mb-12 px-8 sm:mr-64 leading-relaxed text-justify"
                 style={{ fontFamily: "Arial, sans-serif" }}
               >
-                Established in 2010, VIT Chennai has become a leading center of excellence in higher education under the visionary leadership of Dr. G. V. Selvam, its founder and Vice President. Guided by leaders like Dr. V. S. Kanchana Bhaaskaran, Dr. T. Thyagarajan, and Dr. P. K. Manoharan, the institution excels in innovation, research, and transformative learning. Strategically located in Chennai, it promotes application-based education, addressing industrial and societal needs while producing industry-ready professionals. With a vibrant, multicultural campus and strong global collaborations, VIT Chennai fosters intellectual exchange, social responsibility, and technological advancement, redefining higher education in India and beyond.
+                Established in 2010, VIT Chennai has become a leading center of
+                excellence in higher education under the visionary leadership of
+                Dr. G. V. Selvam, its founder and Vice President. Guided by
+                leaders like Dr. V. S. Kanchana Bhaaskaran, Dr. T. Thyagarajan,
+                and Dr. P. K. Manoharan, the institution excels in innovation,
+                research, and transformative learning. Strategically located in
+                Chennai, it promotes application-based education, addressing
+                industrial and societal needs while producing industry-ready
+                professionals. With a vibrant, multicultural campus and strong
+                global collaborations, VIT Chennai fosters intellectual
+                exchange, social responsibility, and technological advancement,
+                redefining higher education in India and beyond.
               </p>
 
               <p
                 className="text-black text-xl sm:mb-12 px-8 sm:mr-64 leading-relaxed text-justify"
                 style={{ fontFamily: "Arial, sans-serif" }}
               >
-                TechnoVIT is VIT Chennai's flagship technical festival, where visionary technical clubs converge to push the boundaries of innovation and creativity. Over three days, it hosts hackathons, robotics battles, workshops, exhibitions and keynote talks, drawing over 20,000 participants including students from more than 19 countries. TechnoVIT transforms the campus into a hub of interdisciplinary collaboration, fostering ideas that transcend conventional limits.
-
+                TechnoVIT is VIT Chennai&apos;s flagship technical festival,
+                where visionary technical clubs converge to push the boundaries
+                of innovation and creativity. Over three days, it hosts
+                hackathons, robotics battles, workshops, exhibitions and keynote
+                talks, drawing over 20,000 participants including students from
+                more than 19 countries. TechnoVIT transforms the campus into a
+                hub of interdisciplinary collaboration, fostering ideas that
+                transcend conventional limits.
               </p>
             </div>
 
