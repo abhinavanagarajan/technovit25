@@ -261,39 +261,73 @@ export const Home = () => {
       </section>
 
       <section className="bg-black py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl sm:text-5xl font-heading text-white mb-4">
-              About VIT Chennai
-            </h2>
-            <div className="w-20 h-1 bg-[#00ff00] mx-auto"></div>
+        <div className="relative w-full min-h-screen bg-black flex">
+          {/* Left Section - Green Background with Content */}
+          <div className="relative w-full sm:w-4/5 bg-[#70E081] sm:flex flex-col justify-between">
+            {/* Pixelated decorative elements at top */}
+
+            <img
+              src="pixelDecoration.png"
+              className="right-0 bottom-0 h-1/2 absolute z-10 hidden sm:block"
+            />
+            <img
+              src="pixelDecoration.png"
+              className="right-0 top-0 h-1/2 absolute z-10 hidden sm:block"
+            />
+
+            {/* Main Content */}
+            <div className="relative z-10 mt-8">
+              <h1
+                className="text-4xl sm:text-6xl font-black mt-4 mb-16 text-white bg-black px-10 py-4"
+                style={{ fontFamily: "Arial Black, sans-serif" }}
+              >
+                About TechnoVIT&apos;25
+              </h1>
+              <p
+                className="text-black text-xl mb-8 sm:mb-12 px-8 sm:mr-64 leading-relaxed text-justify"
+                style={{ fontFamily: "Arial, sans-serif" }}
+              >
+                Established in 2010, VIT Chennai has become a leading center of excellence in higher education under the visionary leadership of Dr. G. V. Selvam, its founder and Vice President. Guided by leaders like Dr. V. S. Kanchana Bhaaskaran, Dr. T. Thyagarajan, and Dr. P. K. Manoharan, the institution excels in innovation, research, and transformative learning. Strategically located in Chennai, it promotes application-based education, addressing industrial and societal needs while producing industry-ready professionals. With a vibrant, multicultural campus and strong global collaborations, VIT Chennai fosters intellectual exchange, social responsibility, and technological advancement, redefining higher education in India and beyond.
+              </p>
+
+              <p
+                className="text-black text-xl mb-8 sm:mb-12 px-8 sm:mr-64 leading-relaxed text-justify"
+                style={{ fontFamily: "Arial, sans-serif" }}
+              >
+                <b>TechnoVIT</b> is VIT Chennai's flagship technical festival, where visionary technical clubs converge to push the boundaries of innovation and creativity. Over three days, it hosts hackathons, robotics battles, workshops, exhibitions and keynote talks, drawing over 20,000 participants including students from more than 19 countries. TechnoVIT transforms the campus into a hub of interdisciplinary collaboration, fostering ideas that transcend conventional limits.
+
+              </p>
+            </div>
+
+            {/* Pixelated decorative pattern - center */}
+            <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-64 h-96"></div>
+
+            {/* Pixelated decorative elements at bottom */}
+            <div className="absolute bottom-0 left-0 right-0 h-8 flex"></div>
           </div>
 
-          <div className="max-w-4xl mx-auto space-y-6 text-white/80 leading-relaxed text-justify">
-            <p className="text-lg">
-              Established in 2010, VIT Chennai has become a leading center of
-              excellence in higher education under the visionary leadership of
-              Dr. G. V. Selvam, its founder and Vice President. Guided by
-              leaders like Dr. V. S. Kanchana Bhaaskaran, Dr. T. Thyagarajan,
-              and Dr. P. K. Manoharan, the institution excels in innovation,
-              research, and transformative learning. Strategically located in
-              Chennai, it promotes application-based education, addressing
-              industrial and societal needs while producing industry-ready
-              professionals. With a vibrant, multicultural campus and strong
-              global collaborations, VIT Chennai fosters intellectual exchange,
-              social responsibility, and technological advancement, redefining
-              higher education in India and beyond.
-            </p>
-            <p className="text-lg">
-              TechnoVIT is VIT Chennai&apos;s flagship technical festival, where
-              visionary technical clubs converge to push the boundaries of
-              innovation and creativity. Over three days, it hosts hackathons,
-              robotics battles, workshops, exhibitions and keynote talks,
-              drawing over 20,000 participants including students from more than
-              19 countries. TechnoVIT transforms the campus into a hub of
-              interdisciplinary collaboration, fostering ideas that transcend
-              conventional limits.
-            </p>
+          {/* Right Section - Image Grid */}
+          <div className="md:w-1/5 bg-black sm:flex flex-col hidden">
+            {/* Top Image - Speaker */}
+            <div className="flex-1 relative overflow-hidden border-4 border-black">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-900 to-blue-600 flex items-center justify-center">
+                <img src="/studentDriving.jpeg" alt="Automotive" />
+              </div>
+            </div>
+
+            {/* Middle Image - Award Ceremony */}
+            <div className="flex-1 relative overflow-hidden border-4 border-black">
+              <div className="absolute inset-0 bg-gradient-to-br from-orange-900 to-yellow-700 flex items-center justify-center">
+                <img src="/diverseCampus.jpeg" alt="Campus Event" />
+              </div>
+            </div>
+
+            {/* Bottom Image - Student */}
+            <div className="flex-1 relative overflow-hidden border-4 border-black">
+              <div className="absolute inset-0 bg-gradient-to-br from-gray-900 to-gray-700 flex items-center justify-center">
+                <img src="/carDrift.png" alt="Car Drift" className='h-full w-full' />
+              </div>
+            </div>
           </div>
         </div>
       </section>
