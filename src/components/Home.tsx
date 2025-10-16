@@ -220,7 +220,7 @@ export const Home = () => {
               <div className="absolute inset-0 bg-[#00ff00] blur-xl opacity-20"></div>
               <h2 className="relative text-lg sm:text-xl lg:text-2xl font-bold text-white tracking-wider uppercase bg-gradient-to-r from-white via-gray-100 to-white bg-clip-text px-6 py-3">
                 <span className="drop-shadow-[0_4px_20px_rgba(0,0,0,0.9)]">
-                  Healing With Intelligence
+                  High on Tech
                 </span>
               </h2>
             </div>
