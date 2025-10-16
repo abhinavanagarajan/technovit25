@@ -311,21 +311,21 @@ export const Home = () => {
             {/* Top Image - Speaker */}
             <div className="flex-1 relative overflow-hidden border-4 border-black">
               <div className="absolute inset-0 bg-gradient-to-br from-blue-900 to-blue-600 flex items-center justify-center">
-                <img src="/speakerStands.png" alt="Speaker Stands" />
+                <img src="/studentDriving.jpeg" alt="Automotive" />
               </div>
             </div>
 
             {/* Middle Image - Award Ceremony */}
             <div className="flex-1 relative overflow-hidden border-4 border-black">
               <div className="absolute inset-0 bg-gradient-to-br from-orange-900 to-yellow-700 flex items-center justify-center">
-                <img src="/lightingLamp.png" alt="Lighting Lamp" />
+                <img src="/diverseCampus.jpeg" alt="Campus Event" />
               </div>
             </div>
 
             {/* Bottom Image - Student */}
             <div className="flex-1 relative overflow-hidden border-4 border-black">
               <div className="absolute inset-0 bg-gradient-to-br from-gray-900 to-gray-700 flex items-center justify-center">
-                <img src="/speakerStudent.png" alt="Speaker Student" />
+                <img src="/carDrift.png" alt="Car Drift" className='h-full w-full' />
               </div>
             </div>
           </div>
