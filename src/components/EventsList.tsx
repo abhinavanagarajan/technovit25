@@ -150,8 +150,9 @@ const UsersIcon = () => (
 const ChevronDownIcon = ({ open }: ChevronDownIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className={`h-6 w-6 transition-transform duration-300 ${open ? "rotate-180" : ""
-      }`}
+    className={`h-6 w-6 transition-transform duration-300 ${
+      open ? "rotate-180" : ""
+    }`}
     fill="none"
     viewBox="0 0 24 24"
     stroke="currentColor"
@@ -281,8 +282,12 @@ const EventDetailsDialog = ({
     // "Description"
     null
   );
-  const { date: startdate, time: starttime } = formatDate(event.fields.startDateAndTime);
-  const { date: enddate, time: endtime } = formatDate(event.fields.endDateAndTime);
+  const { date: startdate, time: starttime } = formatDate(
+    event.fields.startDateAndTime
+  );
+  const { date: enddate, time: endtime } = formatDate(
+    event.fields.endDateAndTime
+  );
 
   const handleAccordionClick = (title: string) => {
     setOpenAccordion((prev) => (prev === title ? null : title));
@@ -305,13 +310,13 @@ const EventDetailsDialog = ({
         >
           <CloseIcon />
         </button>
-        <div className="flex flex-col lg:flex-row gap-8">
+        <div className="flex flex-col lg:flex-row gap-8 lg:items-start">
           <div className="w-full lg:w-1/3 h-64 lg:h-auto bg-[#d9d9d9] flex-shrink-0">
             {imageUrl && (
               <img
-                src='./defaultPoster.png' //{imageUrl}
+                src="./defaultPoster.png" //{imageUrl}
                 alt={event.fields.eventName}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover border border-gray-700"
               />
             )}
           </div>
@@ -338,20 +343,27 @@ const EventDetailsDialog = ({
             <div
               className={`grid grid-cols-4 gap-4 mt-4 px-6 text-lg ${fontBayon.className}`}
             >
-              <div className="flex items-center justify-center bg-[#70E081] text-black py-2 px-4">
+              <div className="flex items-center justify-center bg-[#70E081] text-black py-2 px-2">
                 <ClockIcon />
-                <span>{starttime} - <br/> {endtime}</span>
+                <span>
+                  {starttime} - <br /> {endtime}
+                </span>
               </div>
-              <div className="flex items-center justify-center bg-[#70E081] text-black py-2 px-4">
+              <div className="flex items-center justify-center bg-[#70E081] text-black py-2 px-2">
                 <CalendarIcon />
-                {(startdate === enddate) ? <span>{startdate}</span> : (
-                <span>{startdate} -<br/> {enddate}</span> )}
+                {startdate === enddate ? (
+                  <span>{startdate}</span>
+                ) : (
+                  <span>
+                    {startdate} -<br /> {enddate}
+                  </span>
+                )}
               </div>
-              <div className="flex items-center justify-center bg-[#70E081] text-black py-2 px-4">
+              <div className="flex items-center justify-center bg-[#70E081] text-black py-2 px-2">
                 <UsersIcon />
                 <span>{event.fields.participationType}</span>
               </div>
-              <div className="flex items-center justify-center bg-[#70E081] text-black py-2 px-4">
+              <div className="flex items-center justify-center bg-[#70E081] text-black py-2 px-2">
                 <MapPin />
                 <span>{event.fields.eventVenue}</span>
               </div>
@@ -359,7 +371,7 @@ const EventDetailsDialog = ({
                 href="https://chennaievents.vit.ac.in/technovit/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="col-span-4 flex items-center justify-center bg-[#70E081] text-black py-2 px-4 mt-2 font-semibold cursor-pointer"
+                className="col-span-4 flex items-center justify-center bg-[#70E081] text-black py-2 px-4 mt-2 cursor-pointer"
               >
                 REGISTER NOW
               </a>
@@ -417,7 +429,7 @@ const EventCard = ({ event, imageUrl, onClick }: EventCardProps) => {
         <div className="relative flex-shrink-0 overflow-hidden rounded-md bg-black aspect-[4/5] lg:self-stretch">
           {imageUrl ? (
             <img
-              src='./defaultPoster.png' //{imageUrl}
+              src="./defaultPoster.png" //{imageUrl}
               alt={event.fields.eventName}
               className="w-full h-full object-cover"
             />
@@ -438,7 +450,9 @@ const EventCard = ({ event, imageUrl, onClick }: EventCardProps) => {
             </p>
           </div>
         </div>
-        <div className={`grid grid-cols-2 gap-3 text-lg uppercase ${fontBayon.className} lg:w-72 lg:flex-shrink-0 lg:my-auto`}>
+        <div
+          className={`grid grid-cols-2 gap-3 text-lg uppercase ${fontBayon.className} lg:w-72 lg:flex-shrink-0 lg:my-auto`}
+        >
           <div className="flex items-center justify-center bg-[#70E081] text-black p-3">
             <ClockIcon />
             {time}

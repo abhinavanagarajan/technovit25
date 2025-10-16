@@ -102,7 +102,7 @@ export const Navigation = ({ currentPage, onNavigate }: NavigationProps) => {
             className="h-1.5 w-auto object-contain"
           />
           <img
-            src="/vitlogo.png"
+            src="/VIT logo.png"
             alt="VIT Logo"
             className="h-6 w-auto object-contain"
           />

@@ -14,7 +14,7 @@ import FaultyTerminal from "./FaultyTerminal";
 
 export const Home = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [showVideo, setShowVideo] = useState(true);
+  const [showVideo, setShowVideo] = useState(false);
   const [isMuted, setIsMuted] = useState(true);
   const videoRef = useRef<HTMLVideoElement>(null);
 
