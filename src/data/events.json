@@ -2,10 +2,122 @@
   "sys": {
     "type": "Array"
   },
-  "total": 108,
+  "total": 110,
   "skip": 0,
   "limit": 100,
   "items": [
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "1hdhCcgA25q697lT6yUWds",
+        "type": "Entry",
+        "createdAt": "2025-10-17T16:15:47.409Z",
+        "updatedAt": "2025-10-17T16:15:47.409Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 12,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Robotic Metal Additive Manufacturing",
+        "clubName": "ASME STUDENT CHAPTER",
+        "eventType": "Workshop",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "47Xb2cPhpwsklnk79zlQto"
+          }
+        },
+        "startDateAndTime": "2025-11-01T08:30+00:00",
+        "endDateAndTime": "2025-11-01T04:30+00:00",
+        "pricePerPerson": 200,
+        "participationType": "Solo",
+        "eventVenue": "AB2 015",
+        "shortDescription": "Get hands-on experience with robotic metal additive manufacturing. In this session, you'll use a robotic arc wire direct energy deposition setup to manufacture your own product. Perfect for students who want to create their own custom metal parts.",
+        "longDescription": "Get hands-on experience with robotic metal additive manufacturing. In this session, you'll use a robotic arc wire direct energy deposition setup to manufacture your own product. Perfect for students who want to create their own custom metal parts.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "5fj6hkHZe6YtWqmVcOvmmY",
+        "type": "Entry",
+        "createdAt": "2025-10-17T16:07:21.715Z",
+        "updatedAt": "2025-10-17T16:07:21.715Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 22,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Thrust Issues",
+        "clubName": "ASME STUDENT CHAPTER X Team Enthalpy",
+        "eventType": "Competition",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "47Xb2cPhpwsklnk79zlQto"
+          }
+        },
+        "startDateAndTime": "2025-11-01T09:00+00:00",
+        "endDateAndTime": "2025-11-01T18:00+00:00",
+        "pricePerPerson": 300,
+        "participationType": "Trio",
+        "eventVenue": "AB1 501 & AB3 701",
+        "shortDescription": "It is a design workshop competition based on rocketry and orbital mechanics using a popular software Kerbal Space Programme.",
+        "longDescription": "It is a design workshop competition based on rocketry and orbital mechanics using a popular software Kerbal Space Programme.",
+        "specialEvent": false
+      }
+    },
     {
       "metadata": {
         "tags": [],
@@ -5505,118 +5617,6 @@
         "longDescription": "Algorithmic Art: Generate stunning visual art using code, based on mathematical principles like fractals, tessellations, or parametric equations.\n \n ​Geometric Design: Design a physical or 3D-modeled structure (e.g., a bridge, a sculpture, an architectural model) that demonstrates advanced geometric principles and structural integrity.\n \n Data Sonification: Transform a complex dataset into a musical composition, using mathematical rules to map data points to notes, rhythms, and harmonies.",
         "specialEvent": false
       }
-    },
-    {
-      "metadata": {
-        "tags": [],
-        "concepts": []
-      },
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "rr94wjxz7mfi"
-          }
-        },
-        "id": "7wDMAjAEh8H0DeYXzjtwCu",
-        "type": "Entry",
-        "createdAt": "2025-10-15T02:50:04.329Z",
-        "updatedAt": "2025-10-15T02:50:04.329Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 14,
-        "revision": 1,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "event"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "eventName": "Workshop on PCB",
-        "clubName": "IEEE COMPUTER SOCIETY (IEEE-CS)",
-        "eventType": "Workshop",
-        "poster": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Asset",
-            "id": "5xGcUNgvVl7OWbNkT3agak"
-          }
-        },
-        "startDateAndTime": "2025-10-31T09:00+00:00",
-        "endDateAndTime": "2025-10-31T16:00+00:00",
-        "pricePerPerson": 300,
-        "participationType": "Solo/Duo/Trio",
-        "eventVenue": "AB3 602",
-        "shortDescription": "Interactive event designed to teach participants the practical skills of designing and fabricating electronic circuits on PCB platforms.",
-        "longDescription": "Interactive event designed to teach participants the practical skills of designing and fabricating electronic circuits on PCB platforms.",
-        "specialEvent": false
-      }
-    },
-    {
-      "metadata": {
-        "tags": [],
-        "concepts": []
-      },
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "rr94wjxz7mfi"
-          }
-        },
-        "id": "5UuP8xiUSVrucNBc3HZiku",
-        "type": "Entry",
-        "createdAt": "2025-10-15T02:43:30.944Z",
-        "updatedAt": "2025-10-15T02:43:30.944Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 13,
-        "revision": 1,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "event"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "eventName": "Frame it with Figma",
-        "clubName": "CLOUD COMPUTING CLUB",
-        "eventType": "Workshop",
-        "poster": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Asset",
-            "id": "3oh8rIU6orV0p3UtUqMEth"
-          }
-        },
-        "startDateAndTime": "2025-10-29T10:00+01:00",
-        "endDateAndTime": "2025-10-29T18:00+00:00",
-        "pricePerPerson": 100,
-        "participationType": "Solo",
-        "eventVenue": "Kamaraj Auditorium",
-        "shortDescription": "Hands-on Figma workshop: learn wireframes, mockups, prototypes, then design a complete UI. Win cash prizes, certificates for all.",
-        "longDescription": "Hands-on Figma workshop: learn wireframes, mockups, prototypes, then design a complete UI. Win cash prizes, certificates for all.",
-        "specialEvent": false
-      }
     }
   ],
   "includes": {
@@ -5797,51 +5797,6 @@
               }
             },
             "fileName": "Blue Abstract Blank A4 Document Landscape (2) - Mathematics Club.jpg",
-            "contentType": "image/jpeg"
-          }
-        }
-      },
-      {
-        "metadata": {
-          "tags": [],
-          "concepts": []
-        },
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "rr94wjxz7mfi"
-            }
-          },
-          "id": "3oh8rIU6orV0p3UtUqMEth",
-          "type": "Asset",
-          "createdAt": "2025-10-15T02:43:22.886Z",
-          "updatedAt": "2025-10-15T02:43:22.886Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "publishedVersion": 3,
-          "revision": 1,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "WhatsApp Image 2025-10-10 at 17.49.45 6d1a40e9 - CloudOps VITC",
-          "description": "",
-          "file": {
-            "url": "//images.ctfassets.net/rr94wjxz7mfi/3oh8rIU6orV0p3UtUqMEth/32a5cb1a2096a5587cab866257acf9f4/WhatsApp_Image_2025-10-10_at_17.49.45_6d1a40e9_-_CloudOps_VITC.jpg",
-            "details": {
-              "size": 298366,
-              "image": {
-                "width": 1236,
-                "height": 1600
-              }
-            },
-            "fileName": "WhatsApp Image 2025-10-10 at 17.49.45_6d1a40e9 - CloudOps VITC.jpg",
             "contentType": "image/jpeg"
           }
         }
@@ -6067,51 +6022,6 @@
             },
             "fileName": "Brainware (updated) - Kaushik Saravanan.jpg",
             "contentType": "image/jpeg"
-          }
-        }
-      },
-      {
-        "metadata": {
-          "tags": [],
-          "concepts": []
-        },
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "rr94wjxz7mfi"
-            }
-          },
-          "id": "5xGcUNgvVl7OWbNkT3agak",
-          "type": "Asset",
-          "createdAt": "2025-10-15T02:49:52.273Z",
-          "updatedAt": "2025-10-15T02:49:52.273Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "publishedVersion": 3,
-          "revision": 1,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "PCB workshop-Ieee-compsoc-final - Shruthi Reddy",
-          "description": "",
-          "file": {
-            "url": "//images.ctfassets.net/rr94wjxz7mfi/5xGcUNgvVl7OWbNkT3agak/2391e095d74bbef60e93e1ba80349223/PCB_workshop-Ieee-compsoc-final_-_Shruthi_Reddy.png",
-            "details": {
-              "size": 531617,
-              "image": {
-                "width": 490,
-                "height": 687
-              }
-            },
-            "fileName": "PCB workshop-Ieee-compsoc-final - Shruthi Reddy.png",
-            "contentType": "image/png"
           }
         }
       },
