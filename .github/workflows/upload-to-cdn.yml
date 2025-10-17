@@ -1,0 +1,75 @@
+name: Update Events Data on Cloudflare Pages
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+jobs:
+  update-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Main App Repo (to run the script)
+        uses: actions/checkout@v4
+        with:
+          path: main-app
+
+      - name: Checkout Assets Repo (to push the JSON to)
+        uses: actions/checkout@v4
+        with:
+          repository: a2ys/saving-vit
+          token: ${{ secrets.ASSETS_REPO_PAT }}
+          path: assets-repo
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        working-directory: ./main-app
+        run: npm install axios
+
+      - name: Fetch Contentful data and create events.json
+        working-directory: ./main-app
+        env:
+          SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
+          ACCESS_TOKEN: ${{ secrets.CONTENT_DELIVERY_API_ACCESS_TOKEN }}
+        run: |
+          node <<'EOF'
+          const fs = require('fs');
+          const axios = require('axios');
+
+          const url = `https://cdn.contentful.com/spaces/${process.env.SPACE_ID}/environments/master/entries?access_token=${process.env.ACCESS_TOKEN}&content_type=event`;
+
+          const fetchData = async () => {
+            try {
+              const res = await axios.get(url);
+              console.log('📥 Fetched', res.data.items.length, 'events from Contentful.');
+
+              const outputPath = '../assets-repo/events.json';
+              fs.writeFileSync(outputPath, JSON.stringify(res.data, null, 2));
+              console.log(`✅ events.json successfully written to ${outputPath}`);
+            } catch (err) {
+              console.error('❌ Error fetching Contentful data:', err.message);
+              process.exit(1);
+            }
+          };
+
+          fetchData();
+          EOF
+
+      - name: Commit and push to Assets Repo
+        working-directory: ./assets-repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add events.json
+          # Exit if there are no changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes detected in events.json. Skipping commit."
+            exit 0
+          fi
+          git commit -m "Update events.json from Contentful"
+          git push
