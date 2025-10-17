@@ -2,10 +2,290 @@
   "sys": {
     "type": "Array"
   },
-  "total": 109,
+  "total": 107,
   "skip": 0,
   "limit": 100,
   "items": [
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "7Mm759RYIax4Q2MNWHXq3v",
+        "type": "Entry",
+        "createdAt": "2025-10-17T08:22:10.279Z",
+        "updatedAt": "2025-10-17T08:22:10.279Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "F1 GRAND PRIX",
+        "clubName": "AUTOVIT",
+        "eventType": "Game",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "47Xb2cPhpwsklnk79zlQto"
+          }
+        },
+        "startDateAndTime": "2025-10-31T09:00:00.000Z",
+        "endDateAndTime": "2025-11-01T09:00:00.000Z",
+        "pricePerPerson": 50,
+        "participationType": "Solo",
+        "eventVenue": "AB3 210 SATORI Lab",
+        "shortDescription": "A solo racing challenge on F1 25 where each participant first answers 10 rapid-fire technical questions. Every wrong answer adds +1 second penalty to their lap time. The fastest adjusted lap wins combining racing thrill with technical knowledge.",
+        "longDescription": "A solo racing challenge on F1 25 where each participant first answers 10 rapid-fire technical questions. Every wrong answer adds +1 second penalty to their lap time. The fastest adjusted lap wins combining racing thrill with technical knowledge.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "271X1ZjHCboYQSK8sZeTwA",
+        "type": "Entry",
+        "createdAt": "2025-10-16T12:09:12.251Z",
+        "updatedAt": "2025-10-17T08:11:39.878Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "IGNITE Team of 4",
+        "clubName": "FRATERNITY OF LEADERS",
+        "eventType": "Competition",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "47Xb2cPhpwsklnk79zlQto"
+          }
+        },
+        "startDateAndTime": "2025-10-28T10:30+00:00",
+        "endDateAndTime": "2025-10-28T12:00:00.000Z",
+        "pricePerPerson": 360,
+        "participationType": "Squad",
+        "eventVenue": "Netaji Auditorium",
+        "shortDescription": "The two-day Startup Conclave inspires and guides students in entrepreneurship. Day 1 features interactive sessions with speakers sharing journeys and strategies. Day 2 focuses on startup pitches judged by experts, concluding with a prize distribution.",
+        "longDescription": "The Startup Conclave is a two-day event focused on inspiring and guiding students in their entrepreneurial journeys.<br> Day 1: Innovation & Insight : This day will feature motivational and interactive sessions with three renowned speakers. They will share their personal stories of turning ideas into successful ventures, detailing the challenges, strategies, and key milestones they encountered. <br> Day 2 : Pitch : This day will focus on the practical application of entrepreneurial skills. Following two final speaker sessions, a dedicated startup pitching event will take place. This provides a platform for student startups to present their ideas to a panel of judges, investors, and industry experts. The event will culminate with a prize distribution ceremony to recognize and reward innovative ideas.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "3xjFXPXZPqw1jPmbpT1CW2",
+        "type": "Entry",
+        "createdAt": "2025-10-16T12:09:10.347Z",
+        "updatedAt": "2025-10-17T08:03:29.866Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "IGNITE Team of 2",
+        "clubName": "FRATERNITY OF LEADERS",
+        "eventType": "Competition",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "47Xb2cPhpwsklnk79zlQto"
+          }
+        },
+        "startDateAndTime": "2025-10-28T10:30+00:00",
+        "endDateAndTime": "2025-10-28T12:00:00.000Z",
+        "pricePerPerson": 200,
+        "participationType": "Duo",
+        "eventVenue": "Netaji Auditorium",
+        "shortDescription": "The two-day Startup Conclave inspires and guides students in entrepreneurship. Day 1 features interactive sessions with speakers sharing journeys and strategies. Day 2 focuses on startup pitches judged by experts, concluding with a prize distribution.",
+        "longDescription": "The Startup Conclave is a two-day event focused on inspiring and guiding students in their entrepreneurial journeys.<br> Day 1: Innovation & Insight : This day will feature motivational and interactive sessions with three renowned speakers. They will share their personal stories of turning ideas into successful ventures, detailing the challenges, strategies, and key milestones they encountered. <br> Day 2 : Pitch : This day will focus on the practical application of entrepreneurial skills. Following two final speaker sessions, a dedicated startup pitching event will take place. This provides a platform for student startups to present their ideas to a panel of judges, investors, and industry experts. The event will culminate with a prize distribution ceremony to recognize and reward innovative ideas.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "3MJxe4CtBFTi5yNUYy7rOy",
+        "type": "Entry",
+        "createdAt": "2025-10-14T18:10:48.549Z",
+        "updatedAt": "2025-10-17T07:30:44.560Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 21,
+        "revision": 4,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Hack A Cure",
+        "clubName": "CODECHEF ",
+        "eventType": "Hackathon",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "6xVQmlw9iUvK3hIZJe9oqi"
+          }
+        },
+        "startDateAndTime": "2025-10-28T08:00+00:00",
+        "endDateAndTime": "2025-10-29T08:00+00:00",
+        "pricePerPerson": 200,
+        "participationType": "Duo/Trio/Squad/5+ Members",
+        "eventVenue": "Kamaraj Auditorium",
+        "shortDescription": "In this 24-hour hackathon, teams will design medical AI systems using Retrieval Augmented Generation (RAG). Leverage medical literature to build solutions, deploy them as APIs, and compete based on accuracy, evidence citation, and reliability.",
+        "longDescription": "Hack A Cure is a 24-hour hackathon where participants design advanced medical AI systems using Retrieval Augmented Generation (RAG). Teams leverage extensive medical literature to integrate large language models with external knowledge sources, creating AI solutions that provide accurate, context-rich clinical insights.\n \n Participants deploy their solutions as APIs, which are assessed through automated medical query tests measuring accuracy, evidence citation, and reliability. The hackathon emphasizes developing AI tools that enhance diagnostics, improve patient outcomes, and reduce AI hallucinations.\n \n Beyond technical innovation, Hack A Cure offers hands-on experience with cutting-edge AI technologies, including vector and graph databases, preparing participants for real-world challenges in medical AI applications. The event fosters creativity, collaboration, and ethical AI development, showcasing the potential of retrieval-augmented generation in healthcare.\n \n By combining AI, data retrieval, and medical expertise, Hack A Cure equips students and professionals with practical skills to design robust, evidence-based AI systems, advancing the future of intelligent healthcare solutions.",
+        "specialEvent": true
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "2OtKGx5Ex4KJJn84NSTX0d",
+        "type": "Entry",
+        "createdAt": "2025-10-15T03:07:58.047Z",
+        "updatedAt": "2025-10-17T07:26:24.520Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 15,
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "ANGRY BIRD STEM",
+        "clubName": "AUTOVIT",
+        "eventType": "Game",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "2KvbDfRnjAwWUCladLBY9b"
+          }
+        },
+        "startDateAndTime": "2025-11-02T09:00+00:00",
+        "endDateAndTime": "2025-11-02T15:00+00:00",
+        "pricePerPerson": 300,
+        "participationType": "Trio",
+        "eventVenue": "AB3 201",
+        "shortDescription": "In this challenge, teams of 2 have 45 minutes to build a catapult using only provided materials. The objective is to launch projectiles and knock down targets. Points are awarded for accuracy, power, and creative design, with penalties for delays.\n",
+        "longDescription": "The Angry Bird Stem event is a hands-on building and targeting challenge. \n Objective: Participants must design and build a miniature catapult that can launch projectiles to knock down the target. Accuracy and distance both matter.\n Competition: Team of 2 people. All the teams compete with each other. Each and every team will be given 45 mins to build and design their own catapult and launch. Points will be awarded for hitting the target, knocking them down, creative design and if they do not finish it on time their points will be reduced. The team with the highest score or fastest completion wins.\n Rules: Participants can only use the materials provided by the club. Creativity in building and designing the catapult is encouraged. Safety must be maintained while launching projectiles",
+        "specialEvent": false
+      }
+    },
     {
       "metadata": {
         "tags": [],
@@ -2875,62 +3155,6 @@
             "id": "rr94wjxz7mfi"
           }
         },
-        "id": "271X1ZjHCboYQSK8sZeTwA",
-        "type": "Entry",
-        "createdAt": "2025-10-16T12:09:12.251Z",
-        "updatedAt": "2025-10-16T12:09:12.251Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 1,
-        "revision": 1,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "event"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "eventName": "IGNITE Team of 4",
-        "clubName": "FRATERNITY OF LEADERS",
-        "eventType": "Competition",
-        "poster": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Asset",
-            "id": "47Xb2cPhpwsklnk79zlQto"
-          }
-        },
-        "startDateAndTime": "2025-10-28T09:00:00.000Z",
-        "endDateAndTime": "2025-10-28T12:00:00.000Z",
-        "pricePerPerson": 360,
-        "participationType": "Squad",
-        "eventVenue": "Netaji Auditorium",
-        "shortDescription": "The two-day Startup Conclave inspires and guides students in entrepreneurship. Day 1 features interactive sessions with speakers sharing journeys and strategies. Day 2 focuses on startup pitches judged by experts, concluding with a prize distribution.",
-        "longDescription": "The Startup Conclave is a two-day event focused on inspiring and guiding students in their entrepreneurial journeys.<br> Day 1: Innovation & Insight : This day will feature motivational and interactive sessions with three renowned speakers. They will share their personal stories of turning ideas into successful ventures, detailing the challenges, strategies, and key milestones they encountered. <br> Day 2 : Pitch : This day will focus on the practical application of entrepreneurial skills. Following two final speaker sessions, a dedicated startup pitching event will take place. This provides a platform for student startups to present their ideas to a panel of judges, investors, and industry experts. The event will culminate with a prize distribution ceremony to recognize and reward innovative ideas.",
-        "specialEvent": false
-      }
-    },
-    {
-      "metadata": {
-        "tags": [],
-        "concepts": []
-      },
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "rr94wjxz7mfi"
-          }
-        },
         "id": "7jmAelKSbCXWJhETnUQ32Z",
         "type": "Entry",
         "createdAt": "2025-10-16T12:09:11.343Z",
@@ -2968,118 +3192,6 @@
         "endDateAndTime": "2025-10-28T12:00:00.000Z",
         "pricePerPerson": 285,
         "participationType": "Trio",
-        "eventVenue": "Netaji Auditorium",
-        "shortDescription": "The two-day Startup Conclave inspires and guides students in entrepreneurship. Day 1 features interactive sessions with speakers sharing journeys and strategies. Day 2 focuses on startup pitches judged by experts, concluding with a prize distribution.",
-        "longDescription": "The Startup Conclave is a two-day event focused on inspiring and guiding students in their entrepreneurial journeys.<br> Day 1: Innovation & Insight : This day will feature motivational and interactive sessions with three renowned speakers. They will share their personal stories of turning ideas into successful ventures, detailing the challenges, strategies, and key milestones they encountered. <br> Day 2 : Pitch : This day will focus on the practical application of entrepreneurial skills. Following two final speaker sessions, a dedicated startup pitching event will take place. This provides a platform for student startups to present their ideas to a panel of judges, investors, and industry experts. The event will culminate with a prize distribution ceremony to recognize and reward innovative ideas.",
-        "specialEvent": false
-      }
-    },
-    {
-      "metadata": {
-        "tags": [],
-        "concepts": []
-      },
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "rr94wjxz7mfi"
-          }
-        },
-        "id": "3xjFXPXZPqw1jPmbpT1CW2",
-        "type": "Entry",
-        "createdAt": "2025-10-16T12:09:10.347Z",
-        "updatedAt": "2025-10-16T12:09:10.347Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 1,
-        "revision": 1,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "event"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "eventName": "IGNITE Team of 2",
-        "clubName": "FRATERNITY OF LEADERS",
-        "eventType": "Competition",
-        "poster": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Asset",
-            "id": "47Xb2cPhpwsklnk79zlQto"
-          }
-        },
-        "startDateAndTime": "2025-10-28T09:00:00.000Z",
-        "endDateAndTime": "2025-10-28T12:00:00.000Z",
-        "pricePerPerson": 200,
-        "participationType": "Duo",
-        "eventVenue": "Netaji Auditorium",
-        "shortDescription": "The two-day Startup Conclave inspires and guides students in entrepreneurship. Day 1 features interactive sessions with speakers sharing journeys and strategies. Day 2 focuses on startup pitches judged by experts, concluding with a prize distribution.",
-        "longDescription": "The Startup Conclave is a two-day event focused on inspiring and guiding students in their entrepreneurial journeys.<br> Day 1: Innovation & Insight : This day will feature motivational and interactive sessions with three renowned speakers. They will share their personal stories of turning ideas into successful ventures, detailing the challenges, strategies, and key milestones they encountered. <br> Day 2 : Pitch : This day will focus on the practical application of entrepreneurial skills. Following two final speaker sessions, a dedicated startup pitching event will take place. This provides a platform for student startups to present their ideas to a panel of judges, investors, and industry experts. The event will culminate with a prize distribution ceremony to recognize and reward innovative ideas.",
-        "specialEvent": false
-      }
-    },
-    {
-      "metadata": {
-        "tags": [],
-        "concepts": []
-      },
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "rr94wjxz7mfi"
-          }
-        },
-        "id": "28pa4Zel80nOXDRbs9wndG",
-        "type": "Entry",
-        "createdAt": "2025-10-16T12:09:09.216Z",
-        "updatedAt": "2025-10-16T12:09:09.216Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 1,
-        "revision": 1,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "event"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "eventName": "IGNITE Team of 1",
-        "clubName": "FRATERNITY OF LEADERS",
-        "eventType": "Competition",
-        "poster": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Asset",
-            "id": "47Xb2cPhpwsklnk79zlQto"
-          }
-        },
-        "startDateAndTime": "2025-10-28T09:00:00.000Z",
-        "endDateAndTime": "2025-10-28T12:00:00.000Z",
-        "pricePerPerson": 50,
-        "participationType": "Solo",
         "eventVenue": "Netaji Auditorium",
         "shortDescription": "The two-day Startup Conclave inspires and guides students in entrepreneurship. Day 1 features interactive sessions with speakers sharing journeys and strategies. Day 2 focuses on startup pitches judged by experts, concluding with a prize distribution.",
         "longDescription": "The Startup Conclave is a two-day event focused on inspiring and guiding students in their entrepreneurial journeys.<br> Day 1: Innovation & Insight : This day will feature motivational and interactive sessions with three renowned speakers. They will share their personal stories of turning ideas into successful ventures, detailing the challenges, strategies, and key milestones they encountered. <br> Day 2 : Pitch : This day will focus on the practical application of entrepreneurial skills. Following two final speaker sessions, a dedicated startup pitching event will take place. This provides a platform for student startups to present their ideas to a panel of judges, investors, and industry experts. The event will culminate with a prize distribution ceremony to recognize and reward innovative ideas.",
@@ -5295,118 +5407,6 @@
             "id": "rr94wjxz7mfi"
           }
         },
-        "id": "2OtKGx5Ex4KJJn84NSTX0d",
-        "type": "Entry",
-        "createdAt": "2025-10-15T03:07:58.047Z",
-        "updatedAt": "2025-10-15T03:07:58.047Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 13,
-        "revision": 1,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "event"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "eventName": "ANGRY BIRD STEM",
-        "clubName": "AUTOVIT",
-        "eventType": "Game",
-        "poster": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Asset",
-            "id": "2KvbDfRnjAwWUCladLBY9b"
-          }
-        },
-        "startDateAndTime": "2025-11-02T09:00+00:00",
-        "endDateAndTime": "2025-11-02T15:00+00:00",
-        "pricePerPerson": 100,
-        "participationType": "Trio",
-        "eventVenue": "AB3 201",
-        "shortDescription": "In this challenge, teams of 2 have 45 minutes to build a catapult using only provided materials. The objective is to launch projectiles and knock down targets. Points are awarded for accuracy, power, and creative design, with penalties for delays.\n",
-        "longDescription": "The Angry Bird Stem event is a hands-on building and targeting challenge. \n Objective: Participants must design and build a miniature catapult that can launch projectiles to knock down the target. Accuracy and distance both matter.\n Competition: Team of 2 people. All the teams compete with each other. Each and every team will be given 45 mins to build and design their own catapult and launch. Points will be awarded for hitting the target, knocking them down, creative design and if they do not finish it on time their points will be reduced. The team with the highest score or fastest completion wins.\n Rules: Participants can only use the materials provided by the club. Creativity in building and designing the catapult is encouraged. Safety must be maintained while launching projectiles",
-        "specialEvent": false
-      }
-    },
-    {
-      "metadata": {
-        "tags": [],
-        "concepts": []
-      },
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "rr94wjxz7mfi"
-          }
-        },
-        "id": "61nmjeeMea4SPY8upGAOWQ",
-        "type": "Entry",
-        "createdAt": "2025-10-15T03:03:06.059Z",
-        "updatedAt": "2025-10-15T03:03:06.059Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 15,
-        "revision": 1,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "event"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "eventName": "Animatathon",
-        "clubName": "ANIMATION CLUB",
-        "eventType": "Hackathon",
-        "poster": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Asset",
-            "id": "1TVE7wjo6VDdqgFXvZkSgP"
-          }
-        },
-        "startDateAndTime": "2025-11-01T10:00+00:00",
-        "endDateAndTime": "2025-11-02T13:30+00:00",
-        "pricePerPerson": 100,
-        "participationType": "5+ Members",
-        "eventVenue": "VOC Auditorium",
-        "shortDescription": "Animatathon is a hackathon for creators in 2D, 3D, and stop-motion animation. The event starts with a 2-hour industry talk, followed by a team creation phase. It concludes with a showcase judged on creativity, narrative, and technical execution.",
-        "longDescription": "Animatathon is a 28-hour (or slightly shorter) hackathon-style event that celebrates the full spectrum of animation. Participants from diverse creative backgrounds will come together to explore and experiment with different forms of animation including 2D, 3D, stop motion, and multimedia. The event begins with a two-hour session led by a spokesperson, where industry insights and professional works will be shared to inspire and guide participants before they begin their projects.\n \n Following this, teams will immerse themselves in an intensive creation phase, working to conceptualize and produce original animated projects within the given timeframe. From crafting characters and worlds to experimenting with techniques and storytelling, participants will push their creative boundaries. The event concludes with a showcase judged on creativity, narrative impact, and technical execution, making Animatathon both a competition and a collaborative platform to learn, innovate, and connect within the animation community.",
-        "specialEvent": false
-      }
-    },
-    {
-      "metadata": {
-        "tags": [],
-        "concepts": []
-      },
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "rr94wjxz7mfi"
-          }
-        },
         "id": "3e7rrybDex3VEn8UWAm1cV",
         "type": "Entry",
         "createdAt": "2025-10-15T02:58:47.618Z",
@@ -5621,51 +5621,6 @@
   ],
   "includes": {
     "Asset": [
-      {
-        "metadata": {
-          "tags": [],
-          "concepts": []
-        },
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "rr94wjxz7mfi"
-            }
-          },
-          "id": "1TVE7wjo6VDdqgFXvZkSgP",
-          "type": "Asset",
-          "createdAt": "2025-10-15T03:00:49.053Z",
-          "updatedAt": "2025-10-15T03:00:49.053Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "publishedVersion": 3,
-          "revision": 1,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "Animatathon - VIT Chennai Animation Club",
-          "description": "",
-          "file": {
-            "url": "//images.ctfassets.net/rr94wjxz7mfi/1TVE7wjo6VDdqgFXvZkSgP/6a9e39f24d35713bfd08b912bec20f9e/Animatathon_-_VIT_Chennai_Animation_Club.jpg",
-            "details": {
-              "size": 754366,
-              "image": {
-                "width": 1587,
-                "height": 2245
-              }
-            },
-            "fileName": "Animatathon - VIT Chennai Animation Club.jpg",
-            "contentType": "image/jpeg"
-          }
-        }
-      },
       {
         "metadata": {
           "tags": [],
@@ -6246,6 +6201,51 @@
               }
             },
             "fileName": "Screenshot_20251010_163239_WhatsApp - Divya.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "rr94wjxz7mfi"
+            }
+          },
+          "id": "6xVQmlw9iUvK3hIZJe9oqi",
+          "type": "Asset",
+          "createdAt": "2025-10-14T18:06:44.488Z",
+          "updatedAt": "2025-10-14T18:06:44.488Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 7,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "Hack  a cure",
+          "description": "In this 24-hour hackathon, teams will design medical AI systems using Retrieval Augmented Generation (RAG). Leverage medical literature to build solutions, deploy them as APIs, and compete based on accuracy, evidence citation, and reliability.",
+          "file": {
+            "url": "//images.ctfassets.net/rr94wjxz7mfi/6xVQmlw9iUvK3hIZJe9oqi/8920e49c70ec86e9fef24fbd48b94117/IMG-20251014-WA0048_-_Aneeka_Reemaz_A_23BEL1058__1_.jpg",
+            "details": {
+              "size": 134983,
+              "image": {
+                "width": 890,
+                "height": 1280
+              }
+            },
+            "fileName": "IMG-20251014-WA0048 - Aneeka Reemaz A 23BEL1058 (1).jpg",
             "contentType": "image/jpeg"
           }
         }
