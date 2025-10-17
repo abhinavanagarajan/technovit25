@@ -93,7 +93,7 @@ export default function Home() {
       >
         <div className="absolute top-0 left-0 w-screen h-screen z-10">
           <Image
-            src="/homeBg.png"
+            src="https://cdn.a2ys.dev/images/homeBg.png"
             alt="Fullscreen Background"
             fill
             className="object-fill"
