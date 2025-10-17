@@ -2,10 +2,794 @@
   "sys": {
     "type": "Array"
   },
-  "total": 111,
+  "total": 110,
   "skip": 0,
   "limit": 100,
   "items": [
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "1hdhCcgA25q697lT6yUWds",
+        "type": "Entry",
+        "createdAt": "2025-10-17T16:15:47.409Z",
+        "updatedAt": "2025-10-17T16:15:47.409Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 12,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Robotic Metal Additive Manufacturing",
+        "clubName": "ASME STUDENT CHAPTER",
+        "eventType": "Workshop",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "47Xb2cPhpwsklnk79zlQto"
+          }
+        },
+        "startDateAndTime": "2025-11-01T08:30+00:00",
+        "endDateAndTime": "2025-11-01T04:30+00:00",
+        "pricePerPerson": 200,
+        "participationType": "Solo",
+        "eventVenue": "AB2 015",
+        "shortDescription": "Get hands-on experience with robotic metal additive manufacturing. In this session, you'll use a robotic arc wire direct energy deposition setup to manufacture your own product. Perfect for students who want to create their own custom metal parts.",
+        "longDescription": "Get hands-on experience with robotic metal additive manufacturing. In this session, you'll use a robotic arc wire direct energy deposition setup to manufacture your own product. Perfect for students who want to create their own custom metal parts.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "5fj6hkHZe6YtWqmVcOvmmY",
+        "type": "Entry",
+        "createdAt": "2025-10-17T16:07:21.715Z",
+        "updatedAt": "2025-10-17T16:07:21.715Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 22,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Thrust Issues",
+        "clubName": "ASME STUDENT CHAPTER X Team Enthalpy",
+        "eventType": "Competition",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "47Xb2cPhpwsklnk79zlQto"
+          }
+        },
+        "startDateAndTime": "2025-11-01T09:00+00:00",
+        "endDateAndTime": "2025-11-01T18:00+00:00",
+        "pricePerPerson": 300,
+        "participationType": "Trio",
+        "eventVenue": "AB1 501 & AB3 701",
+        "shortDescription": "It is a design workshop competition based on rocketry and orbital mechanics using a popular software Kerbal Space Programme.",
+        "longDescription": "It is a design workshop competition based on rocketry and orbital mechanics using a popular software Kerbal Space Programme.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "30nPIg2jkTgWTmXQZdaLb2",
+        "type": "Entry",
+        "createdAt": "2025-10-17T10:23:50.018Z",
+        "updatedAt": "2025-10-17T10:23:50.018Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Obscur 33 Final Trace",
+        "clubName": "CYSCOM X FYI",
+        "eventType": "Competition",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "47Xb2cPhpwsklnk79zlQto"
+          }
+        },
+        "startDateAndTime": "2025-10-31T08:00:00.000Z",
+        "endDateAndTime": "2025-11-01T08:00:00.000Z",
+        "pricePerPerson": 150,
+        "participationType": "Solo",
+        "eventVenue": "Kamaraj Auditorium",
+        "shortDescription": "Inspired by an award-winning game, Obscur 33: Final Trace is a story-driven cybersecurity competition. It reimagines the CTF as an immersive, multi-ending experience where you solve dynamic flags and learn cybersecurity through cinematic gameplay.",
+        "longDescription": "Inspired by an award-winning game, Obscur 33: Final Trace is a story-driven cybersecurity competition. It reimagines the CTF as an immersive, multi-ending experience where you solve dynamic flags and learn cybersecurity through cinematic gameplay.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "3UMwTt7Sv0fm4LleLwZMws",
+        "type": "Entry",
+        "createdAt": "2025-10-14T18:54:21.650Z",
+        "updatedAt": "2025-10-17T09:46:54.398Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 24,
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Gen AI - Workshop",
+        "clubName": "ACM STUDENT CHAPTER",
+        "eventType": "Workshop",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "37xuOrzMgOm7r9X2Pe0SIp"
+          }
+        },
+        "startDateAndTime": "2025-10-29T13:00+00:00",
+        "endDateAndTime": "2025-10-29T19:00+00:00",
+        "pricePerPerson": 200,
+        "participationType": "Solo",
+        "eventVenue": "Nethaji Auditorium",
+        "shortDescription": "A genAI workshop featuring a session by ManageEngine (Zoho) on AI in security, followed by a hands-on session where students explore genAI for general and industry use cases, including MCP server creation.",
+        "longDescription": "A GenAI workshop featuring an interactive session by industry experts from ManageEngine (Zoho) on GenAI in security domains, followed by a hands-on session by students exploring general applications, industry use cases, and MCP server creation.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "7Mm759RYIax4Q2MNWHXq3v",
+        "type": "Entry",
+        "createdAt": "2025-10-17T08:22:10.279Z",
+        "updatedAt": "2025-10-17T08:22:10.279Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "F1 GRAND PRIX",
+        "clubName": "AUTOVIT",
+        "eventType": "Game",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "47Xb2cPhpwsklnk79zlQto"
+          }
+        },
+        "startDateAndTime": "2025-10-31T09:00:00.000Z",
+        "endDateAndTime": "2025-11-01T09:00:00.000Z",
+        "pricePerPerson": 50,
+        "participationType": "Solo",
+        "eventVenue": "AB3 210 SATORI Lab",
+        "shortDescription": "A solo racing challenge on F1 25 where each participant first answers 10 rapid-fire technical questions. Every wrong answer adds +1 second penalty to their lap time. The fastest adjusted lap wins combining racing thrill with technical knowledge.",
+        "longDescription": "A solo racing challenge on F1 25 where each participant first answers 10 rapid-fire technical questions. Every wrong answer adds +1 second penalty to their lap time. The fastest adjusted lap wins combining racing thrill with technical knowledge.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "271X1ZjHCboYQSK8sZeTwA",
+        "type": "Entry",
+        "createdAt": "2025-10-16T12:09:12.251Z",
+        "updatedAt": "2025-10-17T08:11:39.878Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "IGNITE Team of 4",
+        "clubName": "FRATERNITY OF LEADERS",
+        "eventType": "Competition",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "47Xb2cPhpwsklnk79zlQto"
+          }
+        },
+        "startDateAndTime": "2025-10-28T10:30+00:00",
+        "endDateAndTime": "2025-10-28T12:00:00.000Z",
+        "pricePerPerson": 360,
+        "participationType": "Squad",
+        "eventVenue": "Netaji Auditorium",
+        "shortDescription": "The two-day Startup Conclave inspires and guides students in entrepreneurship. Day 1 features interactive sessions with speakers sharing journeys and strategies. Day 2 focuses on startup pitches judged by experts, concluding with a prize distribution.",
+        "longDescription": "The Startup Conclave is a two-day event focused on inspiring and guiding students in their entrepreneurial journeys.<br> Day 1: Innovation & Insight : This day will feature motivational and interactive sessions with three renowned speakers. They will share their personal stories of turning ideas into successful ventures, detailing the challenges, strategies, and key milestones they encountered. <br> Day 2 : Pitch : This day will focus on the practical application of entrepreneurial skills. Following two final speaker sessions, a dedicated startup pitching event will take place. This provides a platform for student startups to present their ideas to a panel of judges, investors, and industry experts. The event will culminate with a prize distribution ceremony to recognize and reward innovative ideas.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "3xjFXPXZPqw1jPmbpT1CW2",
+        "type": "Entry",
+        "createdAt": "2025-10-16T12:09:10.347Z",
+        "updatedAt": "2025-10-17T08:03:29.866Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "IGNITE Team of 2",
+        "clubName": "FRATERNITY OF LEADERS",
+        "eventType": "Competition",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "47Xb2cPhpwsklnk79zlQto"
+          }
+        },
+        "startDateAndTime": "2025-10-28T10:30+00:00",
+        "endDateAndTime": "2025-10-28T12:00:00.000Z",
+        "pricePerPerson": 200,
+        "participationType": "Duo",
+        "eventVenue": "Netaji Auditorium",
+        "shortDescription": "The two-day Startup Conclave inspires and guides students in entrepreneurship. Day 1 features interactive sessions with speakers sharing journeys and strategies. Day 2 focuses on startup pitches judged by experts, concluding with a prize distribution.",
+        "longDescription": "The Startup Conclave is a two-day event focused on inspiring and guiding students in their entrepreneurial journeys.<br> Day 1: Innovation & Insight : This day will feature motivational and interactive sessions with three renowned speakers. They will share their personal stories of turning ideas into successful ventures, detailing the challenges, strategies, and key milestones they encountered. <br> Day 2 : Pitch : This day will focus on the practical application of entrepreneurial skills. Following two final speaker sessions, a dedicated startup pitching event will take place. This provides a platform for student startups to present their ideas to a panel of judges, investors, and industry experts. The event will culminate with a prize distribution ceremony to recognize and reward innovative ideas.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "3MJxe4CtBFTi5yNUYy7rOy",
+        "type": "Entry",
+        "createdAt": "2025-10-14T18:10:48.549Z",
+        "updatedAt": "2025-10-17T07:30:44.560Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 21,
+        "revision": 4,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Hack A Cure",
+        "clubName": "CODECHEF ",
+        "eventType": "Hackathon",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "6xVQmlw9iUvK3hIZJe9oqi"
+          }
+        },
+        "startDateAndTime": "2025-10-28T08:00+00:00",
+        "endDateAndTime": "2025-10-29T08:00+00:00",
+        "pricePerPerson": 200,
+        "participationType": "Duo/Trio/Squad/5+ Members",
+        "eventVenue": "Kamaraj Auditorium",
+        "shortDescription": "In this 24-hour hackathon, teams will design medical AI systems using Retrieval Augmented Generation (RAG). Leverage medical literature to build solutions, deploy them as APIs, and compete based on accuracy, evidence citation, and reliability.",
+        "longDescription": "Hack A Cure is a 24-hour hackathon where participants design advanced medical AI systems using Retrieval Augmented Generation (RAG). Teams leverage extensive medical literature to integrate large language models with external knowledge sources, creating AI solutions that provide accurate, context-rich clinical insights.\n \n Participants deploy their solutions as APIs, which are assessed through automated medical query tests measuring accuracy, evidence citation, and reliability. The hackathon emphasizes developing AI tools that enhance diagnostics, improve patient outcomes, and reduce AI hallucinations.\n \n Beyond technical innovation, Hack A Cure offers hands-on experience with cutting-edge AI technologies, including vector and graph databases, preparing participants for real-world challenges in medical AI applications. The event fosters creativity, collaboration, and ethical AI development, showcasing the potential of retrieval-augmented generation in healthcare.\n \n By combining AI, data retrieval, and medical expertise, Hack A Cure equips students and professionals with practical skills to design robust, evidence-based AI systems, advancing the future of intelligent healthcare solutions.",
+        "specialEvent": true
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "2OtKGx5Ex4KJJn84NSTX0d",
+        "type": "Entry",
+        "createdAt": "2025-10-15T03:07:58.047Z",
+        "updatedAt": "2025-10-17T07:26:24.520Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 15,
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "ANGRY BIRD STEM",
+        "clubName": "AUTOVIT",
+        "eventType": "Game",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "2KvbDfRnjAwWUCladLBY9b"
+          }
+        },
+        "startDateAndTime": "2025-11-02T09:00+00:00",
+        "endDateAndTime": "2025-11-02T15:00+00:00",
+        "pricePerPerson": 300,
+        "participationType": "Trio",
+        "eventVenue": "AB3 201",
+        "shortDescription": "In this challenge, teams of 2 have 45 minutes to build a catapult using only provided materials. The objective is to launch projectiles and knock down targets. Points are awarded for accuracy, power, and creative design, with penalties for delays.\n",
+        "longDescription": "The Angry Bird Stem event is a hands-on building and targeting challenge. \n Objective: Participants must design and build a miniature catapult that can launch projectiles to knock down the target. Accuracy and distance both matter.\n Competition: Team of 2 people. All the teams compete with each other. Each and every team will be given 45 mins to build and design their own catapult and launch. Points will be awarded for hitting the target, knocking them down, creative design and if they do not finish it on time their points will be reduced. The team with the highest score or fastest completion wins.\n Rules: Participants can only use the materials provided by the club. Creativity in building and designing the catapult is encouraged. Safety must be maintained while launching projectiles",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "2w7ZcoQKCCRKUZvwg75jLJ",
+        "type": "Entry",
+        "createdAt": "2025-10-16T12:16:45.318Z",
+        "updatedAt": "2025-10-17T07:23:29.661Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Decoding Time  A Journey into TIME SERIES ANALYSIS",
+        "clubName": "ARTIFICIAL INTELLIGENCE CLUB",
+        "eventType": "Workshop",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "47Xb2cPhpwsklnk79zlQto"
+          }
+        },
+        "startDateAndTime": "2025-10-27T09:00:00.000Z",
+        "endDateAndTime": "2025-10-29T16:00+00:00",
+        "pricePerPerson": 150,
+        "participationType": "Solo",
+        "eventVenue": "Online",
+        "shortDescription": "This workshop provides a gentle intro on the applications which requires time series analysis and hands-on session on - Introduction to time-series and stationary data handling, data smoothing, autocorrelation, and AutoRegressive Integrated Moving Average (ARIMA) models and handling the Temporal data imbalance in Python,",
+        "longDescription": "This workshop provides a gentle intro on the applications which requires time series analysis and hands-on session on - Introduction to time-series and stationary data handling, data smoothing, autocorrelation, and AutoRegressive Integrated Moving Average (ARIMA) models and handling the Temporal data imbalance in Python,",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "7wtkB7Wpme4okkOUS3pyUc",
+        "type": "Entry",
+        "createdAt": "2025-10-16T10:43:50.324Z",
+        "updatedAt": "2025-10-17T07:18:56.844Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "CraftMySite",
+        "clubName": "OPEN SOURCE PROGRAMMING CLUB",
+        "eventType": "Competition",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "47Xb2cPhpwsklnk79zlQto"
+          }
+        },
+        "startDateAndTime": "2025-10-31T08:00+00:00",
+        "endDateAndTime": "2025-10-31T16:00:00.000Z",
+        "pricePerPerson": 100,
+        "participationType": "Solo",
+        "eventVenue": "VOC  Auditorium",
+        "shortDescription": "Participants build standout personal portfolio websites using AI tools and coding. Projects are judged on design, functionality, responsiveness, and presentation. Attendees gain skills to create impressive, professional portfolios from scratch.",
+        "longDescription": "A dynamic workshop and contest where you build standout personal portfolio websites fast. Learn to harness AI tools and code from scratch to create portfolios that grab attention. Projects will be judged on design, functionality, responsiveness, and presentation. Attendees will gain walkaway with the ability to build impressive portfolios.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "6e7DkFo7XoKg67TOg1nXHI",
+        "type": "Entry",
+        "createdAt": "2025-10-16T14:13:25.784Z",
+        "updatedAt": "2025-10-17T07:15:27.561Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "InnoHack Innovation and IPR Challenge",
+        "clubName": "ENTREPRENEURSHIP CELL (E-CELL)",
+        "eventType": "Workshop",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "47Xb2cPhpwsklnk79zlQto"
+          }
+        },
+        "startDateAndTime": "2025-10-30T09:00:00.000Z",
+        "endDateAndTime": "2025-10-30T16:30:00.000Z",
+        "pricePerPerson": 300,
+        "participationType": "Solo/Duo/Trio",
+        "eventVenue": "AB3 001",
+        "shortDescription": "Workshop on innovation and IPR with a hackathon. Sessions include: innovation introduction, IPR basics, ideation, creative problem-solving, group hackathon activity, and presentations. Participants learn to implement ideas effectively.",
+        "longDescription": "Objective:<br> • To educate students about intellectual property rights (IPR) and their role in innovation.<br> • To inspire students to generate creative solutions to real-world problems.<br> • To provide a platform where students can implement their ideas through a hackathon - Group activity<br> <br> Tentative Sessions:<br> <br> Session 1: Introduction to Innovation (FN session)<br> <br> Session 2: Understanding intellectual property rights (IPR) (FN session)<br> <br> Session 3: Ideation & Creativity (FN session)<br> <br> Session 4: Hackathon - Group activity - Creative solutions to real-world problems (FN & AN session)<br> <br> Session 5: Presentation (AN session)",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "5ewmbQkhj7CHWDAUobYWND",
+        "type": "Entry",
+        "createdAt": "2025-10-14T10:01:47.055Z",
+        "updatedAt": "2025-10-17T07:00:42.450Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 42,
+        "revision": 6,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "HackaThrone",
+        "clubName": "MICROSOFT INNOVATION CLUB",
+        "eventType": "Hackathon",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "4Ix6PVl0AolFhukMHBzyAy"
+          }
+        },
+        "startDateAndTime": "2025-10-29T11:00+00:00",
+        "endDateAndTime": "2025-10-30T11:00+00:00",
+        "pricePerPerson": 200,
+        "participationType": "Squad",
+        "eventVenue": "MG Auditorium",
+        "shortDescription": "A multidisciplinary hackathon where every project integrates web development, AI/ML, cybersecurity, and product innovation. Teams build cohesive, user-centered solutions, blending technical skills, data intelligence, and innovative system design.",
+        "longDescription": "HackThrone is a high-impact, multidisciplinary hackathon where participants go beyond traditional domain silos. Unlike regular hackathons that focus on a single track or theme, every project at HackThrone must integrate four critical pillars of modern technology:\n <br><br>\n 1. Web Development\n 2. Artificial Intelligence & Machine Learning (AI/ML)\n 3. Cybersecurity\n 4. Innovation & Product Thinking\n \n This format challenges teams to think holistically, blending technical skill, system design, data intelligence, and user-centered innovation into one cohesive solution.\n \n By creating a hackathon where every team must incorporate all four core domains, not just pick one or two, HackThrone truly stands out from traditional hackathons.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "1lhNRMBbHhEMvc98JZ1HG8",
+        "type": "Entry",
+        "createdAt": "2025-10-16T14:16:07.568Z",
+        "updatedAt": "2025-10-17T06:33:53.803Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Quantum Meets AI The Rise of Quantum Deep Learning",
+        "clubName": "ARTIFICIAL INTELLIGENCE CLUB",
+        "eventType": "Workshop",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "47Xb2cPhpwsklnk79zlQto"
+          }
+        },
+        "startDateAndTime": "2025-10-29T10:00:00.000Z",
+        "endDateAndTime": "2025-10-29T16:00:00.000Z",
+        "pricePerPerson": 100,
+        "participationType": "Solo",
+        "eventVenue": "AB3 201",
+        "shortDescription": "Explore quantum computing principles like superposition and entanglement to accelerate deep learning. Learn hybrid algorithms, quantum-inspired neural networks, and see hands-on demos highlighting future AI applications.",
+        "longDescription": "This workshop explores how quantum computing principles, such as superposition and entanglement, can accelerate and transform deep learning models. Participants will learn about quantum-inspired neural networks, hybrid quantum-classical algorithms, and their potential in solving complex problems. Hands-on demonstrations and case studies will highlight the future of quantum-enhanced AI applications.",
+        "specialEvent": false
+      }
+    },
     {
       "metadata": {
         "tags": [],
@@ -59,62 +843,6 @@
         "eventVenue": "AB3 501",
         "shortDescription": "Participants act as digital detectives in a CTF-style murder mystery. They uncover hidden clues, solve technical puzzles, and piece together evidence under time pressure, combining investigation, problem-solving, and teamwork.",
         "longDescription": "Participants will step into the role of digital detectives in this thrilling capture-the-flag challenge, where they must unravel a gripping murder mystery by uncovering hidden clues, solving technical puzzles, and piecing together evidence. The event blends problem-solving, investigation, and teamwork under time pressure, offering an engaging and competitive experience for beginners and enthusiasts alike.",
-        "specialEvent": false
-      }
-    },
-    {
-      "metadata": {
-        "tags": [],
-        "concepts": []
-      },
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "rr94wjxz7mfi"
-          }
-        },
-        "id": "1lhNRMBbHhEMvc98JZ1HG8",
-        "type": "Entry",
-        "createdAt": "2025-10-16T14:16:07.568Z",
-        "updatedAt": "2025-10-16T14:16:07.568Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 1,
-        "revision": 1,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "event"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "eventName": "Quantum Meets AI The Rise of Quantum Deep Learning",
-        "clubName": "ARTIFICIAL INTELLIGENCE CLUB",
-        "eventType": "Workshop",
-        "poster": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Asset",
-            "id": "47Xb2cPhpwsklnk79zlQto"
-          }
-        },
-        "startDateAndTime": "2025-10-29T10:00:00.000Z",
-        "endDateAndTime": "2025-10-29T16:00:00.000Z",
-        "pricePerPerson": 1000,
-        "participationType": "Solo",
-        "eventVenue": "AB3 201",
-        "shortDescription": "Explore quantum computing principles like superposition and entanglement to accelerate deep learning. Learn hybrid algorithms, quantum-inspired neural networks, and see hands-on demos highlighting future AI applications.",
-        "longDescription": "This workshop explores how quantum computing principles, such as superposition and entanglement, can accelerate and transform deep learning models. Participants will learn about quantum-inspired neural networks, hybrid quantum-classical algorithms, and their potential in solving complex problems. Hands-on demonstrations and case studies will highlight the future of quantum-enhanced AI applications.",
         "specialEvent": false
       }
     },
@@ -619,62 +1347,6 @@
         "eventVenue": "Ground Near E Block",
         "shortDescription": "Teams design compact rovers and compete in mobility and manipulation trials over rough terrain. Judging includes time, accuracy, efficiency, robustness, innovation, and safety, with bonuses for autonomous performance.",
         "longDescription": "Pravahan 1.0 is VIT Chennai’s flagship national robotics competition, inviting student teams of 2–4 members to design compact rovers within 30 × 30 × 40 cm (l*b*h). The event is structured in three stages: Stage 1 – Ideation (online submission of concept report), Stage 2 – Proof of Concept (structured report + video demonstration), and Stage 3 – On-Site Finals at VIT Chennai. In the Finals, teams compete in two trials: (i) Mobility Trial – obstacle avoidance and checkpoint navigation across terrains with sand, mud, stones, uneven paths, humps, and sharp turns, and (ii) Manipulation Trial – precise pick-and-place of colored blocks at different heights under terrain difficulties. Judging will be based on time, accuracy, efficiency, robustness, innovation, and safety, with bonus recognition for autonomous mobility. As part of TechnoVIT, Pravahan 1.0 offers a national platform for showcasing innovation, applied engineering, and teamwork, supported by prizes, patent assistance, and industry exposure.",
-        "specialEvent": false
-      }
-    },
-    {
-      "metadata": {
-        "tags": [],
-        "concepts": []
-      },
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "rr94wjxz7mfi"
-          }
-        },
-        "id": "6e7DkFo7XoKg67TOg1nXHI",
-        "type": "Entry",
-        "createdAt": "2025-10-16T14:13:25.784Z",
-        "updatedAt": "2025-10-16T14:13:25.784Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 1,
-        "revision": 1,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "event"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "eventName": "InnoHack Innovation and IPR Challenge",
-        "clubName": "ENTREPRENEURSHIP CELL (E-CELL)",
-        "eventType": "Workshop",
-        "poster": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Asset",
-            "id": "47Xb2cPhpwsklnk79zlQto"
-          }
-        },
-        "startDateAndTime": "2025-10-30T09:00:00.000Z",
-        "endDateAndTime": "2025-10-30T16:30:00.000Z",
-        "pricePerPerson": 300,
-        "participationType": "Solo",
-        "eventVenue": "AB3 001",
-        "shortDescription": "Workshop on innovation and IPR with a hackathon. Sessions include: innovation introduction, IPR basics, ideation, creative problem-solving, group hackathon activity, and presentations. Participants learn to implement ideas effectively.",
-        "longDescription": "Objective:<br> • To educate students about intellectual property rights (IPR) and their role in innovation.<br> • To inspire students to generate creative solutions to real-world problems.<br> • To provide a platform where students can implement their ideas through a hackathon - Group activity<br> <br> Tentative Sessions:<br> <br> Session 1: Introduction to Innovation (FN session)<br> <br> Session 2: Understanding intellectual property rights (IPR) (FN session)<br> <br> Session 3: Ideation & Creativity (FN session)<br> <br> Session 4: Hackathon - Group activity - Creative solutions to real-world problems (FN & AN session)<br> <br> Session 5: Presentation (AN session)",
         "specialEvent": false
       }
     },
@@ -2035,62 +2707,6 @@
             "id": "rr94wjxz7mfi"
           }
         },
-        "id": "2w7ZcoQKCCRKUZvwg75jLJ",
-        "type": "Entry",
-        "createdAt": "2025-10-16T12:16:45.318Z",
-        "updatedAt": "2025-10-16T12:16:45.318Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 1,
-        "revision": 1,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "event"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "eventName": "Decoding Time  A Journey into TIME SERIES ANALYSIS",
-        "clubName": "ARTIFICIAL INTELLIGENCE CLUB",
-        "eventType": "Workshop",
-        "poster": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Asset",
-            "id": "47Xb2cPhpwsklnk79zlQto"
-          }
-        },
-        "startDateAndTime": "2025-10-27T09:00:00.000Z",
-        "endDateAndTime": "2025-10-27T16:00:00.000Z",
-        "pricePerPerson": 150,
-        "participationType": "Solo",
-        "eventVenue": "Online",
-        "shortDescription": "This workshop provides a gentle intro on the applications which requires time series analysis and hands-on session on - Introduction to time-series and stationary data handling, data smoothing, autocorrelation, and AutoRegressive Integrated Moving Average (ARIMA) models and handling the Temporal data imbalance in Python,",
-        "longDescription": "This workshop provides a gentle intro on the applications which requires time series analysis and hands-on session on - Introduction to time-series and stationary data handling, data smoothing, autocorrelation, and AutoRegressive Integrated Moving Average (ARIMA) models and handling the Temporal data imbalance in Python,",
-        "specialEvent": false
-      }
-    },
-    {
-      "metadata": {
-        "tags": [],
-        "concepts": []
-      },
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "rr94wjxz7mfi"
-          }
-        },
         "id": "7zNzBsozIS4630shrEcQLx",
         "type": "Entry",
         "createdAt": "2025-10-16T12:16:44.386Z",
@@ -2707,62 +3323,6 @@
             "id": "rr94wjxz7mfi"
           }
         },
-        "id": "271X1ZjHCboYQSK8sZeTwA",
-        "type": "Entry",
-        "createdAt": "2025-10-16T12:09:12.251Z",
-        "updatedAt": "2025-10-16T12:09:12.251Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 1,
-        "revision": 1,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "event"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "eventName": "IGNITE Team of 4",
-        "clubName": "FRATERNITY OF LEADERS",
-        "eventType": "Competition",
-        "poster": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Asset",
-            "id": "47Xb2cPhpwsklnk79zlQto"
-          }
-        },
-        "startDateAndTime": "2025-10-28T09:00:00.000Z",
-        "endDateAndTime": "2025-10-28T12:00:00.000Z",
-        "pricePerPerson": 360,
-        "participationType": "Squad",
-        "eventVenue": "Netaji Auditorium",
-        "shortDescription": "The two-day Startup Conclave inspires and guides students in entrepreneurship. Day 1 features interactive sessions with speakers sharing journeys and strategies. Day 2 focuses on startup pitches judged by experts, concluding with a prize distribution.",
-        "longDescription": "The Startup Conclave is a two-day event focused on inspiring and guiding students in their entrepreneurial journeys.<br> Day 1: Innovation & Insight : This day will feature motivational and interactive sessions with three renowned speakers. They will share their personal stories of turning ideas into successful ventures, detailing the challenges, strategies, and key milestones they encountered. <br> Day 2 : Pitch : This day will focus on the practical application of entrepreneurial skills. Following two final speaker sessions, a dedicated startup pitching event will take place. This provides a platform for student startups to present their ideas to a panel of judges, investors, and industry experts. The event will culminate with a prize distribution ceremony to recognize and reward innovative ideas.",
-        "specialEvent": false
-      }
-    },
-    {
-      "metadata": {
-        "tags": [],
-        "concepts": []
-      },
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "rr94wjxz7mfi"
-          }
-        },
         "id": "7jmAelKSbCXWJhETnUQ32Z",
         "type": "Entry",
         "createdAt": "2025-10-16T12:09:11.343Z",
@@ -2800,118 +3360,6 @@
         "endDateAndTime": "2025-10-28T12:00:00.000Z",
         "pricePerPerson": 285,
         "participationType": "Trio",
-        "eventVenue": "Netaji Auditorium",
-        "shortDescription": "The two-day Startup Conclave inspires and guides students in entrepreneurship. Day 1 features interactive sessions with speakers sharing journeys and strategies. Day 2 focuses on startup pitches judged by experts, concluding with a prize distribution.",
-        "longDescription": "The Startup Conclave is a two-day event focused on inspiring and guiding students in their entrepreneurial journeys.<br> Day 1: Innovation & Insight : This day will feature motivational and interactive sessions with three renowned speakers. They will share their personal stories of turning ideas into successful ventures, detailing the challenges, strategies, and key milestones they encountered. <br> Day 2 : Pitch : This day will focus on the practical application of entrepreneurial skills. Following two final speaker sessions, a dedicated startup pitching event will take place. This provides a platform for student startups to present their ideas to a panel of judges, investors, and industry experts. The event will culminate with a prize distribution ceremony to recognize and reward innovative ideas.",
-        "specialEvent": false
-      }
-    },
-    {
-      "metadata": {
-        "tags": [],
-        "concepts": []
-      },
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "rr94wjxz7mfi"
-          }
-        },
-        "id": "3xjFXPXZPqw1jPmbpT1CW2",
-        "type": "Entry",
-        "createdAt": "2025-10-16T12:09:10.347Z",
-        "updatedAt": "2025-10-16T12:09:10.347Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 1,
-        "revision": 1,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "event"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "eventName": "IGNITE Team of 2",
-        "clubName": "FRATERNITY OF LEADERS",
-        "eventType": "Competition",
-        "poster": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Asset",
-            "id": "47Xb2cPhpwsklnk79zlQto"
-          }
-        },
-        "startDateAndTime": "2025-10-28T09:00:00.000Z",
-        "endDateAndTime": "2025-10-28T12:00:00.000Z",
-        "pricePerPerson": 200,
-        "participationType": "Duo",
-        "eventVenue": "Netaji Auditorium",
-        "shortDescription": "The two-day Startup Conclave inspires and guides students in entrepreneurship. Day 1 features interactive sessions with speakers sharing journeys and strategies. Day 2 focuses on startup pitches judged by experts, concluding with a prize distribution.",
-        "longDescription": "The Startup Conclave is a two-day event focused on inspiring and guiding students in their entrepreneurial journeys.<br> Day 1: Innovation & Insight : This day will feature motivational and interactive sessions with three renowned speakers. They will share their personal stories of turning ideas into successful ventures, detailing the challenges, strategies, and key milestones they encountered. <br> Day 2 : Pitch : This day will focus on the practical application of entrepreneurial skills. Following two final speaker sessions, a dedicated startup pitching event will take place. This provides a platform for student startups to present their ideas to a panel of judges, investors, and industry experts. The event will culminate with a prize distribution ceremony to recognize and reward innovative ideas.",
-        "specialEvent": false
-      }
-    },
-    {
-      "metadata": {
-        "tags": [],
-        "concepts": []
-      },
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "rr94wjxz7mfi"
-          }
-        },
-        "id": "28pa4Zel80nOXDRbs9wndG",
-        "type": "Entry",
-        "createdAt": "2025-10-16T12:09:09.216Z",
-        "updatedAt": "2025-10-16T12:09:09.216Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 1,
-        "revision": 1,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "event"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "eventName": "IGNITE Team of 1",
-        "clubName": "FRATERNITY OF LEADERS",
-        "eventType": "Competition",
-        "poster": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Asset",
-            "id": "47Xb2cPhpwsklnk79zlQto"
-          }
-        },
-        "startDateAndTime": "2025-10-28T09:00:00.000Z",
-        "endDateAndTime": "2025-10-28T12:00:00.000Z",
-        "pricePerPerson": 50,
-        "participationType": "Solo",
         "eventVenue": "Netaji Auditorium",
         "shortDescription": "The two-day Startup Conclave inspires and guides students in entrepreneurship. Day 1 features interactive sessions with speakers sharing journeys and strategies. Day 2 focuses on startup pitches judged by experts, concluding with a prize distribution.",
         "longDescription": "The Startup Conclave is a two-day event focused on inspiring and guiding students in their entrepreneurial journeys.<br> Day 1: Innovation & Insight : This day will feature motivational and interactive sessions with three renowned speakers. They will share their personal stories of turning ideas into successful ventures, detailing the challenges, strategies, and key milestones they encountered. <br> Day 2 : Pitch : This day will focus on the practical application of entrepreneurial skills. Following two final speaker sessions, a dedicated startup pitching event will take place. This provides a platform for student startups to present their ideas to a panel of judges, investors, and industry experts. The event will culminate with a prize distribution ceremony to recognize and reward innovative ideas.",
@@ -2971,62 +3419,6 @@
         "eventVenue": "MG Auditorium",
         "shortDescription": "CODYSSEY is a full-day Halloween coding showdown on 31st Oct. Participants solve algorithmic challenges, attend expert sessions, compete in coding sprints, enjoy themed activities, network, and win prizes, blending technical rigor with fun.",
         "longDescription": "CODYSSEY is a full-day competitive coding showdown on Halloween day, designed to challenge participants with algorithmic problem-solving, intense coding battles, and engaging technical sessions.<br> With a Halloween theme on 31st October, the event blends technical rigor with a creative, fun-filled atmosphere to make coding more thrilling than ever before.<br> <br> Event Highlights<br> Competitive Coding Rounds – Multiple rounds of algorithmic and problem-solving challenges.<br> Speaker Session by Industry Expert – Gain insights from top professionals in the tech world.<br> Algorithmic Showdowns – Brainstorming puzzles and coding sprints with a twist.<br> Halloween-Themed Activities – Creative coding sessions and optional costume participation.<br> Networking Opportunities – Interact with peers, mentors, and sponsors.<br> Prizes, Swag, and PPIs – Rewards, goodies, and potential career opportunities.",
-        "specialEvent": false
-      }
-    },
-    {
-      "metadata": {
-        "tags": [],
-        "concepts": []
-      },
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "rr94wjxz7mfi"
-          }
-        },
-        "id": "4yEanGZps7avE5iryng5t2",
-        "type": "Entry",
-        "createdAt": "2025-10-16T11:58:02.916Z",
-        "updatedAt": "2025-10-16T11:58:02.916Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 1,
-        "revision": 1,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "event"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "eventName": "IBM workshop",
-        "clubName": "IEEE WOMEN IN ENGINEERING (IEEE-WIE)",
-        "eventType": "Workshop",
-        "poster": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Asset",
-            "id": "47Xb2cPhpwsklnk79zlQto"
-          }
-        },
-        "startDateAndTime": "2025-10-27T08:00:00.000Z",
-        "endDateAndTime": "2025-10-27T14:00:00.000Z",
-        "pricePerPerson": 50,
-        "participationType": "Solo",
-        "eventVenue": "VOC Auditorium",
-        "shortDescription": "A main frame workshop by IBM senior engineer. ",
-        "longDescription": "main frame workshop by ibm senior engineer",
         "specialEvent": false
       }
     },
@@ -3771,62 +4163,6 @@
             "id": "rr94wjxz7mfi"
           }
         },
-        "id": "5TEhlShoWBEVaKJbDi1H3q",
-        "type": "Entry",
-        "createdAt": "2025-10-16T11:26:20.197Z",
-        "updatedAt": "2025-10-16T11:26:20.197Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 1,
-        "revision": 1,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "event"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "eventName": "A Quantum Approach to Climate Driven Variability",
-        "clubName": "DATA SCIENCE CLUB",
-        "eventType": "Workshop",
-        "poster": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Asset",
-            "id": "47Xb2cPhpwsklnk79zlQto"
-          }
-        },
-        "startDateAndTime": "2025-11-01T10:00:00.000Z",
-        "endDateAndTime": "2025-11-01T16:00:00.000Z",
-        "pricePerPerson": 200,
-        "participationType": "Duo",
-        "eventVenue": "AB3 404",
-        "shortDescription": "Harnessing Quantum-Enhanced Hybrid Transformer Model for Predicting Long-Term Wind Energy Losses: A Multimodal Fusion Approach to Climate-Driven Variability",
-        "longDescription": "Harnessing Quantum-Enhanced Hybrid Transformer Model for Predicting Long-Term<br> Wind Energy Losses: A Multimodal Fusion Approach to Climate-Driven Variability",
-        "specialEvent": false
-      }
-    },
-    {
-      "metadata": {
-        "tags": [],
-        "concepts": []
-      },
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "rr94wjxz7mfi"
-          }
-        },
         "id": "7MmV54K0fCWJxSq8eU7mCF",
         "type": "Entry",
         "createdAt": "2025-10-16T11:25:14.934Z",
@@ -4555,62 +4891,6 @@
             "id": "rr94wjxz7mfi"
           }
         },
-        "id": "7wtkB7Wpme4okkOUS3pyUc",
-        "type": "Entry",
-        "createdAt": "2025-10-16T10:43:50.324Z",
-        "updatedAt": "2025-10-16T10:43:50.324Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 1,
-        "revision": 1,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "event"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "eventName": "CraftMySite",
-        "clubName": "OPEN SOURCE PROGRAMMING CLUB",
-        "eventType": "Competition",
-        "poster": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Asset",
-            "id": "47Xb2cPhpwsklnk79zlQto"
-          }
-        },
-        "startDateAndTime": "2025-10-31T10:00:00.000Z",
-        "endDateAndTime": "2025-10-31T16:00:00.000Z",
-        "pricePerPerson": 100,
-        "participationType": "Solo",
-        "eventVenue": "VOC  Auditorium",
-        "shortDescription": "Participants build standout personal portfolio websites using AI tools and coding. Projects are judged on design, functionality, responsiveness, and presentation. Attendees gain skills to create impressive, professional portfolios from scratch.",
-        "longDescription": "A dynamic workshop and contest where you build standout personal portfolio websites fast. Learn to harness AI tools and code from scratch to create portfolios that grab attention. Projects will be judged on design, functionality, responsiveness, and presentation. Attendees will gain walkaway with the ability to build impressive portfolios.",
-        "specialEvent": false
-      }
-    },
-    {
-      "metadata": {
-        "tags": [],
-        "concepts": []
-      },
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "rr94wjxz7mfi"
-          }
-        },
         "id": "2Eukt71tHaGuxRhYPFuTwi",
         "type": "Entry",
         "createdAt": "2025-10-16T10:37:53.070Z",
@@ -5295,118 +5575,6 @@
             "id": "rr94wjxz7mfi"
           }
         },
-        "id": "2OtKGx5Ex4KJJn84NSTX0d",
-        "type": "Entry",
-        "createdAt": "2025-10-15T03:07:58.047Z",
-        "updatedAt": "2025-10-15T03:07:58.047Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 13,
-        "revision": 1,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "event"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "eventName": "ANGRY BIRD STEM",
-        "clubName": "AUTOVIT",
-        "eventType": "Game",
-        "poster": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Asset",
-            "id": "2KvbDfRnjAwWUCladLBY9b"
-          }
-        },
-        "startDateAndTime": "2025-11-02T09:00+00:00",
-        "endDateAndTime": "2025-11-02T15:00+00:00",
-        "pricePerPerson": 100,
-        "participationType": "Trio",
-        "eventVenue": "AB3 201",
-        "shortDescription": "In this challenge, teams of 2 have 45 minutes to build a catapult using only provided materials. The objective is to launch projectiles and knock down targets. Points are awarded for accuracy, power, and creative design, with penalties for delays.\n",
-        "longDescription": "The Angry Bird Stem event is a hands-on building and targeting challenge. \n Objective: Participants must design and build a miniature catapult that can launch projectiles to knock down the target. Accuracy and distance both matter.\n Competition: Team of 2 people. All the teams compete with each other. Each and every team will be given 45 mins to build and design their own catapult and launch. Points will be awarded for hitting the target, knocking them down, creative design and if they do not finish it on time their points will be reduced. The team with the highest score or fastest completion wins.\n Rules: Participants can only use the materials provided by the club. Creativity in building and designing the catapult is encouraged. Safety must be maintained while launching projectiles",
-        "specialEvent": false
-      }
-    },
-    {
-      "metadata": {
-        "tags": [],
-        "concepts": []
-      },
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "rr94wjxz7mfi"
-          }
-        },
-        "id": "61nmjeeMea4SPY8upGAOWQ",
-        "type": "Entry",
-        "createdAt": "2025-10-15T03:03:06.059Z",
-        "updatedAt": "2025-10-15T03:03:06.059Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 15,
-        "revision": 1,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "event"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "eventName": "Animatathon",
-        "clubName": "ANIMATION CLUB",
-        "eventType": "Hackathon",
-        "poster": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Asset",
-            "id": "1TVE7wjo6VDdqgFXvZkSgP"
-          }
-        },
-        "startDateAndTime": "2025-11-01T10:00+00:00",
-        "endDateAndTime": "2025-11-02T13:30+00:00",
-        "pricePerPerson": 100,
-        "participationType": "5+ Members",
-        "eventVenue": "VOC Auditorium",
-        "shortDescription": "Animatathon is a hackathon for creators in 2D, 3D, and stop-motion animation. The event starts with a 2-hour industry talk, followed by a team creation phase. It concludes with a showcase judged on creativity, narrative, and technical execution.",
-        "longDescription": "Animatathon is a 28-hour (or slightly shorter) hackathon-style event that celebrates the full spectrum of animation. Participants from diverse creative backgrounds will come together to explore and experiment with different forms of animation including 2D, 3D, stop motion, and multimedia. The event begins with a two-hour session led by a spokesperson, where industry insights and professional works will be shared to inspire and guide participants before they begin their projects.\n \n Following this, teams will immerse themselves in an intensive creation phase, working to conceptualize and produce original animated projects within the given timeframe. From crafting characters and worlds to experimenting with techniques and storytelling, participants will push their creative boundaries. The event concludes with a showcase judged on creativity, narrative impact, and technical execution, making Animatathon both a competition and a collaborative platform to learn, innovate, and connect within the animation community.",
-        "specialEvent": false
-      }
-    },
-    {
-      "metadata": {
-        "tags": [],
-        "concepts": []
-      },
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "rr94wjxz7mfi"
-          }
-        },
         "id": "3e7rrybDex3VEn8UWAm1cV",
         "type": "Entry",
         "createdAt": "2025-10-15T02:58:47.618Z",
@@ -5449,223 +5617,10 @@
         "longDescription": "Algorithmic Art: Generate stunning visual art using code, based on mathematical principles like fractals, tessellations, or parametric equations.\n \n ​Geometric Design: Design a physical or 3D-modeled structure (e.g., a bridge, a sculpture, an architectural model) that demonstrates advanced geometric principles and structural integrity.\n \n Data Sonification: Transform a complex dataset into a musical composition, using mathematical rules to map data points to notes, rhythms, and harmonies.",
         "specialEvent": false
       }
-    },
-    {
-      "metadata": {
-        "tags": [],
-        "concepts": []
-      },
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "rr94wjxz7mfi"
-          }
-        },
-        "id": "7wDMAjAEh8H0DeYXzjtwCu",
-        "type": "Entry",
-        "createdAt": "2025-10-15T02:50:04.329Z",
-        "updatedAt": "2025-10-15T02:50:04.329Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 14,
-        "revision": 1,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "event"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "eventName": "Workshop on PCB",
-        "clubName": "IEEE COMPUTER SOCIETY (IEEE-CS)",
-        "eventType": "Workshop",
-        "poster": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Asset",
-            "id": "5xGcUNgvVl7OWbNkT3agak"
-          }
-        },
-        "startDateAndTime": "2025-10-31T09:00+00:00",
-        "endDateAndTime": "2025-10-31T16:00+00:00",
-        "pricePerPerson": 300,
-        "participationType": "Solo/Duo/Trio",
-        "eventVenue": "AB3 602",
-        "shortDescription": "Interactive event designed to teach participants the practical skills of designing and fabricating electronic circuits on PCB platforms.",
-        "longDescription": "Interactive event designed to teach participants the practical skills of designing and fabricating electronic circuits on PCB platforms.",
-        "specialEvent": false
-      }
-    },
-    {
-      "metadata": {
-        "tags": [],
-        "concepts": []
-      },
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "rr94wjxz7mfi"
-          }
-        },
-        "id": "5UuP8xiUSVrucNBc3HZiku",
-        "type": "Entry",
-        "createdAt": "2025-10-15T02:43:30.944Z",
-        "updatedAt": "2025-10-15T02:43:30.944Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 13,
-        "revision": 1,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "event"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "eventName": "Frame it with Figma",
-        "clubName": "CLOUD COMPUTING CLUB",
-        "eventType": "Workshop",
-        "poster": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Asset",
-            "id": "3oh8rIU6orV0p3UtUqMEth"
-          }
-        },
-        "startDateAndTime": "2025-10-29T10:00+01:00",
-        "endDateAndTime": "2025-10-29T18:00+00:00",
-        "pricePerPerson": 100,
-        "participationType": "Solo",
-        "eventVenue": "Kamaraj Auditorium",
-        "shortDescription": "Hands-on Figma workshop: learn wireframes, mockups, prototypes, then design a complete UI. Win cash prizes, certificates for all.",
-        "longDescription": "Hands-on Figma workshop: learn wireframes, mockups, prototypes, then design a complete UI. Win cash prizes, certificates for all.",
-        "specialEvent": false
-      }
-    },
-    {
-      "metadata": {
-        "tags": [],
-        "concepts": []
-      },
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "rr94wjxz7mfi"
-          }
-        },
-        "id": "5ewmbQkhj7CHWDAUobYWND",
-        "type": "Entry",
-        "createdAt": "2025-10-14T10:01:47.055Z",
-        "updatedAt": "2025-10-14T19:37:45.544Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 40,
-        "revision": 5,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "event"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "eventName": "HackaThrone",
-        "clubName": "MICROSOFT INNOVATION CLUB",
-        "eventType": "Hackathon",
-        "poster": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Asset",
-            "id": "4Ix6PVl0AolFhukMHBzyAy"
-          }
-        },
-        "startDateAndTime": "2025-10-29T11:00+00:00",
-        "endDateAndTime": "2025-10-30T11:00+00:00",
-        "pricePerPerson": 50,
-        "participationType": "Squad",
-        "eventVenue": "MG Auditorium",
-        "shortDescription": "A multidisciplinary hackathon where every project integrates web development, AI/ML, cybersecurity, and product innovation. Teams build cohesive, user-centered solutions, blending technical skills, data intelligence, and innovative system design.",
-        "longDescription": "HackThrone is a high-impact, multidisciplinary hackathon where participants go beyond traditional domain silos. Unlike regular hackathons that focus on a single track or theme, every project at HackThrone must integrate four critical pillars of modern technology:\n <br><br>\n 1. Web Development\n 2. Artificial Intelligence & Machine Learning (AI/ML)\n 3. Cybersecurity\n 4. Innovation & Product Thinking\n \n This format challenges teams to think holistically, blending technical skill, system design, data intelligence, and user-centered innovation into one cohesive solution.\n \n By creating a hackathon where every team must incorporate all four core domains, not just pick one or two, HackThrone truly stands out from traditional hackathons.",
-        "specialEvent": false
-      }
     }
   ],
   "includes": {
     "Asset": [
-      {
-        "metadata": {
-          "tags": [],
-          "concepts": []
-        },
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "rr94wjxz7mfi"
-            }
-          },
-          "id": "1TVE7wjo6VDdqgFXvZkSgP",
-          "type": "Asset",
-          "createdAt": "2025-10-15T03:00:49.053Z",
-          "updatedAt": "2025-10-15T03:00:49.053Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "publishedVersion": 3,
-          "revision": 1,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "Animatathon - VIT Chennai Animation Club",
-          "description": "",
-          "file": {
-            "url": "//images.ctfassets.net/rr94wjxz7mfi/1TVE7wjo6VDdqgFXvZkSgP/6a9e39f24d35713bfd08b912bec20f9e/Animatathon_-_VIT_Chennai_Animation_Club.jpg",
-            "details": {
-              "size": 754366,
-              "image": {
-                "width": 1587,
-                "height": 2245
-              }
-            },
-            "fileName": "Animatathon - VIT Chennai Animation Club.jpg",
-            "contentType": "image/jpeg"
-          }
-        }
-      },
       {
         "metadata": {
           "tags": [],
@@ -5708,6 +5663,51 @@
             },
             "fileName": "TechnoVITPosters - IT AUTOVIT.jpg",
             "contentType": "image/jpeg"
+          }
+        }
+      },
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "rr94wjxz7mfi"
+            }
+          },
+          "id": "37xuOrzMgOm7r9X2Pe0SIp",
+          "type": "Asset",
+          "createdAt": "2025-10-14T18:54:13.944Z",
+          "updatedAt": "2025-10-14T18:54:13.944Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 3,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "gen ai event - VITCC ACM Student Chapter",
+          "description": "",
+          "file": {
+            "url": "//images.ctfassets.net/rr94wjxz7mfi/37xuOrzMgOm7r9X2Pe0SIp/627e5e0ba367eba72872dde780155c22/gen_ai_event_-_VITCC_ACM_Student_Chapter.png",
+            "details": {
+              "size": 451834,
+              "image": {
+                "width": 1080,
+                "height": 1920
+              }
+            },
+            "fileName": "gen_ai_event - VITCC ACM Student Chapter.png",
+            "contentType": "image/png"
           }
         }
       },
@@ -5797,51 +5797,6 @@
               }
             },
             "fileName": "Blue Abstract Blank A4 Document Landscape (2) - Mathematics Club.jpg",
-            "contentType": "image/jpeg"
-          }
-        }
-      },
-      {
-        "metadata": {
-          "tags": [],
-          "concepts": []
-        },
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "rr94wjxz7mfi"
-            }
-          },
-          "id": "3oh8rIU6orV0p3UtUqMEth",
-          "type": "Asset",
-          "createdAt": "2025-10-15T02:43:22.886Z",
-          "updatedAt": "2025-10-15T02:43:22.886Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "publishedVersion": 3,
-          "revision": 1,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "WhatsApp Image 2025-10-10 at 17.49.45 6d1a40e9 - CloudOps VITC",
-          "description": "",
-          "file": {
-            "url": "//images.ctfassets.net/rr94wjxz7mfi/3oh8rIU6orV0p3UtUqMEth/32a5cb1a2096a5587cab866257acf9f4/WhatsApp_Image_2025-10-10_at_17.49.45_6d1a40e9_-_CloudOps_VITC.jpg",
-            "details": {
-              "size": 298366,
-              "image": {
-                "width": 1236,
-                "height": 1600
-              }
-            },
-            "fileName": "WhatsApp Image 2025-10-10 at 17.49.45_6d1a40e9 - CloudOps VITC.jpg",
             "contentType": "image/jpeg"
           }
         }
@@ -6083,51 +6038,6 @@
               "id": "rr94wjxz7mfi"
             }
           },
-          "id": "5xGcUNgvVl7OWbNkT3agak",
-          "type": "Asset",
-          "createdAt": "2025-10-15T02:49:52.273Z",
-          "updatedAt": "2025-10-15T02:49:52.273Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "publishedVersion": 3,
-          "revision": 1,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "PCB workshop-Ieee-compsoc-final - Shruthi Reddy",
-          "description": "",
-          "file": {
-            "url": "//images.ctfassets.net/rr94wjxz7mfi/5xGcUNgvVl7OWbNkT3agak/2391e095d74bbef60e93e1ba80349223/PCB_workshop-Ieee-compsoc-final_-_Shruthi_Reddy.png",
-            "details": {
-              "size": 531617,
-              "image": {
-                "width": 490,
-                "height": 687
-              }
-            },
-            "fileName": "PCB workshop-Ieee-compsoc-final - Shruthi Reddy.png",
-            "contentType": "image/png"
-          }
-        }
-      },
-      {
-        "metadata": {
-          "tags": [],
-          "concepts": []
-        },
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "rr94wjxz7mfi"
-            }
-          },
           "id": "6OHduzb0cokTRQXgpvxykk",
           "type": "Asset",
           "createdAt": "2025-10-14T18:47:41.033Z",
@@ -6156,6 +6066,51 @@
               }
             },
             "fileName": "Screenshot_20251010_163239_WhatsApp - Divya.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "rr94wjxz7mfi"
+            }
+          },
+          "id": "6xVQmlw9iUvK3hIZJe9oqi",
+          "type": "Asset",
+          "createdAt": "2025-10-14T18:06:44.488Z",
+          "updatedAt": "2025-10-14T18:06:44.488Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 7,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "Hack  a cure",
+          "description": "In this 24-hour hackathon, teams will design medical AI systems using Retrieval Augmented Generation (RAG). Leverage medical literature to build solutions, deploy them as APIs, and compete based on accuracy, evidence citation, and reliability.",
+          "file": {
+            "url": "//images.ctfassets.net/rr94wjxz7mfi/6xVQmlw9iUvK3hIZJe9oqi/8920e49c70ec86e9fef24fbd48b94117/IMG-20251014-WA0048_-_Aneeka_Reemaz_A_23BEL1058__1_.jpg",
+            "details": {
+              "size": 134983,
+              "image": {
+                "width": 890,
+                "height": 1280
+              }
+            },
+            "fileName": "IMG-20251014-WA0048 - Aneeka Reemaz A 23BEL1058 (1).jpg",
             "contentType": "image/jpeg"
           }
         }
