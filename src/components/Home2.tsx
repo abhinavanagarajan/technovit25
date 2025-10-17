@@ -134,7 +134,7 @@ export const Home = () => {
     },
     {
       question: "How do I register for events?",
-      answer: "Coming Soon!!!!!!!",
+      answer: "Coming Soonp!!!!!!!",
     },
     {
       question: "What are the prizes?",

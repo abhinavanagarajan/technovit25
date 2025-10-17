@@ -133,7 +133,7 @@ export const Home = () => {
     },
     {
       question: "How do I register for events?",
-      answer: "Coming Soon!!!!!!!",
+      answer: "Visit chennaievents.vit.ac.in/technovit/ to register!",
     },
     {
       question: "What are the prizes?",
