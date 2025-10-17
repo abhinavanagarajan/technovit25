@@ -234,7 +234,7 @@ export const Home = () => {
             </span>
           </h1> */}
           <img
-            src="/technoVit.svg"
+            src="https://cdn.a2ys.dev/images/technoVit.svg"
             alt="TechnoVIT 25 Logo"
             width={800}
             height={200}
@@ -286,11 +286,11 @@ export const Home = () => {
             {/* Pixelated decorative elements at top */}
 
             <img
-              src="pixelDecoration.png"
+              src="https://cdn.a2ys.dev/images/pixelDecoration.png"
               className="right-0 bottom-0 h-1/2 absolute z-10 hidden sm:block"
             />
             <img
-              src="pixelDecoration.png"
+              src="https://cdn.a2ys.dev/images/pixelDecoration.png"
               className="right-0 top-0 h-1/2 absolute z-10 hidden sm:block"
             />
 
@@ -347,21 +347,30 @@ export const Home = () => {
             {/* Top Image - Speaker */}
             <div className="flex-1 relative overflow-hidden border-4 border-black">
               <div className="absolute inset-0 bg-gradient-to-br from-blue-900 to-blue-600 flex items-center justify-center">
-                <img src="/speakerStands.png" alt="Speaker Stands" />
+                <img
+                  src="https://cdn.a2ys.dev/images/speakerStands.png"
+                  alt="Speaker Stands"
+                />
               </div>
             </div>
 
             {/* Middle Image - Award Ceremony */}
             <div className="flex-1 relative overflow-hidden border-4 border-black">
               <div className="absolute inset-0 bg-gradient-to-br from-orange-900 to-yellow-700 flex items-center justify-center">
-                <img src="/lightingLamp.png" alt="Lighting Lamp" />
+                <img
+                  src="https://cdn.a2ys.dev/images/lightingLamp.png"
+                  alt="Lighting Lamp"
+                />
               </div>
             </div>
 
             {/* Bottom Image - Student */}
             <div className="flex-1 relative overflow-hidden border-4 border-black">
               <div className="absolute inset-0 bg-gradient-to-br from-gray-900 to-gray-700 flex items-center justify-center">
-                <img src="/speakerStudent.png" alt="Speaker Student" />
+                <img
+                  src="https://cdn.a2ys.dev/images/speakerStudent.png"
+                  alt="Speaker Student"
+                />
               </div>
             </div>
           </div>

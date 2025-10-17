@@ -5,9 +5,9 @@ interface ImageCarouselProps {
   autoPlayInterval?: number;
 }
 
-const ImageCarousel: React.FC<ImageCarouselProps> = ({ 
-  images = [], 
-  autoPlayInterval = 2500 
+const ImageCarousel: React.FC<ImageCarouselProps> = ({
+  images = [],
+  autoPlayInterval = 2500,
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -22,7 +22,11 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
   }, [images, autoPlayInterval]);
 
   const handleCenterItemClick = () => {
-    window.open("https://chennaievents.vit.ac.in/technovit/", "_blank", "noopener,noreferrer")
+    window.open(
+      "https://chennaievents.vit.ac.in/technovit/",
+      "_blank",
+      "noopener,noreferrer"
+    );
   };
 
   const getItemStyle = ({
@@ -35,8 +39,11 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
     const leftIndex = (currentIndex - 1 + len) % len;
     const rightIndex = (currentIndex + 1) % len;
 
-    const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
-    const isTablet = typeof window !== 'undefined' && window.innerWidth >= 768 && window.innerWidth < 1024;
+    const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
+    const isTablet =
+      typeof window !== "undefined" &&
+      window.innerWidth >= 768 &&
+      window.innerWidth < 1024;
 
     let style: React.CSSProperties = {
       transition: "all 1s ease-in-out",
@@ -50,7 +57,9 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
       style = {
         ...style,
         opacity: 1,
-        transform: isMobile ? "translateX(0) scale(1)" : "translateX(0) scale(1.2)",
+        transform: isMobile
+          ? "translateX(0) scale(1)"
+          : "translateX(0) scale(1.2)",
         zIndex: 10,
         cursor: "pointer",
       };
@@ -58,22 +67,22 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
       style = {
         ...style,
         opacity: isMobile ? 0.4 : 0.6,
-        transform: isMobile 
-          ? "translateX(-60%) scale(0.6)" 
-          : isTablet 
-            ? "translateX(-70%) scale(0.7)"
-            : "translateX(-80%) scale(0.8)",
+        transform: isMobile
+          ? "translateX(-60%) scale(0.6)"
+          : isTablet
+          ? "translateX(-70%) scale(0.7)"
+          : "translateX(-80%) scale(0.8)",
         zIndex: 5,
       };
     } else if (itemIndex === rightIndex) {
       style = {
         ...style,
         opacity: isMobile ? 0.4 : 0.6,
-        transform: isMobile 
-          ? "translateX(60%) scale(0.6)" 
-          : isTablet 
-            ? "translateX(70%) scale(0.7)"
-            : "translateX(80%) scale(0.8)",
+        transform: isMobile
+          ? "translateX(60%) scale(0.6)"
+          : isTablet
+          ? "translateX(70%) scale(0.7)"
+          : "translateX(80%) scale(0.8)",
         zIndex: 5,
       };
     }
@@ -82,10 +91,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
   };
 
   if (!images || images.length === 0) {
-    return (
-      <div className="flex items-center justify-center w-full h-96">
-      </div>
-    );
+    return <div className="flex items-center justify-center w-full h-96"></div>;
   }
 
   return (
@@ -108,8 +114,8 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
             }
           }}
         >
-          <img 
-            src='./defaultPoster.png' //{imageUrl} 
+          <img
+            src="https://cdn.a2ys.dev/images/defaultPoster.png" //{imageUrl}
             alt={`Carousel item ${index + 1}`}
             className="w-full h-full object-cover"
           />

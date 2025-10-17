@@ -314,7 +314,7 @@ const EventDetailsDialog = ({
           <div className="w-full lg:w-1/3 h-64 lg:h-auto bg-[#d9d9d9] flex-shrink-0">
             {imageUrl && (
               <img
-                src="./defaultPoster.png" //{imageUrl}
+                src={`https://cdn.a2ys.dev/images/defaultPoster.png`} //{imageUrl}
                 alt={event.fields.eventName}
                 className="w-full h-full object-cover border border-gray-700"
               />
@@ -429,7 +429,7 @@ const EventCard = ({ event, imageUrl, onClick }: EventCardProps) => {
         <div className="relative flex-shrink-0 overflow-hidden rounded-md bg-black aspect-[4/5] lg:self-stretch">
           {imageUrl ? (
             <img
-              src="./defaultPoster.png" //{imageUrl}
+              src={`https://cdn.a2ys.dev/images/defaultPoster.png`} //{imageUrl}
               alt={event.fields.eventName}
               className="w-full h-full object-cover"
             />

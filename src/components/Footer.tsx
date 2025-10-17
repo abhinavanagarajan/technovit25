@@ -9,7 +9,7 @@ export const Footer = () => {
             <h3 className="text-2xl font-heading text-[#00ff00]">
               <span className="text-white">techno</span>VIT&apos;25
             </h3>
-            <p className="text-muted text-sm">Healing with Intelligence</p>
+            <p className="text-muted text-sm">High on Tech</p>
             <p className="text-muted text-sm">
               India&apos;s Biggest Technical Fest
             </p>

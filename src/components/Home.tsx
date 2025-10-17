@@ -267,11 +267,11 @@ export const Home = () => {
             {/* Pixelated decorative elements at top */}
 
             <img
-              src="pixelDecoration.png"
+              src="https://cdn.a2ys.dev/images/pixelDecoration.png"
               className="right-0 bottom-0 h-1/2 absolute z-10 hidden sm:block"
             />
             <img
-              src="pixelDecoration.png"
+              src="https://cdn.a2ys.dev/images/pixelDecoration.png"
               className="right-0 top-0 h-1/2 absolute z-10 hidden sm:block"
             />
 
@@ -328,14 +328,20 @@ export const Home = () => {
             {/* Top Image - Speaker */}
             <div className="flex-1 relative overflow-hidden border-4 border-black">
               <div className="absolute inset-0 bg-gradient-to-br from-blue-900 to-blue-600 flex items-center justify-center">
-                <img src="/studentDriving.jpeg" alt="Automotive" />
+                <img
+                  src="https://cdn.a2ys.dev/images/studentDriving.jpeg"
+                  alt="Automotive"
+                />
               </div>
             </div>
 
             {/* Middle Image - Award Ceremony */}
             <div className="flex-1 relative overflow-hidden border-4 border-black">
               <div className="absolute inset-0 bg-gradient-to-br from-orange-900 to-yellow-700 flex items-center justify-center">
-                <img src="/diverseCampus.jpeg" alt="Campus Event" />
+                <img
+                  src="https://cdn.a2ys.dev/images/diverseCampus.jpeg"
+                  alt="Campus Event"
+                />
               </div>
             </div>
 
@@ -343,7 +349,7 @@ export const Home = () => {
             <div className="flex-1 relative overflow-hidden border-4 border-black">
               <div className="absolute inset-0 bg-gradient-to-br from-gray-900 to-gray-700 flex items-center justify-center">
                 <img
-                  src="/carDrift.png"
+                  src="https://cdn.a2ys.dev/images/carDrift.png"
                   alt="Car Drift"
                   className="h-full w-full"
                 />

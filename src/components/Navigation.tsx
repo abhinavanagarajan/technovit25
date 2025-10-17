@@ -57,17 +57,17 @@ export const Navigation = ({ currentPage, onNavigate }: NavigationProps) => {
           onClick={() => handleNavClick("home")}
         >
           <img
-            src="/technoVit25-new.png"
+            src="https://cdn.a2ys.dev/images/technoVit25-new.png"
             alt="TechnoVIT Logo"
             className="h-16 w-auto object-contain"
           />
           <img
-            src="/dot.png"
+            src="https://cdn.a2ys.dev/images/dot.png"
             alt="Separator Dot"
             className="h-2 w-auto object-contain"
           />
           <img
-            src="/VIT logo.png"
+            src="https://cdn.a2ys.dev/images/VIT logo.png"
             alt="VIT Logo"
             className="h-8 w-auto object-contain"
           />
@@ -92,17 +92,17 @@ export const Navigation = ({ currentPage, onNavigate }: NavigationProps) => {
           onClick={() => handleNavClick("home")}
         >
           <img
-            src="/technoVit25-new.png"
+            src="https://cdn.a2ys.dev/images/technoVit25-new.png"
             alt="TechnoVIT Logo"
             className="h-8 w-auto object-contain"
           />
           <img
-            src="/dot.png"
+            src="https://cdn.a2ys.dev/images/dot.png"
             alt="Separator Dot"
             className="h-1.5 w-auto object-contain"
           />
           <img
-            src="/VIT logo.png"
+            src="https://cdn.a2ys.dev/images/VIT logo.png"
             alt="VIT Logo"
             className="h-6 w-auto object-contain"
           />
