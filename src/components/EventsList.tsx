@@ -337,9 +337,12 @@ const EventDetailsDialog = ({
               </div>
             </div>
             <hr className="border-[#3a3a3a] my-4" />
-            <p className="text-gray-400 px-6">
-              {event.fields.shortDescription}
-            </p>
+            <p
+              className="text-gray-400 px-6 max-h-32 overflow-y-scroll"
+              dangerouslySetInnerHTML={{
+                __html: event.fields.shortDescription,
+              }}
+            />
             <div
               className={`grid grid-cols-4 gap-4 mt-4 px-6 text-lg ${fontBayon.className}`}
             >

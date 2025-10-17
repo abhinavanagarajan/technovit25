@@ -10,6 +10,7 @@ import {
   VolumeX,
 } from "lucide-react";
 import { Card, CardContent } from "./Card";
+import { motion } from "framer-motion";
 
 export const Home = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -139,6 +140,21 @@ export const Home = () => {
       question: "What are the prizes?",
       answer:
         "Prizes vary by event, with total prize pool exceeding ₹10 lakhs. Check individual event pages for specific prize details.",
+    },
+  ];
+
+  const carouselImages = [
+    {
+      src: "https://cdn.a2ys.dev/images/studentDriving.jpeg",
+      alt: "Automotive",
+    },
+    {
+      src: "https://cdn.a2ys.dev/images/diverseCampus.jpeg",
+      alt: "Campus Event",
+    },
+    {
+      src: "https://cdn.a2ys.dev/images/carDrift.png",
+      alt: "Car Drift",
     },
   ];
 
@@ -277,16 +293,10 @@ export const Home = () => {
 
             {/* Main Content */}
             <div className="relative z-10 mt-8">
-              <h1
-                className="text-4xl sm:text-6xl font-black mt-4 mb-16 text-white bg-black px-10 py-4"
-                style={{ fontFamily: "Arial Black, sans-serif" }}
-              >
+              <h1 className="text-4xl sm:text-6xl font-black mt-4 mb-16 text-white bg-black px-10 py-4">
                 About TechnoVIT&apos;25
               </h1>
-              <p
-                className="text-black text-xl mb-8 sm:mb-12 px-8 sm:mr-64 leading-relaxed text-justify"
-                style={{ fontFamily: "Arial, sans-serif" }}
-              >
+              <p className="text-black text-xl mb-8 sm:mb-12 px-8 sm:mr-64 leading-relaxed text-justify">
                 Established in 2010, VIT Chennai has become a leading center of
                 excellence in higher education under the visionary leadership of
                 Dr. G. V. Selvam, its founder and Vice President. Guided by
@@ -301,10 +311,7 @@ export const Home = () => {
                 redefining higher education in India and beyond.
               </p>
 
-              <p
-                className="text-black text-xl mb-8 sm:mb-12 px-8 sm:mr-64 leading-relaxed text-justify"
-                style={{ fontFamily: "Arial, sans-serif" }}
-              >
+              <p className="text-black text-xl mb-8 sm:mb-12 px-8 sm:mr-64 leading-relaxed text-justify">
                 <b>TechnoVIT</b> is VIT Chennai&apos;s flagship technical
                 festival, where visionary technical clubs converge to push the
                 boundaries of innovation and creativity. Over three days, it
@@ -323,38 +330,31 @@ export const Home = () => {
             <div className="absolute bottom-0 left-0 right-0 h-8 flex"></div>
           </div>
 
-          {/* Right Section - Image Grid */}
-          <div className="md:w-1/5 bg-black sm:flex flex-col hidden">
-            {/* Top Image - Speaker */}
-            <div className="flex-1 relative overflow-hidden border-4 border-black">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-900 to-blue-600 flex items-center justify-center">
-                <img
-                  src="https://cdn.a2ys.dev/images/studentDriving.jpeg"
-                  alt="Automotive"
-                />
-              </div>
-            </div>
-
-            {/* Middle Image - Award Ceremony */}
-            <div className="flex-1 relative overflow-hidden border-4 border-black">
-              <div className="absolute inset-0 bg-gradient-to-br from-orange-900 to-yellow-700 flex items-center justify-center">
-                <img
-                  src="https://cdn.a2ys.dev/images/diverseCampus.jpeg"
-                  alt="Campus Event"
-                />
-              </div>
-            </div>
-
-            {/* Bottom Image - Student */}
-            <div className="flex-1 relative overflow-hidden border-4 border-black">
-              <div className="absolute inset-0 bg-gradient-to-br from-gray-900 to-gray-700 flex items-center justify-center">
-                <img
-                  src="https://cdn.a2ys.dev/images/carDrift.png"
-                  alt="Car Drift"
-                  className="h-full w-full"
-                />
-              </div>
-            </div>
+          <div className="md:w-1/5 bg-black hidden sm:flex relative overflow-hidden">
+            <motion.div
+              className="absolute top-0 left-0 w-full h-[200%] flex flex-col"
+              animate={{
+                y: ["0%", "-50%"],
+              }}
+              transition={{
+                ease: "linear",
+                duration: 20,
+                repeat: Infinity,
+              }}
+            >
+              {[...carouselImages, ...carouselImages].map((image, index) => (
+                <div
+                  key={index}
+                  className="w-full h-[calc(100%/6)] relative overflow-hidden border-4 border-black"
+                >
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+              ))}
+            </motion.div>
           </div>
         </div>
       </section>
