@@ -2,10 +2,122 @@
   "sys": {
     "type": "Array"
   },
-  "total": 107,
+  "total": 108,
   "skip": 0,
   "limit": 100,
   "items": [
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "30nPIg2jkTgWTmXQZdaLb2",
+        "type": "Entry",
+        "createdAt": "2025-10-17T10:23:50.018Z",
+        "updatedAt": "2025-10-17T10:23:50.018Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Obscur 33 Final Trace",
+        "clubName": "CYSCOM X FYI",
+        "eventType": "Competition",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "47Xb2cPhpwsklnk79zlQto"
+          }
+        },
+        "startDateAndTime": "2025-10-31T08:00:00.000Z",
+        "endDateAndTime": "2025-11-01T08:00:00.000Z",
+        "pricePerPerson": 150,
+        "participationType": "Solo",
+        "eventVenue": "Kamaraj Auditorium",
+        "shortDescription": "Inspired by an award-winning game, Obscur 33: Final Trace is a story-driven cybersecurity competition. It reimagines the CTF as an immersive, multi-ending experience where you solve dynamic flags and learn cybersecurity through cinematic gameplay.",
+        "longDescription": "Inspired by an award-winning game, Obscur 33: Final Trace is a story-driven cybersecurity competition. It reimagines the CTF as an immersive, multi-ending experience where you solve dynamic flags and learn cybersecurity through cinematic gameplay.",
+        "specialEvent": false
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "rr94wjxz7mfi"
+          }
+        },
+        "id": "3UMwTt7Sv0fm4LleLwZMws",
+        "type": "Entry",
+        "createdAt": "2025-10-14T18:54:21.650Z",
+        "updatedAt": "2025-10-17T09:46:54.398Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 24,
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "eventName": "Gen AI - Workshop",
+        "clubName": "ACM STUDENT CHAPTER",
+        "eventType": "Workshop",
+        "poster": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "37xuOrzMgOm7r9X2Pe0SIp"
+          }
+        },
+        "startDateAndTime": "2025-10-29T13:00+00:00",
+        "endDateAndTime": "2025-10-29T19:00+00:00",
+        "pricePerPerson": 200,
+        "participationType": "Solo",
+        "eventVenue": "Nethaji Auditorium",
+        "shortDescription": "A genAI workshop featuring a session by ManageEngine (Zoho) on AI in security, followed by a hands-on session where students explore genAI for general and industry use cases, including MCP server creation.",
+        "longDescription": "A GenAI workshop featuring an interactive session by industry experts from ManageEngine (Zoho) on GenAI in security domains, followed by a hands-on session by students exploring general applications, industry use cases, and MCP server creation.",
+        "specialEvent": false
+      }
+    },
     {
       "metadata": {
         "tags": [],
@@ -451,62 +563,6 @@
         "eventVenue": "AB3 001",
         "shortDescription": "Workshop on innovation and IPR with a hackathon. Sessions include: innovation introduction, IPR basics, ideation, creative problem-solving, group hackathon activity, and presentations. Participants learn to implement ideas effectively.",
         "longDescription": "Objective:<br> • To educate students about intellectual property rights (IPR) and their role in innovation.<br> • To inspire students to generate creative solutions to real-world problems.<br> • To provide a platform where students can implement their ideas through a hackathon - Group activity<br> <br> Tentative Sessions:<br> <br> Session 1: Introduction to Innovation (FN session)<br> <br> Session 2: Understanding intellectual property rights (IPR) (FN session)<br> <br> Session 3: Ideation & Creativity (FN session)<br> <br> Session 4: Hackathon - Group activity - Creative solutions to real-world problems (FN & AN session)<br> <br> Session 5: Presentation (AN session)",
-        "specialEvent": false
-      }
-    },
-    {
-      "metadata": {
-        "tags": [],
-        "concepts": []
-      },
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "rr94wjxz7mfi"
-          }
-        },
-        "id": "3UMwTt7Sv0fm4LleLwZMws",
-        "type": "Entry",
-        "createdAt": "2025-10-14T18:54:21.650Z",
-        "updatedAt": "2025-10-17T07:06:56.434Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 19,
-        "revision": 2,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "event"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "eventName": "Gen AI - Workshop",
-        "clubName": "ACM STUDENT CHAPTER",
-        "eventType": "Workshop",
-        "poster": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Asset",
-            "id": "37xuOrzMgOm7r9X2Pe0SIp"
-          }
-        },
-        "startDateAndTime": "2025-10-29T13:00+00:00",
-        "endDateAndTime": "2025-10-29T19:00+00:00",
-        "pricePerPerson": 200,
-        "participationType": "Solo",
-        "eventVenue": "Kamaraj Auditorium",
-        "shortDescription": "A genAI workshop featuring a session by ManageEngine (Zoho) on AI in security, followed by a hands-on session where students explore genAI for general and industry use cases, including MCP server creation.",
-        "longDescription": "A GenAI workshop featuring an interactive session by industry experts from ManageEngine (Zoho) on GenAI in security domains, followed by a hands-on session by students exploring general applications, industry use cases, and MCP server creation.",
         "specialEvent": false
       }
     },
@@ -5561,62 +5617,6 @@
         "longDescription": "Hands-on Figma workshop: learn wireframes, mockups, prototypes, then design a complete UI. Win cash prizes, certificates for all.",
         "specialEvent": false
       }
-    },
-    {
-      "metadata": {
-        "tags": [],
-        "concepts": []
-      },
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "rr94wjxz7mfi"
-          }
-        },
-        "id": "2Hp5FF2FfSkvHizd9ewMVT",
-        "type": "Entry",
-        "createdAt": "2025-10-14T18:57:54.677Z",
-        "updatedAt": "2025-10-14T18:57:54.677Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 18,
-        "revision": 1,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "event"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "eventName": "Codemafia",
-        "clubName": "DAO COMMUNITY",
-        "eventType": "Competition",
-        "poster": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Asset",
-            "id": "4wlT4fRSMysakQAOn17vAq"
-          }
-        },
-        "startDateAndTime": "2025-10-29T09:00+00:00",
-        "endDateAndTime": "2025-10-29T16:00+00:00",
-        "pricePerPerson": 50,
-        "participationType": "Duo/Trio",
-        "eventVenue": "VOC Auditorium",
-        "shortDescription": "Participants will join a Capture The Flag (CTF) contest with cryptography, web, reverse engineering, and forensics challenges, sharpening cybersecurity skills as teams race to capture flags and lead the leaderboard.",
-        "longDescription": "Participants will join a Capture The Flag (CTF) competition featuring cryptography, web exploitation, reverse engineering, and forensics. This workshop-style event hones cybersecurity skills as teams race to capture flags and top the leaderboard.",
-        "specialEvent": false
-      }
     }
   ],
   "includes": {
@@ -5976,51 +5976,6 @@
               }
             },
             "fileName": "technovit event poster - Sangeetha.jpg",
-            "contentType": "image/jpeg"
-          }
-        }
-      },
-      {
-        "metadata": {
-          "tags": [],
-          "concepts": []
-        },
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "rr94wjxz7mfi"
-            }
-          },
-          "id": "4wlT4fRSMysakQAOn17vAq",
-          "type": "Asset",
-          "createdAt": "2025-10-14T18:49:48.983Z",
-          "updatedAt": "2025-10-14T18:49:48.983Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "publishedVersion": 3,
-          "revision": 1,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "Code Mafia DAO X IEEERAS c - Sanjana PS",
-          "description": "",
-          "file": {
-            "url": "//images.ctfassets.net/rr94wjxz7mfi/4wlT4fRSMysakQAOn17vAq/5e6be4ae535ec679d156923d0c091bdd/Code_Mafia_DAO_X_IEEERAS_c_-_Sanjana_PS.jpg",
-            "details": {
-              "size": 995066,
-              "image": {
-                "width": 5400,
-                "height": 7200
-              }
-            },
-            "fileName": "Code Mafia DAO X IEEERAS c - Sanjana PS.jpg",
             "contentType": "image/jpeg"
           }
         }
