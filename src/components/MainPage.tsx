@@ -7,6 +7,8 @@ import { Navigation } from "./Navigation";
 import { Footer } from "./Footer";
 import Events from "./Events";
 import { MerchPage } from "./MerchPage";
+import { Sponsors } from "./Sponsors";
+
 
 const MainPage = () => {
   const [currentPage, setCurrentPage] = useState("home");
@@ -27,6 +29,8 @@ const MainPage = () => {
         return <MerchPage />;
       case "about":
         return <About />;
+      case "sponsors":
+        return <Sponsors />;
     }
   };
 
@@ -34,7 +38,7 @@ const MainPage = () => {
     <div className="min-h-screen bg-black w-screen">
       <Navigation currentPage={currentPage} onNavigate={setCurrentPage} />
       <main className="pt-20">{renderPage()}</main>
-      <Footer />
+      {currentPage !== "sponsors" && <Footer />}
     </div>
   );
 };
