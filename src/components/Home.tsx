@@ -115,8 +115,8 @@ export const Home = () => {
   }, []);
 
   const stats = [
-    { icon: Users, value: "40,000+", label: "Participants" },
-    { icon: CalendarDays, value: "200+", label: "Events" },
+    { icon: Users, value: "25,000+", label: "Participants" },
+    { icon: CalendarDays, value: "150+", label: "Events" },
     { icon: Trophy, value: "70+", label: "Sponsors" },
     { icon: Globe, value: "20+", label: "Countries" },
   ];
@@ -130,11 +130,24 @@ export const Home = () => {
     {
       question: "When is technoVIT 2025?",
       answer:
-        "TechnoVIT 2025 will be held from October 31, 2025, to November 2, 2025. Stay tuned for more updates!",
+        "technoVIT 2025 will be held from October 31, 2025, to November 2, 2025. Stay tuned for more updates!",
     },
     {
       question: "How do I register for events?",
-      answer: "Visit chennaievents.vit.ac.in/technovit/ to register!",
+      answer: (
+      <>
+        Visit{" "}
+        <a
+          href="https://chennaievents.vit.ac.in/technovit/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-500 underline hover:text-blue-700"
+        >
+          chennaievents.vit.ac.in/technovit/
+        </a>{" "}
+        to register!
+      </>
+    ),
     },
     {
       question: "What are the prizes?",
@@ -236,7 +249,7 @@ export const Home = () => {
               <div className="absolute inset-0 bg-[#00ff00] blur-xl opacity-20"></div>
               <h2 className="relative text-lg sm:text-xl lg:text-2xl font-bold text-white tracking-wider uppercase bg-gradient-to-r from-white via-gray-100 to-white bg-clip-text px-6 py-3">
                 <span className="drop-shadow-[0_4px_20px_rgba(0,0,0,0.9)]">
-                  High on Tech
+                  HEALING WITH INTELLIGENCE
                 </span>
               </h2>
             </div>
@@ -294,7 +307,7 @@ export const Home = () => {
             {/* Main Content */}
             <div className="relative z-10 mt-8">
               <h1 className="text-4xl sm:text-6xl font-black mt-4 mb-16 text-white bg-black px-10 py-4">
-                About TechnoVIT&apos;25
+                About technoVIT&apos;25
               </h1>
               <p className="text-black text-xl mb-8 sm:mb-12 px-8 sm:mr-64 leading-relaxed text-justify">
                 Established in 2010, VIT Chennai has become a leading center of
@@ -312,12 +325,12 @@ export const Home = () => {
               </p>
 
               <p className="text-black text-xl mb-8 sm:mb-12 px-8 sm:mr-64 leading-relaxed text-justify">
-                <b>TechnoVIT</b> is VIT Chennai&apos;s flagship technical
+                <b>technoVIT</b> is VIT Chennai&apos;s flagship technical
                 festival, where visionary technical clubs converge to push the
                 boundaries of innovation and creativity. Over three days, it
                 hosts hackathons, robotics battles, workshops, exhibitions and
-                keynote talks, drawing over 20,000 participants including
-                students from more than 19 countries. TechnoVIT transforms the
+                keynote talks, drawing over 25,000 participants including
+                students from more than 20 countries. technoVIT transforms the
                 campus into a hub of interdisciplinary collaboration, fostering
                 ideas that transcend conventional limits.
               </p>
