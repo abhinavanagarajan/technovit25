@@ -135,19 +135,19 @@ export const Home = () => {
     {
       question: "How do I register for events?",
       answer: (
-      <>
-        Visit{" "}
-        <a
-          href="https://chennaievents.vit.ac.in/technovit/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-500 underline hover:text-blue-700"
-        >
-          chennaievents.vit.ac.in/technovit/
-        </a>{" "}
-        to register!
-      </>
-    ),
+        <>
+          Visit{" "}
+          <a
+            href="https://chennaievents.vit.ac.in/technovit/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500 underline hover:text-blue-700"
+          >
+            chennaievents.vit.ac.in/technovit/
+          </a>{" "}
+          to register!
+        </>
+      ),
     },
     {
       question: "What are the prizes?",
@@ -232,6 +232,9 @@ export const Home = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/60 z-[1]"></div>
 
         <div className="relative z-10 text-center max-w-6xl mx-auto -mt-12">
+          <h2 className="text-sm sm:text-base text-right lg:text-lg text-white font-bold tracking-[0.2em] uppercase mb-6 animate-fade-in">
+            High on Tech
+          </h2>
           <h1 className="text-6xl sm:text-7xl lg:text-9xl font-black mb-3 animate-slide-up">
             <span className="text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.3)] hover:drop-shadow-[0_0_40px_rgba(255,255,255,0.5)] transition-all duration-300">
               techno
@@ -261,6 +264,14 @@ export const Home = () => {
               October 31 - November 2
             </div>
             <div className="h-px w-12 sm:w-20 bg-gradient-to-l from-transparent to-[#00ff00]"></div>
+          </div>
+          <div>
+            <button
+              onClick={() => (window.location.href = "/events")}
+              className="mt-8 bg-[#00ff00] px-8 py-3 uppercase text-black font-bold rounded-xl hover:bg-[#00ff00]/90"
+            >
+              Explore more
+            </button>
           </div>
         </div>
       </section>
