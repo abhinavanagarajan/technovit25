@@ -60,7 +60,52 @@ const Events = () => {
           />
         </div>
 
+        <div className="relative overflow-hidden bg-[#70E081] ttFont py-1">
+          <div
+            className="flex whitespace-nowrap animate-marquee hover:pause"
+            style={{
+              display: 'inline-flex',
+              animation: 'marquee 60s linear infinite',
+            }}
+          >
+            {/* Repeat content for seamless scroll */}
+            {Array(2)
+              .fill(0)
+              .map((_, i) => (
+                <div className="flex" key={i}>
+                  <span className="text-black text-lg font-medium mx-8 inline-block">
+                    For any event related queries e-mail us at {' '}
+                    <a href="mailto:technovit@vit.ac.in">technovit@vit.ac.in</a>
+                  </span>
+                  <span className="text-black text-lg font-medium mx-8 inline-block">
+                    For any event related queries mail{' '}
+                    <a href="mailto:technovit@vit.ac.in">technovit@vit.ac.in</a>
+                  </span>
+                  <span className="text-black text-lg font-medium mx-8 inline-block">
+                    For any event related queries mail{' '}
+                    <a href="mailto:technovit@vit.ac.in">technovit@vit.ac.in</a>
+                  </span>
+                </div>
+              ))}
+          </div>
+
+          {/* Inline CSS for animation */}
+          <style>
+            {`
+              @keyframes marquee {
+                0% { transform: translateX(0%); }
+                100% { transform: translateX(-50%); }
+              }
+              .animate-marquee { animation: marquee 20s linear infinite; }
+              .hover\\:pause:hover { animation-play-state: paused; }
+            `}
+          </style>
+        </div>
+
         <div className="relative z-10 w-full min-h-screen flex flex-col lg:flex-row items-center justify-center lg:justify-around px-4 sm:px-6 md:px-12 lg:px-24 py-8 md:py-0 gap-8 lg:gap-0 ttFont">
+
+
+
           <div className="flex flex-col space-y-2 sm:space-y-3 text-center lg:text-left">
             <h1 className="text-white text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-[110px] leading-none tracking-tight">
               Events
