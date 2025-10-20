@@ -300,7 +300,7 @@ export const Home = () => {
             onClick={() => (window.location.href = "/events")}
             className="bg-[#70E081] px-8 py-3 uppercase text-black font-bold hover:bg-[#70E081]/90 transition-colors duration-300"
             animate={{
-              y: [0, -15, 0],
+              y: [0, -10, 0],
             }}
             transition={{
               duration: 2.5,
