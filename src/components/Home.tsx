@@ -82,7 +82,7 @@ export const Home = () => {
       ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-      ctx.fillStyle = "#00ff00";
+      ctx.fillStyle = "#70E081";
       ctx.font = "15px monospace";
 
       for (let i = 0; i < drops.length; i++) {
@@ -169,6 +169,34 @@ export const Home = () => {
       src: "https://cdn.a2ys.dev/images/carDrift.png",
       alt: "Car Drift",
     },
+    {
+      src: "https://cdn.a2ys.dev/images/IMG_3848.JPG",
+      alt: "technoVIT alt",
+    },
+    {
+      src: "https://cdn.a2ys.dev/images/WhatsApp%20Image%202025-10-19%20at%2021.46.43_6a220941.jpg",
+      alt: "technoVIT alt",
+    },
+    {
+      src: "https://cdn.a2ys.dev/images/IMG_3817.JPG",
+      alt: "technoVIT alt",
+    },
+    {
+      src: "https://cdn.a2ys.dev/images/IMG_5231.JPG",
+      alt: "technoVIT alt",
+    },
+    {
+      src: "https://cdn.a2ys.dev/images/WhatsApp%20Image%202025-10-19%20at%2021.56.34_d8f72fb8.jpg",
+      alt: "technoVIT alt",
+    },
+    {
+      src: "https://cdn.a2ys.dev/images/IMG_5307.JPG",
+      alt: "technoVIT alt",
+    },
+    {
+      src: "https://cdn.a2ys.dev/images/IMG_5346.JPG",
+      alt: "technoVIT alt",
+    },
   ];
 
   return (
@@ -193,7 +221,7 @@ export const Home = () => {
 
           <div className="absolute top-6 right-6 flex gap-3">
             <button
-              className="text-white bg-black/60 hover:bg-black/80 rounded-full p-3 transition-all duration-300 hover:scale-110 backdrop-blur-sm border-2 border-white/20 hover:border-[#00ff00]"
+              className="text-white bg-black/60 hover:bg-black/80 rounded-full p-3 transition-all duration-300 hover:scale-110 backdrop-blur-sm border-2 border-white/20 hover:border-[#70E081]"
               onClick={toggleMute}
               aria-label={isMuted ? "Unmute video" : "Mute video"}
             >
@@ -211,7 +239,7 @@ export const Home = () => {
             </button>
 
             <button
-              className="text-white bg-black/60 hover:bg-black/80 rounded-full p-3 transition-all duration-300 hover:scale-110 backdrop-blur-sm border-2 border-white/20 hover:border-[#00ff00]"
+              className="text-white bg-black/60 hover:bg-black/80 rounded-full p-3 transition-all duration-300 hover:scale-110 backdrop-blur-sm border-2 border-white/20 hover:border-[#70E081]"
               onClick={() => setShowVideo(false)}
               aria-label="Close video"
             >
@@ -232,24 +260,24 @@ export const Home = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/60 z-[1]"></div>
 
         <div className="relative z-10 text-center max-w-6xl mx-auto -mt-12">
-          <h2 className="text-sm sm:text-base text-right lg:text-lg text-white font-bold tracking-[0.2em] uppercase mb-6 animate-fade-in">
+          <h2 className="text-sm sm:text-base text-right lg:text-xl text-white tracking-[0.2em] uppercase mb-2 animate-fade-in font-black">
             High on Tech
           </h2>
           <h1 className="text-6xl sm:text-7xl lg:text-9xl font-black mb-3 animate-slide-up">
             <span className="text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.3)] hover:drop-shadow-[0_0_40px_rgba(255,255,255,0.5)] transition-all duration-300">
               techno
             </span>
-            <span className="text-[#00ff00] drop-shadow-[0_0_40px_rgba(0,255,0,0.8)] hover:drop-shadow-[0_0_60px_rgba(0,255,0,1)] transition-all duration-300 inline-block hover:scale-105">
+            <span className="text-[#70E081] drop-shadow-[0_0_40px_rgba(0,255,0,0.8)] hover:drop-shadow-[0_0_60px_rgba(0,255,0,1)] transition-all duration-300 inline-block">
               VIT
             </span>
-            <span className="text-[#00ff00] drop-shadow-[0_0_40px_rgba(0,255,0,0.8)]">
+            <span className="text-[#70E081] drop-shadow-[0_0_40px_rgba(0,255,0,0.8)]">
               &apos;25
             </span>
           </h1>
 
           <div className="mb-4 animate-fade-in">
             <div className="relative inline-block">
-              <div className="absolute inset-0 bg-[#00ff00] blur-xl opacity-20"></div>
+              <div className="absolute inset-0 bg-[#70E081] blur-xl opacity-20"></div>
               <h2 className="relative text-lg sm:text-xl lg:text-2xl font-bold text-white tracking-wider uppercase bg-gradient-to-r from-white via-gray-100 to-white bg-clip-text px-6 py-3">
                 <span className="drop-shadow-[0_4px_20px_rgba(0,0,0,0.9)]">
                   HEALING WITH INTELLIGENCE
@@ -259,20 +287,29 @@ export const Home = () => {
           </div>
 
           <div className="flex items-center justify-center gap-4 animate-slide-in">
-            <div className="h-px w-12 sm:w-20 bg-gradient-to-r from-transparent to-[#00ff00]"></div>
-            <div className="text-sm sm:text-base lg:text-lg text-white font-light tracking-[0.2em] uppercase backdrop-blur-sm bg-black/30 px-6 py-3 border border-[#00ff00]/30 shadow-[0_0_30px_rgba(0,255,0,0.2)]">
+            <div className="h-px w-12 sm:w-20 bg-gradient-to-r from-transparent to-[#70E081]"></div>
+            <div className="text-sm sm:text-base lg:text-lg text-white font-light tracking-[0.2em] uppercase backdrop-blur-sm bg-black/30 px-6 py-3 border border-[#70E081]/30 shadow-[0_0_30px_rgba(0,255,0,0.2)]">
               October 31 - November 2
             </div>
-            <div className="h-px w-12 sm:w-20 bg-gradient-to-l from-transparent to-[#00ff00]"></div>
+            <div className="h-px w-12 sm:w-20 bg-gradient-to-l from-transparent to-[#70E081]"></div>
           </div>
-          <div>
-            <button
-              onClick={() => (window.location.href = "/events")}
-              className="mt-8 bg-[#00ff00] px-8 py-3 uppercase text-black font-bold rounded-xl hover:bg-[#00ff00]/90"
-            >
-              Explore more
-            </button>
-          </div>
+        </div>
+
+        <div className="relative z-10 mt-12">
+          <motion.button
+            onClick={() => (window.location.href = "/events")}
+            className="bg-[#70E081] px-8 py-3 uppercase text-black font-bold hover:bg-[#70E081]/90 transition-colors duration-300 cursor-pointer"
+            animate={{
+              y: [0, -10, 0],
+            }}
+            transition={{
+              duration: 2.5,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+          >
+            Explore more
+          </motion.button>
         </div>
       </section>
 
@@ -283,14 +320,14 @@ export const Home = () => {
               <Card
                 key={index}
                 hover={false}
-                className="text-center bg-black border-[#00ff00]/30"
+                className="text-center bg-black border-[#70E081]/30"
               >
                 <CardContent className="py-8">
-                  <stat.icon className="w-12 h-12 mx-auto mb-4 text-[#00ff00]" />
+                  <stat.icon className="w-12 h-12 mx-auto mb-4 text-[#70E081]" />
                   <div className="text-2xl sm:text-4xl font-heading text-white mb-2">
                     {stat.value}
                   </div>
-                  <div className="text-sm text-[#00ff00]/70 uppercase tracking-wide">
+                  <div className="text-sm text-[#70E081]/70 uppercase tracking-wide">
                     {stat.label}
                   </div>
                 </CardContent>
@@ -362,19 +399,20 @@ export const Home = () => {
               }}
               transition={{
                 ease: "linear",
-                duration: 20,
+                duration: 10,
                 repeat: Infinity,
+                repeatType: "loop",
               }}
             >
               {[...carouselImages, ...carouselImages].map((image, index) => (
                 <div
                   key={index}
-                  className="w-full h-[calc(100%/6)] relative overflow-hidden border-4 border-black"
+                  className="w-full relative border-4 border-black box-border"
                 >
                   <img
                     src={image.src}
                     alt={image.alt}
-                    className="h-full w-full object-cover"
+                    className="w-full h-auto"
                   />
                 </div>
               ))}
@@ -389,14 +427,14 @@ export const Home = () => {
             <h2 className="text-4xl sm:text-5xl font-heading text-white mb-4">
               Frequently Asked Questions
             </h2>
-            <div className="w-20 h-1 bg-[#00ff00] mx-auto"></div>
+            <div className="w-20 h-1 bg-[#70E081] mx-auto"></div>
           </div>
 
           <div className="space-y-4">
             {faqs.map((faq, index) => (
               <div
                 key={index}
-                className="border-2 border-[#00ff00]/30 hover:border-[#00ff00] transition-all duration-300 bg-black"
+                className="border-2 border-[#70E081]/30 hover:border-[#70E081] transition-all duration-300 bg-black"
               >
                 <button
                   className="w-full px-6 py-4 flex justify-between items-center text-left"
@@ -406,14 +444,14 @@ export const Home = () => {
                     {faq.question}
                   </span>
                   <ChevronDown
-                    className={`text-[#00ff00] transition-transform duration-300 ${
+                    className={`text-[#70E081] transition-transform duration-300 ${
                       openFaq === index ? "rotate-180" : ""
                     }`}
                     size={24}
                   />
                 </button>
                 {openFaq === index && (
-                  <div className="px-6 pb-4 text-white/70 border-t border-[#00ff00]/30 pt-4 animate-fade-in">
+                  <div className="px-6 pb-4 text-white/70 border-t border-[#70E081]/30 pt-4 animate-fade-in">
                     {faq.answer}
                   </div>
                 )}

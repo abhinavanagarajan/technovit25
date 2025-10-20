@@ -32,7 +32,7 @@ export const Navigation = ({ currentPage, onNavigate }: NavigationProps) => {
 
   return (
     <nav
-      className={`fixed left-0 right-0 top-0 z-50 border-b-[1px] border-[#ffffff] bg-[#000000] backdrop-blur-md text-xl  ${bayon.className}`}
+      className={`z-50 border-b-[1px] border-[#ffffff] bg-[#000000] backdrop-blur-md text-xl  ${bayon.className}`}
     >
       <div className="mx-auto hidden h-16 max-w-[95vw] items-center md:flex">
         {/* Left - Navigation Links */}
@@ -42,8 +42,8 @@ export const Navigation = ({ currentPage, onNavigate }: NavigationProps) => {
               key={item.path}
               onClick={() => handleNavClick(item.path)}
               className={cn(
-                "uppercase tracking-wide text-white transition-colors duration-200 hover:text-[#00ff00]",
-                currentPage === item.path && "text-[#00ff00]"
+                "uppercase tracking-wide text-white transition-colors duration-200 hover:text-[#70E081] cursor-pointer",
+                currentPage === item.path && "text-[#70E081]"
               )}
             >
               {item.name}
@@ -118,7 +118,7 @@ export const Navigation = ({ currentPage, onNavigate }: NavigationProps) => {
       </div>
 
       {isOpen && (
-        <div className="border-t border-[#00ff00]/20 bg-black md:hidden">
+        <div className="border-t border-[#70E081]/20 bg-black md:hidden">
           <div className="flex flex-col px-4 py-3 space-y-2">
             {navItems.map((item) => (
               <button
@@ -127,8 +127,8 @@ export const Navigation = ({ currentPage, onNavigate }: NavigationProps) => {
                 className={cn(
                   "text-left uppercase text-white px-3 py-2 transition-colors",
                   currentPage === item.path
-                    ? "bg-[#00ff00]/20 text-[#00ff00]"
-                    : "hover:bg-[#00ff00]/10 hover:text-[#00ff00]"
+                    ? "bg-[#70E081]/20 text-[#70E081]"
+                    : "hover:bg-[#70E081]/10 hover:text-[#70E081]"
                 )}
               >
                 {item.name}
@@ -136,7 +136,7 @@ export const Navigation = ({ currentPage, onNavigate }: NavigationProps) => {
             ))}
             <button
               onClick={() => handleNavClick("events")}
-              className="mt-2 w-full bg-[#00ff00] px-4 py-2 uppercase text-black hover:bg-[#00ff00]/90"
+              className="mt-2 w-full bg-[#70E081] px-4 py-2 uppercase text-black hover:bg-[#70E081]/90"
             >
               Get Started
             </button>

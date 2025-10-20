@@ -164,7 +164,7 @@ const EventFilter = ({ onFilterChange, availableDates }: EventFilterProps) => {
   const teamSizes: string[] = ["SOLO", "DUO", "TRIO", "SQUAD", "5+ MEMBERS"];
 
   return (
-    <div className="w-full bg-[#70E081]">
+    <div className="w-full h-full bg-[#70E081]">
       <div className="p-4 bg-black flex justify-between items-center border-b-2 border-black">
         <div className="flex items-center gap-2">
           <h2 className="m-0 text-white text-xl uppercase">FILTERS</h2>
@@ -202,21 +202,23 @@ const EventFilter = ({ onFilterChange, availableDates }: EventFilterProps) => {
       >
         <div>
           <div className="relative py-4">
-            <div className={`flex justify-between mb-2 text-lg text-black ${bayon.className}`}>
+            <div
+              className={`flex justify-between mb-2 text-lg text-black ${bayon.className}`}
+            >
               <span>₹{priceRange[0]}</span>
               <span>₹{priceRange[1]}</span>
             </div>
-            
+
             <div className="relative h-1 bg-gray-300 rounded">
               {/* Range track highlight */}
-              <div 
+              <div
                 className="absolute h-1 bg-black rounded"
                 style={{
                   left: `${(priceRange[0] / 1000) * 100}%`,
-                  right: `${100 - (priceRange[1] / 1000) * 100}%`
+                  right: `${100 - (priceRange[1] / 1000) * 100}%`,
                 }}
               />
-              
+
               {/* Min range slider */}
               <input
                 type="range"
@@ -231,7 +233,7 @@ const EventFilter = ({ onFilterChange, availableDates }: EventFilterProps) => {
                 }}
                 className="absolute w-full h-1 bg-transparent appearance-none cursor-pointer pointer-events-none [&::-webkit-slider-thumb]:pointer-events-auto [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-4 [&::-webkit-slider-thumb]:h-4 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-black [&::-webkit-slider-thumb]:cursor-pointer [&::-moz-range-thumb]:pointer-events-auto [&::-moz-range-thumb]:w-4 [&::-moz-range-thumb]:h-4 [&::-moz-range-thumb]:rounded-full [&::-moz-range-thumb]:bg-black [&::-moz-range-thumb]:border-0 [&::-moz-range-thumb]:cursor-pointer"
               />
-              
+
               {/* Max range slider */}
               <input
                 type="range"
@@ -247,10 +249,12 @@ const EventFilter = ({ onFilterChange, availableDates }: EventFilterProps) => {
                 className="absolute w-full h-1 bg-transparent appearance-none cursor-pointer pointer-events-none [&::-webkit-slider-thumb]:pointer-events-auto [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-4 [&::-webkit-slider-thumb]:h-4 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-black [&::-webkit-slider-thumb]:cursor-pointer [&::-moz-range-thumb]:pointer-events-auto [&::-moz-range-thumb]:w-4 [&::-moz-range-thumb]:h-4 [&::-moz-range-thumb]:rounded-full [&::-moz-range-thumb]:bg-black [&::-moz-range-thumb]:border-0 [&::-moz-range-thumb]:cursor-pointer"
               />
             </div>
-            
-            <div className={`flex justify-between mt-2 text-lg ${bayon.className}`}>
-              <span className='text-gray-800'>₹0</span>
-              <span className='text-gray-800'>₹1000</span>
+
+            <div
+              className={`flex justify-between mt-2 text-lg ${bayon.className}`}
+            >
+              <span className="text-gray-800">₹0</span>
+              <span className="text-gray-800">₹1000</span>
             </div>
           </div>
         </div>

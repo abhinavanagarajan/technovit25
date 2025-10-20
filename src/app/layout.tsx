@@ -3,12 +3,6 @@ import { Be_Vietnam_Pro } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
-// const bayon = Bayon({
-//   variable: "--font-bayon",
-//   subsets: ["latin"],
-//   weight: "400",
-// });
-
 const beVietnam = Be_Vietnam_Pro({
   variable: "--font-be-vietnam-pro",
   subsets: ["latin"],
