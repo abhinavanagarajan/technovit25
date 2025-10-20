@@ -6,7 +6,7 @@ export const MerchPage = () => {
           <h1 className="text-5xl sm:text-6xl font-heading text-white ttFont">
             Coming Soon
           </h1>
-          <div className="w-20 h-1 bg-[#00ff00] mx-auto mt-4 mb-6"></div>
+          <div className="w-20 h-1 bg-[#70E081] mx-auto mt-4 mb-6"></div>
         </div>
       </div>
     </div>

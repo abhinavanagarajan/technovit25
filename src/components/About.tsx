@@ -7,7 +7,7 @@ export const About = () => {
             <h2 className="text-4xl sm:text-5xl font-heading text-white mb-4">
               Theme: Healing with Intelligence
             </h2>
-            <div className="w-20 h-1 bg-[#00ff00] mx-auto"></div>
+            <div className="w-20 h-1 bg-[#70E081] mx-auto"></div>
           </div>
 
           <div className="max-w-4xl mx-auto space-y-6 text-white/80 leading-relaxed text-justify">

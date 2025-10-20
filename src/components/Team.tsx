@@ -163,7 +163,7 @@ export const Team = () => {
           <h1 className="text-5xl sm:text-6xl font-heading text-white mb-4">
             Our Team
           </h1>
-          <div className="w-20 h-1 bg-[#00ff00] mx-auto mb-6"></div>
+          <div className="w-20 h-1 bg-[#70E081] mx-auto mb-6"></div>
           <p className="text-xl text-muted max-w-2xl mx-auto">
             Meet the dedicated team behind technoVIT&apos;25
           </p>
@@ -181,7 +181,7 @@ export const Team = () => {
                   <h2 className="text-3xl font-subheading text-white mb-2">
                     {category}
                   </h2>
-                  <div className="w-16 h-0.5 bg-[#00ff00]"></div>
+                  <div className="w-16 h-0.5 bg-[#70E081]"></div>
                 </div>
 
                 <div className={`grid gap-6 ${getGridClasses(members.length)}`}>
@@ -201,7 +201,7 @@ export const Team = () => {
                         <h3 className="text-lg font-subheading text-white mb-1 uppercase">
                           {member.name}
                         </h3>
-                        <p className="text-sm text-[#00ff00] mb-3 uppercase tracking-wide">
+                        <p className="text-sm text-[#70E081] mb-3 uppercase tracking-wide">
                           {member.role}
                         </p>
                       </CardContent>

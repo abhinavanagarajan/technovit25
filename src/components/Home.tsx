@@ -82,7 +82,7 @@ export const Home = () => {
       ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-      ctx.fillStyle = "#00ff00";
+      ctx.fillStyle = "#70E081";
       ctx.font = "15px monospace";
 
       for (let i = 0; i < drops.length; i++) {
@@ -221,7 +221,7 @@ export const Home = () => {
 
           <div className="absolute top-6 right-6 flex gap-3">
             <button
-              className="text-white bg-black/60 hover:bg-black/80 rounded-full p-3 transition-all duration-300 hover:scale-110 backdrop-blur-sm border-2 border-white/20 hover:border-[#00ff00]"
+              className="text-white bg-black/60 hover:bg-black/80 rounded-full p-3 transition-all duration-300 hover:scale-110 backdrop-blur-sm border-2 border-white/20 hover:border-[#70E081]"
               onClick={toggleMute}
               aria-label={isMuted ? "Unmute video" : "Mute video"}
             >
@@ -239,7 +239,7 @@ export const Home = () => {
             </button>
 
             <button
-              className="text-white bg-black/60 hover:bg-black/80 rounded-full p-3 transition-all duration-300 hover:scale-110 backdrop-blur-sm border-2 border-white/20 hover:border-[#00ff00]"
+              className="text-white bg-black/60 hover:bg-black/80 rounded-full p-3 transition-all duration-300 hover:scale-110 backdrop-blur-sm border-2 border-white/20 hover:border-[#70E081]"
               onClick={() => setShowVideo(false)}
               aria-label="Close video"
             >
@@ -267,17 +267,17 @@ export const Home = () => {
             <span className="text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.3)] hover:drop-shadow-[0_0_40px_rgba(255,255,255,0.5)] transition-all duration-300">
               techno
             </span>
-            <span className="text-[#00ff00] drop-shadow-[0_0_40px_rgba(0,255,0,0.8)] hover:drop-shadow-[0_0_60px_rgba(0,255,0,1)] transition-all duration-300 inline-block">
+            <span className="text-[#70E081] drop-shadow-[0_0_40px_rgba(0,255,0,0.8)] hover:drop-shadow-[0_0_60px_rgba(0,255,0,1)] transition-all duration-300 inline-block">
               VIT
             </span>
-            <span className="text-[#00ff00] drop-shadow-[0_0_40px_rgba(0,255,0,0.8)]">
+            <span className="text-[#70E081] drop-shadow-[0_0_40px_rgba(0,255,0,0.8)]">
               &apos;25
             </span>
           </h1>
 
           <div className="mb-4 animate-fade-in">
             <div className="relative inline-block">
-              <div className="absolute inset-0 bg-[#00ff00] blur-xl opacity-20"></div>
+              <div className="absolute inset-0 bg-[#70E081] blur-xl opacity-20"></div>
               <h2 className="relative text-lg sm:text-xl lg:text-2xl font-bold text-white tracking-wider uppercase bg-gradient-to-r from-white via-gray-100 to-white bg-clip-text px-6 py-3">
                 <span className="drop-shadow-[0_4px_20px_rgba(0,0,0,0.9)]">
                   HEALING WITH INTELLIGENCE
@@ -287,18 +287,18 @@ export const Home = () => {
           </div>
 
           <div className="flex items-center justify-center gap-4 animate-slide-in">
-            <div className="h-px w-12 sm:w-20 bg-gradient-to-r from-transparent to-[#00ff00]"></div>
-            <div className="text-sm sm:text-base lg:text-lg text-white font-light tracking-[0.2em] uppercase backdrop-blur-sm bg-black/30 px-6 py-3 border border-[#00ff00]/30 shadow-[0_0_30px_rgba(0,255,0,0.2)]">
+            <div className="h-px w-12 sm:w-20 bg-gradient-to-r from-transparent to-[#70E081]"></div>
+            <div className="text-sm sm:text-base lg:text-lg text-white font-light tracking-[0.2em] uppercase backdrop-blur-sm bg-black/30 px-6 py-3 border border-[#70E081]/30 shadow-[0_0_30px_rgba(0,255,0,0.2)]">
               October 31 - November 2
             </div>
-            <div className="h-px w-12 sm:w-20 bg-gradient-to-l from-transparent to-[#00ff00]"></div>
+            <div className="h-px w-12 sm:w-20 bg-gradient-to-l from-transparent to-[#70E081]"></div>
           </div>
         </div>
 
         <div className="relative z-10 mt-12">
           <motion.button
             onClick={() => (window.location.href = "/events")}
-            className="bg-[#00ff00] px-8 py-3 uppercase text-black font-bold hover:bg-[#00ff00]/90 transition-colors duration-300"
+            className="bg-[#70E081] px-8 py-3 uppercase text-black font-bold hover:bg-[#70E081]/90 transition-colors duration-300"
             animate={{
               y: [0, -15, 0],
             }}
@@ -320,14 +320,14 @@ export const Home = () => {
               <Card
                 key={index}
                 hover={false}
-                className="text-center bg-black border-[#00ff00]/30"
+                className="text-center bg-black border-[#70E081]/30"
               >
                 <CardContent className="py-8">
-                  <stat.icon className="w-12 h-12 mx-auto mb-4 text-[#00ff00]" />
+                  <stat.icon className="w-12 h-12 mx-auto mb-4 text-[#70E081]" />
                   <div className="text-2xl sm:text-4xl font-heading text-white mb-2">
                     {stat.value}
                   </div>
-                  <div className="text-sm text-[#00ff00]/70 uppercase tracking-wide">
+                  <div className="text-sm text-[#70E081]/70 uppercase tracking-wide">
                     {stat.label}
                   </div>
                 </CardContent>
@@ -427,14 +427,14 @@ export const Home = () => {
             <h2 className="text-4xl sm:text-5xl font-heading text-white mb-4">
               Frequently Asked Questions
             </h2>
-            <div className="w-20 h-1 bg-[#00ff00] mx-auto"></div>
+            <div className="w-20 h-1 bg-[#70E081] mx-auto"></div>
           </div>
 
           <div className="space-y-4">
             {faqs.map((faq, index) => (
               <div
                 key={index}
-                className="border-2 border-[#00ff00]/30 hover:border-[#00ff00] transition-all duration-300 bg-black"
+                className="border-2 border-[#70E081]/30 hover:border-[#70E081] transition-all duration-300 bg-black"
               >
                 <button
                   className="w-full px-6 py-4 flex justify-between items-center text-left"
@@ -444,14 +444,14 @@ export const Home = () => {
                     {faq.question}
                   </span>
                   <ChevronDown
-                    className={`text-[#00ff00] transition-transform duration-300 ${
+                    className={`text-[#70E081] transition-transform duration-300 ${
                       openFaq === index ? "rotate-180" : ""
                     }`}
                     size={24}
                   />
                 </button>
                 {openFaq === index && (
-                  <div className="px-6 pb-4 text-white/70 border-t border-[#00ff00]/30 pt-4 animate-fade-in">
+                  <div className="px-6 pb-4 text-white/70 border-t border-[#70E081]/30 pt-4 animate-fade-in">
                     {faq.answer}
                   </div>
                 )}

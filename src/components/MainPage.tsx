@@ -59,9 +59,9 @@ const MainPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-black w-screen">
+    <div className="flex flex-col min-h-screen bg-black w-screen">
       <Navigation currentPage={currentPage} onNavigate={setCurrentPage} />
-      <main className="pt-20">
+      <main className="flex-1">
         {renderPage()}
         <ScrollToTop />
       </main>

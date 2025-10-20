@@ -6,7 +6,7 @@ export const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
           <div className="space-y-2">
-            <h3 className="text-2xl font-bold text-[#00ff00]">
+            <h3 className="text-2xl font-bold text-[#70E081]">
               <span className="text-white">techno</span>VIT&apos;25
             </h3>
             <p className="text-muted text-sm">High on Tech</p>
@@ -22,7 +22,7 @@ export const Footer = () => {
                 <Mail size={16} />
                 <a
                   href="mailto:convenor.technoVIT@vit.ac.in"
-                  className="hover:text-[#00ff00] transition-colors"
+                  className="hover:text-[#70E081] transition-colors"
                 >
                   technovit@vit.ac.in
                 </a>
@@ -37,7 +37,7 @@ export const Footer = () => {
                 href="https://www.instagram.com/technovit_25/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 border-2 border-border hover:border-[#00ff00] flex items-center justify-center transition-all duration-300 hover:scale-105"
+                className="w-10 h-10 border-2 border-border hover:border-[#70E081] flex items-center justify-center transition-all duration-300 hover:scale-105"
               >
                 <Instagram size={20} />
               </a>
@@ -45,7 +45,7 @@ export const Footer = () => {
                 href="https://www.youtube.com/@VITChennaic"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 border-2 border-border hover:border-[#00ff00] flex items-center justify-center transition-all duration-300 hover:scale-105"
+                className="w-10 h-10 border-2 border-border hover:border-[#70E081] flex items-center justify-center transition-all duration-300 hover:scale-105"
               >
                 <Youtube size={20} />
               </a>
@@ -53,7 +53,7 @@ export const Footer = () => {
                 href="https://www.linkedin.com/company/technovit-chennai/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 border-2 border-border hover:border-[#00ff00] flex items-center justify-center transition-all duration-300 hover:scale-105"
+                className="w-10 h-10 border-2 border-border hover:border-[#70E081] flex items-center justify-center transition-all duration-300 hover:scale-105"
               >
                 <Linkedin size={20} />
               </a>
@@ -61,7 +61,7 @@ export const Footer = () => {
                 href="https://whatsapp.com/channel/0029VbBC41Z59PwTuuvQUU0B"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 border-2 border-border hover:border-[#00ff00] flex items-center justify-center transition-all duration-300 hover:scale-105"
+                className="w-10 h-10 border-2 border-border hover:border-[#70E081] flex items-center justify-center transition-all duration-300 hover:scale-105"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
