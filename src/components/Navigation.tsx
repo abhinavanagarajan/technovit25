@@ -42,7 +42,7 @@ export const Navigation = ({ currentPage, onNavigate }: NavigationProps) => {
               key={item.path}
               onClick={() => handleNavClick(item.path)}
               className={cn(
-                "uppercase tracking-wide text-white transition-colors duration-200 hover:text-[#70E081]",
+                "uppercase tracking-wide text-white transition-colors duration-200 hover:text-[#70E081] cursor-pointer",
                 currentPage === item.path && "text-[#70E081]"
               )}
             >

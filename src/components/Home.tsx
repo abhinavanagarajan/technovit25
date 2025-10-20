@@ -298,7 +298,7 @@ export const Home = () => {
         <div className="relative z-10 mt-12">
           <motion.button
             onClick={() => (window.location.href = "/events")}
-            className="bg-[#70E081] px-8 py-3 uppercase text-black font-bold hover:bg-[#70E081]/90 transition-colors duration-300"
+            className="bg-[#70E081] px-8 py-3 uppercase text-black font-bold hover:bg-[#70E081]/90 transition-colors duration-300 cursor-pointer"
             animate={{
               y: [0, -10, 0],
             }}
