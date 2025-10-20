@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
 import { gsap } from "gsap";
-import ASCIIText from "../components/ASCIIText";
+import ASCIIText from "@/components/ASCIIText";
 import { Press_Start_2P } from "next/font/google";
 import MainPage from "@/components/MainPage";
 
@@ -64,7 +64,6 @@ export default function Home() {
         },
         "-=0.5"
       )
-      // 3. Prepare and fade in the second screen
       .set(secondScreenRef.current, {
         display: "flex",
         opacity: 0,
