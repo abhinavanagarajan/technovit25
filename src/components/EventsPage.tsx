@@ -1,9 +1,11 @@
 "use client";
 
 import React, { useState, useMemo, useEffect, useCallback } from "react";
+import axios from "axios";
+
 import EventsList from "./EventsList";
 import EventFilter from "./Filters";
-import axios from "axios";
+import Pagination from "./Pagination";
 import { Asset, EventApiResponse, EventItem } from "@/interfaces/contentful";
 
 type FilterState = {
@@ -12,6 +14,8 @@ type FilterState = {
   dates: string[];
   teamSize: string[];
 };
+
+const EVENTS_PER_PAGE = 5;
 
 const formatDateForFilter = (isoString: string): string => {
   const dateObj = new Date(isoString);
@@ -22,13 +26,11 @@ const formatDateForFilter = (isoString: string): string => {
   const month = dateObj
     .toLocaleDateString("en-US", { month: "short", timeZone: "UTC" })
     .toUpperCase();
-
   let daySuffix;
   if (day.endsWith("1") && !day.endsWith("11")) daySuffix = "ST";
   else if (day.endsWith("2") && !day.endsWith("12")) daySuffix = "ND";
   else if (day.endsWith("3") && !day.endsWith("13")) daySuffix = "RD";
   else daySuffix = "TH";
-
   return `${day}${daySuffix} ${month}`;
 };
 
@@ -37,11 +39,12 @@ const EventsPage = () => {
   const [eventData, setEvents] = useState<EventItem[]>([]);
   const [assetData, setAssetData] = useState<Asset[]>([]);
 
+  const [currentPage, setCurrentPage] = useState(1);
+
   useEffect(() => {
     const fetchEvents = async () => {
       try {
         const response = await axios.get<EventApiResponse>("/api/events");
-        console.log("Fetched Events:", response.data.items);
         setEvents(response.data.items);
         setAssetData(response.data.includes?.Asset || []);
       } catch (error) {
@@ -54,20 +57,16 @@ const EventsPage = () => {
   const { uniqueDates, dateMap } = useMemo(() => {
     const newDateMap: Record<string, string> = {};
     const dates = new Set<string>();
-
     eventData.forEach((event) => {
       const formattedDate = formatDateForFilter(event.fields.startDateAndTime);
       const datePart = event.fields.startDateAndTime.substring(0, 10);
-
       newDateMap[formattedDate] = datePart;
       dates.add(formattedDate);
     });
-
     const sortedDates = Array.from(dates).sort(
       (a, b) =>
         new Date(newDateMap[a]).getTime() - new Date(newDateMap[b]).getTime()
     );
-
     return { uniqueDates: sortedDates, dateMap: newDateMap };
   }, [eventData]);
 
@@ -80,7 +79,13 @@ const EventsPage = () => {
 
   const handleFilterChange = useCallback((newFilters: FilterState) => {
     setFilters(newFilters);
+    setCurrentPage(1);
   }, []);
+
+  const handleSearchChange = (term: string) => {
+    setSearchTerm(term);
+    setCurrentPage(1);
+  };
 
   const filteredEvents = useMemo(() => {
     return eventData.filter((event) => {
@@ -89,28 +94,22 @@ const EventsPage = () => {
           .toLowerCase()
           .includes(searchTerm.toLowerCase()) ||
         event.fields.clubName.toLowerCase().includes(searchTerm.toLowerCase());
-
       const eventTypeMatch =
         filters.eventType.length === 0 ||
         filters.eventType.includes(event.fields.eventType.toUpperCase());
-
       const priceMatch =
         event.fields.pricePerPerson >= filters.priceRange[0] &&
         event.fields.pricePerPerson <= filters.priceRange[1];
-
       const teamSizeMatch =
         filters.teamSize.length === 0 ||
         filters.teamSize.some((size) =>
           event.fields.participationType.toUpperCase().includes(size)
         );
-
-
       const dateMatch =
         filters.dates.length === 0 ||
         filters.dates
           .map((dateLabel) => dateMap[dateLabel])
           .includes(event.fields.startDateAndTime.substring(0, 10));
-
       return (
         searchMatch &&
         eventTypeMatch &&
@@ -121,9 +120,11 @@ const EventsPage = () => {
     });
   }, [searchTerm, filters, eventData, dateMap]);
 
-  useEffect(() => {
-    console.log("Filtered Events:", filteredEvents);
-  }, [filteredEvents]);
+  const currentEvents = useMemo(() => {
+    const firstPageIndex = (currentPage - 1) * EVENTS_PER_PAGE;
+    const lastPageIndex = firstPageIndex + EVENTS_PER_PAGE;
+    return filteredEvents.slice(firstPageIndex, lastPageIndex);
+  }, [currentPage, filteredEvents]);
 
   return (
     <div className="flex flex-col lg:flex-row bg-[#1a1a1a]">
@@ -135,10 +136,17 @@ const EventsPage = () => {
       </div>
       <div className="w-full lg:w-3/4">
         <EventsList
-          events={filteredEvents}
+          events={currentEvents}
           assets={assetData}
           searchTerm={searchTerm}
-          onSearchChange={setSearchTerm}
+          onSearchChange={handleSearchChange}
+        />
+
+        <Pagination
+          currentPage={currentPage}
+          totalCount={filteredEvents.length}
+          pageSize={EVENTS_PER_PAGE}
+          onPageChange={(page) => setCurrentPage(page)}
         />
       </div>
     </div>
