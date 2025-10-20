@@ -20,7 +20,11 @@ const MainPage = () => {
 
   // Update URL when page changes
   useEffect(() => {
-    window.history.pushState({}, "", `/${currentPage === "home" ? "" : currentPage}`);
+    window.history.pushState(
+      {},
+      "",
+      `/${currentPage === "home" ? "" : currentPage}`
+    );
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [currentPage]);
 
@@ -57,8 +61,11 @@ const MainPage = () => {
   return (
     <div className="min-h-screen bg-black w-screen">
       <Navigation currentPage={currentPage} onNavigate={setCurrentPage} />
-      <main className="pt-20">{renderPage()}<ScrollToTop /></main>
-      {currentPage !== "sponsors" && <Footer />}
+      <main className="pt-20">
+        {renderPage()}
+        <ScrollToTop />
+      </main>
+      <Footer />
     </div>
   );
 };
