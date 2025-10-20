@@ -169,6 +169,34 @@ export const Home = () => {
       src: "https://cdn.a2ys.dev/images/carDrift.png",
       alt: "Car Drift",
     },
+    {
+      src: "https://cdn.a2ys.dev/images/IMG_3848.JPG",
+      alt: "technoVIT alt",
+    },
+    {
+      src: "https://cdn.a2ys.dev/images/WhatsApp%20Image%202025-10-19%20at%2021.46.43_6a220941.jpg",
+      alt: "technoVIT alt",
+    },
+    {
+      src: "https://cdn.a2ys.dev/images/IMG_3817.JPG",
+      alt: "technoVIT alt",
+    },
+    {
+      src: "https://cdn.a2ys.dev/images/IMG_5231.JPG",
+      alt: "technoVIT alt",
+    },
+    {
+      src: "https://cdn.a2ys.dev/images/WhatsApp%20Image%202025-10-19%20at%2021.56.34_d8f72fb8.jpg",
+      alt: "technoVIT alt",
+    },
+    {
+      src: "https://cdn.a2ys.dev/images/IMG_5307.JPG",
+      alt: "technoVIT alt",
+    },
+    {
+      src: "https://cdn.a2ys.dev/images/IMG_5346.JPG",
+      alt: "technoVIT alt",
+    },
   ];
 
   return (
@@ -232,14 +260,14 @@ export const Home = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/60 z-[1]"></div>
 
         <div className="relative z-10 text-center max-w-6xl mx-auto -mt-12">
-          <h2 className="text-sm sm:text-base text-right lg:text-lg text-white font-bold tracking-[0.2em] uppercase mb-6 animate-fade-in">
+          <h2 className="text-sm sm:text-base text-right lg:text-xl text-white tracking-[0.2em] uppercase mb-2 animate-fade-in font-black">
             High on Tech
           </h2>
           <h1 className="text-6xl sm:text-7xl lg:text-9xl font-black mb-3 animate-slide-up">
             <span className="text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.3)] hover:drop-shadow-[0_0_40px_rgba(255,255,255,0.5)] transition-all duration-300">
               techno
             </span>
-            <span className="text-[#00ff00] drop-shadow-[0_0_40px_rgba(0,255,0,0.8)] hover:drop-shadow-[0_0_60px_rgba(0,255,0,1)] transition-all duration-300 inline-block hover:scale-105">
+            <span className="text-[#00ff00] drop-shadow-[0_0_40px_rgba(0,255,0,0.8)] hover:drop-shadow-[0_0_60px_rgba(0,255,0,1)] transition-all duration-300 inline-block">
               VIT
             </span>
             <span className="text-[#00ff00] drop-shadow-[0_0_40px_rgba(0,255,0,0.8)]">
@@ -265,14 +293,23 @@ export const Home = () => {
             </div>
             <div className="h-px w-12 sm:w-20 bg-gradient-to-l from-transparent to-[#00ff00]"></div>
           </div>
-          <div>
-            <button
-              onClick={() => (window.location.href = "/events")}
-              className="mt-8 bg-[#00ff00] px-8 py-3 uppercase text-black font-bold rounded-xl hover:bg-[#00ff00]/90"
-            >
-              Explore more
-            </button>
-          </div>
+        </div>
+
+        <div className="relative z-10 mt-12">
+          <motion.button
+            onClick={() => (window.location.href = "/events")}
+            className="bg-[#00ff00] px-8 py-3 uppercase text-black font-bold hover:bg-[#00ff00]/90 transition-colors duration-300"
+            animate={{
+              y: [0, -15, 0],
+            }}
+            transition={{
+              duration: 2.5,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+          >
+            Explore more
+          </motion.button>
         </div>
       </section>
 
@@ -362,19 +399,20 @@ export const Home = () => {
               }}
               transition={{
                 ease: "linear",
-                duration: 20,
+                duration: 10,
                 repeat: Infinity,
+                repeatType: "loop",
               }}
             >
               {[...carouselImages, ...carouselImages].map((image, index) => (
                 <div
                   key={index}
-                  className="w-full h-[calc(100%/6)] relative overflow-hidden border-4 border-black"
+                  className="w-full relative border-4 border-black box-border"
                 >
                   <img
                     src={image.src}
                     alt={image.alt}
-                    className="h-full w-full object-cover"
+                    className="w-full h-auto"
                   />
                 </div>
               ))}
