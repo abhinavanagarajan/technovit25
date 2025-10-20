@@ -9,9 +9,8 @@ export const Sponsors = () => {
             Title Sponsors
           </h2>
           <div className="flex flex-wrap justify-center items-center gap-12">
-            {/* Placeholder for title sponsor logos */}
             <div className="w-64 h-32 border-2 border-gray-700 rounded-lg flex items-center justify-center hover:border-blue-500 transition-colors">
-              <img src="" />
+              <img src="https://cdn.a2ys.dev/images/hcltech-new-logo.svg" />
             </div>
           </div>
         </section>
@@ -24,7 +23,7 @@ export const Sponsors = () => {
           <div className="flex flex-wrap justify-center items-center gap-12">
             {/* Placeholder for FM partner logo */}
             <div className="w-64 h-32 border-2 border-gray-700 rounded-lg flex items-center justify-center hover:border-purple-500 transition-colors">
-              <span className="text-gray-500">Coming Soon</span>
+              <img src="https://cdn.a2ys.dev/images/hellofm-logo.png" />
             </div>
           </div>
         </section>
