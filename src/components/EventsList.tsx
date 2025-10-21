@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { EventItem, Asset } from "@/interfaces/contentful";
 import { Bayon } from "next/font/google";
 import { MapPin } from "lucide-react";
@@ -71,7 +71,6 @@ interface ChevronDownIconProps {
 
 interface AccordionItemProps {
   title: string;
-  // children: string;
   children?: React.ReactNode;
   htmlContent?: string;
   isOpen: boolean;
@@ -91,9 +90,8 @@ const SearchIcon = () => (
     strokeLinejoin="round"
     className="text-white"
   >
-    {" "}
-    <circle cx="11" cy="11" r="8"></circle>{" "}
-    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>{" "}
+    <circle cx="11" cy="11" r="8"></circle>
+    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
   </svg>
 );
 const ClockIcon = () => (
@@ -105,12 +103,11 @@ const ClockIcon = () => (
     stroke="currentColor"
     strokeWidth={2}
   >
-    {" "}
     <path
       strokeLinecap="round"
       strokeLinejoin="round"
       d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-    />{" "}
+    />
   </svg>
 );
 const CalendarIcon = () => (
@@ -122,12 +119,11 @@ const CalendarIcon = () => (
     stroke="currentColor"
     strokeWidth={2}
   >
-    {" "}
     <path
       strokeLinecap="round"
       strokeLinejoin="round"
       d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-    />{" "}
+    />
   </svg>
 );
 const UsersIcon = () => (
@@ -139,12 +135,11 @@ const UsersIcon = () => (
     stroke="currentColor"
     strokeWidth={2}
   >
-    {" "}
     <path
       strokeLinecap="round"
       strokeLinejoin="round"
       d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.653-.125-1.273-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.653.125-1.273.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-    />{" "}
+    />
   </svg>
 );
 const ChevronDownIcon = ({ open }: ChevronDownIconProps) => (
@@ -158,12 +153,7 @@ const ChevronDownIcon = ({ open }: ChevronDownIconProps) => (
     stroke="currentColor"
     strokeWidth={2}
   >
-    {" "}
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      d="M19 9l-7 7-7-7"
-    />{" "}
+    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
   </svg>
 );
 const CloseIcon = () => (
@@ -175,12 +165,11 @@ const CloseIcon = () => (
     stroke="currentColor"
     strokeWidth={2}
   >
-    {" "}
     <path
       strokeLinecap="round"
       strokeLinejoin="round"
       d="M6 18L18 6M6 6l12 12"
-    />{" "}
+    />
   </svg>
 );
 
@@ -200,17 +189,6 @@ const AccordionItem = ({
         <h3 className="uppercase text-white">{title}</h3>
         <ChevronDownIcon open={isOpen} />
       </div>
-      {/* {isOpen && (
-        // <div className="pb-4 text-gray-400 text-lg max-h-24 overflow-y-scroll">
-        //   {children}
-        // </div>
-
-        <div
-          className="pb-4 text-gray-400 text-lg max-h-24 overflow-y-scroll"
-          dangerouslySetInnerHTML={{ __html: children }}
-        />
-      )} */}
-
       {isOpen && (
         <>
           {htmlContent && (
@@ -219,7 +197,6 @@ const AccordionItem = ({
               dangerouslySetInnerHTML={{ __html: htmlContent }}
             />
           )}
-
           {children && (
             <div className="pb-4 text-gray-400 text-lg">{children}</div>
           )}
@@ -233,7 +210,6 @@ const SearchAndFilter = ({
   searchTerm,
   onSearchChange,
 }: SearchAndFilterProps) => {
-  const dropdownArrow = `data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E`;
   return (
     <div className="w-full px-2 py-4 mb-4">
       <div className="flex w-full items-center gap-2">
@@ -247,27 +223,6 @@ const SearchAndFilter = ({
             onChange={(e) => onSearchChange(e.target.value)}
           />
         </div>
-        <select
-          className="cursor-pointer appearance-none border border-[#565656] bg-black px-3 py-1.5 pr-8 uppercase text-white outline-none text-sm whitespace-nowrap"
-          style={{
-            backgroundImage: `url("${dropdownArrow}")`,
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "right 0.5rem center",
-            backgroundSize: "0.6em",
-            minWidth: "fit-content",
-            width: "auto",
-          }}
-        >
-          <option className="bg-black text-white" value="30">
-            Show 30
-          </option>
-          <option className="bg-black text-white" value="50">
-            Show 50
-          </option>
-          <option className="bg-black text-white" value="100">
-            Show 100
-          </option>
-        </select>
       </div>
     </div>
   );
@@ -278,10 +233,7 @@ const EventDetailsDialog = ({
   imageUrl,
   onClose,
 }: EventDetailsDialogProps) => {
-  const [openAccordion, setOpenAccordion] = useState<string | null>(
-    // "Description"
-    null
-  );
+  const [openAccordion, setOpenAccordion] = useState<string | null>(null);
   const { date: startdate, time: starttime } = formatDate(
     event.fields.startDateAndTime
   );
@@ -314,7 +266,7 @@ const EventDetailsDialog = ({
           <div className="w-full lg:w-1/3 h-64 lg:h-auto bg-[#d9d9d9] flex-shrink-0">
             {imageUrl && (
               <img
-                src={`https://cdn.a2ys.dev/images/defaultPoster.png`} //{imageUrl}
+                src={`https://cdn.a2ys.dev/images/defaultPoster.png`}
                 alt={event.fields.eventName}
                 className="w-full h-full object-cover border border-gray-700"
               />
@@ -420,7 +372,7 @@ const EventDetailsDialog = ({
   );
 };
 
-const EventCard = ({ event, imageUrl, onClick }: EventCardProps) => {
+const EventCard = React.memo(({ event, imageUrl, onClick }: EventCardProps) => {
   const { date, time } = formatDate(event.fields.startDateAndTime);
 
   return (
@@ -432,7 +384,7 @@ const EventCard = ({ event, imageUrl, onClick }: EventCardProps) => {
         <div className="relative flex-shrink-0 overflow-hidden rounded-md bg-black aspect-[4/5] lg:self-stretch">
           {imageUrl ? (
             <img
-              src={`https://cdn.a2ys.dev/images/defaultPoster.png`} //{imageUrl}
+              src={`https://cdn.a2ys.dev/images/defaultPoster.png`}
               alt={event.fields.eventName}
               className="w-full h-full object-cover"
             />
@@ -478,7 +430,9 @@ const EventCard = ({ event, imageUrl, onClick }: EventCardProps) => {
       </div>
     </div>
   );
-};
+});
+
+EventCard.displayName = "EventCard";
 
 const EventsList = ({
   events,
@@ -486,10 +440,6 @@ const EventsList = ({
   searchTerm,
   onSearchChange,
 }: EventsListProps) => {
-  useEffect(
-    () => console.log("EventsList rendered with events:", events),
-    [events]
-  );
   const [selectedEvent, setSelectedEvent] = useState<EventItem | null>(null);
 
   const getImageUrl = (event: EventItem): string | undefined => {
