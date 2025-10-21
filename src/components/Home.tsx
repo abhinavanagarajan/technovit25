@@ -80,6 +80,10 @@ export const Home = ({ onNavigate }: HomeProps) => {
   const animationFrameId = useRef<number | null>(null);
   const drops = useRef<number[]>([]);
 
+  const lastTimeRef = useRef<number>(0);
+  const elapsedTimeRef = useRef<number>(0);
+  const interval = 40;
+
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
@@ -101,24 +105,33 @@ export const Home = ({ onNavigate }: HomeProps) => {
 
     setCanvasDimensions();
 
-    const draw = () => {
+    const draw = (timestamp: number) => {
       if (!ctx) return;
+
+      const deltaTime = timestamp - lastTimeRef.current;
+      lastTimeRef.current = timestamp;
+      elapsedTimeRef.current += deltaTime;
 
       ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
       ctx.fillRect(0, 0, canvas.width, canvas.height);
-      ctx.fillStyle = "#70E081";
-      ctx.font = "15px monospace";
 
-      for (let i = 0; i < drops.current.length; i++) {
-        const text = characters.charAt(
-          Math.floor(Math.random() * characters.length)
-        );
-        ctx.fillText(text, i * 20, drops.current[i]);
+      if (elapsedTimeRef.current > interval) {
+        elapsedTimeRef.current %= interval;
 
-        if (drops.current[i] > canvas.height && Math.random() > 0.975) {
-          drops.current[i] = 0;
+        ctx.fillStyle = "#70E081";
+        ctx.font = "15px monospace";
+
+        for (let i = 0; i < drops.current.length; i++) {
+          const text = characters.charAt(
+            Math.floor(Math.random() * characters.length)
+          );
+          ctx.fillText(text, i * 20, drops.current[i]);
+
+          if (drops.current[i] > canvas.height && Math.random() > 0.975) {
+            drops.current[i] = 0;
+          }
+          drops.current[i] += 20;
         }
-        drops.current[i] += 20;
       }
       animationFrameId.current = requestAnimationFrame(draw);
     };
@@ -127,6 +140,7 @@ export const Home = ({ onNavigate }: HomeProps) => {
       (entries) => {
         if (entries[0].isIntersecting) {
           if (!animationFrameId.current) {
+            lastTimeRef.current = performance.now();
             animationFrameId.current = requestAnimationFrame(draw);
           }
         } else {
@@ -228,7 +242,7 @@ export const Home = ({ onNavigate }: HomeProps) => {
                   <div className="text-2xl sm:text-4xl font-heading text-white mb-2">
                     {stat.value}
                   </div>
-                  <div className="text-sm text-[#7F0E081]/70 uppercase tracking-wide">
+                  <div className="text-sm text-[#70E081]/70 uppercase tracking-wide">
                     {stat.label}
                   </div>
                 </CardContent>
@@ -263,7 +277,7 @@ export const Home = ({ onNavigate }: HomeProps) => {
                 leaders like Dr. V. S. Kanchana Bhaaskaran, Dr. T. Thyagarajan,
                 and Dr. P. K. Manoharan, the institution excels in innovation,
                 research, and transformative learning. Strategically located in
-                Chennai, it promotes application-based education, addressing f
+                Chennai, it promotes application-based education, addressing
                 industrial and societal needs while producing industry-ready
                 professionals. With a vibrant, multicultural campus and strong
                 global collaborations, VIT Chennai fosters intellectual
@@ -288,7 +302,7 @@ export const Home = ({ onNavigate }: HomeProps) => {
             <div className="absolute bottom-0 left-0 right-0 h-8 flex"></div>
           </div>
 
-          <div className="md:w-1fs/5 bg-black hidden sm:flex relative overflow-hidden">
+          <div className="md:w-1/5 bg-black hidden sm:flex relative overflow-hidden">
             <motion.div
               className="absolute top-0 left-0 w-full h-[200%] flex flex-col"
               animate={{
