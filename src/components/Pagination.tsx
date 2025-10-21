@@ -53,12 +53,12 @@ const Pagination = ({
         onClick={onPrevious}
         disabled={currentPage === 1}
         className={`
-                    px-3 py-2 border-2 border-black flex items-center justify-center
-                    ${
-                      currentPage === 1
-                        ? "bg-gray-400 cursor-not-allowed"
-                        : "bg-[#42E25A] text-black cursor-pointer"
-                    }
+                  px-3 py-2 border-2 border-black flex items-center justify-center
+                  ${
+                    currentPage === 1
+                      ? "bg-gray-400 cursor-not-allowed"
+                      : "bg-[#42E25A] text-black cursor-pointer"
+                  }
                 `}
       >
         <svg
@@ -97,7 +97,7 @@ const Pagination = ({
                                 ? "bg-black text-[#42E25A]"
                                 : "bg-[#42E25A] text-black"
                             }
-                        `}
+                          `}
           >
             {pageNumber}
           </button>
@@ -108,12 +108,12 @@ const Pagination = ({
         onClick={onNext}
         disabled={currentPage === totalPageCount}
         className={`
-                    px-3 py-2 border-2 border-black flex items-center justify-center
-                    ${
-                      currentPage === totalPageCount
-                        ? "bg-gray-400 cursor-not-allowed"
-                        : "bg-[#42E25A] text-black cursor-pointer"
-                    }
+                  px-3 py-2 border-2 border-black flex items-center justify-center
+                  ${
+                    currentPage === totalPageCount
+                      ? "bg-gray-400 cursor-not-allowed"
+                      : "bg-[#42E25A] text-black cursor-pointer"
+                  }
                 `}
       >
         <svg
@@ -135,4 +135,4 @@ const Pagination = ({
   );
 };
 
-export default Pagination;
+export default React.memo(Pagination);
