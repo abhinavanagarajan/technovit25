@@ -40,7 +40,7 @@ const lineVariants: Variants = {
 
 export const MerchPage = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center py-24 bg-background">
+    <div className="min-h-screen w-screen flex items-center justify-center py-24 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <motion.h1
