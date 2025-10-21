@@ -1,6 +1,15 @@
 import { Card, CardContent } from "../components/Card";
 
-const teamData = {
+interface Member {
+  name: string;
+  role: string;
+  image?: string;
+  email?: string;
+}
+
+type TeamData = Record<string, Member[]>;
+
+const teamData: TeamData = {
   "Chief Patron": [
     {
       name: "Dr. G Viswanathan",
@@ -102,12 +111,15 @@ const teamData = {
     },
     {
       name: "Dr. Radha R",
-      role: "Stage arragements (Inaugural / Valedictory)",
+      role: "Stage arrangements (Inaugural / Valedictory)",
     },
     { name: "Dr. Senthilpandian M", role: "Stalls and Expo" },
     { name: "Dr. Giridaran A", role: "Stalls and Expo" },
     { name: "Dr. Braveen M", role: "Venue arrangements and Refreshments" },
-    { name: "Dr. Balamurugan B J", role: "Venue arragements and Refreshments" },
+    {
+      name: "Dr. Balamurugan B J",
+      role: "Venue arrangements and Refreshments",
+    },
     { name: "Dr. M. Prasad", role: "Web and Technical Team" },
   ],
   "Student Organizers": [
@@ -140,7 +152,6 @@ const teamData = {
   ],
 };
 
-// Helper function to determine grid classes based on the number of members
 const getGridClasses = (memberCount: number) => {
   if (memberCount === 1) {
     return "grid-cols-1 max-w-sm mx-auto";
@@ -151,13 +162,12 @@ const getGridClasses = (memberCount: number) => {
   if (memberCount === 3) {
     return "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 max-w-5xl mx-auto";
   }
-  // Default responsive grid for 4 or more members
   return "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4";
 };
 
 export const Team = () => {
   return (
-    <div className="min-h-screen py-24">
+    <div className="py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <h1 className="text-5xl sm:text-6xl font-heading text-white mb-4">
@@ -188,9 +198,9 @@ export const Team = () => {
                   {members.map((member, index) => (
                     <Card key={index} className="group">
                       <div className="relative overflow-hidden">
-                        {(member as { image?: string }).image && (
+                        {member.image && (
                           <img
-                            src={(member as { image: string }).image}
+                            src={member.image}
                             alt={member.name}
                             className="w-full h-64 object-contain transition-transform duration-300 group-hover:scale-110"
                           />
