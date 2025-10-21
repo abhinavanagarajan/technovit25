@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { EventItem, Asset } from "@/interfaces/contentful";
 import { Bayon } from "next/font/google";
 import { MapPin } from "lucide-react";
@@ -441,6 +441,18 @@ const EventsList = ({
   onSearchChange,
 }: EventsListProps) => {
   const [selectedEvent, setSelectedEvent] = useState<EventItem | null>(null);
+
+  useEffect(() => {
+    if (selectedEvent) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [selectedEvent]);
 
   const getImageUrl = (event: EventItem): string | undefined => {
     const posterId = event.fields.poster?.sys.id;
