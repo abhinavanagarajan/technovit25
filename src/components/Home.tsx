@@ -1,4 +1,7 @@
+"use client";
+
 import { useState, useEffect, useRef } from "react";
+import Link from "next/link";
 import { ChevronDown, Users, Trophy, Globe, CalendarDays } from "lucide-react";
 import { Card, CardContent } from "./Card";
 import { motion } from "framer-motion";
@@ -70,11 +73,7 @@ const carouselImages = [
   { src: "https://cdn.a2ys.dev/images/IMG_5346.JPG", alt: "technoVIT alt" },
 ];
 
-interface HomeProps {
-  onNavigate: (page: string) => void;
-}
-
-export const Home = ({ onNavigate }: HomeProps) => {
+export const Home = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const animationFrameId = useRef<number | null>(null);
@@ -179,7 +178,7 @@ export const Home = ({ onNavigate }: HomeProps) => {
             High on Tech
           </h2>
           <h1 className="text-6xl sm:text-7xl lg:text-9xl font-black mb-3 animate-slide-up">
-            <span className="text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.3)] hover:drop-shadow-[0_0_40px_rgba(255,255,0.5)] transition-all duration-300">
+            <span className="text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.3)]">
               techno
             </span>
             <span className="text-[#70E081] drop-shadow-[0_0_40px_rgba(0,255,0,0.8)] hover:drop-shadow-[0_0_60px_rgba(0,255,0,1)] transition-all duration-300 inline-block">
@@ -211,9 +210,7 @@ export const Home = ({ onNavigate }: HomeProps) => {
         </div>
 
         <div className="relative z-10 mt-12">
-          <motion.button
-            onClick={() => onNavigate("events")}
-            className="bg-[#70E081] px-8 py-3 uppercase text-black font-bold hover:bg-[#70E081]/90 transition-colors duration-300 cursor-pointer"
+          <motion.div
             animate={{
               y: [0, -10, 0],
             }}
@@ -223,8 +220,13 @@ export const Home = ({ onNavigate }: HomeProps) => {
               ease: "easeInOut",
             }}
           >
-            Explore more
-          </motion.button>
+            <Link
+              href="/events"
+              className="bg-[#70E081] px-8 py-3 uppercase text-black font-bold hover:bg-[#70E081]/90 transition-colors duration-300 cursor-pointer"
+            >
+              Explore more
+            </Link>
+          </motion.div>
         </div>
       </section>
 
@@ -234,7 +236,7 @@ export const Home = ({ onNavigate }: HomeProps) => {
             {stats.map((stat, index) => (
               <Card
                 key={index}
-                hover={false}
+                // hover={false}
                 className="text-center bg-black border-[#70E081]/30"
               >
                 <CardContent className="py-8">
