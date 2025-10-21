@@ -2,6 +2,22 @@
 
 import { useState, useEffect } from "react";
 
+const ArrowUpIcon = () => (
+  <svg
+    className="w-6 h-6"
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M5 10l7-7m0 0l7 7m-7-7v18"
+    />
+  </svg>
+);
+
 export default function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -35,19 +51,7 @@ export default function ScrollToTop() {
       }`}
       aria-label="Scroll to top"
     >
-      <svg
-        className="w-6 h-6"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M5 10l7-7m0 0l7 7m-7-7v18"
-        />
-      </svg>
+      <ArrowUpIcon />
     </button>
   );
 }
