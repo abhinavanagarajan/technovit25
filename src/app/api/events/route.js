@@ -4,11 +4,10 @@ export async function GET() {
   const assetsUrl = process.env.NEXT_PUBLIC_ASSETS_URL;
 
   if (!assetsUrl) {
-    console.error(
-      "Error: NEXT_PUBLIC_ASSETS_URL is not defined in your environment variables."
-    );
+    const errorMessage = "NEXT_PUBLIC_ASSETS_URL is not defined";
+    console.error(`Configuration Error: ${errorMessage}`);
     return NextResponse.json(
-      { message: "Server configuration error." },
+      { message: "Server configuration error.", error: errorMessage },
       { status: 500 }
     );
   }
@@ -21,15 +20,22 @@ export async function GET() {
     });
 
     if (!response.ok) {
-      throw new Error(`Failed to fetch events data: ${response.statusText}`);
+      throw new Error(
+        `Failed to fetch events data: ${response.status} ${response.statusText}`
+      );
     }
 
     const data = await response.json();
     return NextResponse.json(data);
   } catch (error) {
-    console.error("Error fetching external events.json:", error);
+    const errorMessage =
+      error instanceof Error ? error.message : "Unknown error occurred";
+    console.error("Error fetching external events.json:", errorMessage);
     return NextResponse.json(
-      { message: "Error fetching event data from source." },
+      {
+        message: "Error fetching event data from source.",
+        error: errorMessage,
+      },
       { status: 500 }
     );
   }

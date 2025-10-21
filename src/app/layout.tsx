@@ -10,8 +10,41 @@ const beVietnam = Be_Vietnam_Pro({
 });
 
 export const metadata: Metadata = {
-  title: "technoVIT 2025",
-  description: "Join technoVIT'25",
+  metadataBase: new URL("https://technovit.vit.ac.in"),
+  title: {
+    default: "technoVIT 2025",
+    template: "%s | technoVIT 2025",
+  },
+  description:
+    "Join technoVIT'25 - The official technical fest of VIT Chennai.",
+  keywords: ["technoVIT", "VIT", "tech fest", "technical fest", "events"],
+
+  openGraph: {
+    title: "technoVIT 2025",
+    description:
+      "Join technoVIT'25 - The official technical fest of VIT Chennai.",
+    url: "https://technovit.vit.ac.in",
+    siteName: "technoVIT 2025",
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "technoVIT 2025",
+    description:
+      "Join technoVIT'25 - The official technical fest of VIT Chennai.",
+  },
+
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 1,
+  },
+
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
