@@ -11,8 +11,11 @@ const pressStart = Press_Start_2P({
   weight: "400",
 });
 
+const INTRO_STORAGE_KEY = "technovit_intro_seen";
+
 export default function Home() {
   const [hasClicked, setHasClicked] = useState(false);
+  const [isSessionChecked, setIsSessionChecked] = useState(false);
   const [powerButtonFontSize, setPowerButtonFontSize] = useState(200);
 
   const buttonRef = useRef<HTMLButtonElement>(null);
@@ -29,6 +32,13 @@ export default function Home() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  useEffect(() => {
+    if (sessionStorage.getItem(INTRO_STORAGE_KEY) === "true") {
+      setHasClicked(true);
+    }
+    setIsSessionChecked(true);
+  }, []);
+
   const runTransitionAnimation = () => {
     if (
       !firstScreenRef.current ||
@@ -42,6 +52,7 @@ export default function Home() {
     const tl = gsap.timeline({
       onComplete: () => {
         setHasClicked(true);
+        sessionStorage.setItem(INTRO_STORAGE_KEY, "true");
       },
     });
 
@@ -75,7 +86,7 @@ export default function Home() {
           duration: 1,
           ease: "power2.inOut",
         },
-        "<0.5" // Start fading in the second screen as the first one is fading out
+        "<0.5"
       );
   };
 
@@ -84,11 +95,16 @@ export default function Home() {
     runTransitionAnimation();
   };
 
+  if (!isSessionChecked) {
+    return <main className="min-h-[100svh] relative flex bg-black" />;
+  }
+
   return (
     <main className="min-h-[100svh] relative flex bg-black">
       <div
         ref={firstScreenRef}
         className="absolute inset-0 flex items-center justify-center"
+        style={{ display: hasClicked ? "none" : "flex" }}
       >
         <div className="absolute top-0 left-0 w-screen h-screen z-10">
           <Image
@@ -119,7 +135,14 @@ export default function Home() {
         </div>
       </div>
 
-      <div ref={secondScreenRef} className="hidden overflow-y-hidden">
+      <div
+        ref={secondScreenRef}
+        className="overflow-y-hidden"
+        style={{
+          display: hasClicked ? "flex" : "none",
+          opacity: hasClicked ? 1 : 0,
+        }}
+      >
         <MainPage />
       </div>
     </main>
