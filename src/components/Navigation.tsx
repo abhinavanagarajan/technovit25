@@ -14,16 +14,16 @@ const bayon = Bayon({
   weight: "400",
 });
 
+const navItems = [
+  { name: "HOME", path: "home" },
+  { name: "EVENTS", path: "events" },
+  { name: "TEAM", path: "team" },
+  { name: "MERCH", path: "merch" },
+  // { name: "SPONSORS", path: "sponsors" },
+];
+
 export const Navigation = ({ currentPage, onNavigate }: NavigationProps) => {
   const [isOpen, setIsOpen] = useState(false);
-
-  const navItems = [
-    { name: "HOME", path: "home" },
-    { name: "EVENTS", path: "events" },
-    { name: "TEAM", path: "team" },
-    { name: "MERCH", path: "merch" },
-    // { name: "SPONSORS", path: "sponsors" },
-  ];
 
   const handleNavClick = (path: string) => {
     onNavigate(path);
@@ -32,10 +32,9 @@ export const Navigation = ({ currentPage, onNavigate }: NavigationProps) => {
 
   return (
     <nav
-      className={`z-50 border-b-[1px] border-[#ffffff] bg-[#000000] backdrop-blur-md text-xl  ${bayon.className}`}
+      className={`z-50 border-b-[1px] border-[#ffffff] bg-[#000000] backdrop-blur-md text-xl ${bayon.className}`}
     >
       <div className="mx-auto hidden h-16 max-w-[95vw] items-center md:flex">
-        {/* Left - Navigation Links */}
         <div className="flex flex-1 items-center gap-6 justify-start">
           {navItems.map((item) => (
             <button
@@ -51,7 +50,6 @@ export const Navigation = ({ currentPage, onNavigate }: NavigationProps) => {
           ))}
         </div>
 
-        {/* Center - Logos */}
         <div
           className="flex flex-none items-center gap-3 justify-center cursor-pointer"
           onClick={() => handleNavClick("home")}
@@ -73,7 +71,6 @@ export const Navigation = ({ currentPage, onNavigate }: NavigationProps) => {
           />
         </div>
 
-        {/* Right - Get Started Button */}
         <div className="flex flex-1 items-center justify-end">
           <button
             onClick={() => handleNavClick("events")}
@@ -84,9 +81,7 @@ export const Navigation = ({ currentPage, onNavigate }: NavigationProps) => {
         </div>
       </div>
 
-      {/* Mobile Navbar */}
       <div className="flex items-center justify-between px-4 py-3 md:hidden">
-        {/* Mobile Logos */}
         <div
           className="flex items-center gap-2 cursor-pointer"
           onClick={() => handleNavClick("home")}
