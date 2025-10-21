@@ -193,7 +193,7 @@ class AsciiFilter {
         const gray =
           (0.3 * imgData[i] + 0.6 * imgData[i + 1] + 0.1 * imgData[i + 2]) /
           255;
-        let idx = Math.floor((this.invert ? gray : 1 - gray) * charsetLen);
+        const idx = Math.floor((this.invert ? gray : 1 - gray) * charsetLen);
         str += this.charset[idx];
       }
       str += "\n";
@@ -474,7 +474,7 @@ class CanvAscii {
 
   updateOptions(newOptions: Partial<CanvAsciiOptions>) {
     let meshNeedsUpdate = false;
-    let textCanvasStyleNeedsUpdate = false;
+    const textCanvasStyleNeedsUpdate = false;
 
     if (
       newOptions.text !== undefined &&

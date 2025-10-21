@@ -1,5 +1,5 @@
 import { Renderer, Program, Mesh, Color, Triangle } from "ogl";
-import React, { useEffect, useRef, useMemo, useCallback } from "react";
+import React, { useEffect, useRef, useCallback } from "react";
 
 type Vec2 = [number, number];
 
@@ -204,8 +204,6 @@ export default function FaultyTerminal(props: FaultyTerminalProps) {
     scale = 1,
     gridMul = [2, 1],
     digitSize = 1.5,
-    timeScale = 0.3,
-    pause = false,
     scanlineIntensity = 0.3,
     glitchAmount = 1,
     flickerAmount = 1,
