@@ -12,23 +12,19 @@ import ScrollToTop from "./ScrollToTop";
 const MainPage = () => {
   const [currentPage, setCurrentPage] = useState("home");
 
-  // Initialize from URL on mount
   useEffect(() => {
     const path = window.location.pathname.slice(1) || "home";
     setCurrentPage(path);
   }, []);
 
-  // Update URL when page changes
   useEffect(() => {
-    window.history.pushState(
-      {},
-      "",
-      `/${currentPage === "home" ? "" : currentPage}`
-    );
+    const newPath = `/${currentPage === "home" ? "" : currentPage}`;
+    if (window.location.pathname !== newPath) {
+      window.history.pushState({}, "", newPath);
+    }
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [currentPage]);
 
-  // Handle browser back/forward buttons
   useEffect(() => {
     const handlePopState = () => {
       const path = window.location.pathname.slice(1) || "home";
@@ -39,30 +35,22 @@ const MainPage = () => {
     return () => window.removeEventListener("popstate", handlePopState);
   }, []);
 
-  const renderPage = () => {
-    switch (currentPage) {
-      case "home":
-        return <Home />;
-      case "events":
-        return <Events />;
-      case "team":
-        return <Team />;
-      case "merch":
-        return <MerchPage />;
-      case "about":
-        return <About />;
-      case "sponsors":
-        return <Sponsors />;
-      default:
-        return <Home />;
-    }
+  const pageComponents: Record<string, React.ReactNode> = {
+    home: <Home onNavigate={setCurrentPage} />,
+    events: <Events />,
+    team: <Team />,
+    merch: <MerchPage />,
+    about: <About />,
+    sponsors: <Sponsors />,
   };
+
+  const PageToRender = pageComponents[currentPage] || pageComponents.home;
 
   return (
     <div className="flex flex-col min-h-screen bg-black w-screen">
       <Navigation currentPage={currentPage} onNavigate={setCurrentPage} />
       <main className="flex-1">
-        {renderPage()}
+        {PageToRender}
         <ScrollToTop />
       </main>
       <Footer />
