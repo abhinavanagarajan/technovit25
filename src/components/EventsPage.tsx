@@ -1,12 +1,10 @@
 "use client";
 
-import React, { useState, useMemo, useEffect, useCallback } from "react";
-import axios from "axios";
-
+import React, { useState, useMemo, useCallback } from "react";
 import EventsList from "./EventsList";
 import EventFilter from "./Filters";
 import Pagination from "./Pagination";
-import { Asset, EventApiResponse, EventItem } from "@/interfaces/contentful";
+import { Asset, EventItem } from "@/interfaces/contentful";
 
 type FilterState = {
   eventType: string[];
@@ -34,25 +32,14 @@ const formatDateForFilter = (isoString: string): string => {
   return `${day}${daySuffix} ${month}`;
 };
 
-const EventsPage = () => {
+interface EventsPageProps {
+  eventData: EventItem[];
+  assetData: Asset[];
+}
+
+const EventsPage = ({ eventData, assetData }: EventsPageProps) => {
   const [searchTerm, setSearchTerm] = useState("");
-  const [eventData, setEvents] = useState<EventItem[]>([]);
-  const [assetData, setAssetData] = useState<Asset[]>([]);
-
   const [currentPage, setCurrentPage] = useState(1);
-
-  useEffect(() => {
-    const fetchEvents = async () => {
-      try {
-        const response = await axios.get<EventApiResponse>("/api/events");
-        setEvents(response.data.items);
-        setAssetData(response.data.includes?.Asset || []);
-      } catch (error) {
-        console.error("Error fetching events:", error);
-      }
-    };
-    fetchEvents();
-  }, []);
 
   const { uniqueDates, dateMap } = useMemo(() => {
     const newDateMap: Record<string, string> = {};

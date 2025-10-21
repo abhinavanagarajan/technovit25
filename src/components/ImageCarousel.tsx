@@ -1,15 +1,35 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 
 interface ImageCarouselProps {
   images?: string[];
   autoPlayInterval?: number;
 }
 
+const getWindowWidth = () => {
+  return typeof window !== "undefined" ? window.innerWidth : 0;
+};
+
 const ImageCarousel: React.FC<ImageCarouselProps> = ({
   images = [],
   autoPlayInterval = 2500,
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [windowWidth, setWindowWidth] = useState(getWindowWidth());
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const deviceType = useMemo(() => {
+    if (windowWidth < 768) return "mobile";
+    if (windowWidth >= 768 && windowWidth < 1024) return "tablet";
+    return "desktop";
+  }, [windowWidth]);
 
   useEffect(() => {
     if (!images || images.length === 0) return;
@@ -29,21 +49,11 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
     );
   };
 
-  const getItemStyle = ({
-    itemIndex,
-  }: {
-    itemIndex: number;
-  }): React.CSSProperties => {
+  const getItemStyle = (itemIndex: number): React.CSSProperties => {
     const len = images.length;
     const centerIndex = currentIndex;
     const leftIndex = (currentIndex - 1 + len) % len;
     const rightIndex = (currentIndex + 1) % len;
-
-    const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
-    const isTablet =
-      typeof window !== "undefined" &&
-      window.innerWidth >= 768 &&
-      window.innerWidth < 1024;
 
     let style: React.CSSProperties = {
       transition: "all 1s ease-in-out",
@@ -57,32 +67,35 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
       style = {
         ...style,
         opacity: 1,
-        transform: isMobile
-          ? "translateX(0) scale(1)"
-          : "translateX(0) scale(1.2)",
+        transform:
+          deviceType === "mobile"
+            ? "translateX(0) scale(1)"
+            : "translateX(0) scale(1.2)",
         zIndex: 10,
         cursor: "pointer",
       };
     } else if (itemIndex === leftIndex) {
       style = {
         ...style,
-        opacity: isMobile ? 0.4 : 0.6,
-        transform: isMobile
-          ? "translateX(-60%) scale(0.6)"
-          : isTablet
-          ? "translateX(-70%) scale(0.7)"
-          : "translateX(-80%) scale(0.8)",
+        opacity: deviceType === "mobile" ? 0.4 : 0.6,
+        transform:
+          deviceType === "mobile"
+            ? "translateX(-60%) scale(0.6)"
+            : deviceType === "tablet"
+            ? "translateX(-70%) scale(0.7)"
+            : "translateX(-80%) scale(0.8)",
         zIndex: 5,
       };
     } else if (itemIndex === rightIndex) {
       style = {
         ...style,
-        opacity: isMobile ? 0.4 : 0.6,
-        transform: isMobile
-          ? "translateX(60%) scale(0.6)"
-          : isTablet
-          ? "translateX(70%) scale(0.7)"
-          : "translateX(80%) scale(0.8)",
+        opacity: deviceType === "mobile" ? 0.4 : 0.6,
+        transform:
+          deviceType === "mobile"
+            ? "translateX(60%) scale(0.6)"
+            : deviceType === "tablet"
+            ? "translateX(70%) scale(0.7)"
+            : "translateX(80%) scale(0.8)",
         zIndex: 5,
       };
     }
@@ -106,7 +119,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
           style={{
             height: "clamp(200px, 40vh, 50vh)",
             width: "clamp(150px, 30vh, 35vh)",
-            ...getItemStyle({ itemIndex: index }),
+            ...getItemStyle(index),
           }}
           onClick={() => {
             if (index === currentIndex) {
@@ -115,7 +128,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
           }}
         >
           <img
-            src="https://cdn.a2ys.dev/images/defaultPoster.png" //{imageUrl}
+            src="https://cdn.a2ys.dev/images/defaultPoster.png"
             alt={`Carousel item ${index + 1}`}
             className="w-full h-full object-cover"
           />
@@ -124,4 +137,4 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
     </div>
   );
 };
-export default ImageCarousel;
+export default React.memo(ImageCarousel);

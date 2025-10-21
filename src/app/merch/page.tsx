@@ -1,6 +1,9 @@
+"use client";
+
 import { motion, Variants } from "framer-motion";
 
 const comingSoonText = "Coming Soon";
+const letters = comingSoonText.split("");
 
 const sentenceVariants: Variants = {
   hidden: { opacity: 1 },
@@ -48,7 +51,7 @@ export const MerchPage = () => {
             initial="hidden"
             animate="visible"
           >
-            {comingSoonText.split("").map((char, index) => {
+            {letters.map((char, index) => {
               return (
                 <motion.span key={char + "-" + index} variants={letterVariants}>
                   {char}

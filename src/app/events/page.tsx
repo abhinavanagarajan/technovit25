@@ -1,7 +1,9 @@
-import FaultyTerminal from "./FaultyTerminal";
-import ImageCarousel from "./ImageCarousel";
-import EventsPage from "./EventsPage";
-import { useEffect, useState } from "react";
+"use client";
+
+import FaultyTerminal from "@/components/FaultyTerminal";
+import ImageCarousel from "@/components/ImageCarousel";
+import EventsPage from "@/components/EventsPage";
+import { useEffect, useState, useMemo } from "react";
 import axios from "axios";
 import { Asset, EventApiResponse, EventItem } from "@/interfaces/contentful";
 
@@ -13,7 +15,6 @@ const Events = () => {
     const fetchEvents = async () => {
       try {
         const response = await axios.get<EventApiResponse>("/api/events");
-        console.log("Carousel Fetched Events:", response.data.items);
         setEvents(response.data.items);
         setAssetData(response.data.includes?.Asset || []);
       } catch (error) {
@@ -23,20 +24,22 @@ const Events = () => {
     fetchEvents();
   }, []);
 
-  // Get carousel images from special events
-  const carouselImages = eventData
-    .filter((event) => event.fields.specialEvent === true)
-    .map((event) => {
-      const assetId = event.fields.poster?.sys?.id;
-      const asset = assetData.find((a) => a.sys.id === assetId);
-      return asset?.fields?.file?.url ? `https:${asset.fields.file.url}` : null;
-    })
-    .filter((url): url is string => url !== null);
+  const carouselImages = useMemo(() => {
+    return eventData
+      .filter((event) => event.fields.specialEvent === true)
+      .map((event) => {
+        const assetId = event.fields.poster?.sys?.id;
+        const asset = assetData.find((a) => a.sys.id === assetId);
+        return asset?.fields?.file?.url
+          ? `https:${asset.fields.file.url}`
+          : null;
+      })
+      .filter((url): url is string => url !== null);
+  }, [eventData, assetData]);
 
   return (
     <div>
       <div className="w-full h-[90vh] bg-black overflow-hidden relative">
-        {/* Background effect */}
         <div className="absolute inset-0 opacity-40 pointer-events-none">
           <FaultyTerminal
             scale={3}
@@ -60,14 +63,7 @@ const Events = () => {
         </div>
 
         <div className="relative overflow-hidden bg-[#70E081] ttFont py-1">
-          <div
-            className="flex whitespace-nowrap animate-marquee hover:pause"
-            style={{
-              display: "inline-flex",
-              animation: "marquee 60s linear infinite",
-            }}
-          >
-            {/* Repeat content for seamless scroll */}
+          <div className="flex whitespace-nowrap animate-marquee hover:pause">
             {Array(2)
               .fill(0)
               .map((_, i) => (
@@ -87,15 +83,13 @@ const Events = () => {
                 </div>
               ))}
           </div>
-
-          {/* Inline CSS for animation */}
           <style>
             {`
               @keyframes marquee {
                 0% { transform: translateX(0%); }
                 100% { transform: translateX(-50%); }
               }
-              .animate-marquee { animation: marquee 20s linear infinite; }
+              .animate-marquee { animation: marquee 60s linear infinite; }
               .hover\\:pause:hover { animation-play-state: paused; }
             `}
           </style>
@@ -110,13 +104,12 @@ const Events = () => {
               @ technoVIT&apos;25
             </p>
           </div>
-
           <ImageCarousel images={carouselImages} autoPlayInterval={2500} />
         </div>
       </div>
       <div className="flex flex-col md:flex-row">
         <div className="flex-1 overflow-y-auto">
-          <EventsPage />
+          <EventsPage eventData={eventData} assetData={assetData} />
         </div>
       </div>
     </div>
