@@ -1,6 +1,8 @@
-import FaultyTerminal from "./FaultyTerminal";
-import ImageCarousel from "./ImageCarousel";
-import EventsPage from "./EventsPage";
+"use client";
+
+import FaultyTerminal from "@/components/FaultyTerminal";
+import ImageCarousel from "@/components/ImageCarousel";
+import EventsPage from "@/components/EventsPage";
 import { useEffect, useState, useMemo } from "react";
 import axios from "axios";
 import { Asset, EventApiResponse, EventItem } from "@/interfaces/contentful";

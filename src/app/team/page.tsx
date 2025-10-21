@@ -1,4 +1,4 @@
-import { Card, CardContent } from "../components/Card";
+import { Card, CardContent } from "@/components/Card";
 
 interface Member {
   name: string;
@@ -165,9 +165,9 @@ const getGridClasses = (memberCount: number) => {
   return "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4";
 };
 
-export const Team = () => {
+const Team = () => {
   return (
-    <div className="py-24 w-screen">
+    <div className="py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <h1 className="text-5xl sm:text-6xl font-heading text-white mb-4">
@@ -230,3 +230,5 @@ export const Team = () => {
     </div>
   );
 };
+
+export default Team;
