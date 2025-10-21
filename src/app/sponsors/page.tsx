@@ -15,7 +15,7 @@ const sponsorData: SponsorCategory[] = [
     sponsors: [
       {
         name: "HCL Tech",
-        logoUrl: "https://cdn.a2ys.dev/images/hcltech-new-logo.svg",
+        logoUrl: "https://cdn.a2ys.dev/images/hcl.jpg",
         hoverBorderColor: "hover:border-blue-500",
       },
     ],
@@ -25,7 +25,7 @@ const sponsorData: SponsorCategory[] = [
     sponsors: [
       {
         name: "Hello FM",
-        logoUrl: "https://cdn.a2ys.dev/images/hellofm-logo.png",
+        logoUrl: "https://cdn.a2ys.dev/images/hellofm.jpg",
         hoverBorderColor: "hover:border-purple-500",
       },
     ],
@@ -45,12 +45,12 @@ const Sponsors = () => {
               {category.sponsors.map((sponsor) => (
                 <div
                   key={sponsor.name}
-                  className={`w-64 h-32 border-2 border-gray-700 rounded-lg flex items-center justify-center p-4 ${sponsor.hoverBorderColor} transition-colors`}
+                  className={`w-64 h-32 border-2 border-gray-700 rounded-lg flex items-center justify-center p-2 ${sponsor.hoverBorderColor} transition-colors`}
                 >
                   <img
                     src={sponsor.logoUrl}
                     alt={`${sponsor.name} logo`}
-                    className="max-w-full max-h-full object-contain"
+                    className="max-w-full max-h-full object-fill rounded-sm"
                   />
                 </div>
               ))}

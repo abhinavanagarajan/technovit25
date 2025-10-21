@@ -18,7 +18,7 @@ const navItems = [
   { name: "EVENTS", path: "/events" },
   { name: "TEAM", path: "/team" },
   { name: "MERCH", path: "/merch" },
-  // { name: "SPONSORS", path: "/sponsors" },
+  { name: "SPONSORS", path: "/sponsors" },
 ];
 
 export const Navigation = () => {
