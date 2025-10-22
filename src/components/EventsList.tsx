@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
 import { EventItem, Asset } from "@/interfaces/contentful";
 import { Bayon } from "next/font/google";
 import { MapPin } from "lucide-react";
@@ -264,13 +264,11 @@ const EventDetailsDialog = ({
         </button>
         <div className="flex flex-col lg:flex-row gap-8 lg:items-start">
           <div className="w-full lg:w-1/3 h-64 lg:h-auto bg-[#d9d9d9] flex-shrink-0">
-            {imageUrl && (
-              <img
-                src={`https://cdn.a2ys.dev/images/defaultPoster.png`}
-                alt={event.fields.eventName}
-                className="w-full h-full object-cover border border-gray-700"
-              />
-            )}
+            <img
+              src={imageUrl}
+              alt={event.fields.eventName}
+              className="w-full h-full object-fill border border-gray-700"
+            />
           </div>
           <div className="w-full lg:w-2/3 flex flex-col py-4">
             <div className="flex justify-between items-start px-6">
@@ -381,12 +379,12 @@ const EventCard = React.memo(({ event, imageUrl, onClick }: EventCardProps) => {
       onClick={onClick}
     >
       <div className="flex w-full flex-col gap-6 text-white lg:h-[30vh] lg:flex-row lg:items-stretch lg:space-x-6 lg:gap-6">
-        <div className="relative flex-shrink-0 overflow-hidden rounded-md bg-black aspect-[4/5] lg:self-stretch">
+        <div className="relative flex-shrink-0 overflow-hidden bg-black aspect-[4/5] lg:self-stretch">
           {imageUrl ? (
             <img
-              src={`https://cdn.a2ys.dev/images/defaultPoster.png`}
+              src={imageUrl}
               alt={event.fields.eventName}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-fill border border-white"
             />
           ) : (
             <div className="absolute inset-0 bg-[#1a1a1a]"></div>
@@ -442,6 +440,29 @@ const EventsList = ({
 }: EventsListProps) => {
   const [selectedEvent, setSelectedEvent] = useState<EventItem | null>(null);
 
+  const assetMap = useMemo(() => {
+    if (!assets) return new Map<string, Asset>();
+    return new Map(assets.map((asset) => [asset.sys.id, asset]));
+  }, [assets]);
+
+  const getImageUrl = useCallback(
+    (event: EventItem): string => {
+      const defaultImageUrl = "https://cdn.a2ys.dev/images/defaultPoster.png";
+
+      if (event.fields.specialEvent) {
+        const posterId = event.fields.poster?.sys.id;
+        if (posterId) {
+          const asset = assetMap.get(posterId);
+          if (asset) {
+            return `https:${asset.fields.file.url}`;
+          }
+        }
+      }
+      return defaultImageUrl;
+    },
+    [assetMap]
+  );
+
   useEffect(() => {
     if (selectedEvent) {
       document.body.style.overflow = "hidden";
@@ -454,13 +475,6 @@ const EventsList = ({
     };
   }, [selectedEvent]);
 
-  const getImageUrl = (event: EventItem): string | undefined => {
-    const posterId = event.fields.poster?.sys.id;
-    if (!posterId || !assets) return undefined;
-    const asset = assets.find((asset) => asset.sys.id === posterId);
-    return asset ? `https:${asset.fields.file.url}` : undefined;
-  };
-
   return (
     <div className="w-full flex flex-col">
       <SearchAndFilter
@@ -470,6 +484,7 @@ const EventsList = ({
       {events.length > 0 ? (
         events.map((event) => {
           const imageUrl = getImageUrl(event);
+
           return (
             <EventCard
               key={event.sys.id}

@@ -115,7 +115,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
       {images.map((imageUrl, index) => (
         <div
           key={index}
-          className="border-0 border-gray-400 shadow-xl rounded-sm overflow-hidden bg-gray-200"
+          className="border-0 border-gray-400 shadow-xl overflow-hidden bg-gray-200"
           style={{
             height: "clamp(200px, 40vh, 50vh)",
             width: "clamp(150px, 30vh, 35vh)",
@@ -128,9 +128,9 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
           }}
         >
           <img
-            src="https://cdn.a2ys.dev/images/defaultPoster.png"
+            src={imageUrl || "https://cdn.a2ys.dev/images/defaultPoster.png"}
             alt={`Carousel item ${index + 1}`}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-fill border border-white"
           />
         </div>
       ))}
