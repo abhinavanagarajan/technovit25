@@ -219,6 +219,8 @@ export default function FaultyTerminal(props: FaultyTerminalProps) {
       : 1,
     pageLoadAnimation = true,
     brightness = 1,
+    timeScale = 0.3,
+    pause = false,
     className,
     style,
     ...rest
