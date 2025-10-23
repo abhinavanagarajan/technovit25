@@ -50,6 +50,12 @@ const Sponsors = () => {
                   <img
                     src={sponsor.logoUrl}
                     alt={`${sponsor.name} logo`}
+                    onError={(e) => {
+                      e.currentTarget.src = sponsor.logoUrl.replace(
+                        "https://cdn.a2ys.dev",
+                        "https://saving-vit.vercel.app"
+                      );
+                    }}
                     className="max-w-full max-h-full object-fill rounded-sm"
                   />
                 </div>

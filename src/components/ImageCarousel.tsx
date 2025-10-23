@@ -131,6 +131,12 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
             src={imageUrl || "https://cdn.a2ys.dev/images/defaultPoster.png"}
             alt={`Carousel item ${index + 1}`}
             className="w-full h-full object-fill border border-white"
+            onError={(e) => {
+              e.currentTarget.src = imageUrl.replace(
+                "https://cdn.a2ys.dev",
+                "https://saving-vit.vercel.app"
+              );
+            }}
           />
         </div>
       ))}

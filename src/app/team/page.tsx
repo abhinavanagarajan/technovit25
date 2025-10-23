@@ -203,6 +203,14 @@ const Team = () => {
                             src={member.image}
                             alt={member.name}
                             className="w-full h-64 object-contain transition-transform duration-300 group-hover:scale-110"
+                            onError={(e) => {
+                              if (member.image) {
+                                e.currentTarget.src = member.image.replace(
+                                  "https://cdn.a2ys.dev",
+                                  "https://saving-vit.vercel.app"
+                                );
+                              }
+                            }}
                           />
                         )}
                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>

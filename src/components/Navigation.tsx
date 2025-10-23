@@ -63,16 +63,45 @@ export const Navigation = () => {
             src="https://cdn.a2ys.dev/images/technoVit25-new.png"
             alt="TechnoVIT Logo"
             className="h-16 w-auto object-contain"
+            onError={(e) => {
+              e.currentTarget.src = e.currentTarget.src.replace(
+                "https://cdn.a2ys.dev",
+                "https://saving-vit.vercel.app"
+              );
+            }}
           />
           <img
             src="https://cdn.a2ys.dev/images/dot.png"
             alt="Separator Dot"
             className="h-2 w-auto object-contain"
+            onError={(e) => {
+              e.currentTarget.src = e.currentTarget.src.replace(
+                "https://cdn.a2ys.dev",
+                "https://saving-vit.vercel.app"
+              );
+            }}
+          />
+          <img
+            src="https://cdn.a2ys.dev/images/dot.png"
+            alt="Separator Dot"
+            className="h-2 w-auto object-contain"
+            onError={(e) => {
+              e.currentTarget.src = e.currentTarget.src.replace(
+                "https://cdn.a2ys.dev",
+                "https://saving-vit.vercel.app"
+              );
+            }}
           />
           <img
             src="https://cdn.a2ys.dev/images/VIT logo.png"
             alt="VIT Logo"
             className="h-8 w-auto object-contain"
+            onError={(e) => {
+              e.currentTarget.src = e.currentTarget.src.replace(
+                "https://cdn.a2ys.dev",
+                "https://saving-vit.vercel.app"
+              );
+            }}
           />
         </Link>
 
@@ -92,16 +121,34 @@ export const Navigation = () => {
             src="https://cdn.a2ys.dev/images/technoVit25-new.png"
             alt="TechnoVIT Logo"
             className="h-8 w-auto object-contain"
+            onError={(e) => {
+              e.currentTarget.src = e.currentTarget.src.replace(
+                "https://cdn.a2ys.dev",
+                "https://saving-vit.vercel.app"
+              );
+            }}
           />
           <img
             src="https://cdn.a2ys.dev/images/dot.png"
             alt="Separator Dot"
             className="h-1.5 w-auto object-contain"
+            onError={(e) => {
+              e.currentTarget.src = e.currentTarget.src.replace(
+                "https://cdn.a2ys.dev",
+                "https://saving-vit.vercel.app"
+              );
+            }}
           />
           <img
             src="https://cdn.a2ys.dev/images/VIT logo.png"
             alt="VIT Logo"
             className="h-6 w-auto object-contain"
+            onError={(e) => {
+              e.currentTarget.src = e.currentTarget.src.replace(
+                "https://cdn.a2ys.dev",
+                "https://saving-vit.vercel.app"
+              );
+            }}
           />
         </Link>
 

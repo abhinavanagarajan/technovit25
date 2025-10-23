@@ -268,6 +268,14 @@ const EventDetailsDialog = ({
               src={imageUrl}
               alt={event.fields.eventName}
               className="w-full h-full object-fill border border-gray-700"
+              onError={(e) => {
+                if (imageUrl) {
+                  e.currentTarget.src = imageUrl.replace(
+                    "https://cdn.a2ys.dev",
+                    "https://saving-vit.vercel.app"
+                  );
+                }
+              }}
             />
           </div>
           <div className="w-full lg:w-2/3 flex flex-col py-4">

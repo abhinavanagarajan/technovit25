@@ -129,6 +129,10 @@ export default function RootLayout({
               <div className="absolute top-0 left-0 w-screen h-screen z-10">
                 <Image
                   src="https://cdn.a2ys.dev/images/homeBg.png"
+                  onError={(event) => {
+                    event.currentTarget.src =
+                      "https://saving-vit.vercel.app/images/homeBg.png";
+                  }}
                   alt="Fullscreen Background"
                   fill
                   className="object-fill"
