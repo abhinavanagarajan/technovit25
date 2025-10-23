@@ -59,7 +59,7 @@ const EventsPage = ({ eventData, assetData }: EventsPageProps) => {
 
   const [filters, setFilters] = useState<FilterState>({
     eventType: [],
-    priceRange: [0, 2000],
+    priceRange: [0, 2500],
     dates: [],
     teamSize: [],
   });

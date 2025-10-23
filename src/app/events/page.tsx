@@ -15,7 +15,12 @@ const Events = () => {
     const fetchEvents = async () => {
       try {
         const response = await axios.get<EventApiResponse>("/api/events");
-        setEvents(response.data.items);
+
+        const sortedEvents = response.data.items.sort((a, b) =>
+          a.fields.eventName.localeCompare(b.fields.eventName)
+        );
+
+        setEvents(sortedEvents);
         setAssetData(response.data.includes?.Asset || []);
       } catch (error) {
         console.error("Error fetching events:", error);

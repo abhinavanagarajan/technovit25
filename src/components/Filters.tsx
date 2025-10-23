@@ -101,7 +101,7 @@ const EventFilter = ({ onFilterChange, availableDates }: EventFilterProps) => {
 
   const [selectedEventTypes, setSelectedEventTypes] = useState<string[]>([]);
   const [selectedTeamSizes, setSelectedTeamSizes] = useState<string[]>([]);
-  const [priceRange, setPriceRange] = useState([0, 2000]);
+  const [priceRange, setPriceRange] = useState([0, 2500]);
   const [selectedDates, setSelectedDates] = useState<string[]>([]);
 
   useEffect(() => {
@@ -150,7 +150,7 @@ const EventFilter = ({ onFilterChange, availableDates }: EventFilterProps) => {
   const clearFilters = () => {
     setSelectedEventTypes([]);
     setSelectedTeamSizes([]);
-    setPriceRange([0, 2000]);
+    setPriceRange([0, 2500]);
     setSelectedDates([]);
   };
 
@@ -213,14 +213,14 @@ const EventFilter = ({ onFilterChange, availableDates }: EventFilterProps) => {
               <div
                 className="absolute h-1 bg-black rounded"
                 style={{
-                  left: `${(priceRange[0] / 2000) * 100}%`,
-                  right: `${100 - (priceRange[1] / 2000) * 100}%`,
+                  left: `${(priceRange[0] / 2500) * 100}%`,
+                  right: `${100 - (priceRange[1] / 2500) * 100}%`,
                 }}
               />
               <input
                 type="range"
                 min="0"
-                max="2000"
+                max="2500"
                 value={priceRange[0]}
                 onChange={(e) => {
                   const newMin = parseInt(e.target.value, 10);
@@ -233,7 +233,7 @@ const EventFilter = ({ onFilterChange, availableDates }: EventFilterProps) => {
               <input
                 type="range"
                 min="0"
-                max="2000"
+                max="2500"
                 value={priceRange[1]}
                 onChange={(e) => {
                   const newMax = parseInt(e.target.value, 10);
@@ -249,7 +249,7 @@ const EventFilter = ({ onFilterChange, availableDates }: EventFilterProps) => {
               className={`flex justify-between mt-2 text-lg ${bayon.className}`}
             >
               <span className="text-gray-800">₹0</span>
-              <span className="text-gray-800">₹2000</span>
+              <span className="text-gray-800">₹2500</span>
             </div>
           </div>
         </div>

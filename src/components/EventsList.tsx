@@ -448,16 +448,15 @@ const EventsList = ({
   const getImageUrl = useCallback(
     (event: EventItem): string => {
       const defaultImageUrl = "https://cdn.a2ys.dev/images/defaultPoster.png";
+      const posterId = event.fields.poster?.sys.id;
 
-      if (event.fields.specialEvent) {
-        const posterId = event.fields.poster?.sys.id;
-        if (posterId) {
-          const asset = assetMap.get(posterId);
-          if (asset) {
-            return `https:${asset.fields.file.url}`;
-          }
+      if (posterId) {
+        const asset = assetMap.get(posterId);
+        if (asset?.fields?.file?.url) {
+          return `https:${asset.fields.file.url}`;
         }
       }
+
       return defaultImageUrl;
     },
     [assetMap]
