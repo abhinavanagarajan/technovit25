@@ -9,13 +9,25 @@ const nextConfig: NextConfig = {
         port: "",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "saving-vit.vercel.app",
+        port: "",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "images.ctfassets.net",
+        port: "",
+        pathname: "/**",
+      },
     ],
   },
   async rewrites() {
     return [
       {
-        source: '/:path*',
-        destination: '/',
+        source: "/:path*",
+        destination: "/",
       },
     ];
   },

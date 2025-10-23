@@ -258,11 +258,19 @@ export default function Page() {
           <div className="relative w-full sm:w-4/5 bg-[#70E081] sm:flex flex-col justify-between">
             <img
               src="https://cdn.a2ys.dev/images/pixelDecoration.png"
+              onError={(e) => {
+                e.currentTarget.src =
+                  "https://saving-vit.vercel.app/images/pixelDecoration.png";
+              }}
               className="right-0 bottom-0 h-1/2 absolute z-10 hidden sm:block"
               alt=""
             />
             <img
               src="https://cdn.a2ys.dev/images/pixelDecoration.png"
+              onError={(e) => {
+                e.currentTarget.src =
+                  "https://saving-vit.vercel.app/images/pixelDecoration.png";
+              }}
               className="right-0 top-0 h-1/2 absolute z-10 hidden sm:block"
               alt=""
             />
@@ -324,6 +332,12 @@ export default function Page() {
                     src={image.src}
                     alt={image.alt}
                     className="w-full h-auto"
+                    onError={(e) => {
+                      e.currentTarget.src = image.src.replace(
+                        "https://cdn.a2ys.dev",
+                        "https://saving-vit.vercel.app"
+                      );
+                    }}
                   />
                 </div>
               ))}

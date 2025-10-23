@@ -268,6 +268,14 @@ const EventDetailsDialog = ({
               src={imageUrl}
               alt={event.fields.eventName}
               className="w-full h-full object-fill border border-gray-700"
+              onError={(e) => {
+                if (imageUrl) {
+                  e.currentTarget.src = imageUrl.replace(
+                    "https://cdn.a2ys.dev",
+                    "https://saving-vit.vercel.app"
+                  );
+                }
+              }}
             />
           </div>
           <div className="w-full lg:w-2/3 flex flex-col py-4">
@@ -448,16 +456,15 @@ const EventsList = ({
   const getImageUrl = useCallback(
     (event: EventItem): string => {
       const defaultImageUrl = "https://cdn.a2ys.dev/images/defaultPoster.png";
+      const posterId = event.fields.poster?.sys.id;
 
-      if (event.fields.specialEvent) {
-        const posterId = event.fields.poster?.sys.id;
-        if (posterId) {
-          const asset = assetMap.get(posterId);
-          if (asset) {
-            return `https:${asset.fields.file.url}`;
-          }
+      if (posterId) {
+        const asset = assetMap.get(posterId);
+        if (asset?.fields?.file?.url) {
+          return `https:${asset.fields.file.url}`;
         }
       }
+
       return defaultImageUrl;
     },
     [assetMap]

@@ -1,3 +1,5 @@
+import { SponsorImage } from "@/components/SponsorImage";
+
 interface Sponsor {
   name: string;
   logoUrl: string;
@@ -45,12 +47,11 @@ const Sponsors = () => {
               {category.sponsors.map((sponsor) => (
                 <div
                   key={sponsor.name}
-                  className={`w-64 h-32 border-2 border-gray-700 rounded-lg flex items-center justify-center p-2 ${sponsor.hoverBorderColor} transition-colors`}
+                  className={`relative w-64 h-32 border-2 border-gray-700 rounded-lg p-2 ${sponsor.hoverBorderColor} transition-colors`}
                 >
-                  <img
+                  <SponsorImage
                     src={sponsor.logoUrl}
                     alt={`${sponsor.name} logo`}
-                    className="max-w-full max-h-full object-fill rounded-sm"
                   />
                 </div>
               ))}

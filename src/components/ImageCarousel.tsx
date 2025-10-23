@@ -1,4 +1,7 @@
+"use client";
+
 import React, { useState, useEffect, useMemo } from "react";
+import Image from "next/image";
 
 interface ImageCarouselProps {
   images?: string[];
@@ -115,11 +118,12 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
       {images.map((imageUrl, index) => (
         <div
           key={index}
-          className="border-0 border-gray-400 shadow-xl overflow-hidden bg-gray-200"
+          className="overflow-hidden border border-white"
           style={{
             height: "clamp(200px, 40vh, 50vh)",
             width: "clamp(150px, 30vh, 35vh)",
             ...getItemStyle(index),
+            position: "absolute",
           }}
           onClick={() => {
             if (index === currentIndex) {
@@ -127,14 +131,24 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
             }
           }}
         >
-          <img
+          <Image
             src={imageUrl || "https://cdn.a2ys.dev/images/defaultPoster.png"}
             alt={`Carousel item ${index + 1}`}
-            className="w-full h-full object-fill border border-white"
+            fill
+            className="object-fill"
+            sizes="(max-width: 768px) 150px, (max-width: 1024px) 200px, 250px"
+            priority={index === currentIndex}
+            onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
+              e.currentTarget.src = (e.currentTarget.src || imageUrl).replace(
+                "https://cdn.a2ys.dev",
+                "https://saving-vit.vercel.app"
+              );
+            }}
           />
         </div>
       ))}
     </div>
   );
 };
+
 export default React.memo(ImageCarousel);

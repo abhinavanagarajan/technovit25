@@ -1,4 +1,7 @@
+"use client";
+
 import { Card, CardContent } from "@/components/Card";
+import { MemberImage } from "@/components/MemberImage";
 
 interface Member {
   name: string;
@@ -199,11 +202,7 @@ const Team = () => {
                     <Card key={index} className="group">
                       <div className="relative overflow-hidden">
                         {member.image && (
-                          <img
-                            src={member.image}
-                            alt={member.name}
-                            className="w-full h-64 object-contain transition-transform duration-300 group-hover:scale-110"
-                          />
+                          <MemberImage src={member.image} alt={member.name} />
                         )}
                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       </div>
