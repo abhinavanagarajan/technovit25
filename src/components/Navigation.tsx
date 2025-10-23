@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -59,10 +60,13 @@ export const Navigation = () => {
           href="/"
           className="flex flex-none items-center gap-3 justify-center cursor-pointer"
         >
-          <img
+          <Image
             src="https://cdn.a2ys.dev/images/technoVit25-new.png"
             alt="TechnoVIT Logo"
+            width={160}
+            height={64}
             className="h-16 w-auto object-contain"
+            priority
             onError={(e) => {
               e.currentTarget.src = e.currentTarget.src.replace(
                 "https://cdn.a2ys.dev",
@@ -70,9 +74,11 @@ export const Navigation = () => {
               );
             }}
           />
-          <img
+          <Image
             src="https://cdn.a2ys.dev/images/dot.png"
             alt="Separator Dot"
+            width={8}
+            height={8}
             className="h-2 w-auto object-contain"
             onError={(e) => {
               e.currentTarget.src = e.currentTarget.src.replace(
@@ -81,20 +87,11 @@ export const Navigation = () => {
               );
             }}
           />
-          <img
-            src="https://cdn.a2ys.dev/images/dot.png"
-            alt="Separator Dot"
-            className="h-2 w-auto object-contain"
-            onError={(e) => {
-              e.currentTarget.src = e.currentTarget.src.replace(
-                "https://cdn.a2ys.dev",
-                "https://saving-vit.vercel.app"
-              );
-            }}
-          />
-          <img
+          <Image
             src="https://cdn.a2ys.dev/images/VIT logo.png"
             alt="VIT Logo"
+            width={128}
+            height={32}
             className="h-8 w-auto object-contain"
             onError={(e) => {
               e.currentTarget.src = e.currentTarget.src.replace(
@@ -117,9 +114,11 @@ export const Navigation = () => {
 
       <div className="flex items-center justify-between px-4 py-3 md:hidden">
         <Link href="/" className="flex items-center gap-2 cursor-pointer">
-          <img
+          <Image
             src="https://cdn.a2ys.dev/images/technoVit25-new.png"
             alt="TechnoVIT Logo"
+            width={100}
+            height={32}
             className="h-8 w-auto object-contain"
             onError={(e) => {
               e.currentTarget.src = e.currentTarget.src.replace(
@@ -128,9 +127,11 @@ export const Navigation = () => {
               );
             }}
           />
-          <img
+          <Image
             src="https://cdn.a2ys.dev/images/dot.png"
             alt="Separator Dot"
+            width={6}
+            height={6}
             className="h-1.5 w-auto object-contain"
             onError={(e) => {
               e.currentTarget.src = e.currentTarget.src.replace(
@@ -139,9 +140,11 @@ export const Navigation = () => {
               );
             }}
           />
-          <img
+          <Image
             src="https://cdn.a2ys.dev/images/VIT logo.png"
             alt="VIT Logo"
+            width={96}
+            height={24}
             className="h-6 w-auto object-contain"
             onError={(e) => {
               e.currentTarget.src = e.currentTarget.src.replace(
