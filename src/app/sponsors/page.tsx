@@ -3,7 +3,6 @@ import { SponsorImage } from "@/components/SponsorImage";
 interface Sponsor {
   name: string;
   logoUrl: string;
-  hoverBorderColor: string;
 }
 
 interface SponsorCategory {
@@ -13,22 +12,20 @@ interface SponsorCategory {
 
 const sponsorData: SponsorCategory[] = [
   {
-    title: "Title Sponsors",
+    title: "Title Sponsor",
     sponsors: [
       {
         name: "HCL Tech",
         logoUrl: "https://cdn.a2ys.dev/images/hcl.jpg",
-        hoverBorderColor: "hover:border-blue-500",
       },
     ],
   },
   {
-    title: "FM Partner",
+    title: "Partners",
     sponsors: [
       {
         name: "Hello FM",
         logoUrl: "https://cdn.a2ys.dev/images/hellofm.jpg",
-        hoverBorderColor: "hover:border-purple-500",
       },
     ],
   },
@@ -44,17 +41,17 @@ const Sponsors = () => {
               {category.title}
             </h2>
             <div className="flex flex-wrap justify-center items-center gap-12">
-              {category.sponsors.map((sponsor) => (
-                <div
-                  key={sponsor.name}
-                  className={`relative w-64 h-32 border-2 border-gray-700 rounded-lg p-2 ${sponsor.hoverBorderColor} transition-colors`}
-                >
+              {category.sponsors.map((sponsor) => {
+                const isTitleSponsor = category.title === "Title Sponsor";
+                return (
                   <SponsorImage
+                    key={sponsor.name}
                     src={sponsor.logoUrl}
                     alt={`${sponsor.name} logo`}
+                    className={isTitleSponsor ? "w-96 h-48" : "w-64 h-32"}
                   />
-                </div>
-              ))}
+                );
+              })}
             </div>
           </section>
         ))}
