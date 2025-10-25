@@ -5,7 +5,6 @@ import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 import { useState, useRef, useEffect } from "react";
-import Image from "next/image";
 import { gsap } from "gsap";
 import ASCIIText from "@/components/ASCIIText";
 
@@ -127,16 +126,16 @@ export default function RootLayout({
               style={{ display: hasClicked ? "none" : "flex" }}
             >
               <div className="absolute top-0 left-0 w-screen h-screen z-10">
-                <Image
+                <img
                   src="https://cdn.a2ys.dev/images/homeBg.png"
                   onError={(event) => {
                     event.currentTarget.src =
                       "https://saving-vit.vercel.app/images/homeBg.png";
                   }}
                   alt="Fullscreen Background"
-                  fill
-                  className="object-fill"
-                  priority
+                  className="w-full h-full object-fill"
+                  loading="eager"
+                  fetchPriority="high"
                 />
               </div>
               <div className="relative z-20 w-full h-full flex flex-col items-center justify-center">
