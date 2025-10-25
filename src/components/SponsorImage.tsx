@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-
 interface SponsorImageProps {
   src: string;
   alt: string;
@@ -11,11 +9,11 @@ interface SponsorImageProps {
 export const SponsorImage = ({ src, alt, className }: SponsorImageProps) => {
   return (
     <div className={`relative ${className}`}>
-      <Image
+      <img
         src={src}
         alt={alt}
-        fill
-        className="object-contain"
+        className="absolute inset-0 h-full w-full object-contain"
+        loading="lazy"
         onError={(e) => {
           const target = e.target as HTMLImageElement;
           target.src = src.replace(

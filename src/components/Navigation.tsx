@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -45,6 +44,7 @@ export const Navigation = () => {
               <Link
                 key={item.path}
                 href={item.path}
+                prefetch={false}
                 className={cn(
                   "uppercase tracking-wide text-white transition-colors duration-200 hover:text-[#70E081] cursor-pointer",
                   isActive && "text-[#70E081]"
@@ -59,14 +59,16 @@ export const Navigation = () => {
         <Link
           href="/"
           className="flex flex-none items-center gap-3 justify-center cursor-pointer"
+          prefetch={false}
         >
-          <Image
+          <img
             src="https://cdn.a2ys.dev/images/technoVit25-new.png"
             alt="TechnoVIT Logo"
             width={160}
             height={64}
             className="h-16 w-auto object-contain"
-            priority
+            loading="eager"
+            fetchPriority="high"
             onError={(e) => {
               e.currentTarget.src = e.currentTarget.src.replace(
                 "https://cdn.a2ys.dev",
@@ -74,7 +76,7 @@ export const Navigation = () => {
               );
             }}
           />
-          <Image
+          <img
             src="https://cdn.a2ys.dev/images/dot.png"
             alt="Separator Dot"
             width={8}
@@ -87,7 +89,7 @@ export const Navigation = () => {
               );
             }}
           />
-          <Image
+          <img
             src="https://cdn.a2ys.dev/images/VIT logo.png"
             alt="VIT Logo"
             width={128}
@@ -105,6 +107,7 @@ export const Navigation = () => {
         <div className="flex flex-1 items-center justify-end">
           <Link
             href="/events"
+            prefetch={false}
             className="bg-[#70E081] px-4 py-2 uppercase text-black hover:bg-[#70E081]/90 transition-colors"
           >
             Get Started
@@ -113,8 +116,12 @@ export const Navigation = () => {
       </div>
 
       <div className="flex items-center justify-between px-4 py-3 md:hidden">
-        <Link href="/" className="flex items-center gap-2 cursor-pointer">
-          <Image
+        <Link
+          href="/"
+          className="flex items-center gap-2 cursor-pointer"
+          prefetch={false}
+        >
+          <img
             src="https://cdn.a2ys.dev/images/technoVit25-new.png"
             alt="TechnoVIT Logo"
             width={100}
@@ -127,7 +134,7 @@ export const Navigation = () => {
               );
             }}
           />
-          <Image
+          <img
             src="https://cdn.a2ys.dev/images/dot.png"
             alt="Separator Dot"
             width={6}
@@ -140,7 +147,7 @@ export const Navigation = () => {
               );
             }}
           />
-          <Image
+          <img
             src="https://cdn.a2ys.dev/images/VIT logo.png"
             alt="VIT Logo"
             width={96}
@@ -177,6 +184,7 @@ export const Navigation = () => {
                   key={item.path}
                   href={item.path}
                   onClick={handleMobileLinkClick}
+                  prefetch={false}
                   className={cn(
                     "text-left uppercase text-white px-3 py-2 transition-colors",
                     isActive
@@ -192,6 +200,7 @@ export const Navigation = () => {
               href="/events"
               onClick={handleMobileLinkClick}
               className="mt-2 w-full bg-[#70E081] px-4 py-2 uppercase text-black hover:bg-[#70E081]/90 text-center"
+              prefetch={false}
             >
               Get Started
             </Link>

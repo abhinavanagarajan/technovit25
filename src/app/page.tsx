@@ -221,6 +221,7 @@ export default function Page() {
             }}
           >
             <Link
+              prefetch={false}
               href="/events"
               className="bg-[#70E081] px-8 py-3 uppercase text-black font-bold hover:bg-[#70E081]/90 transition-colors duration-300 cursor-pointer"
             >
