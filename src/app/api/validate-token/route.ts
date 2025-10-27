@@ -1,6 +1,20 @@
-// app/api/validate-token/route.ts
-
 import { NextRequest, NextResponse } from "next/server";
+
+interface ValidateTokenRequest {
+  token: string;
+}
+
+interface D1QueryResponse {
+  result: [
+    {
+      results: [
+        {
+          launched: number;
+        }
+      ];
+    }
+  ];
+}
 
 export async function POST(req: NextRequest) {
   const LAUNCH_TOKEN = process.env.LAUNCH_TOKEN;
@@ -9,7 +23,7 @@ export async function POST(req: NextRequest) {
   const D1_API_TOKEN = process.env.D1_API_TOKEN;
 
   try {
-    const { token } = await req.json();
+    const { token } = (await req.json()) as ValidateTokenRequest;
 
     if (token !== LAUNCH_TOKEN) {
       return NextResponse.json(
@@ -39,8 +53,8 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    const data = await response.json();
-    const launchState = data.result[0]?.results[0]?.launched;
+    const data = (await response.json()) as D1QueryResponse;
+    const launchState = data.result?.[0]?.results?.[0]?.launched;
 
     if (launchState === 0) {
       return NextResponse.json({ valid: true });

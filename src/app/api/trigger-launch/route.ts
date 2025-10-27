@@ -1,5 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 
+interface LaunchRequest {
+  token: string;
+}
+
 export async function POST(req: NextRequest) {
   const LAUNCH_TOKEN = process.env.LAUNCH_TOKEN;
   const D1_ACCOUNT_ID = process.env.D1_ACCOUNT_ID;
@@ -7,7 +11,7 @@ export async function POST(req: NextRequest) {
   const D1_API_TOKEN = process.env.D1_API_TOKEN;
 
   try {
-    const { token } = await req.json();
+    const { token } = (await req.json()) as LaunchRequest;
 
     if (token !== LAUNCH_TOKEN) {
       return NextResponse.json({ error: "Invalid token." }, { status: 403 });
@@ -29,11 +33,15 @@ export async function POST(req: NextRequest) {
 
     if (!response.ok) {
       const errorData = await response.json();
-      throw new Error(JSON.stringify(errorData));
+      throw new Error(
+        `Cloudflare API Error: ${response.status} ${
+          response.statusText
+        } - ${JSON.stringify(errorData)}`
+      );
     }
 
     return NextResponse.json({ success: true, message: "Launch successful!" });
-  } catch (error: any) {
+  } catch (error) {
     return NextResponse.json(
       { error: "Failed to trigger launch." },
       { status: 500 }
