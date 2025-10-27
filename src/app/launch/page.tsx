@@ -124,7 +124,7 @@ export default function LaunchPage() {
         textAlign: "center",
       }}
     >
-      <h1>technoVIT '25 Grand Launch</h1>
+      <h1>technoVIT&apos;25 Grand Launch</h1>
       <button
         onClick={handleLaunch}
         disabled={isLoading}
