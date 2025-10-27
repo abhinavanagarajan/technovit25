@@ -3,11 +3,24 @@
 import { useState, useEffect } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 
+interface ValidateResponse {
+  valid: boolean;
+  reason?: string;
+}
+
+interface LaunchResponse {
+  success?: boolean;
+  message?: string;
+  error?: string;
+}
+
 export default function LaunchPage() {
   const router = useRouter();
   const searchParams = useSearchParams();
 
-  const [authStatus, setAuthStatus] = useState("validating");
+  const [authStatus, setAuthStatus] = useState<
+    "validating" | "authorized" | "unauthorized"
+  >("validating");
   const [isLoading, setIsLoading] = useState(false);
   const [message, setMessage] = useState("");
 
@@ -28,13 +41,20 @@ export default function LaunchPage() {
           body: JSON.stringify({ token }),
         });
 
-        if (response.ok) {
-          setAuthStatus("authorized"); // Token is valid, allow access
+        const data: ValidateResponse = await response.json();
+
+        if (response.ok && data.valid) {
+          setAuthStatus("authorized");
         } else {
+          console.error(
+            "Token validation failed:",
+            data.reason || "Unknown error"
+          );
           setAuthStatus("unauthorized");
-          router.push("/"); // Token is invalid, redirect
+          router.push("/");
         }
       } catch (error) {
+        console.error("Failed to validate token:", error);
         setAuthStatus("unauthorized");
         router.push("/");
       }
@@ -49,41 +69,48 @@ export default function LaunchPage() {
     const token = searchParams.get("token");
 
     try {
-      const response = await fetch("/api/trigger-launch", {
+      const response = await fetch("/api/launch", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ token }),
       });
-      const data = await response.json();
+
+      const data: LaunchResponse = await response.json();
+
       if (response.ok) {
         setMessage("🚀 SUCCESS! technoVIT is now LIVE!");
       } else {
         throw new Error(data.error || "Something went wrong.");
       }
-    } catch (error: any) {
-      setMessage(`Launch Failed: ${error.message}`);
+    } catch (error) {
+      if (error instanceof Error) {
+        setMessage(`Launch Failed: ${error.message}`);
+      } else {
+        setMessage("Launch Failed: An unknown error occurred.");
+      }
     } finally {
       setIsLoading(false);
     }
   };
 
-  // Render content based on authorization status
   if (authStatus !== "authorized") {
-    // Show a loading/validating message while checking or redirecting
     return (
       <div
-        style={
-          {
-            /* ... your loading styles ... */
-          }
-        }
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          height: "100vh",
+          background: "#000",
+          color: "white",
+          fontSize: "1.5rem",
+        }}
       >
         <p>Validating Access...</p>
       </div>
     );
   }
 
-  // If authorized, show the actual launch page content
   return (
     <div
       style={{
@@ -94,6 +121,7 @@ export default function LaunchPage() {
         height: "100vh",
         background: "#000",
         color: "white",
+        textAlign: "center",
       }}
     >
       <h1>technoVIT '25 Grand Launch</h1>
@@ -108,6 +136,7 @@ export default function LaunchPage() {
           color: "white",
           border: "none",
           borderRadius: "10px",
+          margin: "20px 0",
         }}
       >
         {isLoading ? "Launching..." : "LAUNCH NOW"}
