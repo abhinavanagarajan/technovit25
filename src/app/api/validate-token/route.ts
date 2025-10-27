@@ -22,6 +22,14 @@ export async function POST(req: NextRequest) {
   const D1_DATABASE_ID = process.env.D1_DATABASE_ID;
   const D1_API_TOKEN = process.env.D1_API_TOKEN;
 
+  if (!LAUNCH_TOKEN || !D1_ACCOUNT_ID || !D1_DATABASE_ID || !D1_API_TOKEN) {
+    console.error("Validation API: Missing required environment variables.");
+    return NextResponse.json(
+      { valid: false, reason: "Server configuration error." },
+      { status: 500 }
+    );
+  }
+
   try {
     const { token } = (await req.json()) as ValidateTokenRequest;
 
@@ -47,8 +55,10 @@ export async function POST(req: NextRequest) {
     );
 
     if (!response.ok) {
+      const errorText = await response.text();
+      console.error("Database fetch error:", errorText);
       return NextResponse.json(
-        { valid: false, reason: "Database error." },
+        { valid: false, reason: "Database communication error." },
         { status: 500 }
       );
     }
@@ -65,8 +75,9 @@ export async function POST(req: NextRequest) {
       );
     }
   } catch (error) {
+    console.error("Validate Token API Error:", error);
     return NextResponse.json(
-      { error: "An internal server error occurred." },
+      { error: "An internal server error occurred during validation." },
       { status: 500 }
     );
   }
