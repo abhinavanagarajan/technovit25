@@ -1,73 +1,94 @@
 "use client";
 
-import { motion, Variants } from "framer-motion";
+import React, { useState, useEffect } from "react";
 
-const comingSoonText = "Coming Soon";
-const letters = comingSoonText.split("");
+interface TshirtData {
+  front: string;
+  back: string;
+}
 
-const sentenceVariants: Variants = {
-  hidden: { opacity: 1 },
-  visible: {
-    opacity: 1,
-    transition: {
-      delay: 0.3,
-      staggerChildren: 0.08,
-    },
-  },
-};
+const MerchPage: React.FC = () => {
+  const [tshirts, setTshirts] = useState<TshirtData>({ front: "", back: "" });
+  const accentColor = "#70E081";
 
-const letterVariants: Variants = {
-  hidden: { opacity: 0, y: 50 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      ease: "easeOut",
-      duration: 0.5,
-    },
-  },
-};
+  useEffect(() => {
+    const storageKey = "technovitMerchData";
+    const oneDayInMs = 24 * 60 * 60 * 1000;
 
-const lineVariants: Variants = {
-  hidden: { width: "0%" },
-  visible: {
-    width: "5rem",
-    transition: {
-      delay: 1.5,
-      duration: 0.8,
-      ease: "easeInOut",
-    },
-  },
-};
+    const cachedDataJSON = localStorage.getItem(storageKey);
 
-export const MerchPage = () => {
+    if (cachedDataJSON) {
+      const { data, timestamp } = JSON.parse(cachedDataJSON);
+      const isExpired = new Date().getTime() - timestamp > oneDayInMs;
+
+      if (!isExpired) {
+        setTshirts(data);
+        return;
+      }
+    }
+
+    const freshData: TshirtData = {
+      front: "https://cdn.a2ys.dev/images/tshirt-front.png",
+      back: "https://cdn.a2ys.dev/images/tshirt-back.png",
+    };
+
+    const dataToCache = {
+      data: freshData,
+      timestamp: new Date().getTime(),
+    };
+
+    localStorage.setItem(storageKey, JSON.stringify(dataToCache));
+    setTshirts(freshData);
+  }, []);
+
+  if (!tshirts.front) {
+    return (
+      <div className="flex min-h-screen items-center justify-center text-white">
+        Loading Merch...
+      </div>
+    );
+  }
+
   return (
-    <div className="min-h-screen flex items-center justify-center py-24 bg-background">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center">
-          <motion.h1
-            className="text-5xl sm:text-6xl font-heading text-white ttFont"
-            variants={sentenceVariants}
-            initial="hidden"
-            animate="visible"
-          >
-            {letters.map((char, index) => {
-              return (
-                <motion.span key={char + "-" + index} variants={letterVariants}>
-                  {char}
-                </motion.span>
-              );
-            })}
-          </motion.h1>
+    <div className="flex min-h-screen flex-col items-center justify-center text-white p-4 sm:p-8">
+      <div className="text-center mb-12 md:mb-16">
+        <h1 className="ttFont relative text-5xl md:text-7xl font-bold pb-4">
+          technoVIT&apos;25 Merch
+          <span
+            className="absolute bottom-0 left-1/2 h-1.5 w-2/3 -translate-x-1/2 rounded-full"
+            style={{ backgroundColor: accentColor }}
+          />
+        </h1>
+      </div>
 
-          <motion.div
-            className="h-1 bg-[#70E081] mx-auto mt-4 mb-6"
-            variants={lineVariants}
-            initial="hidden"
-            animate="visible"
+      <div className="flex flex-col sm:flex-row items-center gap-8 md:gap-12 mb-12 md:mb-16">
+        <div className="group overflow-hidden rounded-xl bg-gray-800 shadow-lg transition-transform duration-300 ease-in-out hover:scale-105 w-96 h-96">
+          <img
+            src={tshirts.front}
+            alt="Front of the t-shirt"
+            className="w-full h-full object-cover"
+            loading="lazy"
+          />
+        </div>
+        <div className="group overflow-hidden rounded-xl bg-gray-800 shadow-lg transition-transform duration-300 ease-in-out hover:scale-105 w-96 h-96">
+          <img
+            src={tshirts.back}
+            alt="Back of the t-shirt"
+            className="w-full h-full object-cover"
+            loading="lazy"
           />
         </div>
       </div>
+
+      <a
+        href="https://chennaievents.vit.ac.in/technovit/merch"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-lg font-bold text-gray-900 py-4 px-16 rounded-full"
+        style={{ backgroundColor: accentColor }}
+      >
+        Buy Now
+      </a>
     </div>
   );
 };
