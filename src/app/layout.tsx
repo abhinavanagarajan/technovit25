@@ -1,10 +1,16 @@
+"use client";
+
 import { Be_Vietnam_Pro } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
+import { useState, useEffect } from "react";
+import Image from "next/image";
 
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
+import MiniChatbot from "@/components/MiniChatbot";
+import { Button } from "@/components/ui/button";
 
 const beVietnam = Be_Vietnam_Pro({
   variable: "--font-be-vietnam-pro",
@@ -17,6 +23,22 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const [isChatbotOpen, setIsChatbotOpen] = useState(false);
+  const [isScrollTopVisible, setIsScrollTopVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setIsScrollTopVisible(true);
+      } else {
+        setIsScrollTopVisible(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <html lang="en">
       <body
@@ -30,6 +52,25 @@ export default function RootLayout({
           </main>
           <Footer />
         </div>
+        {isChatbotOpen ? (
+          <MiniChatbot onClose={() => setIsChatbotOpen(false)} />
+        ) : (
+          <Button
+            onClick={() => setIsChatbotOpen(true)}
+            className={`fixed right-8 z-50 h-12 w-12 rounded-full shadow-lg bg-primary hover:bg-primary/90 p-0 overflow-hidden transition-all duration-300 hover:scale-110 ${
+              isScrollTopVisible ? "bottom-24" : "bottom-8"
+            }`}
+            size="icon"
+          >
+            <Image
+              src="/chatbot-logo.png"
+              alt="Chatbot"
+              width={48}
+              height={48}
+              className="object-cover w-full h-full"
+            />
+          </Button>
+        )}
         <Analytics />
       </body>
     </html>

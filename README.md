@@ -85,3 +85,5 @@ We’ll be developing the **Technovit’25 website** collaboratively using **Nex
 * Keep your PRs **small and focused**.
 * Write **clear commit messages**.
 * If you face merge conflicts, **resolve them locally** before pushing.
+
+deploy please
