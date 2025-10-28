@@ -54,8 +54,8 @@ Prizes vary by event, with total prize pool exceeding ₹10 lakhs. Check individ
 Merch/Merchandise details
 Check the merch page!! We have really good designs
 
-Events: |Date|Time|Loc|Name|Fee|; 
-31/10|10:00|AB1-506|ATCAD Design|100|; 28/10|08:00|Kamaraj Aud.|Hack A Cure|200|; 31/10|09:00|AB3-612|Code the Future: ESP Workshop|60|; 
+Events: |Date|Time|Loc|Name|Fee|;
+31/10|10:00|AB1-506|ATCAD Design|100|; 28/10|08:00|Kamaraj Aud.|Hack A Cure|200|; 31/10|09:00|AB3-612|Code the Future: ESP Workshop|60|;
 31/10|09:00|AB3-210 Sat. Lab|F1 GRAND PRIX|50|; 31/10|09:00|AB3 Portico|Robosoccer|100/team|; 28/10|10:30|Netaji Aud.|IGNITE|200(2), 285(3), 360(4), 425(5)|;
 30/10|09:00|AB3-309|GreenCode: Open CV/App Dev|60/person|; 28/10|13:00|AB1 Lawn|8 Mins to Win It|75/team|; 29/10|09:00|VOC Aud.|Codemafia|50(Solo), 80(Duo), 120(Trio)|;
 31/10|10:00|AB3-208|Build A Bridge|100/person|; 29/10|13:00|Netaji Aud.|Gen AI - Workshop|200|; 29/10|13:00|AB1 Mini Portico|The Stranger Clues|50/person|;
