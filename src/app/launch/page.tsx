@@ -3,18 +3,10 @@ import LaunchClient from "./LaunchClient";
 
 function Loading() {
   return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        height: "100vh",
-        background: "#000",
-        color: "white",
-        fontSize: "1.5rem",
-      }}
-    >
-      <p>Validating Access...</p>
+    <div className="flex min-h-screen flex-col items-center justify-center text-white p-4">
+      <p className="animate-pulse text-2xl font-semibold tracking-wider">
+        Validating Access...
+      </p>
     </div>
   );
 }
