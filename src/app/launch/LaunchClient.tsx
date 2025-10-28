@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import MiniChatbot from "@/components/MiniChatbot";
 
 interface ValidateResponse {
   valid: boolean;
@@ -80,7 +79,7 @@ const SecondScreen = () => (
   >
     <h2 className="text-4xl font-bold md:text-6xl">🚀 Launch Successful!</h2>
     <p className="mt-6 text-xl text-gray-300 md:text-2xl">
-      You can now talk to the official technoVIT chatbot.
+      The technoVIT website is now live.
     </p>
   </motion.div>
 );
@@ -96,8 +95,6 @@ export default function LaunchClient() {
   const [isLoading, setIsLoading] = useState(false);
   const [message, setMessage] = useState("");
   const [step, setStep] = useState(1);
-  const [showChatbot, setShowChatbot] = useState(false);
-  const [showChatbotIcon, setShowChatbotIcon] = useState(false);
 
   useEffect(() => {
     const urlToken = searchParams.get("token");
@@ -155,7 +152,6 @@ export default function LaunchClient() {
       if (response.ok) {
         setMessage("🚀 SUCCESS! technoVIT is now LIVE!");
         setStep(2);
-        setShowChatbotIcon(true);
       } else {
         throw new Error(data.error || "Something went wrong.");
       }
@@ -192,40 +188,6 @@ export default function LaunchClient() {
         )}
         {step === 2 && <SecondScreen />}
       </AnimatePresence>
-
-      {showChatbotIcon && (
-        <>
-          {!showChatbot && (
-            <motion.button
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.5, duration: 0.3 }}
-              onClick={() => setShowChatbot(true)}
-              className="fixed bottom-4 right-4 z-50 h-16 w-16 cursor-pointer rounded-full bg-blue-600 p-3 shadow-lg transition-all hover:scale-110"
-            >
-              <img
-                src="https://cdn.a2ys.dev/images/logo.png"
-                alt="Chatbot Icon"
-                className="h-full w-full object-contain"
-              />
-            </motion.button>
-          )}
-
-          <AnimatePresence>
-            {showChatbot && (
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: 20 }}
-                transition={{ duration: 0.3, ease: "easeOut" }}
-                className="fixed bottom-4 right-4 z-50"
-              >
-                <MiniChatbot onClose={() => setShowChatbot(false)} />
-              </motion.div>
-            )}
-          </AnimatePresence>
-        </>
-      )}
     </div>
   );
 }
