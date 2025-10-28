@@ -1,6 +1,17 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
+interface D1ApiResponse {
+  result: {
+    results: {
+      launched: 0 | 1;
+    }[];
+  }[];
+  success: boolean;
+  errors: unknown[];
+  messages: unknown[];
+}
+
 export async function middleware(request: NextRequest) {
   if (request.nextUrl.pathname.startsWith("/launch")) {
     const LAUNCH_TOKEN = process.env.LAUNCH_TOKEN;
@@ -30,13 +41,20 @@ export async function middleware(request: NextRequest) {
         }
       );
 
-      const data: any = await response.json();
-      const hasLaunched = data.result[0].results[0]?.launched === 1;
+      if (!response.ok) {
+        console.error("D1 API Error:", await response.text());
+        return NextResponse.redirect(new URL("/", request.url));
+      }
+
+      const data: D1ApiResponse = await response.json();
+
+      const hasLaunched = data.result?.[0]?.results?.[0]?.launched === 1;
 
       if (hasLaunched) {
         return NextResponse.redirect(new URL("/", request.url));
       }
     } catch (error) {
+      console.error("Failed to check launch state:", error);
       return NextResponse.redirect(new URL("/", request.url));
     }
 
