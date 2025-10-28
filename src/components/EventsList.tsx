@@ -4,6 +4,7 @@ import React, { useCallback, useEffect, useMemo, useState } from "react";
 import { EventItem, Asset } from "@/interfaces/contentful";
 import { Bayon } from "next/font/google";
 import { MapPin } from "lucide-react";
+import { getAssetUrl } from "@/app/utils/assetUrl";
 
 const fontBayon = Bayon({ subsets: ["latin"], weight: "400" });
 
@@ -268,14 +269,6 @@ const EventDetailsDialog = ({
               src={imageUrl}
               alt={event.fields.eventName}
               className="w-full h-full object-fill border border-gray-700"
-              onError={(e) => {
-                if (imageUrl) {
-                  e.currentTarget.src = imageUrl.replace(
-                    "https://cdn.a2ys.dev",
-                    "https://saving-vit.vercel.app"
-                  );
-                }
-              }}
             />
           </div>
           <div className="w-full lg:w-2/3 flex flex-col py-4">
@@ -460,8 +453,12 @@ const EventsList = ({
 
       if (posterId) {
         const asset = assetMap.get(posterId);
-        if (asset?.fields?.file?.url) {
-          return `https:${asset.fields.file.url}`;
+        const url = asset?.fields?.file?.url;
+
+        const finalUrl = getAssetUrl(url);
+
+        if (finalUrl) {
+          return finalUrl;
         }
       }
 

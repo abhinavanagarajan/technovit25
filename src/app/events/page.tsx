@@ -6,6 +6,7 @@ import EventsPage from "@/components/EventsPage";
 import { useEffect, useState, useMemo } from "react";
 import axios from "axios";
 import { Asset, EventApiResponse, EventItem } from "@/interfaces/contentful";
+import { getAssetUrl } from "../utils/assetUrl";
 
 const Events = () => {
   const [eventData, setEvents] = useState<EventItem[]>([]);
@@ -14,7 +15,9 @@ const Events = () => {
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const response = await axios.get<EventApiResponse>("/api/events");
+        const response = await axios.get<EventApiResponse>(
+          "https://cdn.a2ys.dev/events.json"
+        );
 
         const sortedEvents = response.data.items.sort((a, b) =>
           a.fields.eventName.localeCompare(b.fields.eventName)
@@ -22,7 +25,9 @@ const Events = () => {
 
         setEvents(sortedEvents);
         setAssetData(response.data.includes?.Asset || []);
-      } catch (error) {}
+      } catch (error) {
+        console.error("Failed to fetch events:", error);
+      }
     };
     fetchEvents();
   }, []);
@@ -33,9 +38,9 @@ const Events = () => {
       .map((event) => {
         const assetId = event.fields.poster?.sys?.id;
         const asset = assetData.find((a) => a.sys.id === assetId);
-        return asset?.fields?.file?.url
-          ? `https:${asset.fields.file.url}`
-          : null;
+        const url = asset?.fields?.file?.url;
+
+        return getAssetUrl(url);
       })
       .filter((url): url is string => url !== null);
   }, [eventData, assetData]);
