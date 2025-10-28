@@ -12,9 +12,23 @@ import {
   useContext,
 } from "react";
 
+// Extended types for tool approval functionality
+type ToolApprovalState =
+  | "input-streaming"
+  | "input-available"
+  | "output-available"
+  | "output-error"
+  | "approval-requested"
+  | "approval-responded"
+  | "output-denied";
+
+type ToolApprovalData = {
+  approved?: boolean;
+};
+
 type ToolApprovalContextValue = {
-  approval: ToolUIPart["approval"];
-  state: ToolUIPart["state"];
+  approval?: ToolApprovalData;
+  state: ToolApprovalState;
 };
 
 const ToolApprovalContext = createContext<ToolApprovalContextValue | null>(
@@ -30,8 +44,8 @@ const useToolApproval = () => {
 };
 
 export type ToolApprovalProps = ComponentProps<typeof Alert> & {
-  approval?: ToolUIPart["approval"];
-  state: ToolUIPart["state"];
+  approval?: ToolApprovalData;
+  state: ToolApprovalState;
 };
 
 export const ToolApproval = memo(

@@ -228,6 +228,9 @@ importers:
       '@types/gsap':
         specifier: ^1.20.2
         version: 1.20.2
+      '@types/hast':
+        specifier: ^3.0.4
+        version: 3.0.4
       '@types/node':
         specifier: ^20
         version: 20.19.21
