@@ -4,9 +4,9 @@ import FaultyTerminal from "@/components/FaultyTerminal";
 import ImageCarousel from "@/components/ImageCarousel";
 import EventsPage from "@/components/EventsPage";
 import { useEffect, useState, useMemo } from "react";
-import axios from "axios";
 import { Asset, EventApiResponse, EventItem } from "@/interfaces/contentful";
 import { getAssetUrl } from "../utils/assetUrl";
+import { getCachedEventsData } from "../utils/apiCache";
 
 const Events = () => {
   const [eventData, setEvents] = useState<EventItem[]>([]);
@@ -15,16 +15,16 @@ const Events = () => {
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const response = await axios.get<EventApiResponse>(
+        const responseData = await getCachedEventsData(
           "https://cdn.a2ys.dev/events.json"
         );
 
-        const sortedEvents = response.data.items.sort((a, b) =>
+        const sortedEvents = responseData.items.sort((a, b) =>
           a.fields.eventName.localeCompare(b.fields.eventName)
         );
 
         setEvents(sortedEvents);
-        setAssetData(response.data.includes?.Asset || []);
+        setAssetData(responseData.includes?.Asset || []);
       } catch (error) {
         console.error("Failed to fetch events:", error);
       }
