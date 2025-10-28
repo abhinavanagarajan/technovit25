@@ -81,7 +81,7 @@ const MerchPage: React.FC = () => {
       </div>
 
       <a
-        href="https://chennaievents.vit.ac.in/technovit/"
+        href="https://chennaievents.vit.ac.in/technovit/merch"
         target="_blank"
         rel="noopener noreferrer"
         className="text-lg font-bold text-gray-900 py-4 px-16 rounded-full"
