@@ -24,8 +24,7 @@ import { Button } from "./ui/button";
 import Image from "next/image";
 
 const suggestions = [
-  "What is TechnoVIT 2025?",
-  "Tell me about the events",
+  "When is TechnoVIT 2025?",
   "How can I register?",
   "What is the theme?",
 ];

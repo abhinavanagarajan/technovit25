@@ -3,14 +3,16 @@
 import { Be_Vietnam_Pro } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
-import { useState, useEffect } from "react";
-import Image from "next/image";
+// import { useState, useEffect } from "react";
+// import Image from "next/image";
+
+import { useState } from "react";
 
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
-import MiniChatbot from "@/components/MiniChatbot";
-import { Button } from "@/components/ui/button";
+// import MiniChatbot from "@/components/MiniChatbot";
+// import { Button } from "@/components/ui/button";
 
 const beVietnam = Be_Vietnam_Pro({
   variable: "--font-be-vietnam-pro",
@@ -23,21 +25,21 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const [isChatbotOpen, setIsChatbotOpen] = useState(false);
+  // const [isChatbotOpen, setIsChatbotOpen] = useState(false);
   const [isScrollTopVisible, setIsScrollTopVisible] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 300) {
-        setIsScrollTopVisible(true);
-      } else {
-        setIsScrollTopVisible(false);
-      }
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (window.scrollY > 300) {
+  //       setIsScrollTopVisible(true);
+  //     } else {
+  //       setIsScrollTopVisible(false);
+  //     }
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
 
   return (
     <html lang="en">
@@ -52,7 +54,7 @@ export default function RootLayout({
           </main>
           <Footer />
         </div>
-        {isChatbotOpen ? (
+        {/* {isChatbotOpen ? (
           <MiniChatbot onClose={() => setIsChatbotOpen(false)} />
         ) : (
           <Button
@@ -70,7 +72,7 @@ export default function RootLayout({
               className="object-cover w-full h-full"
             />
           </Button>
-        )}
+        )} */}
         <Analytics />
       </body>
     </html>
