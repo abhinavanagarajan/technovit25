@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import MiniChatbot from "@/components/MiniChatbot";
+import CachedImage from "@/components/CachedImage";
 
 interface ValidateResponse {
   valid: boolean;
@@ -198,7 +199,7 @@ export default function LaunchClient() {
               onClick={() => setShowChatbot(true)}
               className="fixed bottom-4 right-4 z-50 h-16 w-16 cursor-pointer rounded-full bg-blue-600 p-3 shadow-lg transition-all hover:scale-110"
             >
-              <img
+              <CachedImage
                 src="https://cdn.a2ys.dev/images/logo.png"
                 alt="Chatbot Icon"
                 className="h-full w-full object-contain"

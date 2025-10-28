@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useMemo } from "react";
+import CachedImage from "./CachedImage";
 
 interface ImageCarouselProps {
   images?: string[];
@@ -132,7 +133,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
               }
             }}
           >
-            <img
+            <CachedImage
               src={imageUrl || "https://cdn.a2ys.dev/images/defaultPoster.png"}
               alt={`Carousel item ${index + 1}`}
               className="w-full h-full object-fill"

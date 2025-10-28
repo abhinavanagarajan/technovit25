@@ -5,6 +5,7 @@ import { EventItem, Asset } from "@/interfaces/contentful";
 import { Bayon } from "next/font/google";
 import { MapPin } from "lucide-react";
 import { getAssetUrl } from "@/app/utils/assetUrl";
+import CachedImage from "./CachedImage";
 
 const fontBayon = Bayon({ subsets: ["latin"], weight: "400" });
 
@@ -265,8 +266,8 @@ const EventDetailsDialog = ({
         </button>
         <div className="flex flex-col lg:flex-row gap-8 lg:items-start">
           <div className="w-full lg:w-1/3 h-64 lg:h-auto bg-[#d9d9d9] flex-shrink-0">
-            <img
-              src={imageUrl}
+            <CachedImage
+              src={imageUrl || "https://cdn.a2ys.dev/images/defaultPoster.png"}
               alt={event.fields.eventName}
               className="w-full h-full object-fill border border-gray-700"
             />
@@ -382,7 +383,7 @@ const EventCard = React.memo(({ event, imageUrl, onClick }: EventCardProps) => {
       <div className="flex w-full flex-col gap-6 text-white lg:h-[30vh] lg:flex-row lg:items-stretch lg:space-x-6 lg:gap-6">
         <div className="relative flex-shrink-0 overflow-hidden bg-black aspect-[4/5] lg:self-stretch">
           {imageUrl ? (
-            <img
+            <CachedImage
               src={imageUrl}
               alt={event.fields.eventName}
               className="w-full h-full object-fill border border-white"

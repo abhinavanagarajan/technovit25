@@ -1,5 +1,7 @@
 "use client";
 
+import CachedImage from "./CachedImage";
+
 interface SponsorImageProps {
   src: string;
   alt: string;
@@ -9,7 +11,7 @@ interface SponsorImageProps {
 export const SponsorImage = ({ src, alt, className }: SponsorImageProps) => {
   return (
     <div className={`relative ${className}`}>
-      <img
+      <CachedImage
         src={src}
         alt={alt}
         className="absolute inset-0 h-full w-full object-contain"

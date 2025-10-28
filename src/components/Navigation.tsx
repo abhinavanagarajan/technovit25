@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Bayon } from "next/font/google";
+import CachedImage from "./CachedImage";
 
 const bayon = Bayon({
   variable: "--font-bayon",
@@ -61,7 +62,7 @@ export const Navigation = () => {
           className="flex flex-none items-center gap-3 justify-center cursor-pointer"
           prefetch={false}
         >
-          <img
+          <CachedImage
             src="https://cdn.a2ys.dev/images/technoVit25-new.png"
             alt="TechnoVIT Logo"
             width={160}
@@ -76,7 +77,7 @@ export const Navigation = () => {
               );
             }}
           />
-          <img
+          <CachedImage
             src="https://cdn.a2ys.dev/images/dot.png"
             alt="Separator Dot"
             width={8}
@@ -89,7 +90,7 @@ export const Navigation = () => {
               );
             }}
           />
-          <img
+          <CachedImage
             src="https://cdn.a2ys.dev/images/VIT logo.png"
             alt="VIT Logo"
             width={128}
@@ -121,7 +122,7 @@ export const Navigation = () => {
           className="flex items-center gap-2 cursor-pointer"
           prefetch={false}
         >
-          <img
+          <CachedImage
             src="https://cdn.a2ys.dev/images/technoVit25-new.png"
             alt="TechnoVIT Logo"
             width={100}
@@ -134,7 +135,7 @@ export const Navigation = () => {
               );
             }}
           />
-          <img
+          <CachedImage
             src="https://cdn.a2ys.dev/images/dot.png"
             alt="Separator Dot"
             width={6}
@@ -147,7 +148,7 @@ export const Navigation = () => {
               );
             }}
           />
-          <img
+          <CachedImage
             src="https://cdn.a2ys.dev/images/VIT logo.png"
             alt="VIT Logo"
             width={96}

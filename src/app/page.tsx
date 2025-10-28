@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ChevronDown, Users, Trophy, Globe, CalendarDays } from "lucide-react";
 import { Card, CardContent } from "@/components/Card";
 import { motion } from "framer-motion";
+import CachedImage from "@/components/CachedImage";
 
 const stats = [
   { icon: Users, value: "25,000+", label: "Participants" },
@@ -257,7 +258,7 @@ export default function Page() {
       <section className="bg-black py-20">
         <div className="relative w-full min-h-screen bg-black flex">
           <div className="relative w-full sm:w-4/5 bg-[#70E081] sm:flex flex-col justify-between">
-            <img
+            <CachedImage
               src="https://cdn.a2ys.dev/images/pixelDecoration.png"
               onError={(e) => {
                 e.currentTarget.src =
@@ -266,7 +267,7 @@ export default function Page() {
               className="right-0 bottom-0 h-1/2 absolute z-10 hidden sm:block"
               alt=""
             />
-            <img
+            <CachedImage
               src="https://cdn.a2ys.dev/images/pixelDecoration.png"
               onError={(e) => {
                 e.currentTarget.src =
@@ -329,7 +330,7 @@ export default function Page() {
                   key={index}
                   className="w-full relative border-4 border-black box-border"
                 >
-                  <img
+                  <CachedImage
                     src={image.src}
                     alt={image.alt}
                     className="w-full h-auto"

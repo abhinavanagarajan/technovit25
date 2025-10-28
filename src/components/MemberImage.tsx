@@ -1,5 +1,7 @@
 "use client";
 
+import CachedImage from "./CachedImage";
+
 interface MemberImageProps {
   src: string;
   alt: string;
@@ -7,7 +9,7 @@ interface MemberImageProps {
 
 export const MemberImage = ({ src, alt }: MemberImageProps) => {
   return (
-    <img
+    <CachedImage
       src={src}
       alt={alt}
       width={400}
