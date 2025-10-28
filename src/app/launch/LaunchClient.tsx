@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
+import { motion, AnimatePresence } from "framer-motion";
 
 interface ValidateResponse {
   valid: boolean;
@@ -14,6 +15,75 @@ interface LaunchResponse {
   error?: string;
 }
 
+const screenVariants = {
+  initial: { opacity: 0, y: 20 },
+  animate: { opacity: 1, y: 0 },
+  exit: { opacity: 0, y: -20 },
+  transition: { duration: 0.5, ease: "easeInOut" },
+};
+
+const FirstScreen = ({
+  handleLaunch,
+  isLoading,
+  message,
+}: {
+  handleLaunch: () => void;
+  isLoading: boolean;
+  message: string;
+}) => (
+  <motion.div
+    key="step1"
+    variants={screenVariants}
+    initial="initial"
+    animate="animate"
+    exit="exit"
+    transition={screenVariants.transition}
+    className="flex w-full flex-col items-center justify-center text-center"
+  >
+    <div className="mb-12">
+      <h1 className="ttFont relative pb-4 text-5xl font-bold md:text-7xl">
+        technoVIT&apos;25 Launch
+        <span className="absolute bottom-0 left-1/2 h-1.5 w-2/3 -translate-x-1/2 rounded-full bg-[#DC143C]" />
+      </h1>
+    </div>
+
+    <button
+      onClick={handleLaunch}
+      disabled={isLoading}
+      className="bg-[#DC143C] text-white text-2xl md:text-3xl font-bold py-5 px-16 rounded-full shadow-lg transition-all duration-300 ease-in-out disabled:opacity-60 disabled:cursor-not-allowed disabled:scale-100 hover:cursor-pointer"
+    >
+      {isLoading ? "Launching..." : "LAUNCH NOW"}
+    </button>
+
+    {message && (
+      <p
+        className={`mt-8 text-xl font-semibold md:text-2xl ${
+          message.includes("SUCCESS") ? "text-green-400" : "text-red-400"
+        }`}
+      >
+        {message}
+      </p>
+    )}
+  </motion.div>
+);
+
+const SecondScreen = () => (
+  <motion.div
+    key="step2"
+    variants={screenVariants}
+    initial="initial"
+    animate="animate"
+    exit="exit"
+    transition={screenVariants.transition}
+    className="flex flex-col items-center justify-center text-center"
+  >
+    <h2 className="text-4xl font-bold md:text-6xl">🚀 Launch Successful!</h2>
+    <p className="mt-6 text-xl text-gray-300 md:text-2xl">
+      The technoVIT website is now live.
+    </p>
+  </motion.div>
+);
+
 export default function LaunchClient() {
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -24,6 +94,7 @@ export default function LaunchClient() {
   const [token, setToken] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [message, setMessage] = useState("");
+  const [step, setStep] = useState(1);
 
   useEffect(() => {
     const urlToken = searchParams.get("token");
@@ -43,9 +114,7 @@ export default function LaunchClient() {
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ token: urlToken }),
         });
-
         const data: ValidateResponse = await response.json();
-
         if (response.ok && data.valid) {
           setAuthStatus("authorized");
         } else {
@@ -82,6 +151,7 @@ export default function LaunchClient() {
       const data: LaunchResponse = await response.json();
       if (response.ok) {
         setMessage("🚀 SUCCESS! technoVIT is now LIVE!");
+        setStep(2);
       } else {
         throw new Error(data.error || "Something went wrong.");
       }
@@ -98,55 +168,26 @@ export default function LaunchClient() {
 
   if (authStatus !== "authorized") {
     return (
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          height: "100vh",
-          background: "#000",
-          color: "white",
-          fontSize: "1.5rem",
-        }}
-      >
-        <p>Validating Access...</p>
+      <div className="flex min-h-screen flex-col items-center justify-center p-4 text-white">
+        <p className="animate-pulse text-2xl font-semibold tracking-wider">
+          Validating Access...
+        </p>
       </div>
     );
   }
 
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        height: "100vh",
-        background: "#000",
-        color: "white",
-        textAlign: "center",
-      }}
-    >
-      <h1>technoVIT&apos;25 Grand Launch</h1>
-      <button
-        onClick={handleLaunch}
-        disabled={isLoading || !token}
-        style={{
-          padding: "20px 40px",
-          fontSize: "2rem",
-          cursor: "pointer",
-          background: "crimson",
-          color: "white",
-          border: "none",
-          borderRadius: "10px",
-          margin: "20px 0",
-        }}
-      >
-        {isLoading ? "Launching..." : "LAUNCH NOW"}
-      </button>
-      {message && (
-        <p style={{ marginTop: "20px", fontSize: "1.5rem" }}>{message}</p>
-      )}
+    <div className="flex min-h-screen flex-col items-center justify-center p-4 text-white">
+      <AnimatePresence mode="wait">
+        {step === 1 && (
+          <FirstScreen
+            handleLaunch={handleLaunch}
+            isLoading={isLoading}
+            message={message}
+          />
+        )}
+        {step === 2 && <SecondScreen />}
+      </AnimatePresence>
     </div>
   );
 }
