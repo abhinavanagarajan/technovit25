@@ -89,33 +89,37 @@ jobs:
 
               // Download all poster images
               const assetArray = Object.values(assetIncludes);
-              console.log(`\n📸 Downloading ${assetArray.length} posters...`);
+              console.log(`\n📸 Processing ${assetArray.length} posters...`);
 
               for (const asset of assetArray) {
                 if (asset.fields && asset.fields.file && asset.fields.file.url) {
-                  try {
-                    const imageUrl = asset.fields.file.url.startsWith('//')
-                      ? `https:${asset.fields.file.url}`
-                      : asset.fields.file.url;
+                  const fileName = asset.fields.file.fileName;
+                  const filePath = path.join(postersDir, fileName);
 
-                    const fileName = asset.fields.file.fileName;
-                    const filePath = path.join(postersDir, fileName);
+                  // Check if the file already exists before downloading
+                  if (fs.existsSync(filePath)) {
+                    console.log(`  👍 Skipping, already exists: ${fileName}`);
+                  } else {
+                    try {
+                      const imageUrl = asset.fields.file.url.startsWith('//')
+                        ? `https:${asset.fields.file.url}`
+                        : asset.fields.file.url;
 
-                    // Download image
-                    const response = await axios.get(imageUrl, {
-                      responseType: 'arraybuffer',
-                      timeout: 30000
-                    });
+                      // Download image only if it doesn't exist
+                      const response = await axios.get(imageUrl, {
+                        responseType: 'arraybuffer',
+                        timeout: 30000
+                      });
 
-                    fs.writeFileSync(filePath, response.data);
-                    console.log(`  ✅ Downloaded: ${fileName}`);
-
-                    // Update asset URL to point to CDN
-                    asset.fields.file.url = `/posters/${fileName}`;
-
-                  } catch (err) {
-                    console.error(`  ❌ Failed to download ${asset.fields.file.fileName}:`, err.message);
+                      fs.writeFileSync(filePath, response.data);
+                      console.log(`  ✅ Downloaded: ${fileName}`);
+                    } catch (err) {
+                      console.error(`  ❌ Failed to download ${fileName}:`, err.message);
+                    }
                   }
+
+                  // IMPORTANT: Update the URL to the local path for all assets
+                  asset.fields.file.url = `/posters/${fileName}`;
                 }
               }
 
