@@ -31,7 +31,7 @@ jobs:
         working-directory: ./main-app
         run: npm install axios
 
-      - name: Fetch Contentful data and create events.json
+      - name: Fetch Contentful data, download posters, and create events.json
         working-directory: ./main-app
         env:
           SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
@@ -39,6 +39,7 @@ jobs:
         run: |
           node <<'EOF'
           const fs = require('fs');
+          const path = require('path');
           const axios = require('axios');
 
           const fetchData = async () => {
@@ -52,6 +53,7 @@ jobs:
               let allItems = [];
               let assetIncludes = {};
 
+              // Fetch all events
               do {
                 const url = `https://cdn.contentful.com/spaces/${spaceId}/environments/master/entries?access_token=${accessToken}&content_type=event&limit=${limit}&skip=${skip}`;
 
@@ -78,6 +80,51 @@ jobs:
 
               } while (skip < total);
 
+              // Create posters directory
+              const postersDir = path.join('../assets-repo', 'posters');
+              if (!fs.existsSync(postersDir)) {
+                fs.mkdirSync(postersDir, { recursive: true });
+                console.log('📁 Created posters directory');
+              }
+
+              // Download all poster images
+              const assetArray = Object.values(assetIncludes);
+              console.log(`\n📸 Downloading ${assetArray.length} posters...`);
+
+              for (const asset of assetArray) {
+                if (asset.fields && asset.fields.file && asset.fields.file.url) {
+                  try {
+                    const imageUrl = asset.fields.file.url.startsWith('//')
+                      ? `https:${asset.fields.file.url}`
+                      : asset.fields.file.url;
+
+                    const fileName = asset.fields.file.fileName;
+                    const filePath = path.join(postersDir, fileName);
+
+                    // Download image
+                    const response = await axios.get(imageUrl, {
+                      responseType: 'arraybuffer',
+                      timeout: 30000
+                    });
+
+                    fs.writeFileSync(filePath, response.data);
+                    console.log(`  ✅ Downloaded: ${fileName}`);
+
+                    // Update asset URL to point to CDN
+                    asset.fields.file.url = `/posters/${fileName}`;
+
+                  } catch (err) {
+                    console.error(`  ❌ Failed to download ${asset.fields.file.fileName}:`, err.message);
+                  }
+                }
+              }
+
+              // Update assetIncludes with modified URLs
+              assetIncludes = {};
+              assetArray.forEach(asset => {
+                assetIncludes[asset.sys.id] = asset;
+              });
+
               const finalData = {
                 sys: { type: 'Array' },
                 total: allItems.length,
@@ -91,7 +138,8 @@ jobs:
 
               const outputPath = '../assets-repo/events.json';
               fs.writeFileSync(outputPath, JSON.stringify(finalData, null, 2));
-              console.log(`✅ All ${finalData.total} events successfully written to ${outputPath}`);
+              console.log(`\n✅ All ${finalData.total} events successfully written to ${outputPath}`);
+              console.log(`✅ All posters saved to posters/ directory with updated URLs`);
 
             } catch (err) {
               console.error('❌ Error fetching Contentful data:', err.message);
@@ -107,11 +155,11 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add events.json
+          git add events.json posters/
           # Exit if there are no changes to commit
           if git diff --staged --quiet; then
-            echo "No changes detected in events.json. Skipping commit."
+            echo "No changes detected. Skipping commit."
             exit 0
           fi
-          git commit -m "Update events.json from Contentful"
+          git commit -m "Update events.json and posters from Contentful"
           git push
