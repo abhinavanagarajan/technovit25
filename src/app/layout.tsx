@@ -44,7 +44,9 @@ export default function RootLayout({
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>technovit'25 | VIT Chennai's Annual Technical Fest</title>
+        <title>
+          technovit&apos;25 | VIT Chennai&apos;s Annual Technical Fest
+        </title>
         <meta
           name="description"
           content="technovit'25 - VIT Chennai's Annual Technical Fest. Join us for an exhilarating experience of innovation, technology, and creativity. Explore workshops, competitions, and guest lectures by industry experts. Unleash your potential and be part of the future!"
